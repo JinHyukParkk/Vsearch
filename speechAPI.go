@@ -3,9 +3,11 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"io/ioutil"
 	"log"
+	"os"
 	// Imports the Google Cloud Speech API client package.
 	"golang.org/x/net/context"
 
@@ -13,6 +15,11 @@ import (
 	speechpb "google.golang.org/genproto/googleapis/cloud/speech/v1"
 )
 
+func check(e error) {
+	if e != nil {
+		panic(e)
+	}
+}
 func main() {
 	ctx := context.Background()
 
@@ -23,7 +30,7 @@ func main() {
 	}
 
 	// Sets the name of the audio file to transcribe.
-	filename := "/Users/jinhyuk/Desktop/audio.flac"
+	filename := "/Users/jinhyuk/go/src/github.com/JinHyukParkk/CapstoneProject/audioFile/res.flac"
 
 	// Reads the audio file into memory.
 	data, err := ioutil.ReadFile(filename)
@@ -36,7 +43,7 @@ func main() {
 		Config: &speechpb.RecognitionConfig{
 			Encoding:        speechpb.RecognitionConfig_FLAC,
 			SampleRateHertz: 16000,
-			LanguageCode:    "ko-KR",
+			LanguageCode:    "en-US",
 		},
 		Audio: &speechpb.RecognitionAudio{
 			AudioSource: &speechpb.RecognitionAudio_Content{Content: data},
@@ -47,10 +54,16 @@ func main() {
 	}
 
 	// Prints the results.
-	fmt.Printf("Response\n")
+	fmt.Printf("Response\nresult.txt file create\n")
+	f, err := os.Create("/Users/jinhyuk/go/src/github.com/JinHyukParkk/CapstoneProject/text/result.txt")
+	check(err)
+	defer f.Close()
+	w := bufio.NewWriter(f)
 	for _, result := range resp.Results {
 		for _, alt := range result.Alternatives {
-			fmt.Printf("\"%v\" (confidence=%3f)\n", alt.Transcript, alt.Confidence)
+			w.WriteString(alt.Transcript + "\n")
+			// fmt.Printf("\"%v\" (confidence=%3f)\n", , alt.Confidence)
 		}
+		w.Flush()
 	}
 }
