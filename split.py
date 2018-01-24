@@ -1,7 +1,8 @@
 from pydub import AudioSegment
 from pydub.silence import split_on_silence, detect_nonsilent
 import datetime
-
+import json
+import os
 def split_sound_file(path, format):
     """Split sound file && Return nonsilent ranges."""
 
@@ -47,6 +48,27 @@ def list_from_file():
         src_file.close()
     return srt_lines
 
+def create_json_file(srt_lines, nonsilent_ranges):
+    """create json file"""
+
+    init_time = datetime.datetime(100, 1, 1, 0, 0,)
+
+    outter_dict = dict()
+    
+    order = 0
+    for time in nonsilent_ranges:
+        inner_dict = dict()
+        st = "start_time"
+        et = "end_time"
+        inner_dict[st] = str((init_time + datetime.timedelta(0, milliseconds=time[0])).time())[:-3]
+        inner_dict[et] = str((init_time + datetime.timedelta(0, milliseconds=time[1])).time())[:-3]
+
+        outter_dict[str(order)] = inner_dict
+        order+=1
+    with open('test.json', 'wt', encoding="utf-8") as make_file:
+        json.dump(outter_dict, make_file, ensure_ascii=False, indent='\t')
+    print(json.dumps(outter_dict, ensure_ascii=False, indent='\t'))
+
 def create_srt_file(srt_lines, nonsilent_ranges):
     """create_srt_file."""
 
@@ -77,8 +99,9 @@ def create_srt_file(srt_lines, nonsilent_ranges):
 def main():
     """main"""
     nonsilent_ranges = split_sound_file("./audioFile/test.mp4", "mp4")
+    # os.system('./1_example')
     srt_lines = list_from_file()
-    create_srt_file(srt_lines, nonsilent_ranges)
-
+    # create_srt_file(srt_lines, nonsilent_ranges)
+    create_json_file(srt_lines, nonsilent_ranges)
 if __name__ == "__main__":
     main()
