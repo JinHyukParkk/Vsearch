@@ -60,8 +60,10 @@ def create_json_file(srt_lines, nonsilent_ranges):
         inner_dict = dict()
         st = "start_time"
         et = "end_time"
+        content = "content"
         inner_dict[st] = str((init_time + datetime.timedelta(0, milliseconds=time[0])).time())[:-3]
         inner_dict[et] = str((init_time + datetime.timedelta(0, milliseconds=time[1])).time())[:-3]
+        inner_dict[content] = srt_lines[order]
 
         outter_dict[str(order)] = inner_dict
         order+=1
