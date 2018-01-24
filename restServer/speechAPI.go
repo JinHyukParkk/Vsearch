@@ -8,7 +8,6 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
-	"os/exec"
 	"strconv"
 	// Imports the Google Cloud Speech API client package.
 	"golang.org/x/net/context"
@@ -23,15 +22,15 @@ func check(e error) {
 	}
 }
 func main() {
-	fmt.Println("====Start shell Script====")
-	cmdStr := "convertVoiveFile.sh"
-	cmd := exec.Command("bash", cmdStr)
-	_, err := cmd.Output()
-	if err != nil {
-		println(err.Error())
-		println("Error")
-		return
-	}
+	// fmt.Println("====Start shell Script====")
+	// cmdStr := "convertVoiveFile.sh"
+	// cmd := exec.Command("bash", cmdStr)
+	// _, err := cmd.Output()
+	// if err != nil {
+	// 	println(err.Error())
+	// 	println("Error")
+	// 	return
+	// }
 	fmt.Println("====Create Client====")
 	ctx := context.Background()
 
