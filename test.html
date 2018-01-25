@@ -1,42 +1,71 @@
-<html >
-  <head>
-    <title>Full player example</title>
-    <!-- Uncomment the following meta tag if you have issues rendering this page on an intranet or local site. -->    
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"/> -->
-
-    <script src="test.js" type="text/javascript"></script>
+<html>
+    <head>
+        <title>Full player example</title>
+        <!-- Uncomment the following meta tag if you have issues rendering this page on an intranet or local site. -->    
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"/> -->
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="test.js" type="text/javascript"></script>
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
 
     </head>
-    <body onload="init();" >        
+    <body onload="init();" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video id="Video1" class="embed-responsive-item" controls title="video element">            
+                             HTML5 Video is required for this example
+                        </video>
+                        
+                    </div>
+                    <div class="col-sm-12 col-md-12">
+                        <div id="buttonbar">
+
+                            <div>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" id="restart" class="btn btn-default" title="Restart button">[]</button> 
+                                    <button type="button" id="slower" class="btn btn-default" title="Slower playback button">-</button> 
+                                    <button id="rew" class="btn btn-default" title="Rewind button" >&lt;&lt;</button>
+                                    <button id="play" class="btn btn-default" title="Play button">&gt;</button>
+                                    <button id="fwd" class="btn btn-default" title="Forward button" >&gt;&gt;</button>
+                                    <button id="faster" class="btn btn-default" title="Faster playback button">+</button>
+                                    <button id="Button2" class="btn btn-default" title="Mute button" ><img alt="Volume on button" src="vol2.png" /></button>
+                                </div>    
+                            </div>
+                            <div class="col-md-12">
+                                <label>Playback </label>
+                                <label>Reset playback rate: </label><button id="normal" class="btn btn-default" title="Reset playback rate button">=</button>    
+                            
+                            </div>
+                            <div class="col-md-12">
+                                <label>Volume:</label>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button id="volDn" class="btn btn-default" title="Volume down button">-</button>
+                                    <button id="volUp" class="btn btn-default" title="Volume up button">+</button>
+                                    <button id="mute" class="btn btn-default" title="Mute button" ><img alt="Volume on button" src="vol2.png" /></button>
+                                </div>
+                            </div> 
+                               
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id= "inputField">
+                        <label>Type or paste a video URL:</label> 
+                        <br/>
+                        <input type="text" id="videoFile" title="video file input field" value="civil_war.mp4" />        
+                        <button id="loadVideo" class="btn btn-default" title="Load video button">Load</button>
+                        
+                    </div>
+                    <div title="Error message area" id="errorMsg"></div> 
+                </div>
+            </div>
+            
+        </div>       
     
-    <video id="Video1" controls style="border: 1px solid blue;" height="240" width="320" title="video element">            
-         HTML5 Video is required for this example
-    </video>
-    
-    <div id="buttonbar" style="display: none;")>
-        <button id="restart" title="Restart button">[]</button> 
-        <button id="slower" title="Slower playback button">-</button> 
-        <button id="rew" title="Rewind button" >&lt;&lt;</button>
-        <button id="play" title="Play button">&gt;</button>
-        <button id="fwd" title="Forward button" >&gt;&gt;</button>
-        <button id="faster" title="Faster playback button">+</button>
-        <button id="Button2" title="Mute button" ><img alt="Volume on button" src="vol2.png" /></button>     
-        <br />
-        <label>Playback </label>
-            <label>Reset playback rate: </label><button id="normal" title="Reset playback rate button">=</button>    
         
-        <label>  Volume </label>
-            <button id="volDn"  title="Volume down button">-</button>
-            <button id="volUp"  title="Volume up button">+</button>
-            <button id="mute" title="Mute button" ><img alt="Volume on button" src="vol2.png" /></button>        
-    </div>   
-    <br/>  
-    <div id= "inputField" style="display:none;" >
-        <label>Type or paste a video URL: <br/>
-        <input type="text" id="videoFile" style="width: 300px;"  title="video file input field" value="civil_war.mp4" />        
-        <button id="loadVideo" title="Load video button">Load</button>
-        </label>
-    </div>
-    <div title="Error message area" id="errorMsg" style="color:Red;"></div>  
     </body>
 </html>
