@@ -21,7 +21,7 @@ func check(e error) {
 		panic(e)
 	}
 }
-func main() {
+func SpeechAPI() {
 	// fmt.Println("====Start shell Script====")
 	// cmdStr := "convertVoiveFile.sh"
 	// cmd := exec.Command("bash", cmdStr)
