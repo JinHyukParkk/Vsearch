@@ -1,0 +1,28 @@
+{
+  "name": "capstoneproject",
+  "version": "1.0.0",
+  "description": "capstone",
+  "main": "file_upload.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JinHyukParkk/CapstoneProject.git"
+  },
+  "keywords": [
+    "upload"
+  ],
+  "author": "haechang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JinHyukParkk/CapstoneProject/issues"
+  },
+  "homepage": "https://github.com/JinHyukParkk/CapstoneProject#readme",
+  "dependencies": {
+    "multer": "^1.3.0",
+    "multiparty": "^4.1.3",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {}
+}

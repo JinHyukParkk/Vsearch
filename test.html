@@ -8,6 +8,7 @@
         <script src="test.js" type="text/javascript"></script>
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="file_upload.js" type="text/javascript"></script>
         <link rel="stylesheet" type="text/css" href="css/main.css">
 
     </head>
@@ -60,12 +61,28 @@
                         <button id="loadVideo" class="btn btn-default" title="Load video button">Load</button>
                         
                     </div>
+                    
                     <div title="Error message area" id="errorMsg"></div> 
+                    
+                    <br/>
+
+                    <div id= "uploadField">
+					 	<form action="/testLoadMp4/test" method="post" enctype="multipart/form-data">
+					 		<label>Upload video URL:</label>
+					 		<br/>
+					    	name <input type="text" name="username">
+							
+							<br>
+							file :
+							<input type="file" name="myfile1">
+					    	<input type="submit" value="Upload">
+					 	</form>
+                    </div>
                 </div>
             </div>
-            
-        </div>       
+        </div>    
+
+
     
-        
     </body>
 </html>
