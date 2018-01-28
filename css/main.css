@@ -1,0 +1,15 @@
+body{
+	font-size:12pt; 
+}
+#buttonbar{
+	display:none; 
+}
+#Video1{
+	border:1px solid blue;
+}
+#inputField{
+	display:none;
+}
+#errorMsg{
+	color:red;
+}
