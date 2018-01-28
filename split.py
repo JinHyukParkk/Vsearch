@@ -19,8 +19,7 @@ def split_sound_file(path, format):
 
     for i, chunk in enumerate(audio_chunks):
         out_file = "./audioFile_python/test{0}.flac".format(i)
-        print ("exporting", out_file, " - non silent- time : ",
-            nonsilent_ranges[i][0], "~", nonsilent_ranges[i][1])
+        print ("exporting", out_file, " - non silent- time : ", nonsilent_ranges[i][0], "~", nonsilent_ranges[i][1])
         chunk.export(out_file, format="flac")
 
     return nonsilent_ranges
@@ -60,10 +59,10 @@ def create_json_file(srt_lines, nonsilent_ranges):
         inner_dict = dict()
         st = "start_time"
         et = "end_time"
-        content = "content"
+        # content = "content"
         inner_dict[st] = str((init_time + datetime.timedelta(0, milliseconds=time[0])).time())[:-3]
         inner_dict[et] = str((init_time + datetime.timedelta(0, milliseconds=time[1])).time())[:-3]
-        inner_dict[content] = srt_lines[order]
+        # inner_dict[content] = srt_lines[order]
 
         outter_dict[str(order)] = inner_dict
         order+=1
@@ -75,16 +74,15 @@ def create_srt_file(srt_lines, nonsilent_ranges):
     """create_srt_file."""
 
     srt_file = open("test.srt", 'wt')
-    block_num = 1
     init_time = datetime.datetime(100, 1, 1, 0, 0,)
 
-    for line in srt_lines:
-        nonsilent_milliseconds = nonsilent_ranges[(block_num-1)]
+    for i, line in enumerate(srt_lines):
+        nonsilent_milliseconds = nonsilent_ranges[i]
 
         start_time = str((init_time + datetime.timedelta(0,milliseconds=nonsilent_milliseconds[0])).time())
         end_time = str((init_time + datetime.timedelta(0,milliseconds=nonsilent_milliseconds[1])).time())
 
-        srt_file.write(str(block_num))
+        srt_file.write(str(i+1))
         srt_file.write("\n")
         srt_file.write(start_time[:-3])
         srt_file.write(" --> ")
@@ -94,16 +92,14 @@ def create_srt_file(srt_lines, nonsilent_ranges):
         srt_file.write("\n")
         srt_file.write("\n")
 
-        block_num+=1
-
     srt_file.close()
-
+    
 def main():
     """main"""
-    nonsilent_ranges = split_sound_file("./audioFile/test.mp4", "mp4")
-    # os.system('./1_example')
-    srt_lines = list_from_file()
-    # create_srt_file(srt_lines, nonsilent_ranges)
-    create_json_file(srt_lines, nonsilent_ranges)
+    nonsilent_ranges = split_sound_file("./audioFile/test.mp4", "mp4") # 영상파일을 여러개 flac파일로 나눔
+    # os.system('./1_example') <- go 실행파일 실행해서 flac 파일들을 텍스트로 변환
+    srt_lines = list_from_file() 
+    create_srt_file(srt_lines, nonsilent_ranges) # 자막파일 생성
+    create_json_file(srt_lines, nonsilent_ranges) # JSON 파일 생성
 if __name__ == "__main__":
     main()
