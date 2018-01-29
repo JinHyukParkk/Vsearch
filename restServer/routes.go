@@ -16,5 +16,5 @@ type Route struct {
 type Routes []Route
 
 var routes = Routes{
-	Route{"Test", "GET", "/testLoadMp4/test", apis.Test},
+	Route{"Test", "POST", "/test", apis.Test},
 }
