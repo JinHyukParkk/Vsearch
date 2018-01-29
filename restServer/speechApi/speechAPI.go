@@ -53,7 +53,7 @@ func SpeechAPI() {
 	i := 1
 	for {
 		var pathFile string
-		pathFile = "./audioFile_python/test" + strconv.Itoa(i) + ".flac"
+		pathFile = "./audioFile_python/result" + strconv.Itoa(i) + ".flac"
 
 		fmt.Println(pathFile)
 		if _, err := os.Stat(pathFile); err == nil {

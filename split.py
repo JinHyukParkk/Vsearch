@@ -19,7 +19,7 @@ def split_sound_file(path, format):
         audio_chunks.append(sound_file[start_i:end_i])
 
     for i, chunk in enumerate(audio_chunks):
-        out_file = "./audioFile/test{0}.flac".format(i) #flac으로 변환된 output파일 저장 경로 및 파일 명
+        out_file = "./audioFile_python/test{0}.flac".format(i) #flac으로 변환된 output파일 저장 경로 및 파일 명
         print ("exporting", out_file, " - non silent- time : ", nonsilent_ranges[i][0], "~", nonsilent_ranges[i][1])
         chunk.export(out_file, format="flac")
 
@@ -34,7 +34,7 @@ def list_from_file():
     while True:
         file_name = "result" + str(index) + ".txt"
         try:
-            src_file = open("./text/"+file_name, "rt") #speechAPI로 생성된 text 파일들을 읽음 
+            src_file = open("./text/"+file_name, "rt") #speechAPI로 생성된 text 파일들을 읽음
         except:
             print("End File")
             break
@@ -54,7 +54,7 @@ def create_json_file(srt_lines, nonsilent_ranges):
     init_time = datetime.datetime(100, 1, 1, 0, 0,)
 
     outter_dict = dict()
-    
+
     order = 0
     for time in nonsilent_ranges:
         inner_dict = dict()
@@ -74,7 +74,7 @@ def create_json_file(srt_lines, nonsilent_ranges):
 def create_srt_file(srt_lines, nonsilent_ranges):
     """create_srt_file."""
 
-    srt_file = open("test.srt", 'wt') #자막 파일 생성 
+    srt_file = open("test.srt", 'wt') #자막 파일 생성
     init_time = datetime.datetime(100, 1, 1, 0, 0,)
 
     for i, line in enumerate(srt_lines):
@@ -94,12 +94,12 @@ def create_srt_file(srt_lines, nonsilent_ranges):
         srt_file.write("\n")
 
     srt_file.close()
-    
+
 def main():
     """main"""
     nonsilent_ranges = split_sound_file("./audioFile/test.mp4", "mp4") # 영상파일을 여러개 flac파일로 나눔
     # os.system('./1_example') <- go 실행파일 실행해서 flac 파일들을 텍스트로 변환시켜야함
-    # srt_lines = list_from_file() 
+    # srt_lines = list_from_file()
     # create_srt_file(srt_lines, nonsilent_ranges) # 자막파일 생성
     # create_json_file(srt_lines, nonsilent_ranges) # JSON 파일 생성
 if __name__ == "__main__":
