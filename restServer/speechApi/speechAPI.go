@@ -53,11 +53,8 @@ func SpeechAPI() {
 	i := 1
 	for {
 		var pathFile string
-		if i < 10 {
-			pathFile = "../audioFile/out00" + strconv.Itoa(i) + ".flac"
-		} else {
-			pathFile = "../audioFile/out0" + strconv.Itoa(i) + ".flac"
-		}
+		pathFile = "./audioFile_python/test" + strconv.Itoa(i) + ".flac"
+
 		fmt.Println(pathFile)
 		if _, err := os.Stat(pathFile); err == nil {
 			// Reads the audio file into memory.

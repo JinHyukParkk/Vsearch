@@ -53,7 +53,7 @@ def create_json_file(srt_lines, nonsilent_ranges):
     init_time = datetime.datetime(100, 1, 1, 0, 0,)
 
     outter_dict = dict()
-    
+
     order = 0
     for time in nonsilent_ranges:
         inner_dict = dict()
@@ -96,9 +96,9 @@ def create_srt_file(srt_lines, nonsilent_ranges):
     
 def main():
     """main"""
-    nonsilent_ranges = split_sound_file("./audioFile/test.mp4", "mp4") # 영상파일을 여러개 flac파일로 나눔
+    nonsilent_ranges = split_sound_file("./audioFile/test.flac", "flac") # 영상파일을 여러개 flac파일로 나눔
     # os.system('./1_example') <- go 실행파일 실행해서 flac 파일들을 텍스트로 변환
-    srt_lines = list_from_file() 
+    srt_lines = list_from_file()
     create_srt_file(srt_lines, nonsilent_ranges) # 자막파일 생성
     create_json_file(srt_lines, nonsilent_ranges) # JSON 파일 생성
 if __name__ == "__main__":
