@@ -18,5 +18,25 @@
       <input type="button" id="videoB" value="Upload" >
     </form>
     <br/>
+
+    <form action="/" method="post" enctype="multipart/form-data" name = "fileinfo" id = "fileinfo">
+    <div class = "img_file">
+        <label for="name">비교할 파일을 선택하세요</label><p/>
+        <label for="name">reference: </label>
+        <input type="file" name="reference" /><p/>
+        <label for="name">target: </label>
+        <input type="file" name="target" /><p/>
+        <input type="button" id="ajaxButton" value="클릭" />
+    </div>
+    </form>
+  </br>
+  <p>-------Result-------</p>
+  <div class="after" id = "after">
+    <!-- <p id = "res">No files currently selected for upload</p> -->
+  </div>
+
+
+
+
   </body>
 </html>
