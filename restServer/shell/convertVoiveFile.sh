@@ -17,9 +17,10 @@ python3 ../split.py
 
 testList=`ls ./audioFile_python/test*`
 export resPath=./audioFile_python
+fs_count=$(ls -Rl $resPath | grep ^- | wc -l)
 count=0
-for i in $testList
+
+for ((i=0;i<$fs_count;i++))
 do
-  sox --channels=2 --bits=16 --rate=44100 --encoding=signed-integer --endian=little $i --channels=1 --bits=16 --rate=16000 $resPath/result$count.flac
-  count=$((count+1))
+  sox --channels=2 --bits=16 --rate=44100 --encoding=signed-integer --endian=little $resPath/test$i.flac --channels=1 --bits=16 --rate=16000 $resPath/result$i.flac
 done
