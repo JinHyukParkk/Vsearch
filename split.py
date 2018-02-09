@@ -48,6 +48,16 @@ def list_from_file():
         src_file.close()
     return srt_lines
 
+def word_count(list_line):
+    srt_lines = (" ".join(list_line)).lower()
+    text = srt_lines.split()
+    from collections import OrderedDict
+    from collections import defaultdict
+    word_count = defaultdict(lambda: 0)
+    for word in text:
+        word_count[word] += 1
+    return OrderedDict(sorted(word_count.items(), key=lambda t:t[1], reverse=True))
+
 def create_json_file(srt_lines, nonsilent_ranges):
     """create json file"""
 
@@ -67,6 +77,7 @@ def create_json_file(srt_lines, nonsilent_ranges):
 
         outter_dict[str(order)] = inner_dict
         order+=1
+    outter_dict["word"]= word_count(srt_lines)
     with open('test.json', 'wt', encoding="utf-8") as make_file: #json파일 생성
         json.dump(outter_dict, make_file, ensure_ascii=False, indent='\t')
     print(json.dumps(outter_dict, ensure_ascii=False, indent='\t'))
@@ -97,10 +108,10 @@ def create_srt_file(srt_lines, nonsilent_ranges):
 
 def main():
     """main"""
-    nonsilent_ranges = split_sound_file("./audioFile/test.mp4", "mp4") # 영상파일을 여러개 flac파일로 나눔
+    # nonsilent_ranges = split_sound_file("./audioFile/test.mp4", "mp4") # 영상파일을 여러개 flac파일로 나눔
     # os.system('./1_example') <- go 실행파일 실행해서 flac 파일들을 텍스트로 변환시켜야함
-    # srt_lines = list_from_file()
+    srt_lines = list_from_file()
     # create_srt_file(srt_lines, nonsilent_ranges) # 자막파일 생성
-    # create_json_file(srt_lines, nonsilent_ranges) # JSON 파일 생성
+    create_json_file(srt_lines, nonsilent_ranges]) # JSON 파일 생성
 if __name__ == "__main__":
     main()
