@@ -78,8 +78,8 @@ func SpeechAPI() {
 			}
 			// Prints the results.
 			fmt.Printf("Response" + strconv.Itoa(i) + "\nresult.txt file create\n")
-			createFile := "../text/result" + strconv.Itoa(i) + ".txt"
-			CreateDirIfNotExist("../text")
+			createFile := "./resultText/result" + strconv.Itoa(i) + ".txt"
+			CreateDirIfNotExist("./resultText")
 			f, err := os.Create(createFile)
 			check(err)
 			defer f.Close()
