@@ -20,7 +20,7 @@ function getXMLHttpRequest() {
 
 window.onload = function(){
    document.getElementById("videoB").onclick = function(){
-     makeRequestVideo('http://localhost:8090/test')
+     makeRequestVideo('http://210.204.165.166:4088/test')
    }
 }
 function makeRequestVideo(url){
