@@ -1,8 +1,0 @@
-
-.img_file input[type="file"] {
-  text-align: center;
-  cursor: pointer;
-  position: absolute;
-  background-color: #eee;
-  border: thin solid #ccc;
-}
