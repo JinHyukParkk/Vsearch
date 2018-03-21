@@ -38,7 +38,7 @@ func main() {
 
 	// 둘 중 아무거나 써도 됨. js, css  파일 root directory 설정
 	e.Use(middleware.Static("/static"))
-	// e.Static("/", "static")
+	e.Static("/", "static")
 
 	//처음 시작하는 파일 설정.
 	e.File("/", "template/test.html")
