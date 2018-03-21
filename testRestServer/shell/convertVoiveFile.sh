@@ -4,9 +4,11 @@ export AudilFile=../audioFile
 export modulePath=./module
 export resPath=./audioFile_python
 
+
+rm $resPath/*
 python3 $modulePath/split.py
 
-testList=`ls ./audioFile_python/test*`
+# testList=`ls ./audioFile_python/test*`
 
 fs_count=$(ls -Rl $resPath | grep ^- | wc -l)
 count=0
