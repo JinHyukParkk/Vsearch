@@ -19,8 +19,8 @@ func Test(c echo.Context) error {
 	if err != nil {
 		return err
 	}
-	files := form.File["myfile1"]
 
+	files := form.File["myfile1"]
 	log.Println("File is good")
 	// log.Println(handler.Filename)
 	log.Println()
@@ -43,7 +43,7 @@ func Test(c echo.Context) error {
 		}
 	}
 
-	fmt.Println("====Start shell Script====")
+	log.Println("====Start shell Script====")
 	cmdStr := "./shell/convertVoiveFile.sh"
 	cmd := exec.Command("bash", cmdStr)
 
@@ -51,6 +51,7 @@ func Test(c echo.Context) error {
 		return err
 	}
 
+	log.Println("====End shell Script====")
 	return c.HTML(http.StatusOK, fmt.Sprintf("<p>Uploaded successfully %d files with fields name=%s and email=%s.</p>", len(files), "test", "testEmail"))
 }
 
