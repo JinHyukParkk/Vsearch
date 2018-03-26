@@ -38,7 +38,6 @@ func SpeechAPI() {
 	_, err := cmd.Output()
 	if err != nil {
 		println(err.Error())
-		println("Error")
 		return
 	}
 	fmt.Println("====Create Client====")
