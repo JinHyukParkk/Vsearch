@@ -45,6 +45,7 @@ func main() {
 
 	// route
 	e.POST("/test", apis.Test)
+	e.POST("/test", apis.Test1)
 
 	e.Logger.Fatal(e.Start(":8080"))
 }
