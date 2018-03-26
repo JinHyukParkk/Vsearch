@@ -1,5 +1,6 @@
 from pydub import AudioSegment
 from pydub.silence import split_on_silence, detect_nonsilent
+from speechAPI import SpeechAPI
 import datetime
 import json
 import os
@@ -9,19 +10,19 @@ def split_sound_file(path, format):
 
     sound_file = AudioSegment.from_file(path, format=format)
     nonsilent_ranges = detect_nonsilent(sound_file, min_silence_len=500, silence_thresh=-50)
-    audio_chunks = list()
+    # audio_chunks = list()
 
-    keep_silence = 100
-    for start_i, end_i in nonsilent_ranges:
-        start_i = max(0, start_i - keep_silence)
-        end_i += keep_silence
+    # keep_silence = 100
+    # for start_i, end_i in nonsilent_ranges:
+    #     start_i = max(0, start_i - keep_silence)
+    #     end_i += keep_silence
 
-        audio_chunks.append(sound_file[start_i:end_i])
+    #     audio_chunks.append(sound_file[start_i:end_i])
 
-    for i, chunk in enumerate(audio_chunks):
-        out_file = "./audioFile_python/test{0}.flac".format(i) #flac으로 변환된 output파일 저장 경로 및 파일 명
-        print ("exporting", out_file, " - non silent- time : ", nonsilent_ranges[i][0], "~", nonsilent_ranges[i][1])
-        chunk.export(out_file, format="flac")
+    # for i, chunk in enumerate(audio_chunks):
+    #     out_file = "./audioFile_python/test{0}.flac".format(i) #flac으로 변환된 output파일 저장 경로 및 파일 명
+    #     print ("exporting", out_file, " - non silent- time : ", nonsilent_ranges[i][0], "~", nonsilent_ranges[i][1])
+    #     chunk.export(out_file, format="flac")
 
     return nonsilent_ranges
 
@@ -108,10 +109,11 @@ def create_srt_file(srt_lines, nonsilent_ranges):
 
 def main():
     """main"""
-    nonsilent_ranges = split_sound_file("./audioFile/res.flac", "flac") # 영상파일을 여러개 flac파일로 나눔
-    # os.system('./1_example') <- go 실행파일 실행해서 flac 파일들을 텍스트로 변환시켜야함
-    # srt_lines = list_from_file()
-    # create_srt_file(srt_lines, nonsilent_ranges) # 자막파일 생성
-    # create_json_file(srt_lines, nonsilent_ranges) # JSON 파일 생성
+    nonsilent_ranges = split_sound_file("./audioFile/test.flac", "flac") # 영상파일을 여러개 flac파일로 나눔
+    srt_lines  = SpeechAPI()
+    print(srt_lines)
+    create_srt_file(srt_lines, nonsilent_ranges) # 자막파일 생성
+    create_json_file(srt_lines, nonsilent_ranges) # JSON 파일 생성
+
 if __name__ == "__main__":
     main()
