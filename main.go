@@ -4,7 +4,7 @@ import (
 	"html/template"
 	"io"
 
-	"github.com/JinHyukParkk/CapstoneProject/apis"
+	"github.com/JinHyukParkk/CapstoneProject/controllers"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 )
@@ -44,8 +44,8 @@ func main() {
 	e.File("/", "template/test.html")
 
 	// route
-	e.POST("/test", apis.Test)
-	e.POST("/test1", apis.Test1)
+	e.POST("/test", controllers.Test)
+	e.GET("/test1", controllers.Test1)
 
 	e.Logger.Fatal(e.Start(":8080"))
 }
