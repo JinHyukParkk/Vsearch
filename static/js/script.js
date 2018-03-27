@@ -7,7 +7,7 @@ window.onload = function(){
      requestVideoList('http://localhost:8080/videoList');
    }
    document.getElementById("VideoTime").onclick = function() {
-     requestVideoTime('http://localhost:8080/Time');
+     requestVideoTime('http://localhost:8080/test1');
    }
 }
 
@@ -41,12 +41,13 @@ function requestVideoList(url) {
     type: "GET",
     url: url,
     dataType: "json",
+    async:false,
 
     success:function(resp){
-      VideoList = resp;
+      VideoList = JSON.parse(resp.responseText);
       alert("success");
       alert(videoList);
-      return VideoList;
+
     },
     error:function(){
       alert("error");
@@ -55,16 +56,31 @@ function requestVideoList(url) {
 }
 
 function requestVideoTime(url) {
-  var startTime;
-  var endTime;
+  var Time;
+  var StartTime;
+  var EndTime;
+
   $.ajax({
+    type: "GET",
+    url: url,
+    dataType: "json",
+    async:false,
 
-
-    success:function(argument) {
-      // body...
+    success:function(resp){
+      Time = JSON.parse(resp.responseText);
+      alert("success");
+      alert(Time);
+    
+    for (var i =0; i < Time.times.length; i--) {
+       var li = document.createElement("li");
+       li.innerHTML = "Start: " + Time.times[0].start 
+       li.
+      }
     }
-    error:function(argument){
-      // body...
+    
+
+    error:function(){
+      alert("error");
     }
   })
 }
