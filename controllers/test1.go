@@ -4,31 +4,26 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/JinHyukParkk/CapstoneProject/models"
 	"github.com/labstack/echo"
 )
 
-type Response struct {
-	Times []Time `json:"times"`
-}
-type Time struct {
-	Start_Time string `json:"start_time"`
-	End_Time   string `json:"end_time"`
-}
-
 func Test1(c echo.Context) error {
 	log.Println("hello test1")
-	times := []Time{
-		Time{
+	times := []models.Time{
+		{
 			"111",
 			"222",
 		},
-		Time{
+		{
 			"333",
 			"444",
 		},
 	}
-	u := &Response{
+	times = append(times, models.Time{"555", "666"})
+	u := &models.Response{
 		Times: times,
 	}
+
 	return c.JSON(http.StatusOK, u)
 }
