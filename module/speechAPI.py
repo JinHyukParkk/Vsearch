@@ -1,4 +1,3 @@
-
 import io
 import os
 
@@ -19,10 +18,9 @@ def SpeechAPI():
     index = 0
     results = []
     while True:
-        pathFile = "../audioFile_python/result" + str(index) + ".flac"
+        pathFile = "./audioFile_python/result" + str(index) + ".flac"
         print(pathFile)
         # Loads the audio into memory
-        res = []
         try:
             with io.open(pathFile, 'rb') as audio_file:
                 content = audio_file.read()
@@ -40,9 +38,10 @@ def SpeechAPI():
         print(response.results)
         if not response.results:
             results.append('')
+        result_str = []
         for result in response.results:
-            result_str = format(result.alternatives[0].transcript) 
-            results.append(result_str)
+            result_str += format(result.alternatives[0].transcript) 
+        results.append(result_str)
         index += 1
     return results
 

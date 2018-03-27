@@ -6,7 +6,7 @@ import os
 
 def main():
     """main"""
-    nonsilent_ranges = split_sound_file("./audioFile/test.flac", "flac") # 영상파일을 여러개 flac파일로 나눔
+    nonsilent_ranges = split_sound_file("./audioFile/res.flac", "flac") # 영상파일을 여러개 flac파일로 나눔
     srt_lines  = SpeechAPI()
     create_srt_file(srt_lines, nonsilent_ranges) # 자막파일 생성
     create_json_file(srt_lines, nonsilent_ranges) # JSON 파일 생성
