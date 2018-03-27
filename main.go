@@ -46,6 +46,7 @@ func main() {
 	// route
 	e.POST("/test", controllers.Test)
 	e.GET("/test1", controllers.Test1)
+	e.GET("/test2", controllers.Test2)
 
 	e.Logger.Fatal(e.Start(":8080"))
 }
