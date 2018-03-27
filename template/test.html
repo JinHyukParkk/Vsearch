@@ -8,18 +8,32 @@
     <title>Test</title>
   </head>
   <body ondragstart="return false">
-    <form action="/" method="post" enctype="multipart/form-data" name = "vidiotest" id= "vidiotest">
-      <label>Upload video URL:</label>
-      <br/>
-      name : <input type="text" name="username">
-      <br/>
-      file :<input type="file" name="myfile1">
-      <br/>
-      <input type="button" id="UploadVideo" value="Upload" >
-      
-      <input type="button" id="RequestVideoList" value="RequestVideo">
-    </form>
+    <div>
+      <form action="/" method="post" enctype="multipart/form-data" name = "vidiotest" id= "vidiotest">
+        <label>Upload video URL:</label>
+        <br/>
+        name : <input type="text" name="username">
+        <br/>
+        file :<input type="file" name="myfile1">
+        <br/>
+        <input type="button" id="UploadVideo" value="Upload" >
+      </form>
     
+    <div>
+      <video id="myVideo" width="400" height="300" controls>
+        <source src="CapstoneProject/audioFile/test.mp4" type="video/mp4"/>
+      </video>
+      <br/>
+      <button id="testButton" value="5_seconds">5_seconds</button>
+    </div>
+    
+    <input type="button" id="Time" value="VideoTime">
+
+    <div id=TimeList>
+      
+    </div>
+
+
     <br/>
   </body>
 </html>
