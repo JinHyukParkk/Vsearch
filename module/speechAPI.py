@@ -36,13 +36,16 @@ def SpeechAPI():
         # Detects speech in the audio file
         response = client.recognize(config, audio)
         print(response.results)
+        index += 1
+
         if not response.results:
             results.append('')
-        result_str = []
+            continue
+        result_str =""
         for result in response.results:
-            result_str += format(result.alternatives[0].transcript) 
+            result_str = result_str + format(result.alternatives[0].transcript) 
+            print(result_str)
         results.append(result_str)
-        index += 1
     return results
 
 

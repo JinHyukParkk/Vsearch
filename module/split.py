@@ -17,7 +17,7 @@ def split_sound_file(path, format):
         audio_chunks.append(sound_file[start_i:end_i])
 
     for i, chunk in enumerate(audio_chunks):
-        out_file = "./audioFile_python/test{0}.flac".format(i) #flac으로 변환된 output파일 저장 경로 및 파일 명
+        out_file = "./audioFile_python/result{0}.flac".format(i) #flac으로 변환된 output파일 저장 경로 및 파일 명
         print ("exporting", out_file, " - non silent- time : ", nonsilent_ranges[i][0], "~", nonsilent_ranges[i][1])
         chunk.export(out_file, format="flac")
 
