@@ -1,5 +1,5 @@
 window.onload = function(){
-   requestReceiveVideo('http://localhost:8080/test2');
+   // requestReceiveVideo('http://localhost:8080/test2');
    document.getElementById("UploadVideo").onclick = function(){
      // makeRequestVideo('http://210.204.165.166:4088/test')
      requestSendVideo('http://localhost:8080/test')
@@ -56,21 +56,21 @@ $.ajaxTransport("+binary", function(options, originalOptions, jqXHR){
       data = options.data || null,
       username = options.username || null,
       password = options.password || null;
-            
+
                   xhr.addEventListener('load', function(){
         var data = {};
         data[options.dataType] = xhr.response;
         // make callback and send data
         callback(xhr.status, xhr.statusText, data, xhr.getAllResponseHeaders());
                   });
-   
+
                   xhr.open(type, url, async, username, password);
-          
+
       // setup custom headers
       for (var i in headers ) {
         xhr.setRequestHeader(i, headers[i] );
       }
-          
+
                   xhr.responseType = dataType;
                   xhr.send(data);
               },
@@ -93,7 +93,7 @@ $.ajaxTransport("+binary", function(options, originalOptions, jqXHR){
 
       var myVideo = document.createElement("video");
       myVideo.width = 600;
-      myVideo.height = 500; 
+      myVideo.height = 500;
       myVideo.src = URL.createObjectURL(resp);
       myVideo.autoplay = true;
       myVideo.controls = true;
@@ -110,17 +110,17 @@ $.ajaxTransport("+binary", function(options, originalOptions, jqXHR){
   //   type: "GET",
   //   url: url,
   //   dataType: "blob",
-    
+
   //   success:function(resp){
   //     alert(resp);
   //     var reader = new FileReader();
   //     reader.readAsDataURL(resp);
-      
+
   //     reader.onload = function () {
   //       var myVideo = document.createElement("video");
   //       myVideo.width = 400;
   //       myVideo.height = 300;
-       
+
   //       myVideo.src = reader.result;
   //       document.getElementById("myVideo").appendChild(myVideo);
   //     }
@@ -154,11 +154,11 @@ function requestVideoTime(url) {
     type: "GET",
     url: url,
     dataType: "json",
-    
+
     success:function(resp){
       alert("success");
       alert(resp.times[0].start_time);
-    
+
       for(var i = 0; i < resp.times.length; i++){
         var li = document.createElement("li");
         li.innerHTML = "start: " + resp.times[i].start_time + "~ end: " + resp.times[i].end_time;

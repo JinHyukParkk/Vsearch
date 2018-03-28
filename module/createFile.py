@@ -25,15 +25,15 @@ def create_json_file(srt_lines, nonsilent_ranges):
             order += 1
             continue
         inner_dict = dict()
-        
+
         st = "start_time"
         et = "end_time"
         content = "content"
-        
+
         inner_dict[st] = str((init_time + datetime.timedelta(0, milliseconds=time[0])).time())[:-3]
         inner_dict[et] = str((init_time + datetime.timedelta(0, milliseconds=time[1])).time())[:-3]
         inner_dict[content] = Processing(srt_lines[order])
-        
+
         URL_new = URL_origin + str(elastic_id)
         post(URL_new,inner_dict)
         order += 1
