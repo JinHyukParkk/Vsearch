@@ -12,15 +12,15 @@ func Test1(c echo.Context) error {
 	log.Println("hello test1")
 	times := []models.Time{
 		{
-			"111",
-			"222",
+			"10",
+			"20",
 		},
 		{
-			"333",
-			"444",
+			"30",
+			"40",
 		},
 	}
-	times = append(times, models.Time{"555", "666"})
+	times = append(times, models.Time{"50", "60"})
 	u := &models.Response{
 		Times: times,
 	}

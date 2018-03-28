@@ -1,6 +1,6 @@
 // Sample speech-quickstart uses the Google Cloud Speech API to transcribe
 // audio.
-package speechApi
+package googleApi
 
 import (
 	"bufio"
