@@ -16,4 +16,5 @@ func Test2(c echo.Context) error {
 	}
 
 	return c.Stream(http.StatusOK, "video/mp4", f)
+	// return c.File("./audioFile/test.mp4")
 }
