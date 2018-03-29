@@ -23,7 +23,7 @@ func main() {
 	}
 
 	// Sets the name for the new bucket.
-	bucketName := "my-pjh-bucket"
+	bucketName := "mfaefawef"
 
 	// Creates a Bucket instance.
 	bucket := client.Bucket(bucketName)
