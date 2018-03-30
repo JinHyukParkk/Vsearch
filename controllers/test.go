@@ -8,6 +8,7 @@ import (
 	"os"
 	"os/exec"
 
+	"github.com/JinHyukParkk/CapstoneProject/GoogleAPI"
 	"github.com/labstack/echo"
 )
 
@@ -51,6 +52,11 @@ func Test(c echo.Context) error {
 		return err
 	}
 	log.Println("====End shell Script====")
+
+	log.Println("====Upload CloudStorage====")
+
+	googleApi.Upload("audioFile/test.mp4")
+
 	return c.HTML(http.StatusOK, fmt.Sprintf("<p>Uploaded successfully %d files with fields name=%s and email=%s.</p>", len(files), "test", "testEmail"))
 }
 
