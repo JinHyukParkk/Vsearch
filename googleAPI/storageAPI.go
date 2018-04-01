@@ -38,8 +38,13 @@ func MakeStorage() {
 
 	fmt.Printf("Bucket %v created.\n", bucketName)
 }
-func delete(client *storage.Client, bucketName string) error {
+func delete(bucketName string) error {
 	ctx := context.Background()
+
+	client, err := storage.NewClient(ctx)
+	if err != nil {
+		log.Fatalf("Failed to create client: %v", err)
+	}
 	// [START delete_bucket]
 	if err := client.Bucket(bucketName).Delete(ctx); err != nil {
 		return err
