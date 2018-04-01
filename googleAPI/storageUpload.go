@@ -38,6 +38,7 @@ func StorageUpload(object string) {
 		log.Fatal(err)
 	}
 
+	// open link
 	acl := client.Bucket(bucketName).Object(object).ACL()
 	if err := acl.Set(ctx, storage.AllUsers, storage.RoleReader); err != nil {
 		log.Fatal(err)
