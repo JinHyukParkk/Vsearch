@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export AudilFile=./audioFile
+export AudioFile=./audioFile
 export modulePath=./module
 export resPath=./audioFile_python
 
@@ -12,6 +12,8 @@ sox --channels=2 --bits=24 --rate=44100 --encoding=signed-integer --endian=littl
 python3 $modulePath/main.py
 
 rm $resPath/*
+
+rm $AudioFile/*
 
 # testList=`ls ./audioFile_python/test*`
 

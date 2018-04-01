@@ -44,6 +44,10 @@ func Test(c echo.Context) error {
 		}
 	}
 
+	log.Println("====Upload CloudStorage====")
+	googleApi.Upload("audioFile/test.mp4")
+	log.Println("====Finish Upload CloudStorage====")
+
 	log.Println("====Start shell Script====")
 	cmdStr := "./shell/convertVoiveFile.sh"
 	cmd := exec.Command("bash", cmdStr)
@@ -52,10 +56,6 @@ func Test(c echo.Context) error {
 		return err
 	}
 	log.Println("====End shell Script====")
-
-	log.Println("====Upload CloudStorage====")
-
-	googleApi.Upload("audioFile/test.mp4")
 
 	return c.HTML(http.StatusOK, fmt.Sprintf("<p>Uploaded successfully %d files with fields name=%s and email=%s.</p>", len(files), "test", "testEmail"))
 }
