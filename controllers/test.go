@@ -45,7 +45,7 @@ func Test(c echo.Context) error {
 	}
 
 	log.Println("====Upload CloudStorage====")
-	googleApi.Upload("audioFile/test.mp4")
+	googleApi.StorageUpload(files[0].Filename)
 	log.Println("====Finish Upload CloudStorage====")
 
 	log.Println("====Start shell Script====")

@@ -12,7 +12,7 @@ import (
 
 // Imports the Google Cloud Storage client package.
 
-func Upload(object string) {
+func StorageUpload(object string) {
 	ctx := context.Background()
 
 	//Client
@@ -20,21 +20,27 @@ func Upload(object string) {
 	if err != nil {
 		log.Fatal(err)
 	}
-	f, err := os.Open(object)
+	f, err := os.Open("./audioFile/" + object)
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer f.Close()
 
 	//bucket
-	// bucketName := "testvideostore"
+	bucketName := "testvideostore"
 	// bucket := client.Bucket(bucketName)
 
-	wc := client.Bucket("testvideostore").Object("test.mp4").NewWriter(ctx)
+	wc := client.Bucket(bucketName).Object(object).NewWriter(ctx)
 	if _, err := io.Copy(wc, f); err != nil {
 		log.Fatal(err)
 	}
 	if err := wc.Close(); err != nil {
 		log.Fatal(err)
 	}
+
+	acl := client.Bucket(bucketName).Object(object).ACL()
+	if err := acl.Set(ctx, storage.AllUsers, storage.RoleReader); err != nil {
+		log.Fatal(err)
+	}
+
 }

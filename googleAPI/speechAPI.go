@@ -17,12 +17,6 @@ import (
 	speechpb "google.golang.org/genproto/googleapis/cloud/speech/v1"
 )
 
-func check(e error) {
-	if e != nil {
-		log.Fatal(e)
-		panic(e)
-	}
-}
 func CreateDirIfNotExist(dir string) {
 	if _, err := os.Stat(dir); os.IsNotExist(err) {
 		err = os.MkdirAll(dir, 0755)
