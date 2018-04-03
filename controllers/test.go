@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"os"
 	"os/exec"
+	"strings"
 
 	"github.com/JinHyukParkk/CapstoneProject/GoogleAPI"
 	"github.com/labstack/echo"
@@ -48,8 +49,12 @@ func Test(c echo.Context) error {
 	googleApi.StorageUpload(files[0].Filename)
 	log.Println("====Finish Upload CloudStorage====")
 
+	s := strings.Split(files[0].Filename, ".")
+	name, ty := s[0], s[1]
+
 	log.Println("====Start shell Script====")
-	cmdStr := "./shell/convertVoiveFile.sh"
+	cmdStr := "./shell/convertVoiveFile.sh " + name + " " + ty
+
 	cmd := exec.Command("bash", cmdStr)
 
 	if _, err := cmd.Output(); err != nil {
