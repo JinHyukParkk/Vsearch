@@ -44,8 +44,8 @@ def main():
 
     log("### Create File START ###", logging.info)
 
-    create_srt_file(srt_lines, nonsilent_ranges, file_name)  # 자막파일 생성
-    create_json_file(srt_lines, nonsilent_ranges)  # JSON 파일 생성
+    create_srt_file(srt_lines, nonsilent_ranges)  # 자막파일 생성
+    create_json_file(srt_lines, nonsilent_ranges, file_name)  # JSON 파일 생성
     
     log("### Create File END ###", logging.info)
 
