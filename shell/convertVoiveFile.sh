@@ -9,11 +9,11 @@ ffmpeg -i $AudioFile/$1.$2 $AudioFile/1.flac
 
 sox --channels=2 --bits=24 --rate=44100 --encoding=signed-integer --endian=little $AudioFile/1.flac --channels=1 --bits=16 --rate=16000 $AudioFile/$1.flac
 
-# python3 $modulePath/main.py $1.flac
+python3 $modulePath/main.py $1.flac
 
-# rm $resPath/*
+rm $resPath/*
 
-# rm $AudioFile/*
+rm $AudioFile/*
 
 
 
