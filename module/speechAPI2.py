@@ -25,7 +25,6 @@ def SpeechAPI(pathFile, results, index):
             content = audio_file.read()
             audio = types.RecognitionAudio(content=content)
     except FileNotFoundError:
-        print("End File")
         return
     config = types.RecognitionConfig(
         encoding=enums.RecognitionConfig.AudioEncoding.FLAC,
@@ -34,7 +33,6 @@ def SpeechAPI(pathFile, results, index):
 
     # Detects speech in the audio file
     response = client.recognize(config, audio)
-    print(response.results)
 
     if not response.results:
         results[index]=""
@@ -42,5 +40,5 @@ def SpeechAPI(pathFile, results, index):
     result_str = ""
     for result in response.results:
         result_str = result_str + format(result.alternatives[0].transcript)
-        print(result_str)
+
     results[index] = result_str
