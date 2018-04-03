@@ -13,12 +13,8 @@ from google.cloud.speech import types
 
 
 def SpeechAPI(pathFile, results, index):
-    print("====Create Client====")
     client = speech.SpeechClient()
-
     # The name of the audio file to transcribe
-
-    print(pathFile)
     # Loads the audio into memory
     try:
         with io.open(pathFile, 'rb') as audio_file:
@@ -40,5 +36,5 @@ def SpeechAPI(pathFile, results, index):
     result_str = ""
     for result in response.results:
         result_str = result_str + format(result.alternatives[0].transcript)
-
+ 
     results[index] = result_str

@@ -41,11 +41,10 @@ def main():
     sorted_dict_lines = sorted(dict_lines.items(), key=operator.itemgetter(0))
     for line in sorted_dict_lines:
         srt_lines.append(line[1])
-    print(srt_lines)
 
     log("### Create File START ###", logging.info)
 
-    create_srt_file(srt_lines, nonsilent_ranges)  # 자막파일 생성
+    create_srt_file(srt_lines, nonsilent_ranges, file_name)  # 자막파일 생성
     create_json_file(srt_lines, nonsilent_ranges)  # JSON 파일 생성
     
     log("### Create File END ###", logging.info)
