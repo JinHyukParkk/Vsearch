@@ -5,9 +5,9 @@ export modulePath=./module
 export resPath=./audioFile_python
 
 
-ffmpeg -i $AudilFile/test.mp4 $AudilFile/test.flac
+ffmpeg -i $AudioFile/test.mp4 $AudioFile/test.flac
 
-sox --channels=2 --bits=24 --rate=44100 --encoding=signed-integer --endian=little $AudilFile/test.flac --channels=1 --bits=16 --rate=16000 $AudilFile/res.flac
+sox --channels=2 --bits=24 --rate=44100 --encoding=signed-integer --endian=little $AudioFile/test.flac --channels=1 --bits=16 --rate=16000 $AudioFile/res.flac
 
 python3 $modulePath/main.py
 
