@@ -3,6 +3,7 @@ package controllers
 import (
 	"log"
 	"net/http"
+	"os"
 
 	"github.com/JinHyukParkk/CapstoneProject/models"
 	"github.com/labstack/echo"
@@ -10,8 +11,8 @@ import (
 
 func Test2(c echo.Context) error {
 	log.Println("hello test2")
-
-	url := "https://storage.googleapis.com/testvideostore/test.mp4"
+	bucket := os.Getenv("cloudStorage")
+	url := "https://storage.googleapis.com/" + bucket + "/test.mp4"
 	res_url := models.Response1{
 		Url: url,
 	}

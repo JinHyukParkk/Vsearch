@@ -4,6 +4,7 @@ package googleApi
 import (
 	"context"
 	"io/ioutil"
+	"os"
 
 	"cloud.google.com/go/storage"
 )
@@ -16,8 +17,8 @@ func StorageRead(object string) ([]byte, error) {
 	//Client
 	client, err := storage.NewClient(ctx)
 	check(err)
-
-	rc, err := client.Bucket("testvideostore").Object(object).NewReader(ctx)
+	bucket := os.Getenv("cloudStorage")
+	rc, err := client.Bucket(bucket).Object(object).NewReader(ctx)
 	check(err)
 	defer rc.Close()
 	// log.Println("rc Read")

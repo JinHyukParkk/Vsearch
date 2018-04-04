@@ -1,20 +1,21 @@
 // Sample storage-quickstart creates a Google Cloud Storage bucket.
-package googleApi
+package main
 
 import (
 	"fmt"
 	"log"
+	"os"
 
 	// Imports the Google Cloud Storage client package.
 	"cloud.google.com/go/storage"
 	"golang.org/x/net/context"
 )
 
-func MakeStorage() {
+func main() {
 	ctx := context.Background()
 
 	// Sets your Google C	loud Platform project ID.
-	projectID := "absolute-hook-187312"
+	projectID := "capstoneproject-198705"
 
 	// Creates a client.
 	client, err := storage.NewClient(ctx)
@@ -23,7 +24,8 @@ func MakeStorage() {
 	}
 
 	// Sets the name for the new bucket.
-	bucketName := "testvideostore"
+	bucketName := os.Getenv("cloudStorage")
+	log.Println(bucketName)
 
 	// Creates a Bucket instance.
 	bucket := client.Bucket(bucketName)

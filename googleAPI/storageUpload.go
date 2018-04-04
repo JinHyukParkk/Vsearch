@@ -27,7 +27,7 @@ func StorageUpload(object string) {
 	defer f.Close()
 
 	//bucket
-	bucketName := "testvideostore"
+	bucketName := os.Getenv("cloudStorage")
 	// bucket := client.Bucket(bucketName)
 
 	wc := client.Bucket(bucketName).Object(object).NewWriter(ctx)
