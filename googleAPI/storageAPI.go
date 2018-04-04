@@ -1,5 +1,5 @@
 // Sample storage-quickstart creates a Google Cloud Storage bucket.
-package googleAPi
+package googleApi
 
 import (
 	"fmt"
