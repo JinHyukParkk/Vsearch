@@ -13,7 +13,11 @@ window.onload = function(){
    document.getElementById("PlayVideo").onclick = function() {
      requestReceiveVideo('http://localhost:8080/test2')
    }
-
+   document.getElementById("sendKeyword").onclick = function() {
+     var url = "http://localhost:8080/keyword/" + document.getElementById("keywordBox").value;
+     console.log(url); 
+     sendKeyword(url);
+   }
   /*document.getElementById("RequestVideoList").onclick = function(){
      requestVideoList('http://localhost:8080/videoList');
    }*/
@@ -41,6 +45,30 @@ function requestSendVideo(url){
     }
   })
 }
+
+function sendKeyword(url){
+  var form = document.getElementById("keyword");
+  var formData = new FormData(form);
+  var response;
+  $.ajax({
+    type: "GET",
+    enctype: 'multipart/form-data',
+    contentType: false,
+    processData: false,  // Important!
+    cache: false,
+    url: url,
+    data: formData,
+
+    success:function(resp){
+      alert(resp);
+      // uploadImage(resp);
+    },
+    error:function(){
+      alert("error");
+    }
+  })
+}
+
 
 function requestReceiveVideo(url) {
   /*
