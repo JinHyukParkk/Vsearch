@@ -174,3 +174,49 @@
 2018-04-04 16:06:57,715 - root - INFO - ### Create File END ###
 2018-04-04 16:06:57,715 - root - INFO - ### Python End ###
 2018-04-04 16:06:57,715 - root - INFO - ########################
+2018-04-04 16:19:20,061 - root - INFO - ########################
+2018-04-04 16:19:20,061 - root - INFO - ### Python Start ###
+2018-04-04 16:19:20,061 - root - INFO - ### Split START ###
+2018-04-04 16:19:21,803 - root - INFO - ### Split End ###
+2018-04-04 16:19:21,803 - root - INFO - ### SpeechAPI START ###
+2018-04-04 16:19:25,825 - root - INFO - ### SpeechAPI END ###
+2018-04-04 16:19:25,825 - root - INFO - ### Create File START ###
+2018-04-04 16:19:25,831 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:19:25,835 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:19:25,839 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:19:25,845 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:19:25,850 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:19:25,855 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:19:25,862 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:19:25,866 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:19:25,871 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:19:25,876 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:19:25,881 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:19:25,884 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:19:25,888 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:19:25,888 - root - INFO - ### Create File END ###
+2018-04-04 16:19:25,888 - root - INFO - ### Python End ###
+2018-04-04 16:19:25,888 - root - INFO - ########################
+2018-04-04 16:25:43,436 - root - INFO - ########################
+2018-04-04 16:25:43,437 - root - INFO - ### Python Start ###
+2018-04-04 16:25:43,437 - root - INFO - ### Split START ###
+2018-04-04 16:25:45,194 - root - INFO - ### Split End ###
+2018-04-04 16:25:45,194 - root - INFO - ### SpeechAPI START ###
+2018-04-04 16:25:48,585 - root - INFO - ### SpeechAPI END ###
+2018-04-04 16:25:48,586 - root - INFO - ### Create File START ###
+2018-04-04 16:25:48,593 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:25:48,600 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:25:48,605 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:25:48,610 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:25:48,613 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:25:48,618 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:25:48,621 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:25:48,628 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:25:48,634 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:25:48,639 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:25:48,648 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:25:48,653 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:25:48,658 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-04 16:25:48,658 - root - INFO - ### Create File END ###
+2018-04-04 16:25:48,658 - root - INFO - ### Python End ###
+2018-04-04 16:25:48,658 - root - INFO - ########################
