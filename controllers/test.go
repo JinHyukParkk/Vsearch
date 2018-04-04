@@ -25,7 +25,6 @@ func Test(c echo.Context) error {
 	files := form.File["myfile1"]
 	log.Println("File is good")
 	// log.Println(handler.Filename)
-	log.Println()
 	// log.Println(handler.Header)
 
 	for _, file := range files {
@@ -53,10 +52,12 @@ func Test(c echo.Context) error {
 	name, ty := s[0], s[1]
 
 	log.Println("====Start shell Script====")
-	cmdStr := "./shell/convertVoiveFile.sh " + name + " " + ty
+	cmdStr := "./shell/convertVoiveFile.sh"
+	log.Println(cmdStr)
+	// 쉘 사용 방법 : 0, 1, 2
+	cmd := exec.Command("bash", cmdStr, name, ty)
 
-	cmd := exec.Command("bash", cmdStr)
-
+	log.Println("====shell Scripting====")
 	if _, err := cmd.Output(); err != nil {
 		return err
 	}
