@@ -4,6 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <title>Test</title>
   </head>
@@ -14,22 +16,19 @@
         <br/>
         name : <input type="text" name="username">
         <br/>
-        file :<input type="file" name="myfile1">
+        file :<input class="btn btn-default" type="file" name="myfile1">
         <br/>
         <input type="button" id="UploadVideo" value="Upload" >
       </form>
     
+
+    <input type="button" id="PlayVideo" value="Video">
     <div id="myVideo">
-    
-
     </div>
     
-    <input type="button" id="Time" value="VideoTime">
-
+    <input class="btn btn-default" type="button" id="Time" value="VideoTime">
     <div id=TimeList>
-      
     </div>
-
 
     <br/>
   </body>
