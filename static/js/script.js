@@ -13,6 +13,11 @@ window.onload = function(){
    document.getElementById("PlayVideo").onclick = function() {
      requestReceiveVideo('http://localhost:8080/test2')
    }
+<<<<<<< HEAD
+
+ 
+=======
+>>>>>>> 3df7d2074751d7823308f60e46d3a85e1e919828
 
   /*document.getElementById("RequestVideoList").onclick = function(){
      requestVideoList('http://localhost:8080/videoList');
@@ -98,17 +103,27 @@ function requestReceiveVideo(url) {
 
     success:function(resp){
       alert("success");
+<<<<<<< HEAD
+
+      document.getElementById('myVideo').innerHTML = "";
+      var myVideo = document.createElement("video");
+      myVideo.width = 600;
+      myVideo.height = 500; 
+      myVideo.id = "VideoPlayer";
+
+=======
       
       var myVideo = document.createElement("iframe");
       //myVideo.width = 600;
       //myVideo.height = 500; 
       myVideo.id = "VideoPlayer";
       myVideo.className = "embed-responsive-item";
+>>>>>>> 3df7d2074751d7823308f60e46d3a85e1e919828
       myVideo.src = resp.Url;
       myVideo.autoplay = true;
       myVideo.controls = true;
       document.getElementById("myVideo").appendChild(myVideo);
-      console.log(resp);
+    
     },
     error:function(){
       alert("error");
@@ -143,11 +158,22 @@ function requestVideoTime(url) {
 
     success:function(resp){
       alert("success");
+<<<<<<< HEAD
+
+      document.getElementById('TimeList').innerHTML = "";
+=======
+>>>>>>> 3df7d2074751d7823308f60e46d3a85e1e919828
 
       document.getElementById('TimeList').innerHTML = "";
       
       //영상 중간재생 버튼 생성.
       for(var i = 0; i < resp.times.length; i++){
+<<<<<<< HEAD
+        var btn = document.createElement("button");
+        btn.className = "TimeBtn";
+        btn.value = resp.times[i].start_time;
+        btn.innerHTML = "start: " + resp.times[i].start_time + " ~ end: " + resp.times[i].end_time;
+=======
         var btn = document.createElement("input");
         btn.type = "button";
         btn.className = "btn btn-default";
@@ -156,11 +182,20 @@ function requestVideoTime(url) {
         console.log(resp.times[i].start_time);
         btn.placeholder = "start: " + resp.times[i].start_time + "~ end: " + resp.times[i].end_time;
 
+>>>>>>> 3df7d2074751d7823308f60e46d3a85e1e919828
         document.getElementById("TimeList").appendChild(btn);
 
         var br = document.createElement("br");
         document.getElementById("TimeList").appendChild(br);
       }
+<<<<<<< HEAD
+      
+      var buttons = document.getElementById("TimeList").childNodes;
+      for(var j = 0; j < buttons.length; j++){
+        buttons[j].onclick = function(){
+          document.getElementById("VideoPlayer").currentTime = this.value;
+        } 
+=======
 
       //버튼클릭시 해당 영상 시간으로 이동.
       var buttons = document.getElementById("TimeList").childNodes;
@@ -170,6 +205,7 @@ function requestVideoTime(url) {
       
         }
          
+>>>>>>> 3df7d2074751d7823308f60e46d3a85e1e919828
       }
      
 
