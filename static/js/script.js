@@ -20,7 +20,7 @@ window.onload = function(){
 }
 
 function requestSendVideo(url){
-  var form =$('form')[0];
+  var form =$('form')[1];
   var formData = new FormData(form);
   var response;
   $.ajax({

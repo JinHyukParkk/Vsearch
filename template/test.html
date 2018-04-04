@@ -1,79 +1,91 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta charset="utf-8">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
-    <script src="js/script.js" type="text/javascript"></script>
 
-    <!-- bootstrap-->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+  <script src="js/script.js" type="text/javascript"></script>
 
-    <link rel="stylesheet" href="css/style.css"/>
+  <!-- bootstrap-->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
 
-    <title>Test</title>
-  </head>
-  <body ondragstart="return false">
-    <div class="container">
-      <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">캡스톤</a>
-          </div>
+  <title>Test</title>
+</head>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<body ondragstart="return false">
+  <div class="container">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
 
-            <form class="navbar-form navbar-left">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="키워드">
-              </div>
-              <button type="submit" class="btn btn-default">검색</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">메뉴<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">로그인</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">캡스톤</a>
         </div>
-      </nav>
 
-      <form action="/" method="post" enctype="multipart/form-data" name ="vidiotest" id= "vidiotest">
-        <label>Upload video URL:</label>
-        <br/>
-        name : <input type="text" name="username">
-        <br/>
-        file : <input type="file" name="myfile1">
-        <br/>
-        <input type="button" class="btn btn-default" id="UploadVideo" value="Upload" >
-      </form>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-      <div class="col-sm-12 col-md-5">
-        <input type="button" class="btn btn-default" id="PlayVideo" value="Video">
-        <div class="embed-responsive embed-responsive-16by9" id="myVideo">
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="키워드">
+            </div>
+            <button type="submit" class="btn btn-default">검색</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">메뉴
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">로그인</a>
+                </li>
+                <li>
+                  <a href="#">Another action</a>
+                </li>
+                <li>
+                  <a href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-      <input type="button" class="btn btn-default" id="Time" value="VideoTime">
+    </nav>
 
-      <div id=TimeList></div>
+    <form action="/" method="post" enctype="multipart/form-data" name="vidiotest" id="vidiotest">
+      <label>Upload video URL:</label>
+      <br/> name :
+      <input type="text" name="username">
+      <br/> file :
+      <input type="file" name="myfile1">
       <br/>
+      <input type="button" class="btn btn-default" id="UploadVideo" value="Upload">
+    </form>
+
+    <div class="col-sm-12 col-md-5">
+      <input type="button" class="btn btn-default" id="PlayVideo" value="Video">
+      <div class="embed-responsive embed-responsive-16by9" id="myVideo">
+      </div>
     </div>
-  </body>
+    <input type="button" class="btn btn-default" id="Time" value="VideoTime">
+
+    <div id=TimeList></div>
+    <br/>
+  </div>
+</body>
+
 </html>
