@@ -1,5 +1,5 @@
 // Sample storage-quickstart creates a Google Cloud Storage bucket.
-package main
+package googleAPi
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ import (
 	"golang.org/x/net/context"
 )
 
-func main() {
+func Upload() {
 	ctx := context.Background()
 
 	// Sets your Google C	loud Platform project ID.
