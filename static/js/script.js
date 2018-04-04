@@ -15,7 +15,7 @@ window.onload = function(){
    }
    document.getElementById("sendKeyword").onclick = function() {
      var url = "http://localhost:8080/keyword/" + document.getElementById("keywordBox").value;
-     console.log(url); 
+     console.log(url);
      sendKeyword(url);
    }
   /*document.getElementById("RequestVideoList").onclick = function(){
@@ -47,24 +47,21 @@ function requestSendVideo(url){
 }
 
 function sendKeyword(url){
-  var form = document.getElementById("keyword");
-  var formData = new FormData(form);
-  var response;
   $.ajax({
     type: "GET",
-    enctype: 'multipart/form-data',
-    contentType: false,
-    processData: false,  // Important!
-    cache: false,
+    async: true,
+    dataType : "json",
     url: url,
-    data: formData,
 
     success:function(resp){
-      alert(resp);
+
+      console.log(resp.times[0].start_time);
+      // console.log("success");
+      // alert();
       // uploadImage(resp);
     },
     error:function(){
-      alert("error");
+      alert("Method sendKeyword Error");
     }
   })
 }
