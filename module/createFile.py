@@ -35,6 +35,7 @@ def create_json_file(srt_lines, nonsilent_ranges, file_name):
         inner_dict[content] = Processing(srt_lines[order])
 
         URL_new = URL_origin + str(elastic_id)
+        
         post(URL_new,inner_dict)
         order += 1
         elastic_id += 1
