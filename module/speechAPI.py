@@ -10,42 +10,31 @@ from google.cloud.speech import types
 # os.system("./shell/convertVoiveFile.sh") < - go 실행파일 실행해서 flac 파일들을 텍스트로 변환시켜야함
 
 # Instantiates a client
-def SpeechAPI():
-    print("====Create Client====")
+
+
+def SpeechAPI(pathFile, results, index):
     client = speech.SpeechClient()
-
     # The name of the audio file to transcribe
-    index = 0
-    results = []
-    while True:
-        pathFile = "./audioFile_python/result" + str(index) + ".flac"
-        print(pathFile)
-        # Loads the audio into memory
-        try:
-            with io.open(pathFile, 'rb') as audio_file:
-                content = audio_file.read()
-                audio = types.RecognitionAudio(content=content)
-        except FileNotFoundError:
-            print("End File")
-            break
-        config = types.RecognitionConfig(
-            encoding=enums.RecognitionConfig.AudioEncoding.FLAC,
-            sample_rate_hertz=16000,
-            language_code='en-US')
+    # Loads the audio into memory
+    try:
+        with io.open(pathFile, 'rb') as audio_file:
+            content = audio_file.read()
+            audio = types.RecognitionAudio(content=content)
+    except FileNotFoundError:
+        return
+    config = types.RecognitionConfig(
+        encoding=enums.RecognitionConfig.AudioEncoding.FLAC,
+        sample_rate_hertz=16000,
+        language_code='en-US')
 
-        # Detects speech in the audio file
-        response = client.recognize(config, audio)
-        print(response.results)
-        index += 1
+    # Detects speech in the audio file
+    response = client.recognize(config, audio)
 
-        if not response.results:
-            results.append('')
-            continue
-        result_str =""
-        for result in response.results:
-            result_str = result_str + format(result.alternatives[0].transcript) 
-            print(result_str)
-        results.append(result_str)
-    return results
-
-
+    if not response.results:
+        results[index]=""
+        return
+    result_str = ""
+    for result in response.results:
+        result_str = result_str + format(result.alternatives[0].transcript)
+ 
+    results[index] = result_str

@@ -14,9 +14,9 @@ def word_count(list_line):
         word_count[word] += 1
     return OrderedDict(sorted(word_count.items(), key=lambda t: t[1], reverse=True))
 
-def create_json_file(srt_lines, nonsilent_ranges):
+def create_json_file(srt_lines, nonsilent_ranges, file_name):
     """create json file"""
-    URL_origin = "http://localhost:9200/classes/test.mp4/"
+    URL_origin = "http://localhost:9200/classes/"+file_name
     init_time = datetime.datetime(100, 1, 1, 0, 0,)
 
     order = elastic_id = 0
@@ -35,6 +35,7 @@ def create_json_file(srt_lines, nonsilent_ranges):
         inner_dict[content] = Processing(srt_lines[order])
 
         URL_new = URL_origin + str(elastic_id)
+        
         post(URL_new,inner_dict)
         order += 1
         elastic_id += 1

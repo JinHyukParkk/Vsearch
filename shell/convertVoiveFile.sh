@@ -5,15 +5,19 @@ export modulePath=./module
 export resPath=./audioFile_python
 
 
-ffmpeg -i $AudilFile/test.mp4 $AudilFile/test.flac
+ffmpeg -i $AudioFile/$1.$2 $AudioFile/1.flac
 
-sox --channels=2 --bits=24 --rate=44100 --encoding=signed-integer --endian=little $AudilFile/test.flac --channels=1 --bits=16 --rate=16000 $AudilFile/res.flac
+sox --channels=2 --bits=24 --rate=44100 --encoding=signed-integer --endian=little $AudioFile/1.flac --channels=1 --bits=16 --rate=16000 $AudioFile/$1.flac
 
-python3 $modulePath/main.py
+python3 $modulePath/main.py $1.flac
 
-rm $resPath/*
+rm $resPath/*.flac
 
-rm $AudioFile/*
+rm $AudioFile/*.flac
+rm $AudioFile/*.mp4
+
+
+
 
 # testList=`ls ./audioFile_python/test*`
 
