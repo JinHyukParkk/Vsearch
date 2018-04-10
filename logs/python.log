@@ -304,3 +304,10 @@
 2018-04-10 22:33:24,216 - root - INFO - ### SpeechAPI START ###
 2018-04-10 22:33:41,409 - root - INFO - ### SpeechAPI END ###
 2018-04-10 22:33:41,410 - root - INFO - ### Create File START ###
+2018-04-10 22:41:17,094 - root - INFO - ########################
+2018-04-10 22:41:17,094 - root - INFO - ### Python Start ###
+2018-04-10 22:41:17,094 - root - INFO - ### Split START ###
+2018-04-10 22:41:30,978 - root - INFO - ### Split End ###
+2018-04-10 22:41:30,979 - root - INFO - ### SpeechAPI START ###
+2018-04-10 22:41:49,951 - root - INFO - ### SpeechAPI END ###
+2018-04-10 22:41:49,951 - root - INFO - ### Create File START ###
