@@ -270,3 +270,37 @@
 2018-04-10 21:22:25,887 - root - INFO - ### SpeechAPI START ###
 2018-04-10 21:22:48,485 - root - INFO - ### SpeechAPI END ###
 2018-04-10 21:22:48,492 - root - INFO - ### Create File START ###
+2018-04-10 22:26:32,188 - root - INFO - ########################
+2018-04-10 22:26:32,189 - root - INFO - ### Python Start ###
+2018-04-10 22:26:32,189 - root - INFO - ### Split START ###
+2018-04-10 22:26:49,784 - root - INFO - ### Split End ###
+2018-04-10 22:26:49,784 - root - INFO - ### SpeechAPI START ###
+2018-04-10 22:27:07,373 - root - INFO - ### SpeechAPI END ###
+2018-04-10 22:27:07,373 - root - INFO - ### Create File START ###
+2018-04-10 22:28:01,633 - root - INFO - ########################
+2018-04-10 22:28:01,634 - root - INFO - ### Python Start ###
+2018-04-10 22:28:01,634 - root - INFO - ### Split START ###
+2018-04-10 22:28:17,361 - root - INFO - ### Split End ###
+2018-04-10 22:28:17,362 - root - INFO - ### SpeechAPI START ###
+2018-04-10 22:28:35,982 - root - INFO - ### SpeechAPI END ###
+2018-04-10 22:28:35,984 - root - INFO - ### Create File START ###
+2018-04-10 22:32:06,711 - root - INFO - ########################
+2018-04-10 22:32:06,712 - root - INFO - ### Python Start ###
+2018-04-10 22:32:06,712 - root - INFO - ### Split START ###
+2018-04-10 22:32:24,337 - root - INFO - ########################
+2018-04-10 22:32:24,337 - root - INFO - ### Python Start ###
+2018-04-10 22:32:24,338 - root - INFO - ### Split START ###
+2018-04-10 22:32:27,170 - root - INFO - ### Split End ###
+2018-04-10 22:32:27,170 - root - INFO - ### SpeechAPI START ###
+2018-04-10 22:32:33,313 - root - INFO - ### SpeechAPI END ###
+2018-04-10 22:32:33,313 - root - INFO - ### Create File START ###
+2018-04-10 22:32:33,564 - root - INFO - ### Create File END ###
+2018-04-10 22:32:33,565 - root - INFO - ### Python End ###
+2018-04-10 22:32:33,565 - root - INFO - ########################
+2018-04-10 22:33:10,599 - root - INFO - ########################
+2018-04-10 22:33:10,600 - root - INFO - ### Python Start ###
+2018-04-10 22:33:10,600 - root - INFO - ### Split START ###
+2018-04-10 22:33:24,215 - root - INFO - ### Split End ###
+2018-04-10 22:33:24,216 - root - INFO - ### SpeechAPI START ###
+2018-04-10 22:33:41,409 - root - INFO - ### SpeechAPI END ###
+2018-04-10 22:33:41,410 - root - INFO - ### Create File START ###
