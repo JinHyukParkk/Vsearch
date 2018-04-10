@@ -13,7 +13,7 @@ import (
 	"github.com/labstack/echo"
 )
 
-func Test(c echo.Context) error {
+func VideoUpload(c echo.Context) error {
 	// params := mux.Vars(r)
 	log.Println("Connection")
 
