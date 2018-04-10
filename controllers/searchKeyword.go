@@ -64,25 +64,40 @@ func SearchKeyword(c echo.Context) error {
 	dat1 := dat["hits"].(map[string]interface{})
 	dat2 := dat1["hits"].([]interface{})
 	dat3 := dat2[0].(map[string]interface{})
-	dat4 := dat3["_source"].(map[string]interface{})
+	// dat4 := dat3["_source"].(map[string]interface{})
 
-	times := []models.Time{
+	video_list := []models.VideoInfo{
 		{
 			dat3["_type"].(string),
-			FloatToString(calcul_second(dat4["start_time"].(string))),
-			FloatToString(calcul_second(dat4["end_time"].(string))),
-		},
-		{
-			dat3["_type"].(string),
-			"30",
-			"40",
+			strconv.Itoa(len(dat3)),
 		},
 	}
-	times = append(times, models.Time{dat3["_type"].(string), "50", "60"})
-	u := &models.KeywordModel{
-		Times: times,
+
+	video_list = append(video_list, models.VideoInfo{"test1.mp4", "3"})
+
+	// times = append(times, models.Time{dat3["_type"].(string), "50", "60"})
+
+	u := &models.KeywordVideoModel{
+		Video_List: video_list,
 	}
 
 	return c.JSON(http.StatusOK, u)
 	// return c.String(http.StatusOK, "!!")
 }
+
+// times := []models.Time{
+// 	{
+// 		dat3["_type"].(string),
+// 		FloatToString(calcul_second(dat4["start_time"].(string))),
+// 		FloatToString(calcul_second(dat4["end_time"].(string))),
+// 	},
+// 	{
+// 		dat3["_type"].(string),
+// 		"30",
+// 		"40",
+// 	},
+// }
+// times = append(times, models.Time{dat3["_type"].(string), "50", "60"})
+// u := &models.KeywordModel{
+// 	Times: times,
+// }

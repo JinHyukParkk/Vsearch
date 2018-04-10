@@ -253,3 +253,20 @@
 2018-04-10 19:49:49,517 - root - INFO - ### Create File END ###
 2018-04-10 19:49:49,517 - root - INFO - ### Python End ###
 2018-04-10 19:49:49,518 - root - INFO - ########################
+2018-04-10 21:20:51,897 - root - INFO - ########################
+2018-04-10 21:20:51,897 - root - INFO - ### Python Start ###
+2018-04-10 21:20:51,897 - root - INFO - ### Split START ###
+2018-04-10 21:20:54,802 - root - INFO - ### Split End ###
+2018-04-10 21:20:54,802 - root - INFO - ### SpeechAPI START ###
+2018-04-10 21:21:00,042 - root - INFO - ### SpeechAPI END ###
+2018-04-10 21:21:00,042 - root - INFO - ### Create File START ###
+2018-04-10 21:21:00,812 - root - INFO - ### Create File END ###
+2018-04-10 21:21:00,812 - root - INFO - ### Python End ###
+2018-04-10 21:21:00,812 - root - INFO - ########################
+2018-04-10 21:22:11,357 - root - INFO - ########################
+2018-04-10 21:22:11,357 - root - INFO - ### Python Start ###
+2018-04-10 21:22:11,357 - root - INFO - ### Split START ###
+2018-04-10 21:22:25,887 - root - INFO - ### Split End ###
+2018-04-10 21:22:25,887 - root - INFO - ### SpeechAPI START ###
+2018-04-10 21:22:48,485 - root - INFO - ### SpeechAPI END ###
+2018-04-10 21:22:48,492 - root - INFO - ### Create File START ###
