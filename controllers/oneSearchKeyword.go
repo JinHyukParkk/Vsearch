@@ -81,17 +81,3 @@ func OneSearchKeyword(c echo.Context) error {
 	}
 	return c.JSON(http.StatusOK, u)
 }
-
-// times := []models.Time{
-// 	{
-// 		dat3["_type"].(string),
-// 		FloatToString(calcul_second(dat4["start_time"].(string))),
-// 		FloatToString(calcul_second(dat4["end_time"].(string))),
-// 	},
-// 	{
-// 		dat3["_type"].(string),
-// 		"30",
-// 		"40",
-// 	},
-// }
-// times = append(times, models.Time{dat3["_type"].(string), "50", "60"})

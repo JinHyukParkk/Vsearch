@@ -45,9 +45,6 @@ func main() {
 
 	// route
 	e.POST("/videoUpload", controllers.VideoUpload)
-	// e.GET("/test1", controllers.Test1)
-	e.GET("/test2", controllers.Test2)
-
 	e.GET("/keyword/:keyword", controllers.SearchKeyword)
 	e.GET("/oneKeyword/:filename/:keyword", controllers.OneSearchKeyword)
 
