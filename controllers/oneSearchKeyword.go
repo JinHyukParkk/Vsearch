@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"os"
 	"strconv"
 	"strings"
 
@@ -44,7 +45,7 @@ func OneSearchKeyword(c echo.Context) error {
 	}
 	log.Println(keyword, filename)
 	// Create elastic request url
-	url := "http://localhost:9200/" + filename + "/_search?q=content:" + keyword
+	url := "http://localhost:9200/" + filename + "/_search?q=content:" + keyword + "&sort=id:asc&size=10000"
 	resp, err := http.Get(url)
 	if err != nil {
 		panic(err)
@@ -72,7 +73,10 @@ func OneSearchKeyword(c echo.Context) error {
 		dat4 := dat3["_source"].(map[string]interface{})
 		time_list = append(time_list, models.Time{FloatToString1(calcul_second(dat4["start_time"].(string))), FloatToString1(calcul_second(dat4["end_time"].(string)))})
 	}
+	dat3 := dat2[0].(map[string]interface{})
+	rep_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + dat3["_type"].(string)
 	u := &models.KeywordModel{
+		URL:   rep_url,
 		Times: time_list,
 	}
 	return c.JSON(http.StatusOK, u)

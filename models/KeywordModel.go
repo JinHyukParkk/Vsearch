@@ -1,6 +1,7 @@
 package models
 
 type KeywordModel struct {
+	URL   string `json:url`
 	Times []Time `json:"times"`
 }
 type Time struct {
