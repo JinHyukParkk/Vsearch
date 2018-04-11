@@ -42,7 +42,7 @@ func SearchKeyword(c echo.Context) error {
 		str += stemmed
 	}
 
-	url := "http://localhost:9200/classes/_search?q=content:" + str
+	url := "http://localhost:9200/_search?q=content:" + str
 
 	resp, err := http.Get(url)
 	if err != nil {
