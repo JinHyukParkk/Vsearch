@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"bytes"
 	"encoding/json"
 	"io/ioutil"
 	"log"
@@ -28,7 +29,7 @@ func calcul_second(time string) float64 {
 
 func FloatToString(input_num float64) string {
 	// to convert a float number to a string
-	return strconv.FormatFloat(input_num, 'f', 3, 32)
+	return strconv.FormatFloat(input_num, 'f', 0, 32)
 }
 func SearchKeyword(c echo.Context) error {
 	log.Println("SearchKeyword Method")
@@ -41,10 +42,28 @@ func SearchKeyword(c echo.Context) error {
 		check(err)
 		str += stemmed
 	}
+	// Create elastic request url
+	url := "http://localhost:9200/_search?q=content:" + str
 
-	url := "http://localhost:9200/classes/_search?q=content:" + str
-
-	resp, err := http.Get(url)
+	var jsonStr = []byte(`{
+		"size": 0,
+		"aggs": {
+		  "group_by_state": {
+			"terms": {
+			  "field": "_index"
+			}
+		  }
+		}
+	  }`)
+	req, err := http.NewRequest("GET", url, bytes.NewBuffer(jsonStr))
+	req.Header.Set("X-Custom-Header", "myvalue")
+	req.Header.Set("Content-Type", "application/json")
+	// resp, err := http.Get(url)
+	// if err != nil {
+	// 	panic(err)
+	// }
+	client := &http.Client{}
+	resp, err := client.Do(req)
 	if err != nil {
 		panic(err)
 	}
@@ -60,44 +79,22 @@ func SearchKeyword(c echo.Context) error {
 	if err := json.Unmarshal(data, &dat); err != nil {
 		panic(err)
 	}
+	video_list := []models.VideoInfo{}
+	dat1 := dat["aggregations"].(map[string]interface{})
 
-	dat1 := dat["hits"].(map[string]interface{})
-	dat2 := dat1["hits"].([]interface{})
-	dat3 := dat2[0].(map[string]interface{})
-	// dat4 := dat3["_source"].(map[string]interface{})
+	dat2 := dat1["group_by_state"].(map[string]interface{})
 
-	video_list := []models.VideoInfo{
-		{
-			dat3["_type"].(string),
-			strconv.Itoa(len(dat3)),
-		},
+	dat3 := dat2["buckets"].([]interface{})
+
+	for _, d := range dat3 {
+		dat4 := d.(map[string]interface{})
+		video_list = append(video_list, models.VideoInfo{dat4["key"].(string), FloatToString(dat4["doc_count"].(float64))})
+
 	}
-
-	video_list = append(video_list, models.VideoInfo{"test1.mp4", "3"})
-
-	// times = append(times, models.Time{dat3["_type"].(string), "50", "60"})
-
 	u := &models.KeywordVideoModel{
 		Video_List: video_list,
+		Total:      strconv.Itoa(len(dat3)),
 	}
 
 	return c.JSON(http.StatusOK, u)
-	// return c.String(http.StatusOK, "!!")
 }
-
-// times := []models.Time{
-// 	{
-// 		dat3["_type"].(string),
-// 		FloatToString(calcul_second(dat4["start_time"].(string))),
-// 		FloatToString(calcul_second(dat4["end_time"].(string))),
-// 	},
-// 	{
-// 		dat3["_type"].(string),
-// 		"30",
-// 		"40",
-// 	},
-// }
-// times = append(times, models.Time{dat3["_type"].(string), "50", "60"})
-// u := &models.KeywordModel{
-// 	Times: times,
-// }
