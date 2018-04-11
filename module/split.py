@@ -6,10 +6,10 @@ def split_sound_file(path, format):
 
     sound_file = AudioSegment.from_file(path, format=format)
     nonsilent_ranges = detect_nonsilent(
-        sound_file, min_silence_len=500, silence_thresh=-46)
+        sound_file, min_silence_len=500, silence_thresh=-45)
     audio_chunks = list()
 
-    keep_silence = 100
+    keep_silence = 400
     for start_i, end_i in nonsilent_ranges:
         start_i = max(0, start_i - keep_silence)
         end_i += keep_silence
