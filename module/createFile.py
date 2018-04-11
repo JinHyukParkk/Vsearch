@@ -18,7 +18,7 @@ def word_count(list_line):
 def create_json_file(srt_lines, nonsilent_ranges, file_name):
     """create json file"""
     index = file_name.split('.')
-    URL_origin = "http://localhost:9200/" +index[0] +"/"+file_name+"?pretty"
+    URL_origin = "http://localhost:9200/" +index[0] +"/"+file_name+"/"
     init_time = datetime.datetime(100, 1, 1, 0, 0,)
     try:
         order = elastic_id = 0
@@ -27,18 +27,19 @@ def create_json_file(srt_lines, nonsilent_ranges, file_name):
                 order += 1
                 continue
             inner_dict = dict()
-
+            id = "id"
             st = "start_time"
             et = "end_time"
             content = "content"
 
+            inner_dict[id] = elastic_id
             inner_dict[st] = str((init_time + datetime.timedelta(0, milliseconds=time[0])).time())[:-3]
             inner_dict[et] = str((init_time + datetime.timedelta(0, milliseconds=time[1])).time())[:-3]
             inner_dict[content] = Processing(srt_lines[order])
 
-            # URL_new = URL_origin + str(elastic_id)
+            URL_new = URL_origin + str(elastic_id)
 
-            post(URL_origin,inner_dict)
+            post(URL_new,inner_dict)
             order += 1
             elastic_id += 1
     except Exception as ex:

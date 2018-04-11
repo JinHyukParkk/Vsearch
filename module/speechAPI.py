@@ -30,10 +30,8 @@ def SpeechAPI(pathFile, results, index):
             language_code='en-US')
 
         # Detects speech in the audio file
-        # operation = client.long_running_recognize(config, audio)
-        # response = operation.result(timeout=90)
         response = client.recognize(config, audio)
-
+        log(response.results, logging.info)
         if not response.results:
             results[index]=""
             return
@@ -44,5 +42,3 @@ def SpeechAPI(pathFile, results, index):
         results[index] = result_str
     except Exception as ex:
         log(ex,logging.error)
-        
-        
