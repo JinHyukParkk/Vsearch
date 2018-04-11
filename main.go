@@ -49,6 +49,7 @@ func main() {
 	e.GET("/test2", controllers.Test2)
 
 	e.GET("/keyword/:keyword", controllers.SearchKeyword)
+	e.GET("/oneKeyword/:filename/:keyword", controllers.OneSearchKeyword)
 
 	e.Logger.Fatal(e.Start(":8080"))
 }
