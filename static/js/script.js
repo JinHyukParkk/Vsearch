@@ -14,8 +14,9 @@ window.onload = function(){
     requestReceiveVideo('http://localhost:8080/test2')
   }
   document.getElementById("sendKeyword").onclick = function() {
-    var url = "http://localhost:8080/keyword/" + document.getElementById("keywordBox").value;
-    sendKeyword(url);
+    var keyword = document.getElementById("keywordBox").value;
+    var url = "http://localhost:8080/keyword/" + keyword;
+    sendKeyword(url,keyword);
   }
  /*document.getElementById("RequestVideoList").onclick = function(){
     requestVideoList('http://localhost:8080/videoList');
@@ -45,8 +46,12 @@ function requestSendVideo(url){
  })
 }
 
+<<<<<<< HEAD
 function sendKeyword(url){
 
+=======
+function sendKeyword(url,keyword){
+>>>>>>> 8cbef0fe74c035f58c1df3472766630f20faaf24
  $.ajax({
    type: "GET",
    dataType : "JSON",
@@ -54,7 +59,15 @@ function sendKeyword(url){
    url: url,
 
    success:function(resp){
-     console.log(resp.video_list[0]);
+    var VideoName = resp.video_list[0].file_name;
+    for(var i = 0; i < resp.video_list.length; i++){
+      var videoBtn = document.createElement("button");
+      videoBtn.innerHTML = "name: " + resp.video_list[i].file_name + "/ count: " + resp.video_list[i].Count;
+      
+      var tempList = document.createElement("li");
+      tempList.appendChild(videoBtn);
+      document.getElementById("VideoList").appendChild(tempList);
+    } 
    },
    error:function(){
      alert("Method Error: sendKeyword");
@@ -208,4 +221,7 @@ function requestVideoTime(url) {
    }
  })
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8cbef0fe74c035f58c1df3472766630f20faaf24

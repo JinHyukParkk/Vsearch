@@ -3290,3 +3290,114 @@
 2018-04-11 19:39:41,077 - root - INFO - ### Create File END ###
 2018-04-11 19:39:41,077 - root - INFO - ### Python End ###
 2018-04-11 19:39:41,077 - root - INFO - ########################
+2018-04-11 19:43:55,584 - root - INFO - ########################
+2018-04-11 19:43:55,584 - root - INFO - ### Python Start ###
+2018-04-11 19:43:55,584 - root - INFO - ### Split START ###
+2018-04-11 19:43:55,584 - root - INFO - test.flac
+2018-04-11 19:43:57,485 - root - INFO - ### Split End ###
+2018-04-11 19:43:57,485 - root - INFO - ### SpeechAPI START ###
+2018-04-11 19:43:57,485 - root - INFO - ./audioFile_python/result0.flac
+2018-04-11 19:43:57,486 - root - INFO - ./audioFile_python/result1.flac
+2018-04-11 19:43:57,487 - root - INFO - ./audioFile_python/result2.flac
+2018-04-11 19:43:57,487 - root - INFO - ./audioFile_python/result3.flac
+2018-04-11 19:43:57,488 - root - INFO - ./audioFile_python/result4.flac
+2018-04-11 19:43:57,489 - root - INFO - ./audioFile_python/result5.flac
+2018-04-11 19:43:57,490 - root - INFO - ./audioFile_python/result6.flac
+2018-04-11 19:43:57,490 - root - INFO - ./audioFile_python/result7.flac
+2018-04-11 19:43:57,490 - root - INFO - ./audioFile_python/result8.flac
+2018-04-11 19:43:57,491 - root - INFO - ./audioFile_python/result9.flac
+2018-04-11 19:43:57,492 - root - INFO - ./audioFile_python/result10.flac
+2018-04-11 19:43:57,492 - root - INFO - ./audioFile_python/result11.flac
+2018-04-11 19:43:57,493 - root - INFO - ./audioFile_python/result12.flac
+2018-04-11 19:43:57,493 - root - INFO - ./audioFile_python/result13.flac
+2018-04-11 19:43:57,494 - root - INFO - ./audioFile_python/result14.flac
+2018-04-11 19:43:57,494 - root - INFO - ./audioFile_python/result15.flac
+2018-04-11 19:43:57,495 - root - INFO - ./audioFile_python/result16.flac
+2018-04-11 19:43:59,182 - root - INFO - [alternatives {
+  transcript: "Skittles"
+  confidence: 0.9333221912384033
+}
+]
+2018-04-11 19:43:59,232 - root - INFO - []
+2018-04-11 19:43:59,305 - root - INFO - [alternatives {
+  transcript: "I don\'t know what you want"
+  confidence: 0.9701714515686035
+}
+]
+2018-04-11 19:43:59,351 - root - INFO - [alternatives {
+  transcript: "I don\'t know who you are"
+  confidence: 0.9850564002990723
+}
+]
+2018-04-11 19:43:59,409 - root - INFO - [alternatives {
+  transcript: "that\'ll be the end of it"
+  confidence: 0.9586419463157654
+}
+]
+2018-04-11 19:43:59,430 - root - INFO - [alternatives {
+  transcript: "if you are looking for ransom"
+  confidence: 0.9671772718429565
+}
+]
+2018-04-11 19:43:59,526 - root - INFO - [alternatives {
+  transcript: "and I will kill you"
+  confidence: 0.8358370661735535
+}
+]
+2018-04-11 19:43:59,854 - root - INFO - [alternatives {
+  transcript: "I can tell you I don\'t have money"
+  confidence: 0.9410454630851746
+}
+]
+2018-04-11 19:43:59,900 - root - INFO - [alternatives {
+  transcript: "skills I have acquired over a very long career"
+  confidence: 0.9716528058052063
+}
+]
+2018-04-11 19:43:59,907 - root - INFO - [alternatives {
+  transcript: "I do have"
+  confidence: 0.978911280632019
+}
+]
+2018-04-11 19:43:59,973 - root - INFO - [alternatives {
+  transcript: "particular set of skills"
+  confidence: 0.9847912788391113
+}
+]
+2018-04-11 19:43:59,997 - root - INFO - [alternatives {
+  transcript: "if you let my daughter go now."
+  confidence: 0.9581959843635559
+}
+]
+2018-04-11 19:44:00,093 - root - INFO - [alternatives {
+  transcript: "I will not look for you I will not pursue you"
+  confidence: 0.985171377658844
+}
+]
+2018-04-11 19:44:00,249 - root - INFO - [alternatives {
+  transcript: "but if you don\'t"
+  confidence: 0.9785715937614441
+}
+]
+2018-04-11 19:44:00,400 - root - INFO - [alternatives {
+  transcript: "that make me a nightmare for people like you"
+  confidence: 0.9631569981575012
+}
+]
+2018-04-11 19:44:00,933 - root - INFO - [alternatives {
+  transcript: "I will look for you"
+  confidence: 0.9703636169433594
+}
+, alternatives {
+  transcript: " I will find you"
+  confidence: 0.983986496925354
+}
+]
+2018-04-11 19:44:00,944 - root - INFO - []
+2018-04-11 19:44:00,952 - root - INFO - ### SpeechAPI END ###
+2018-04-11 19:44:00,952 - root - INFO - nonsilent_len : 17 dict _ len : 17
+2018-04-11 19:44:00,952 - root - INFO - ### Create srt START ###
+2018-04-11 19:44:00,952 - root - INFO - ### Create json START ###
+2018-04-11 19:44:01,089 - root - INFO - ### Create File END ###
+2018-04-11 19:44:01,089 - root - INFO - ### Python End ###
+2018-04-11 19:44:01,089 - root - INFO - ########################
