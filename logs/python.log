@@ -1,0 +1,762 @@
+2018-04-11 19:54:15,768 - root - INFO - ########################
+2018-04-11 19:54:15,768 - root - INFO - ### Python Start ###
+2018-04-11 19:54:15,768 - root - INFO - ### Split START ###
+2018-04-11 19:54:15,768 - root - INFO - notting_hill.flac
+2018-04-11 19:54:24,262 - root - INFO - ### Split End ###
+2018-04-11 19:54:24,262 - root - INFO - ### SpeechAPI START ###
+2018-04-11 19:54:24,262 - root - INFO - ./audioFile_python/result0.flac
+2018-04-11 19:54:24,262 - root - INFO - ./audioFile_python/result1.flac
+2018-04-11 19:54:24,263 - root - INFO - ./audioFile_python/result2.flac
+2018-04-11 19:54:24,264 - root - INFO - ./audioFile_python/result3.flac
+2018-04-11 19:54:24,264 - root - INFO - ./audioFile_python/result4.flac
+2018-04-11 19:54:24,265 - root - INFO - ./audioFile_python/result5.flac
+2018-04-11 19:54:24,265 - root - INFO - ./audioFile_python/result6.flac
+2018-04-11 19:54:24,265 - root - INFO - ./audioFile_python/result7.flac
+2018-04-11 19:54:24,266 - root - INFO - ./audioFile_python/result8.flac
+2018-04-11 19:54:24,266 - root - INFO - ./audioFile_python/result9.flac
+2018-04-11 19:54:24,267 - root - INFO - ./audioFile_python/result10.flac
+2018-04-11 19:54:24,267 - root - INFO - ./audioFile_python/result11.flac
+2018-04-11 19:54:24,268 - root - INFO - ./audioFile_python/result12.flac
+2018-04-11 19:54:24,268 - root - INFO - ./audioFile_python/result13.flac
+2018-04-11 19:54:24,268 - root - INFO - ./audioFile_python/result14.flac
+2018-04-11 19:54:24,269 - root - INFO - ./audioFile_python/result15.flac
+2018-04-11 19:54:24,269 - root - INFO - ./audioFile_python/result16.flac
+2018-04-11 19:54:24,270 - root - INFO - ./audioFile_python/result17.flac
+2018-04-11 19:54:24,270 - root - INFO - ./audioFile_python/result18.flac
+2018-04-11 19:54:24,270 - root - INFO - ./audioFile_python/result19.flac
+2018-04-11 19:54:24,271 - root - INFO - ./audioFile_python/result20.flac
+2018-04-11 19:54:24,271 - root - INFO - ./audioFile_python/result21.flac
+2018-04-11 19:54:24,272 - root - INFO - ./audioFile_python/result22.flac
+2018-04-11 19:54:24,272 - root - INFO - ./audioFile_python/result23.flac
+2018-04-11 19:54:24,273 - root - INFO - ./audioFile_python/result24.flac
+2018-04-11 19:54:24,273 - root - INFO - ./audioFile_python/result25.flac
+2018-04-11 19:54:24,274 - root - INFO - ./audioFile_python/result26.flac
+2018-04-11 19:54:24,274 - root - INFO - ./audioFile_python/result27.flac
+2018-04-11 19:54:24,274 - root - INFO - ./audioFile_python/result28.flac
+2018-04-11 19:54:24,275 - root - INFO - ./audioFile_python/result29.flac
+2018-04-11 19:54:24,275 - root - INFO - ./audioFile_python/result30.flac
+2018-04-11 19:54:24,275 - root - INFO - ./audioFile_python/result31.flac
+2018-04-11 19:54:24,276 - root - INFO - ./audioFile_python/result32.flac
+2018-04-11 19:54:24,276 - root - INFO - ./audioFile_python/result33.flac
+2018-04-11 19:54:24,277 - root - INFO - ./audioFile_python/result34.flac
+2018-04-11 19:54:24,277 - root - INFO - ./audioFile_python/result35.flac
+2018-04-11 19:54:24,279 - root - INFO - ./audioFile_python/result36.flac
+2018-04-11 19:54:24,279 - root - INFO - ./audioFile_python/result37.flac
+2018-04-11 19:54:24,279 - root - INFO - ./audioFile_python/result38.flac
+2018-04-11 19:54:24,280 - root - INFO - ./audioFile_python/result39.flac
+2018-04-11 19:54:24,280 - root - INFO - ./audioFile_python/result40.flac
+2018-04-11 19:54:24,281 - root - INFO - ./audioFile_python/result41.flac
+2018-04-11 19:54:24,281 - root - INFO - ./audioFile_python/result42.flac
+2018-04-11 19:54:24,281 - root - INFO - ./audioFile_python/result43.flac
+2018-04-11 19:54:24,282 - root - INFO - ./audioFile_python/result44.flac
+2018-04-11 19:54:24,282 - root - INFO - ./audioFile_python/result45.flac
+2018-04-11 19:54:24,282 - root - INFO - ./audioFile_python/result46.flac
+2018-04-11 19:54:24,283 - root - INFO - ./audioFile_python/result47.flac
+2018-04-11 19:54:24,283 - root - INFO - ./audioFile_python/result48.flac
+2018-04-11 19:54:24,284 - root - INFO - ./audioFile_python/result49.flac
+2018-04-11 19:54:24,284 - root - INFO - ./audioFile_python/result50.flac
+2018-04-11 19:54:24,284 - root - INFO - ./audioFile_python/result51.flac
+2018-04-11 19:54:24,285 - root - INFO - ./audioFile_python/result52.flac
+2018-04-11 19:54:24,285 - root - INFO - ./audioFile_python/result53.flac
+2018-04-11 19:54:24,285 - root - INFO - ./audioFile_python/result54.flac
+2018-04-11 19:54:24,285 - root - INFO - ./audioFile_python/result55.flac
+2018-04-11 19:54:24,286 - root - INFO - ./audioFile_python/result56.flac
+2018-04-11 19:54:24,286 - root - INFO - ./audioFile_python/result57.flac
+2018-04-11 19:54:24,287 - root - INFO - ./audioFile_python/result58.flac
+2018-04-11 19:54:24,287 - root - INFO - ./audioFile_python/result59.flac
+2018-04-11 19:54:24,287 - root - INFO - ./audioFile_python/result60.flac
+2018-04-11 19:54:24,288 - root - INFO - ./audioFile_python/result61.flac
+2018-04-11 19:54:27,277 - root - INFO - []
+2018-04-11 19:54:27,443 - root - INFO - [alternatives {
+  transcript: "notify"
+  confidence: 0.719864010810852
+}
+]
+2018-04-11 19:54:27,544 - root - INFO - [alternatives {
+  transcript: "then"
+  confidence: 0.9938145279884338
+}
+]
+2018-04-11 19:54:27,549 - root - INFO - [alternatives {
+  transcript: "I heard"
+  confidence: 0.6829501986503601
+}
+]
+2018-04-11 19:54:27,606 - root - INFO - [alternatives {
+  transcript: "RI"
+  confidence: 0.6826730370521545
+}
+]
+2018-04-11 19:54:27,619 - root - INFO - [alternatives {
+  transcript: "yes"
+  confidence: 0.9809978604316711
+}
+]
+2018-04-11 19:54:27,659 - root - INFO - [alternatives {
+  transcript: "the Scott"
+  confidence: 0.6874163150787354
+}
+]
+2018-04-11 19:54:27,693 - root - INFO - []
+2018-04-11 19:54:27,748 - root - INFO - [alternatives {
+  transcript: "are the two of you"
+  confidence: 0.9749345183372498
+}
+]
+2018-04-11 19:54:27,782 - root - INFO - []
+2018-04-11 19:54:27,870 - root - INFO - []
+2018-04-11 19:54:27,887 - root - INFO - [alternatives {
+  transcript: "consider"
+  confidence: 0.8758171796798706
+}
+]
+2018-04-11 19:54:27,902 - root - INFO - []
+2018-04-11 19:54:27,919 - root - INFO - [alternatives {
+  transcript: "butter"
+  confidence: 0.9379965662956238
+}
+]
+2018-04-11 19:54:28,059 - root - INFO - [alternatives {
+  transcript: "of course"
+  confidence: 0.900185763835907
+}
+]
+2018-04-11 19:54:28,067 - root - INFO - [alternatives {
+  transcript: "sure there aren\'t"
+  confidence: 0.8102198839187622
+}
+]
+2018-04-11 19:54:28,424 - root - INFO - [alternatives {
+  transcript: "well bucket"
+  confidence: 0.6424766778945923
+}
+]
+2018-04-11 19:54:28,443 - root - INFO - [alternatives {
+  transcript: "go away today but I"
+  confidence: 0.8846204280853271
+}
+]
+2018-04-11 19:54:28,536 - root - INFO - [alternatives {
+  transcript: "country crest"
+  confidence: 0.7553152441978455
+}
+]
+2018-04-11 19:54:28,556 - root - INFO - [alternatives {
+  transcript: "your microphone on"
+  confidence: 0.6442511081695557
+}
+]
+2018-04-11 19:54:28,569 - root - INFO - [alternatives {
+  transcript: "recover if I was"
+  confidence: 0.9843839406967163
+}
+]
+2018-04-11 19:54:28,600 - root - INFO - [alternatives {
+  transcript: "Maybe"
+  confidence: 0.8882555961608887
+}
+]
+2018-04-11 19:54:28,700 - root - INFO - [alternatives {
+  transcript: "starting in front of a boy"
+  confidence: 0.9695854187011719
+}
+]
+2018-04-11 19:54:28,727 - root - INFO - [alternatives {
+  transcript: "with you I\'m enrolled"
+  confidence: 0.8892334699630737
+}
+]
+2018-04-11 19:54:28,861 - root - INFO - [alternatives {
+  transcript: "are there any circumstances in which"
+  confidence: 0.9873247146606445
+}
+]
+2018-04-11 19:54:28,864 - root - INFO - [alternatives {
+  transcript: "wondered if I didn\'t"
+  confidence: 0.9654858708381653
+}
+]
+2018-04-11 19:54:28,923 - root - INFO - [alternatives {
+  transcript: "might be more than just good friends"
+  confidence: 0.9764605760574341
+}
+]
+2018-04-11 19:54:29,011 - root - INFO - []
+2018-04-11 19:54:29,025 - root - INFO - [alternatives {
+  transcript: "asking him to love her"
+  confidence: 0.9453912377357483
+}
+]
+2018-04-11 19:54:29,038 - root - INFO - [alternatives {
+  transcript: "I hoped there would be but now I\'m"
+  confidence: 0.8953917026519775
+}
+]
+2018-04-11 19:54:29,068 - root - INFO - [alternatives {
+  transcript: "Outlook"
+  confidence: 0.9087983965873718
+}
+]
+2018-04-11 19:54:29,084 - root - INFO - [alternatives {
+  transcript: "also just a girl"
+  confidence: 0.8357362747192383
+}
+]
+2018-04-11 19:54:29,133 - root - INFO - [alternatives {
+  transcript: "see if you could like me again"
+  confidence: 0.9697145223617554
+}
+]
+2018-04-11 19:54:29,135 - root - INFO - [alternatives {
+  transcript: "I\'m a fatty level-headed bloke"
+  confidence: 0.9006406664848328
+}
+]
+2018-04-11 19:54:29,188 - root - INFO - [alternatives {
+  transcript: "yeah and Out of Love"
+  confidence: 0.8353378176689148
+}
+]
+2018-04-11 19:54:29,329 - root - INFO - [alternatives {
+  transcript: "course I"
+  confidence: 0.8362682461738586
+}
+]
+2018-04-11 19:54:29,393 - root - INFO - [alternatives {
+  transcript: "it turned out that this person"
+  confidence: 0.9702125787734985
+}
+]
+2018-04-11 19:54:29,423 - root - INFO - [alternatives {
+  transcript: "thing isn\'t really real"
+  confidence: 0.9016644358634949
+}
+]
+2018-04-11 19:54:29,460 - root - INFO - [alternatives {
+  transcript: "don\'t forget"
+  confidence: 0.9640241265296936
+}
+]
+2018-04-11 19:54:29,541 - root - INFO - [alternatives {
+  transcript: "danger it seems like a"
+  confidence: 0.8899514675140381
+}
+]
+2018-04-11 19:54:29,573 - root - INFO - []
+2018-04-11 19:54:29,624 - root - INFO - [alternatives {
+  transcript: "soccer is nice soccer"
+  confidence: 0.834924578666687
+}
+]
+2018-04-11 19:54:29,950 - root - INFO - [alternatives {
+  transcript: "can I just say no to you"
+  confidence: 0.9439084529876709
+}
+]
+2018-04-11 19:54:30,107 - root - INFO - [alternatives {
+  transcript: "once again cause the side is I would absolutely expect to be"
+  confidence: 0.8511831760406494
+}
+]
+2018-04-11 19:54:30,131 - root - INFO - [alternatives {
+  transcript: "who won the world knows who you are my mother has trouble remembering my name"
+  confidence: 0.904616117477417
+}
+]
+2018-04-11 19:54:30,166 - root - INFO - []
+2018-04-11 19:54:30,187 - root - INFO - [alternatives {
+  transcript: "Perfect Situation file temporary"
+  confidence: 0.810650110244751
+}
+]
+2018-04-11 19:54:30,242 - root - INFO - [alternatives {
+  transcript: "decision"
+  confidence: 0.9133820533752441
+}
+]
+2018-04-11 19:54:30,288 - root - INFO - [alternatives {
+  transcript: "what you expect me to tell the truth about my life to the most Indiscreet man in English"
+  confidence: 0.8652631044387817
+}
+]
+2018-04-11 19:54:30,407 - root - INFO - [alternatives {
+  transcript: "my relatively inexperienced how would I fear not"
+  confidence: 0.8204449415206909
+}
+]
+2018-04-11 19:54:30,408 - root - INFO - [alternatives {
+  transcript: "I\'ll just be going then it\'s nice to see you"
+  confidence: 0.9599835872650146
+}
+]
+2018-04-11 19:54:30,471 - root - INFO - [alternatives {
+  transcript: "but yesterday the actor lost you who I wasn\'t you just dismissed me out of that"
+  confidence: 0.8349409699440002
+}
+]
+2018-04-11 19:54:30,790 - root - INFO - [alternatives {
+  transcript: "whether you might let me see you a little"
+  confidence: 0.9252174496650696
+}
+, alternatives {
+  transcript: " or"
+  confidence: 0.9247369766235352
+}
+]
+2018-04-11 19:54:30,998 - root - INFO - [alternatives {
+  transcript: "in the pink shirt"
+  confidence: 0.9081220626831055
+}
+]
+2018-04-11 19:54:31,154 - root - INFO - [alternatives {
+  transcript: "really is real no is"
+  confidence: 0.7085043787956238
+}
+, alternatives {
+  transcript: " I live in Notting Hill you live in Beverly Hills"
+  confidence: 0.9864005446434021
+}
+]
+2018-04-11 19:54:31,265 - root - INFO - [alternatives {
+  transcript: "added too many pictures of you too many"
+  confidence: 0.8797290921211243
+}
+, alternatives {
+  transcript: " yeah you go and I\'d be"
+  confidence: 0.8184964060783386
+}
+]
+2018-04-11 19:54:31,369 - root - INFO - [alternatives {
+  transcript: "text next just wondered whether if Mr Taco realized he been"
+  confidence: 0.8342235684394836
+}
+]
+2018-04-11 19:54:32,302 - root - INFO - [alternatives {
+  transcript: "adopt prick go down on his knees and begged you to reconsider whether you would in fact"
+  confidence: 0.9538190364837646
+}
+]
+2018-04-11 19:54:32,303 - root - INFO - [alternatives {
+  transcript: "but what would you say I\'m sorry just the one question please it\'s all right"
+  confidence: 0.8528460264205933
+}
+, alternatives {
+  transcript: " I was just wondering if"
+  confidence: 0.9881893992424011
+}
+]
+2018-04-11 19:54:33,837 - root - INFO - [alternatives {
+  transcript: "definitely"
+  confidence: 0.9320515394210815
+}
+, alternatives {
+  transcript: " shark girl pictures"
+  confidence: 0.6190053224563599
+}
+]
+2018-04-11 19:54:33,838 - root - INFO - []
+2018-04-11 19:54:36,297 - root - INFO - [alternatives {
+  transcript: "yes I believe I would"
+  confidence: 0.9843509793281555
+}
+, alternatives {
+  transcript: " what\'s very good news"
+  confidence: 0.8007928729057312
+}
+, alternatives {
+  transcript: " the readers of Horse & Hound will be absolutely delighted"
+  confidence: 0.9279937744140625
+}
+, alternatives {
+  transcript: " Frank Dominic if you\'d like to ask you a question again"
+  confidence: 0.892982542514801
+}
+]
+2018-04-11 19:54:36,308 - root - INFO - ### SpeechAPI END ###
+2018-04-11 19:54:36,308 - root - INFO - nonsilent_len : 62 dict _ len : 62
+2018-04-11 19:54:36,308 - root - INFO - ### Create srt START ###
+2018-04-11 19:54:36,309 - root - INFO - ### Create json START ###
+2018-04-11 19:54:36,698 - root - INFO - ### Create File END ###
+2018-04-11 19:54:36,699 - root - INFO - ### Python End ###
+2018-04-11 19:54:36,699 - root - INFO - ########################
+2018-04-11 20:00:20,228 - root - INFO - ########################
+2018-04-11 20:00:20,228 - root - INFO - ### Python Start ###
+2018-04-11 20:00:20,228 - root - INFO - ### Split START ###
+2018-04-11 20:00:20,228 - root - INFO - notting_hill.flac
+2018-04-11 20:00:28,900 - root - INFO - ### Split End ###
+2018-04-11 20:00:28,901 - root - INFO - ### SpeechAPI START ###
+2018-04-11 20:00:28,901 - root - INFO - ./audioFile_python/result0.flac
+2018-04-11 20:00:28,901 - root - INFO - ./audioFile_python/result1.flac
+2018-04-11 20:00:28,902 - root - INFO - ./audioFile_python/result2.flac
+2018-04-11 20:00:28,903 - root - INFO - ./audioFile_python/result3.flac
+2018-04-11 20:00:28,904 - root - INFO - ./audioFile_python/result4.flac
+2018-04-11 20:00:28,904 - root - INFO - ./audioFile_python/result5.flac
+2018-04-11 20:00:28,905 - root - INFO - ./audioFile_python/result6.flac
+2018-04-11 20:00:28,906 - root - INFO - ./audioFile_python/result7.flac
+2018-04-11 20:00:28,907 - root - INFO - ./audioFile_python/result8.flac
+2018-04-11 20:00:28,907 - root - INFO - ./audioFile_python/result9.flac
+2018-04-11 20:00:28,908 - root - INFO - ./audioFile_python/result10.flac
+2018-04-11 20:00:28,908 - root - INFO - ./audioFile_python/result11.flac
+2018-04-11 20:00:28,909 - root - INFO - ./audioFile_python/result12.flac
+2018-04-11 20:00:28,909 - root - INFO - ./audioFile_python/result13.flac
+2018-04-11 20:00:28,910 - root - INFO - ./audioFile_python/result14.flac
+2018-04-11 20:00:28,910 - root - INFO - ./audioFile_python/result15.flac
+2018-04-11 20:00:28,911 - root - INFO - ./audioFile_python/result16.flac
+2018-04-11 20:00:28,911 - root - INFO - ./audioFile_python/result17.flac
+2018-04-11 20:00:28,912 - root - INFO - ./audioFile_python/result18.flac
+2018-04-11 20:00:28,912 - root - INFO - ./audioFile_python/result19.flac
+2018-04-11 20:00:28,914 - root - INFO - ./audioFile_python/result20.flac
+2018-04-11 20:00:28,915 - root - INFO - ./audioFile_python/result21.flac
+2018-04-11 20:00:28,915 - root - INFO - ./audioFile_python/result22.flac
+2018-04-11 20:00:28,916 - root - INFO - ./audioFile_python/result23.flac
+2018-04-11 20:00:28,916 - root - INFO - ./audioFile_python/result24.flac
+2018-04-11 20:00:28,916 - root - INFO - ./audioFile_python/result25.flac
+2018-04-11 20:00:28,917 - root - INFO - ./audioFile_python/result26.flac
+2018-04-11 20:00:28,917 - root - INFO - ./audioFile_python/result27.flac
+2018-04-11 20:00:28,918 - root - INFO - ./audioFile_python/result28.flac
+2018-04-11 20:00:28,918 - root - INFO - ./audioFile_python/result29.flac
+2018-04-11 20:00:28,919 - root - INFO - ./audioFile_python/result30.flac
+2018-04-11 20:00:28,919 - root - INFO - ./audioFile_python/result31.flac
+2018-04-11 20:00:28,920 - root - INFO - ./audioFile_python/result32.flac
+2018-04-11 20:00:28,920 - root - INFO - ./audioFile_python/result33.flac
+2018-04-11 20:00:28,921 - root - INFO - ./audioFile_python/result34.flac
+2018-04-11 20:00:28,922 - root - INFO - ./audioFile_python/result35.flac
+2018-04-11 20:00:28,922 - root - INFO - ./audioFile_python/result36.flac
+2018-04-11 20:00:28,922 - root - INFO - ./audioFile_python/result37.flac
+2018-04-11 20:00:28,923 - root - INFO - ./audioFile_python/result38.flac
+2018-04-11 20:00:28,923 - root - INFO - ./audioFile_python/result39.flac
+2018-04-11 20:00:28,924 - root - INFO - ./audioFile_python/result40.flac
+2018-04-11 20:00:28,924 - root - INFO - ./audioFile_python/result41.flac
+2018-04-11 20:00:28,925 - root - INFO - ./audioFile_python/result42.flac
+2018-04-11 20:00:28,925 - root - INFO - ./audioFile_python/result43.flac
+2018-04-11 20:00:28,926 - root - INFO - ./audioFile_python/result44.flac
+2018-04-11 20:00:28,927 - root - INFO - ./audioFile_python/result45.flac
+2018-04-11 20:00:28,928 - root - INFO - ./audioFile_python/result46.flac
+2018-04-11 20:00:28,929 - root - INFO - ./audioFile_python/result47.flac
+2018-04-11 20:00:28,930 - root - INFO - ./audioFile_python/result48.flac
+2018-04-11 20:00:28,932 - root - INFO - ./audioFile_python/result49.flac
+2018-04-11 20:00:28,934 - root - INFO - ./audioFile_python/result50.flac
+2018-04-11 20:00:28,936 - root - INFO - ./audioFile_python/result51.flac
+2018-04-11 20:00:28,937 - root - INFO - ./audioFile_python/result52.flac
+2018-04-11 20:00:28,939 - root - INFO - ./audioFile_python/result53.flac
+2018-04-11 20:00:28,939 - root - INFO - ./audioFile_python/result54.flac
+2018-04-11 20:00:28,940 - root - INFO - ./audioFile_python/result55.flac
+2018-04-11 20:00:28,941 - root - INFO - ./audioFile_python/result56.flac
+2018-04-11 20:00:28,943 - root - INFO - ./audioFile_python/result57.flac
+2018-04-11 20:00:28,944 - root - INFO - ./audioFile_python/result58.flac
+2018-04-11 20:00:28,945 - root - INFO - ./audioFile_python/result59.flac
+2018-04-11 20:00:28,946 - root - INFO - ./audioFile_python/result60.flac
+2018-04-11 20:00:28,946 - root - INFO - ./audioFile_python/result61.flac
+2018-04-11 20:00:31,083 - root - INFO - []
+2018-04-11 20:00:31,271 - root - INFO - []
+2018-04-11 20:00:31,346 - root - INFO - [alternatives {
+  transcript: "the Scott"
+  confidence: 0.6938376426696777
+}
+]
+2018-04-11 20:00:31,386 - root - INFO - [alternatives {
+  transcript: "then"
+  confidence: 0.96339350938797
+}
+]
+2018-04-11 20:00:31,576 - root - INFO - [alternatives {
+  transcript: "of course"
+  confidence: 0.8890514969825745
+}
+]
+2018-04-11 20:00:31,685 - root - INFO - [alternatives {
+  transcript: "RI"
+  confidence: 0.7058060765266418
+}
+]
+2018-04-11 20:00:31,753 - root - INFO - [alternatives {
+  transcript: "I\'m a fatty level-headed bloke"
+  confidence: 0.8960853219032288
+}
+]
+2018-04-11 20:00:31,793 - root - INFO - [alternatives {
+  transcript: "consider"
+  confidence: 0.8677268028259277
+}
+]
+2018-04-11 20:00:31,817 - root - INFO - []
+2018-04-11 20:00:31,862 - root - INFO - [alternatives {
+  transcript: "Outlook"
+  confidence: 0.6595644950866699
+}
+]
+2018-04-11 20:00:31,887 - root - INFO - [alternatives {
+  transcript: "I heard"
+  confidence: 0.7604616284370422
+}
+]
+2018-04-11 20:00:31,895 - root - INFO - []
+2018-04-11 20:00:31,978 - root - INFO - [alternatives {
+  transcript: "are the two of you"
+  confidence: 0.9796811938285828
+}
+]
+2018-04-11 20:00:32,058 - root - INFO - [alternatives {
+  transcript: "go away today but I"
+  confidence: 0.868928849697113
+}
+]
+2018-04-11 20:00:32,098 - root - INFO - [alternatives {
+  transcript: "well bucket"
+  confidence: 0.7631537914276123
+}
+]
+2018-04-11 20:00:32,178 - root - INFO - [alternatives {
+  transcript: "course I"
+  confidence: 0.8692187666893005
+}
+]
+2018-04-11 20:00:32,276 - root - INFO - [alternatives {
+  transcript: "yes"
+  confidence: 0.9827892184257507
+}
+]
+2018-04-11 20:00:32,293 - root - INFO - [alternatives {
+  transcript: "see if you could like me again"
+  confidence: 0.9634978771209717
+}
+]
+2018-04-11 20:00:32,377 - root - INFO - [alternatives {
+  transcript: "notify"
+  confidence: 0.7047414779663086
+}
+]
+2018-04-11 20:00:32,405 - root - INFO - [alternatives {
+  transcript: "short there aren\'t"
+  confidence: 0.9388814568519592
+}
+]
+2018-04-11 20:00:32,509 - root - INFO - [alternatives {
+  transcript: "butter"
+  confidence: 0.9146407246589661
+}
+]
+2018-04-11 20:00:32,531 - root - INFO - [alternatives {
+  transcript: "I hoped there would be but now I\'m"
+  confidence: 0.9026369452476501
+}
+]
+2018-04-11 20:00:32,550 - root - INFO - [alternatives {
+  transcript: "might be more than just good friends"
+  confidence: 0.9718559980392456
+}
+]
+2018-04-11 20:00:32,593 - root - INFO - [alternatives {
+  transcript: "yeah and Out of Love"
+  confidence: 0.8091813921928406
+}
+]
+2018-04-11 20:00:32,700 - root - INFO - [alternatives {
+  transcript: "also just a girl"
+  confidence: 0.8282368779182434
+}
+]
+2018-04-11 20:00:32,789 - root - INFO - [alternatives {
+  transcript: "can I just say no to you"
+  confidence: 0.9523583054542542
+}
+]
+2018-04-11 20:00:32,851 - root - INFO - [alternatives {
+  transcript: "starting in front of a boy"
+  confidence: 0.93202143907547
+}
+]
+2018-04-11 20:00:32,941 - root - INFO - [alternatives {
+  transcript: "with you I\'m enrolled"
+  confidence: 0.9452918767929077
+}
+]
+2018-04-11 20:00:32,998 - root - INFO - [alternatives {
+  transcript: "are there any circumstances in which"
+  confidence: 0.9874055981636047
+}
+]
+2018-04-11 20:00:33,029 - root - INFO - []
+2018-04-11 20:00:33,102 - root - INFO - [alternatives {
+  transcript: "don\'t forget"
+  confidence: 0.9539801478385925
+}
+]
+2018-04-11 20:00:33,132 - root - INFO - []
+2018-04-11 20:00:33,142 - root - INFO - [alternatives {
+  transcript: "Maybe"
+  confidence: 0.9005589485168457
+}
+]
+2018-04-11 20:00:33,142 - root - INFO - [alternatives {
+  transcript: "it turned out that this person"
+  confidence: 0.9597914814949036
+}
+]
+2018-04-11 20:00:33,201 - root - INFO - [alternatives {
+  transcript: "wondered if I didn\'t"
+  confidence: 0.9543072581291199
+}
+]
+2018-04-11 20:00:33,202 - root - INFO - [alternatives {
+  transcript: "recover if I was"
+  confidence: 0.9855256080627441
+}
+]
+2018-04-11 20:00:33,349 - root - INFO - []
+2018-04-11 20:00:33,607 - root - INFO - [alternatives {
+  transcript: "thing isn\'t really real"
+  confidence: 0.9049838781356812
+}
+]
+2018-04-11 20:00:33,622 - root - INFO - [alternatives {
+  transcript: "danger it seems like a"
+  confidence: 0.9085809588432312
+}
+]
+2018-04-11 20:00:33,659 - root - INFO - [alternatives {
+  transcript: "Perfect Situation file temporary"
+  confidence: 0.8406541347503662
+}
+]
+2018-04-11 20:00:33,671 - root - INFO - [alternatives {
+  transcript: "in the pink shirt"
+  confidence: 0.8684134483337402
+}
+]
+2018-04-11 20:00:33,831 - root - INFO - [alternatives {
+  transcript: "asking him to love her"
+  confidence: 0.9315571784973145
+}
+]
+2018-04-11 20:00:33,899 - root - INFO - [alternatives {
+  transcript: "I\'ll just be going then it\'s nice to see you"
+  confidence: 0.9557269811630249
+}
+]
+2018-04-11 20:00:33,936 - root - INFO - [alternatives {
+  transcript: "my relatively inexperienced how would I fear not"
+  confidence: 0.8175938129425049
+}
+]
+2018-04-11 20:00:33,987 - root - INFO - [alternatives {
+  transcript: "Becca is nice soccer"
+  confidence: 0.77860426902771
+}
+]
+2018-04-11 20:00:34,075 - root - INFO - [alternatives {
+  transcript: "once again cause the side is I would absolutely expect to be"
+  confidence: 0.8521444797515869
+}
+]
+2018-04-11 20:00:34,147 - root - INFO - [alternatives {
+  transcript: "decision"
+  confidence: 0.8159875273704529
+}
+]
+2018-04-11 20:00:34,159 - root - INFO - [alternatives {
+  transcript: "what you expect me to tell the truth about my life to the most Indiscreet man in England"
+  confidence: 0.8791897296905518
+}
+]
+2018-04-11 20:00:34,375 - root - INFO - [alternatives {
+  transcript: "who won the world knows who you are my mother has trouble remembering my name"
+  confidence: 0.9159715175628662
+}
+]
+2018-04-11 20:00:34,427 - root - INFO - [alternatives {
+  transcript: "but yesterday the actor lost you who I wasn\'t you just dismissed me out of that"
+  confidence: 0.8478679656982422
+}
+]
+2018-04-11 20:00:34,661 - root - INFO - [alternatives {
+  transcript: "whether you might let me see you a little"
+  confidence: 0.9158178567886353
+}
+, alternatives {
+  transcript: " or"
+  confidence: 0.8999775052070618
+}
+]
+2018-04-11 20:00:34,689 - root - INFO - []
+2018-04-11 20:00:34,821 - root - INFO - [alternatives {
+  transcript: "really is real no is"
+  confidence: 0.6910153031349182
+}
+, alternatives {
+  transcript: " I live in Notting Hill you live in Beverly Hills"
+  confidence: 0.9864251613616943
+}
+]
+2018-04-11 20:00:34,965 - root - INFO - [alternatives {
+  transcript: "text next just wondered whether if Mr Taco realized he been"
+  confidence: 0.8324296474456787
+}
+]
+2018-04-11 20:00:34,978 - root - INFO - [alternatives {
+  transcript: "added too many pictures of you too many"
+  confidence: 0.8577674627304077
+}
+, alternatives {
+  transcript: " yeah you go and I\'d be"
+  confidence: 0.8521851301193237
+}
+]
+2018-04-11 20:00:35,721 - root - INFO - [alternatives {
+  transcript: "adopt prick got down on his knees and begged you to reconsider whether you would in fact"
+  confidence: 0.9222629070281982
+}
+]
+2018-04-11 20:00:35,722 - root - INFO - [alternatives {
+  transcript: "but what would you say I\'m sorry just the one question please it\'s all right"
+  confidence: 0.8265889286994934
+}
+, alternatives {
+  transcript: " I was just wondering if"
+  confidence: 0.9881893992424011
+}
+]
+2018-04-11 20:00:37,161 - root - INFO - []
+2018-04-11 20:00:37,395 - root - INFO - [alternatives {
+  transcript: "definitely"
+  confidence: 0.9460734128952026
+}
+, alternatives {
+  transcript: " shirt and Richardson"
+  confidence: 0.5338712334632874
+}
+]
+2018-04-11 20:00:38,041 - root - INFO - [alternatives {
+  transcript: "your microphone on"
+  confidence: 0.6802347898483276
+}
+]
+2018-04-11 20:00:39,433 - root - INFO - [alternatives {
+  transcript: "yes I believe I would"
+  confidence: 0.9860885739326477
+}
+, alternatives {
+  transcript: " that\'s very good news"
+  confidence: 0.9830916523933411
+}
+, alternatives {
+  transcript: " the readers of Horse & Hound will be absolutely delighted"
+  confidence: 0.9295216202735901
+}
+, alternatives {
+  transcript: " Frank Dominic if you\'d like to ask you a question again"
+  confidence: 0.9065969586372375
+}
+]
+2018-04-11 20:00:44,014 - root - INFO - [alternatives {
+  transcript: "country crest"
+  confidence: 0.758861243724823
+}
+]
+2018-04-11 20:00:44,023 - root - INFO - ### SpeechAPI END ###
+2018-04-11 20:00:44,023 - root - INFO - nonsilent_len : 62 dict _ len : 62
+2018-04-11 20:00:44,024 - root - INFO - ### Create srt START ###
+2018-04-11 20:00:44,025 - root - INFO - ### Create json START ###
+2018-04-11 20:00:44,544 - root - INFO - ### Create File END ###
+2018-04-11 20:00:44,545 - root - INFO - ### Python End ###
+2018-04-11 20:00:44,545 - root - INFO - ########################

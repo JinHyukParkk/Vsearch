@@ -31,7 +31,6 @@ def main():
 
     for index in range(len(nonsilent_ranges)):
         path = "./audioFile_python/result" + str(index) + ".flac"
-        log(path,logging.info)
         th = threading.Thread(target=SpeechAPI, args=(path, dict_lines, index))
         th.start()
         threads.append(th)

@@ -31,7 +31,7 @@ def SpeechAPI(pathFile, results, index):
 
         # Detects speech in the audio file
         response = client.recognize(config, audio)
-        log(response.results, logging.info)
+        # log(response.results, logging.info)
         if not response.results:
             results[index]=""
             return
