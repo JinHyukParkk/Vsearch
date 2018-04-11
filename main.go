@@ -44,7 +44,7 @@ func main() {
 	e.File("/", "template/test.html")
 
 	// route
-	e.POST("/test", controllers.Test)
+	e.POST("/videoUpload", controllers.VideoUpload)
 	// e.GET("/test1", controllers.Test1)
 	e.GET("/test2", controllers.Test2)
 

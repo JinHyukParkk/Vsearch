@@ -3,7 +3,7 @@ window.onload = function(){
 
    document.getElementById("UploadVideo").onclick = function(){
      // makeRequestVideo('http://210.204.165.166:4088/test')
-     requestSendVideo('http://localhost:8080/test')
+     requestSendVideo('http://localhost:8080/videoUpload')
    }
 
    document.getElementById("Time").onclick = function() {
