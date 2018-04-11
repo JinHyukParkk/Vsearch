@@ -1,3130 +1,762 @@
-<<<<<<< HEAD
-2018-04-11 17:34:46,116 - root - INFO - ########################
-2018-04-11 17:34:46,116 - root - INFO - ### Python Start ###
-2018-04-11 17:34:46,116 - root - INFO - ### Split START ###
-2018-04-11 17:34:46,116 - root - INFO - notting_hill.flac
-2018-04-11 17:34:55,261 - root - INFO - ### Split End ###
-2018-04-11 17:34:55,261 - root - INFO - ### SpeechAPI START ###
-2018-04-11 17:34:55,261 - root - INFO - ./audioFile_python/result0.flac
-2018-04-11 17:34:55,262 - root - INFO - ./audioFile_python/result1.flac
-2018-04-11 17:34:55,263 - root - INFO - ./audioFile_python/result2.flac
-2018-04-11 17:34:55,264 - root - INFO - ./audioFile_python/result3.flac
-2018-04-11 17:34:55,264 - root - INFO - ./audioFile_python/result4.flac
-2018-04-11 17:34:55,265 - root - INFO - ./audioFile_python/result5.flac
-2018-04-11 17:34:55,266 - root - INFO - ./audioFile_python/result6.flac
-2018-04-11 17:34:55,266 - root - INFO - ./audioFile_python/result7.flac
-2018-04-11 17:34:55,267 - root - INFO - ./audioFile_python/result8.flac
-2018-04-11 17:34:55,268 - root - INFO - ./audioFile_python/result9.flac
-2018-04-11 17:34:55,269 - root - INFO - ./audioFile_python/result10.flac
-2018-04-11 17:34:55,269 - root - INFO - ./audioFile_python/result11.flac
-2018-04-11 17:34:55,269 - root - INFO - ./audioFile_python/result12.flac
-2018-04-11 17:34:55,270 - root - INFO - ./audioFile_python/result13.flac
-2018-04-11 17:34:55,270 - root - INFO - ./audioFile_python/result14.flac
-2018-04-11 17:34:55,271 - root - INFO - ./audioFile_python/result15.flac
-2018-04-11 17:34:55,271 - root - INFO - ./audioFile_python/result16.flac
-2018-04-11 17:34:55,272 - root - INFO - ./audioFile_python/result17.flac
-2018-04-11 17:34:55,272 - root - INFO - ./audioFile_python/result18.flac
-2018-04-11 17:34:55,273 - root - INFO - ./audioFile_python/result19.flac
-2018-04-11 17:34:55,273 - root - INFO - ./audioFile_python/result20.flac
-2018-04-11 17:34:55,274 - root - INFO - ./audioFile_python/result21.flac
-2018-04-11 17:34:55,274 - root - INFO - ./audioFile_python/result22.flac
-2018-04-11 17:34:55,275 - root - INFO - ./audioFile_python/result23.flac
-2018-04-11 17:34:55,275 - root - INFO - ./audioFile_python/result24.flac
-2018-04-11 17:34:55,276 - root - INFO - ./audioFile_python/result25.flac
-2018-04-11 17:34:55,278 - root - INFO - ./audioFile_python/result26.flac
-2018-04-11 17:34:55,278 - root - INFO - ./audioFile_python/result27.flac
-2018-04-11 17:34:55,278 - root - INFO - ./audioFile_python/result28.flac
-2018-04-11 17:34:55,279 - root - INFO - ./audioFile_python/result29.flac
-2018-04-11 17:34:55,280 - root - INFO - ./audioFile_python/result30.flac
-2018-04-11 17:34:55,280 - root - INFO - ./audioFile_python/result31.flac
-2018-04-11 17:34:55,280 - root - INFO - ./audioFile_python/result32.flac
-2018-04-11 17:34:55,281 - root - INFO - ./audioFile_python/result33.flac
-2018-04-11 17:34:55,281 - root - INFO - ./audioFile_python/result34.flac
-2018-04-11 17:34:55,282 - root - INFO - ./audioFile_python/result35.flac
-2018-04-11 17:34:55,282 - root - INFO - ./audioFile_python/result36.flac
-2018-04-11 17:34:55,283 - root - INFO - ./audioFile_python/result37.flac
-2018-04-11 17:34:55,283 - root - INFO - ./audioFile_python/result38.flac
-2018-04-11 17:34:55,284 - root - INFO - ./audioFile_python/result39.flac
-2018-04-11 17:34:55,284 - root - INFO - ./audioFile_python/result40.flac
-2018-04-11 17:34:55,285 - root - INFO - ./audioFile_python/result41.flac
-2018-04-11 17:34:55,285 - root - INFO - ./audioFile_python/result42.flac
-2018-04-11 17:34:55,286 - root - INFO - ./audioFile_python/result43.flac
-2018-04-11 17:34:55,286 - root - INFO - ./audioFile_python/result44.flac
-2018-04-11 17:34:55,287 - root - INFO - ./audioFile_python/result45.flac
-2018-04-11 17:34:55,288 - root - INFO - ./audioFile_python/result46.flac
-2018-04-11 17:34:55,288 - root - INFO - ./audioFile_python/result47.flac
-2018-04-11 17:34:55,289 - root - INFO - ./audioFile_python/result48.flac
-2018-04-11 17:34:55,289 - root - INFO - ./audioFile_python/result49.flac
-2018-04-11 17:34:55,289 - root - INFO - ./audioFile_python/result50.flac
-2018-04-11 17:34:55,290 - root - INFO - ./audioFile_python/result51.flac
-2018-04-11 17:34:55,291 - root - INFO - ./audioFile_python/result52.flac
-2018-04-11 17:34:55,291 - root - INFO - ./audioFile_python/result53.flac
-2018-04-11 17:34:55,292 - root - INFO - ./audioFile_python/result54.flac
-2018-04-11 17:34:55,292 - root - INFO - ./audioFile_python/result55.flac
-2018-04-11 17:34:55,293 - root - INFO - ./audioFile_python/result56.flac
-2018-04-11 17:34:55,294 - root - INFO - ./audioFile_python/result57.flac
-2018-04-11 17:34:55,296 - root - INFO - ./audioFile_python/result58.flac
-2018-04-11 17:34:55,297 - root - INFO - ./audioFile_python/result59.flac
-2018-04-11 17:34:55,298 - root - INFO - ./audioFile_python/result60.flac
-2018-04-11 17:34:55,299 - root - INFO - ./audioFile_python/result61.flac
-2018-04-11 17:34:55,303 - root - INFO - ./audioFile_python/result62.flac
-2018-04-11 17:34:55,304 - root - INFO - ./audioFile_python/result63.flac
-2018-04-11 17:34:55,306 - root - INFO - ./audioFile_python/result64.flac
-2018-04-11 17:34:55,308 - root - INFO - ./audioFile_python/result65.flac
-2018-04-11 17:34:57,997 - root - INFO - [alternatives {
-  transcript: "then"
-  confidence: 0.9709000587463379
-}
-]
-2018-04-11 17:34:57,997 - root - INFO - [alternatives {
-  transcript: "or"
-  confidence: 0.9026205539703369
-}
-]
-2018-04-11 17:34:58,045 - root - INFO - [alternatives {
+2018-04-11 19:54:15,768 - root - INFO - ########################
+2018-04-11 19:54:15,768 - root - INFO - ### Python Start ###
+2018-04-11 19:54:15,768 - root - INFO - ### Split START ###
+2018-04-11 19:54:15,768 - root - INFO - notting_hill.flac
+2018-04-11 19:54:24,262 - root - INFO - ### Split End ###
+2018-04-11 19:54:24,262 - root - INFO - ### SpeechAPI START ###
+2018-04-11 19:54:24,262 - root - INFO - ./audioFile_python/result0.flac
+2018-04-11 19:54:24,262 - root - INFO - ./audioFile_python/result1.flac
+2018-04-11 19:54:24,263 - root - INFO - ./audioFile_python/result2.flac
+2018-04-11 19:54:24,264 - root - INFO - ./audioFile_python/result3.flac
+2018-04-11 19:54:24,264 - root - INFO - ./audioFile_python/result4.flac
+2018-04-11 19:54:24,265 - root - INFO - ./audioFile_python/result5.flac
+2018-04-11 19:54:24,265 - root - INFO - ./audioFile_python/result6.flac
+2018-04-11 19:54:24,265 - root - INFO - ./audioFile_python/result7.flac
+2018-04-11 19:54:24,266 - root - INFO - ./audioFile_python/result8.flac
+2018-04-11 19:54:24,266 - root - INFO - ./audioFile_python/result9.flac
+2018-04-11 19:54:24,267 - root - INFO - ./audioFile_python/result10.flac
+2018-04-11 19:54:24,267 - root - INFO - ./audioFile_python/result11.flac
+2018-04-11 19:54:24,268 - root - INFO - ./audioFile_python/result12.flac
+2018-04-11 19:54:24,268 - root - INFO - ./audioFile_python/result13.flac
+2018-04-11 19:54:24,268 - root - INFO - ./audioFile_python/result14.flac
+2018-04-11 19:54:24,269 - root - INFO - ./audioFile_python/result15.flac
+2018-04-11 19:54:24,269 - root - INFO - ./audioFile_python/result16.flac
+2018-04-11 19:54:24,270 - root - INFO - ./audioFile_python/result17.flac
+2018-04-11 19:54:24,270 - root - INFO - ./audioFile_python/result18.flac
+2018-04-11 19:54:24,270 - root - INFO - ./audioFile_python/result19.flac
+2018-04-11 19:54:24,271 - root - INFO - ./audioFile_python/result20.flac
+2018-04-11 19:54:24,271 - root - INFO - ./audioFile_python/result21.flac
+2018-04-11 19:54:24,272 - root - INFO - ./audioFile_python/result22.flac
+2018-04-11 19:54:24,272 - root - INFO - ./audioFile_python/result23.flac
+2018-04-11 19:54:24,273 - root - INFO - ./audioFile_python/result24.flac
+2018-04-11 19:54:24,273 - root - INFO - ./audioFile_python/result25.flac
+2018-04-11 19:54:24,274 - root - INFO - ./audioFile_python/result26.flac
+2018-04-11 19:54:24,274 - root - INFO - ./audioFile_python/result27.flac
+2018-04-11 19:54:24,274 - root - INFO - ./audioFile_python/result28.flac
+2018-04-11 19:54:24,275 - root - INFO - ./audioFile_python/result29.flac
+2018-04-11 19:54:24,275 - root - INFO - ./audioFile_python/result30.flac
+2018-04-11 19:54:24,275 - root - INFO - ./audioFile_python/result31.flac
+2018-04-11 19:54:24,276 - root - INFO - ./audioFile_python/result32.flac
+2018-04-11 19:54:24,276 - root - INFO - ./audioFile_python/result33.flac
+2018-04-11 19:54:24,277 - root - INFO - ./audioFile_python/result34.flac
+2018-04-11 19:54:24,277 - root - INFO - ./audioFile_python/result35.flac
+2018-04-11 19:54:24,279 - root - INFO - ./audioFile_python/result36.flac
+2018-04-11 19:54:24,279 - root - INFO - ./audioFile_python/result37.flac
+2018-04-11 19:54:24,279 - root - INFO - ./audioFile_python/result38.flac
+2018-04-11 19:54:24,280 - root - INFO - ./audioFile_python/result39.flac
+2018-04-11 19:54:24,280 - root - INFO - ./audioFile_python/result40.flac
+2018-04-11 19:54:24,281 - root - INFO - ./audioFile_python/result41.flac
+2018-04-11 19:54:24,281 - root - INFO - ./audioFile_python/result42.flac
+2018-04-11 19:54:24,281 - root - INFO - ./audioFile_python/result43.flac
+2018-04-11 19:54:24,282 - root - INFO - ./audioFile_python/result44.flac
+2018-04-11 19:54:24,282 - root - INFO - ./audioFile_python/result45.flac
+2018-04-11 19:54:24,282 - root - INFO - ./audioFile_python/result46.flac
+2018-04-11 19:54:24,283 - root - INFO - ./audioFile_python/result47.flac
+2018-04-11 19:54:24,283 - root - INFO - ./audioFile_python/result48.flac
+2018-04-11 19:54:24,284 - root - INFO - ./audioFile_python/result49.flac
+2018-04-11 19:54:24,284 - root - INFO - ./audioFile_python/result50.flac
+2018-04-11 19:54:24,284 - root - INFO - ./audioFile_python/result51.flac
+2018-04-11 19:54:24,285 - root - INFO - ./audioFile_python/result52.flac
+2018-04-11 19:54:24,285 - root - INFO - ./audioFile_python/result53.flac
+2018-04-11 19:54:24,285 - root - INFO - ./audioFile_python/result54.flac
+2018-04-11 19:54:24,285 - root - INFO - ./audioFile_python/result55.flac
+2018-04-11 19:54:24,286 - root - INFO - ./audioFile_python/result56.flac
+2018-04-11 19:54:24,286 - root - INFO - ./audioFile_python/result57.flac
+2018-04-11 19:54:24,287 - root - INFO - ./audioFile_python/result58.flac
+2018-04-11 19:54:24,287 - root - INFO - ./audioFile_python/result59.flac
+2018-04-11 19:54:24,287 - root - INFO - ./audioFile_python/result60.flac
+2018-04-11 19:54:24,288 - root - INFO - ./audioFile_python/result61.flac
+2018-04-11 19:54:27,277 - root - INFO - []
+2018-04-11 19:54:27,443 - root - INFO - [alternatives {
   transcript: "notify"
-  confidence: 0.6747654676437378
+  confidence: 0.719864010810852
 }
 ]
-2018-04-11 17:34:58,293 - root - INFO - [alternatives {
-  transcript: "see if you could like me again"
-  confidence: 0.9706924557685852
+2018-04-11 19:54:27,544 - root - INFO - [alternatives {
+  transcript: "then"
+  confidence: 0.9938145279884338
 }
 ]
-2018-04-11 17:34:58,400 - root - INFO - []
-2018-04-11 17:34:58,470 - root - INFO - [alternatives {
-  transcript: "I hoped there would be but now I\'m"
-  confidence: 0.8866583704948425
-}
-]
-2018-04-11 17:34:58,470 - root - INFO - [alternatives {
-  transcript: "I\'m a fatty level-headed bloke"
-  confidence: 0.8877275586128235
-}
-]
-2018-04-11 17:34:58,489 - root - INFO - [alternatives {
-  transcript: "course"
-  confidence: 0.8093087673187256
-}
-]
-2018-04-11 17:34:58,617 - root - INFO - [alternatives {
-  transcript: "butter"
-  confidence: 0.8411003947257996
-}
-]
-2018-04-11 17:34:58,635 - root - INFO - [alternatives {
-  transcript: "yeah and Out of Love"
-  confidence: 0.7315306067466736
-}
-]
-2018-04-11 17:34:58,762 - root - INFO - [alternatives {
-  transcript: "sure there aren\'t"
-  confidence: 0.8120495676994324
-}
-]
-2018-04-11 17:34:58,763 - root - INFO - [alternatives {
-  transcript: "consider"
-  confidence: 0.82861328125
-}
-]
-2018-04-11 17:34:58,872 - root - INFO - [alternatives {
+2018-04-11 19:54:27,549 - root - INFO - [alternatives {
   transcript: "I heard"
-  confidence: 0.7178778052330017
+  confidence: 0.6829501986503601
 }
 ]
-2018-04-11 17:34:59,039 - root - INFO - [alternatives {
-  transcript: "danger it seems like a"
-  confidence: 0.8847467303276062
-}
-]
-2018-04-11 17:34:59,250 - root - INFO - [alternatives {
-  transcript: "but yesterday the actor lost you who I was and you just dismissed me out of that"
-  confidence: 0.8283820748329163
-}
-]
-2018-04-11 17:34:59,518 - root - INFO - []
-2018-04-11 17:34:59,567 - root - INFO - []
-2018-04-11 17:34:59,663 - root - INFO - [alternatives {
-  transcript: "can I just say no to you"
-  confidence: 0.943422794342041
-}
-]
-2018-04-11 17:34:59,711 - root - INFO - [alternatives {
-  transcript: "request"
-  confidence: 0.7037259936332703
-}
-]
-2018-04-11 17:34:59,713 - root - INFO - [alternatives {
-  transcript: "Perfect Situation file temporary"
-  confidence: 0.8126547336578369
-}
-]
-2018-04-11 17:34:59,750 - root - INFO - []
-2018-04-11 17:34:59,844 - root - INFO - [alternatives {
-  transcript: "decision"
-  confidence: 0.8617393970489502
-}
-]
-2018-04-11 17:34:59,981 - root - INFO - [alternatives {
-  transcript: "yes"
-  confidence: 0.9813084006309509
-}
-]
-2018-04-11 17:35:00,125 - root - INFO - [alternatives {
-  transcript: "are the two of you"
-  confidence: 0.971879780292511
-}
-]
-2018-04-11 17:35:00,141 - root - INFO - []
-2018-04-11 17:35:00,330 - root - INFO - [alternatives {
-  transcript: "once again cause the side is I would absolutely expect to be"
-  confidence: 0.8407965302467346
-}
-]
-2018-04-11 17:35:00,371 - root - INFO - [alternatives {
-  transcript: "took it in the pink shirt"
-  confidence: 0.8651298880577087
-}
-]
-2018-04-11 17:35:00,371 - root - INFO - [alternatives {
-  transcript: "I\'ll just be going then it\'s nice to see you"
-  confidence: 0.9441379904747009
-}
-]
-2018-04-11 17:35:00,373 - root - INFO - [alternatives {
-  transcript: "who won the world knows who you are my mother has trouble remembering my name"
-  confidence: 0.9723106622695923
-}
-]
-2018-04-11 17:35:00,425 - root - INFO - [alternatives {
-  transcript: "but what would you say I\'m sorry just the one question please it\'s all right"
-  confidence: 0.8406627178192139
-}
-, alternatives {
-  transcript: " I was just wondering if"
-  confidence: 0.9873010516166687
-}
-]
-2018-04-11 17:35:00,447 - root - INFO - [alternatives {
-  transcript: "asking him to love her"
-  confidence: 0.9497294425964355
-}
-]
-2018-04-11 17:35:00,597 - root - INFO - []
-2018-04-11 17:35:00,606 - root - INFO - [alternatives {
-  transcript: "with you I\'m enrolled"
-  confidence: 0.9306809902191162
-}
-]
-2018-04-11 17:35:00,618 - root - INFO - [alternatives {
-  transcript: "recover if I was"
-  confidence: 0.981096088886261
-}
-]
-2018-04-11 17:35:00,648 - root - INFO - []
-2018-04-11 17:35:00,648 - root - INFO - [alternatives {
-  transcript: "don\'t forget"
-  confidence: 0.9880550503730774
-}
-]
-2018-04-11 17:35:00,769 - root - INFO - []
-2018-04-11 17:35:00,770 - root - INFO - [alternatives {
-  transcript: "starting in front of a boy"
-  confidence: 0.9596394896507263
-}
-]
-2018-04-11 17:35:00,890 - root - INFO - [alternatives {
-  transcript: "are there any circumstances in which"
-  confidence: 0.9873371124267578
-}
-]
-2018-04-11 17:35:00,892 - root - INFO - [alternatives {
-  transcript: "adopt prick got down on his knees and begged you to reconsider whether you would in fact"
-  confidence: 0.9218157529830933
-}
-]
-2018-04-11 17:35:00,979 - root - INFO - [alternatives {
-  transcript: "we expect me to tell the truth about my life to the most Indiscreet man in England"
-  confidence: 0.9239815473556519
-}
-]
-2018-04-11 17:35:01,045 - root - INFO - [alternatives {
-  transcript: "go away today but I"
-  confidence: 0.8892748355865479
-}
-]
-2018-04-11 17:35:01,149 - root - INFO - []
-2018-04-11 17:35:01,185 - root - INFO - [alternatives {
-  transcript: "wondered if I didn\'t"
-  confidence: 0.9522302746772766
-}
-]
-2018-04-11 17:35:01,205 - root - INFO - [alternatives {
+2018-04-11 19:54:27,606 - root - INFO - [alternatives {
   transcript: "RI"
-  confidence: 0.9803162217140198
+  confidence: 0.6826730370521545
 }
 ]
-2018-04-11 17:35:01,310 - root - INFO - [alternatives {
-  transcript: "Outlook"
-  confidence: 0.812739372253418
-}
-]
-2018-04-11 17:35:01,474 - root - INFO - []
-2018-04-11 17:35:01,505 - root - INFO - [alternatives {
-  transcript: "the Scott"
-  confidence: 0.7879295945167542
-}
-]
-2018-04-11 17:35:01,619 - root - INFO - [alternatives {
-  transcript: "thing isn\'t really real"
-  confidence: 0.8864742517471313
-}
-]
-2018-04-11 17:35:01,678 - root - INFO - []
-2018-04-11 17:35:01,706 - root - INFO - [alternatives {
-  transcript: "soccer soccer"
-  confidence: 0.8897730708122253
-}
-]
-2018-04-11 17:35:01,746 - root - INFO - [alternatives {
-  transcript: "whether you might let me see you a little"
-  confidence: 0.9222556352615356
-}
-]
-2018-04-11 17:35:01,747 - root - INFO - [alternatives {
-  transcript: "Maybe"
-  confidence: 0.8128043413162231
-}
-]
-2018-04-11 17:35:01,779 - root - INFO - [alternatives {
-  transcript: "also just a girl"
-  confidence: 0.8730008006095886
-}
-]
-2018-04-11 17:35:01,932 - root - INFO - [alternatives {
-  transcript: "might be more than just good friends"
-  confidence: 0.9743651151657104
-}
-]
-2018-04-11 17:35:02,099 - root - INFO - [alternatives {
-  transcript: "my relatively inexperienced how would I fear not"
-  confidence: 0.8689485192298889
-}
-]
-2018-04-11 17:35:02,238 - root - INFO - [alternatives {
-  transcript: "definitely"
-  confidence: 0.9066487550735474
-}
-]
-2018-04-11 17:35:02,335 - root - INFO - [alternatives {
-  transcript: "microphone on"
-  confidence: 0.8601866364479065
-}
-]
-2018-04-11 17:35:02,494 - root - INFO - [alternatives {
-  transcript: "text next just wondered whether if Mr Taco realized he been"
-  confidence: 0.8488147258758545
-}
-]
-2018-04-11 17:35:02,728 - root - INFO - [alternatives {
-  transcript: "really is real no it\'s"
-  confidence: 0.7119558453559875
-}
-, alternatives {
-  transcript: " I live in Notting Hill you live in Beverly Hills"
-  confidence: 0.9854536056518555
-}
-]
-2018-04-11 17:35:03,273 - root - INFO - [alternatives {
-  transcript: "added too many pictures of you too many"
-  confidence: 0.8287510871887207
-}
-, alternatives {
-  transcript: " are you driving I\'d be"
-  confidence: 0.8692455291748047
-}
-]
-2018-04-11 17:35:03,310 - root - INFO - [alternatives {
-  transcript: "it turned out that this person"
-  confidence: 0.977292537689209
-}
-]
-2018-04-11 17:35:03,365 - root - INFO - [alternatives {
-  transcript: "course I"
-  confidence: 0.8639872074127197
-}
-]
-2018-04-11 17:35:03,733 - root - INFO - []
-2018-04-11 17:35:04,539 - root - INFO - []
-2018-04-11 17:35:06,807 - root - INFO - [alternatives {
-  transcript: "yes I believe I would"
-  confidence: 0.9779089093208313
-}
-, alternatives {
-  transcript: " that\'s very good news"
-  confidence: 0.9876290559768677
-}
-, alternatives {
-  transcript: " the readers of wholesome Hound will be absolutely Delight"
-  confidence: 0.8086906671524048
-}
-, alternatives {
-  transcript: " Frank Dominic if you\'d like to ask you a question again"
-  confidence: 0.9165802001953125
-}
-]
-2018-04-11 17:35:06,819 - root - INFO - ### SpeechAPI END ###
-2018-04-11 17:35:06,819 - root - INFO - nonsilent_len : 66 dict _ len : 66
-2018-04-11 17:35:06,820 - root - INFO - ### Create srt START ###
-2018-04-11 17:35:06,821 - root - INFO - ### Create json START ###
-2018-04-11 17:35:07,154 - root - INFO - ### Create File END ###
-2018-04-11 17:35:07,155 - root - INFO - ### Python End ###
-2018-04-11 17:35:07,155 - root - INFO - ########################
-2018-04-11 19:00:27,586 - root - INFO - ########################
-2018-04-11 19:00:27,587 - root - INFO - ### Python Start ###
-2018-04-11 19:00:27,587 - root - INFO - ### Split START ###
-2018-04-11 19:00:27,587 - root - INFO - notting_hill.flac
-2018-04-11 19:00:36,633 - root - INFO - ### Split End ###
-2018-04-11 19:00:36,633 - root - INFO - ### SpeechAPI START ###
-2018-04-11 19:00:36,633 - root - INFO - ./audioFile_python/result0.flac
-2018-04-11 19:00:36,634 - root - INFO - ./audioFile_python/result1.flac
-2018-04-11 19:00:36,634 - root - INFO - ./audioFile_python/result2.flac
-2018-04-11 19:00:36,636 - root - INFO - ./audioFile_python/result3.flac
-2018-04-11 19:00:36,636 - root - INFO - ./audioFile_python/result4.flac
-2018-04-11 19:00:36,636 - root - INFO - ./audioFile_python/result5.flac
-2018-04-11 19:00:36,637 - root - INFO - ./audioFile_python/result6.flac
-2018-04-11 19:00:36,637 - root - INFO - ./audioFile_python/result7.flac
-2018-04-11 19:00:36,638 - root - INFO - ./audioFile_python/result8.flac
-2018-04-11 19:00:36,638 - root - INFO - ./audioFile_python/result9.flac
-2018-04-11 19:00:36,639 - root - INFO - ./audioFile_python/result10.flac
-2018-04-11 19:00:36,639 - root - INFO - ./audioFile_python/result11.flac
-2018-04-11 19:00:36,639 - root - INFO - ./audioFile_python/result12.flac
-2018-04-11 19:00:36,640 - root - INFO - ./audioFile_python/result13.flac
-2018-04-11 19:00:36,640 - root - INFO - ./audioFile_python/result14.flac
-2018-04-11 19:00:36,641 - root - INFO - ./audioFile_python/result15.flac
-2018-04-11 19:00:36,641 - root - INFO - ./audioFile_python/result16.flac
-2018-04-11 19:00:36,642 - root - INFO - ./audioFile_python/result17.flac
-2018-04-11 19:00:36,642 - root - INFO - ./audioFile_python/result18.flac
-2018-04-11 19:00:36,643 - root - INFO - ./audioFile_python/result19.flac
-2018-04-11 19:00:36,643 - root - INFO - ./audioFile_python/result20.flac
-2018-04-11 19:00:36,644 - root - INFO - ./audioFile_python/result21.flac
-2018-04-11 19:00:36,644 - root - INFO - ./audioFile_python/result22.flac
-2018-04-11 19:00:36,644 - root - INFO - ./audioFile_python/result23.flac
-2018-04-11 19:00:36,645 - root - INFO - ./audioFile_python/result24.flac
-2018-04-11 19:00:36,646 - root - INFO - ./audioFile_python/result25.flac
-2018-04-11 19:00:36,646 - root - INFO - ./audioFile_python/result26.flac
-2018-04-11 19:00:36,646 - root - INFO - ./audioFile_python/result27.flac
-2018-04-11 19:00:36,647 - root - INFO - ./audioFile_python/result28.flac
-2018-04-11 19:00:36,648 - root - INFO - ./audioFile_python/result29.flac
-2018-04-11 19:00:36,649 - root - INFO - ./audioFile_python/result30.flac
-2018-04-11 19:00:36,650 - root - INFO - ./audioFile_python/result31.flac
-2018-04-11 19:00:36,650 - root - INFO - ./audioFile_python/result32.flac
-2018-04-11 19:00:36,650 - root - INFO - ./audioFile_python/result33.flac
-2018-04-11 19:00:36,651 - root - INFO - ./audioFile_python/result34.flac
-2018-04-11 19:00:36,651 - root - INFO - ./audioFile_python/result35.flac
-2018-04-11 19:00:36,652 - root - INFO - ./audioFile_python/result36.flac
-2018-04-11 19:00:36,652 - root - INFO - ./audioFile_python/result37.flac
-2018-04-11 19:00:36,652 - root - INFO - ./audioFile_python/result38.flac
-2018-04-11 19:00:36,653 - root - INFO - ./audioFile_python/result39.flac
-2018-04-11 19:00:36,653 - root - INFO - ./audioFile_python/result40.flac
-2018-04-11 19:00:36,653 - root - INFO - ./audioFile_python/result41.flac
-2018-04-11 19:00:36,654 - root - INFO - ./audioFile_python/result42.flac
-2018-04-11 19:00:36,654 - root - INFO - ./audioFile_python/result43.flac
-2018-04-11 19:00:36,654 - root - INFO - ./audioFile_python/result44.flac
-2018-04-11 19:00:36,655 - root - INFO - ./audioFile_python/result45.flac
-2018-04-11 19:00:36,655 - root - INFO - ./audioFile_python/result46.flac
-2018-04-11 19:00:36,656 - root - INFO - ./audioFile_python/result47.flac
-2018-04-11 19:00:36,656 - root - INFO - ./audioFile_python/result48.flac
-2018-04-11 19:00:36,657 - root - INFO - ./audioFile_python/result49.flac
-2018-04-11 19:00:36,657 - root - INFO - ./audioFile_python/result50.flac
-2018-04-11 19:00:36,658 - root - INFO - ./audioFile_python/result51.flac
-2018-04-11 19:00:36,658 - root - INFO - ./audioFile_python/result52.flac
-2018-04-11 19:00:36,658 - root - INFO - ./audioFile_python/result53.flac
-2018-04-11 19:00:36,659 - root - INFO - ./audioFile_python/result54.flac
-2018-04-11 19:00:36,659 - root - INFO - ./audioFile_python/result55.flac
-2018-04-11 19:00:36,660 - root - INFO - ./audioFile_python/result56.flac
-2018-04-11 19:00:36,661 - root - INFO - ./audioFile_python/result57.flac
-2018-04-11 19:00:36,662 - root - INFO - ./audioFile_python/result58.flac
-2018-04-11 19:00:36,663 - root - INFO - ./audioFile_python/result59.flac
-2018-04-11 19:00:36,665 - root - INFO - ./audioFile_python/result60.flac
-2018-04-11 19:00:36,667 - root - INFO - ./audioFile_python/result61.flac
-2018-04-11 19:00:36,669 - root - INFO - ./audioFile_python/result62.flac
-2018-04-11 19:00:36,670 - root - INFO - ./audioFile_python/result63.flac
-2018-04-11 19:00:36,671 - root - INFO - ./audioFile_python/result64.flac
-2018-04-11 19:00:36,672 - root - INFO - ./audioFile_python/result65.flac
-2018-04-11 19:00:38,794 - root - INFO - []
-2018-04-11 19:00:38,974 - root - INFO - []
-2018-04-11 19:00:39,555 - root - INFO - [alternatives {
-  transcript: "with you I\'m enrolled"
-  confidence: 0.9471186399459839
-}
-]
-2018-04-11 19:00:39,602 - root - INFO - []
-2018-04-11 19:00:40,027 - root - INFO - [alternatives {
+2018-04-11 19:54:27,619 - root - INFO - [alternatives {
   transcript: "yes"
-  confidence: 0.9813746213912964
+  confidence: 0.9809978604316711
 }
 ]
-2018-04-11 19:00:40,339 - root - INFO - [alternatives {
+2018-04-11 19:54:27,659 - root - INFO - [alternatives {
+  transcript: "the Scott"
+  confidence: 0.6874163150787354
+}
+]
+2018-04-11 19:54:27,693 - root - INFO - []
+2018-04-11 19:54:27,748 - root - INFO - [alternatives {
+  transcript: "are the two of you"
+  confidence: 0.9749345183372498
+}
+]
+2018-04-11 19:54:27,782 - root - INFO - []
+2018-04-11 19:54:27,870 - root - INFO - []
+2018-04-11 19:54:27,887 - root - INFO - [alternatives {
   transcript: "consider"
-  confidence: 0.8326976299285889
+  confidence: 0.8758171796798706
 }
 ]
-2018-04-11 19:00:40,528 - root - INFO - [alternatives {
-  transcript: "course"
-  confidence: 0.8928172588348389
-}
-]
-2018-04-11 19:00:40,567 - root - INFO - [alternatives {
-  transcript: "course I"
-  confidence: 0.8625521659851074
-}
-]
-2018-04-11 19:00:40,603 - root - INFO - [alternatives {
-  transcript: "DACA news"
-  confidence: 0.7488620281219482
-}
-]
-2018-04-11 19:00:40,679 - root - INFO - []
-2018-04-11 19:00:40,699 - root - INFO - []
-2018-04-11 19:00:40,702 - root - INFO - [alternatives {
-  transcript: "definitely"
-  confidence: 0.8945474624633789
-}
-]
-2018-04-11 19:00:40,779 - root - INFO - [alternatives {
-  transcript: "sure there aren\'t"
-  confidence: 0.8209483623504639
-}
-]
-2018-04-11 19:00:40,808 - root - INFO - [alternatives {
-  transcript: "then"
-  confidence: 0.9630603790283203
-}
-]
-2018-04-11 19:00:40,826 - root - INFO - []
-2018-04-11 19:00:40,885 - root - INFO - []
-2018-04-11 19:00:40,887 - root - INFO - []
-2018-04-11 19:00:41,019 - root - INFO - [alternatives {
-  transcript: "go away today but I"
-  confidence: 0.8213757872581482
-}
-]
-2018-04-11 19:00:41,075 - root - INFO - [alternatives {
-  transcript: "see if you could like me again"
-  confidence: 0.9633316993713379
-}
-]
-2018-04-11 19:00:41,096 - root - INFO - [alternatives {
-  transcript: "RI"
-  confidence: 0.9782850742340088
-}
-]
-2018-04-11 19:00:41,209 - root - INFO - [alternatives {
-  transcript: "request"
-  confidence: 0.7708114385604858
-}
-]
-2018-04-11 19:00:41,210 - root - INFO - [alternatives {
+2018-04-11 19:54:27,902 - root - INFO - []
+2018-04-11 19:54:27,919 - root - INFO - [alternatives {
   transcript: "butter"
-  confidence: 0.8740376234054565
+  confidence: 0.9379965662956238
 }
 ]
-2018-04-11 19:00:41,326 - root - INFO - [alternatives {
-  transcript: "are there any circumstances in which"
-  confidence: 0.9873815178871155
+2018-04-11 19:54:28,059 - root - INFO - [alternatives {
+  transcript: "of course"
+  confidence: 0.900185763835907
 }
 ]
-2018-04-11 19:00:41,378 - root - INFO - [alternatives {
-  transcript: "Outlook"
-  confidence: 0.8136157989501953
+2018-04-11 19:54:28,067 - root - INFO - [alternatives {
+  transcript: "sure there aren\'t"
+  confidence: 0.8102198839187622
 }
 ]
-2018-04-11 19:00:41,426 - root - INFO - [alternatives {
-  transcript: "or"
-  confidence: 0.9022946953773499
-}
-]
-2018-04-11 19:00:41,463 - root - INFO - []
-2018-04-11 19:00:41,506 - root - INFO - [alternatives {
-  transcript: "notify"
-  confidence: 0.6918095946311951
-}
-]
-2018-04-11 19:00:41,587 - root - INFO - [alternatives {
-  transcript: "microphone on"
-  confidence: 0.8241956233978271
-}
-]
-2018-04-11 19:00:41,691 - root - INFO - []
-2018-04-11 19:00:41,694 - root - INFO - [alternatives {
-  transcript: "starting in front of a boy"
-  confidence: 0.8889985680580139
-}
-]
-2018-04-11 19:00:41,819 - root - INFO - [alternatives {
-  transcript: "the Scott"
-  confidence: 0.7542412877082825
-}
-]
-2018-04-11 19:00:41,822 - root - INFO - [alternatives {
-  transcript: "are the two of you"
-  confidence: 0.9755752682685852
-}
-]
-2018-04-11 19:00:41,899 - root - INFO - [alternatives {
-  transcript: "wondered if I didn\'t"
-  confidence: 0.9482114911079407
-}
-]
-2018-04-11 19:00:41,916 - root - INFO - [alternatives {
-  transcript: "also just a girl"
-  confidence: 0.8458298444747925
-}
-]
-2018-04-11 19:00:42,122 - root - INFO - [alternatives {
-  transcript: "recover if I was"
-  confidence: 0.9827843904495239
-}
-]
-2018-04-11 19:00:42,132 - root - INFO - [alternatives {
-  transcript: "I hoped there would be but now I\'m"
-  confidence: 0.8778036236763
-}
-]
-2018-04-11 19:00:42,191 - root - INFO - [alternatives {
-  transcript: "danger it seems like a"
-  confidence: 0.9000841975212097
-}
-]
-2018-04-11 19:00:42,200 - root - INFO - [alternatives {
-  transcript: "might be more than just good friends"
-  confidence: 0.9791885018348694
-}
-]
-2018-04-11 19:00:42,244 - root - INFO - [alternatives {
-  transcript: "a lot Maybe"
-  confidence: 0.552997350692749
-}
-]
-2018-04-11 19:00:42,298 - root - INFO - [alternatives {
-  transcript: "asking him to love her"
-  confidence: 0.9473606944084167
-}
-]
-2018-04-11 19:00:42,307 - root - INFO - [alternatives {
+2018-04-11 19:54:28,424 - root - INFO - [alternatives {
   transcript: "well bucket"
-  confidence: 0.6101396083831787
+  confidence: 0.6424766778945923
 }
 ]
-2018-04-11 19:00:42,398 - root - INFO - [alternatives {
-  transcript: "I\'ll just be going then it\'s nice to see you"
-  confidence: 0.9278682470321655
+2018-04-11 19:54:28,443 - root - INFO - [alternatives {
+  transcript: "go away today but I"
+  confidence: 0.8846204280853271
 }
 ]
-2018-04-11 19:00:42,475 - root - INFO - [alternatives {
-  transcript: "yeah and Out of Love"
-  confidence: 0.783304750919342
+2018-04-11 19:54:28,536 - root - INFO - [alternatives {
+  transcript: "country crest"
+  confidence: 0.7553152441978455
 }
 ]
-2018-04-11 19:00:42,607 - root - INFO - []
-2018-04-11 19:00:42,614 - root - INFO - [alternatives {
-  transcript: "it turned out that this person"
-  confidence: 0.9740495681762695
+2018-04-11 19:54:28,556 - root - INFO - [alternatives {
+  transcript: "your microphone on"
+  confidence: 0.6442511081695557
 }
 ]
-2018-04-11 19:00:42,659 - root - INFO - [alternatives {
-  transcript: "don\'t forget"
-  confidence: 0.9880550503730774
+2018-04-11 19:54:28,569 - root - INFO - [alternatives {
+  transcript: "recover if I was"
+  confidence: 0.9843839406967163
 }
 ]
-2018-04-11 19:00:42,670 - root - INFO - [alternatives {
+2018-04-11 19:54:28,600 - root - INFO - [alternatives {
+  transcript: "Maybe"
+  confidence: 0.8882555961608887
+}
+]
+2018-04-11 19:54:28,700 - root - INFO - [alternatives {
+  transcript: "starting in front of a boy"
+  confidence: 0.9695854187011719
+}
+]
+2018-04-11 19:54:28,727 - root - INFO - [alternatives {
+  transcript: "with you I\'m enrolled"
+  confidence: 0.8892334699630737
+}
+]
+2018-04-11 19:54:28,861 - root - INFO - [alternatives {
+  transcript: "are there any circumstances in which"
+  confidence: 0.9873247146606445
+}
+]
+2018-04-11 19:54:28,864 - root - INFO - [alternatives {
+  transcript: "wondered if I didn\'t"
+  confidence: 0.9654858708381653
+}
+]
+2018-04-11 19:54:28,923 - root - INFO - [alternatives {
+  transcript: "might be more than just good friends"
+  confidence: 0.9764605760574341
+}
+]
+2018-04-11 19:54:29,011 - root - INFO - []
+2018-04-11 19:54:29,025 - root - INFO - [alternatives {
+  transcript: "asking him to love her"
+  confidence: 0.9453912377357483
+}
+]
+2018-04-11 19:54:29,038 - root - INFO - [alternatives {
+  transcript: "I hoped there would be but now I\'m"
+  confidence: 0.8953917026519775
+}
+]
+2018-04-11 19:54:29,068 - root - INFO - [alternatives {
+  transcript: "Outlook"
+  confidence: 0.9087983965873718
+}
+]
+2018-04-11 19:54:29,084 - root - INFO - [alternatives {
+  transcript: "also just a girl"
+  confidence: 0.8357362747192383
+}
+]
+2018-04-11 19:54:29,133 - root - INFO - [alternatives {
+  transcript: "see if you could like me again"
+  confidence: 0.9697145223617554
+}
+]
+2018-04-11 19:54:29,135 - root - INFO - [alternatives {
   transcript: "I\'m a fatty level-headed bloke"
-  confidence: 0.9018474221229553
+  confidence: 0.9006406664848328
 }
 ]
-2018-04-11 19:00:42,820 - root - INFO - [alternatives {
+2018-04-11 19:54:29,188 - root - INFO - [alternatives {
+  transcript: "yeah and Out of Love"
+  confidence: 0.8353378176689148
+}
+]
+2018-04-11 19:54:29,329 - root - INFO - [alternatives {
+  transcript: "course I"
+  confidence: 0.8362682461738586
+}
+]
+2018-04-11 19:54:29,393 - root - INFO - [alternatives {
+  transcript: "it turned out that this person"
+  confidence: 0.9702125787734985
+}
+]
+2018-04-11 19:54:29,423 - root - INFO - [alternatives {
   transcript: "thing isn\'t really real"
-  confidence: 0.9027204513549805
+  confidence: 0.9016644358634949
 }
 ]
-2018-04-11 19:00:42,918 - root - INFO - [alternatives {
-  transcript: "we expect me to tell the truth about my life to the most Indiscreet man in England"
-  confidence: 0.9252000451087952
+2018-04-11 19:54:29,460 - root - INFO - [alternatives {
+  transcript: "don\'t forget"
+  confidence: 0.9640241265296936
 }
 ]
-2018-04-11 19:00:42,930 - root - INFO - [alternatives {
-  transcript: "decision"
-  confidence: 0.9055635929107666
+2018-04-11 19:54:29,541 - root - INFO - [alternatives {
+  transcript: "danger it seems like a"
+  confidence: 0.8899514675140381
 }
 ]
-2018-04-11 19:00:43,072 - root - INFO - [alternatives {
-  transcript: "whether you might let me see you a little"
-  confidence: 0.925330638885498
+2018-04-11 19:54:29,573 - root - INFO - []
+2018-04-11 19:54:29,624 - root - INFO - [alternatives {
+  transcript: "soccer is nice soccer"
+  confidence: 0.834924578666687
 }
 ]
-2018-04-11 19:00:43,095 - root - INFO - [alternatives {
+2018-04-11 19:54:29,950 - root - INFO - [alternatives {
   transcript: "can I just say no to you"
-  confidence: 0.9541172385215759
+  confidence: 0.9439084529876709
 }
 ]
-2018-04-11 19:00:43,369 - root - INFO - [alternatives {
+2018-04-11 19:54:30,107 - root - INFO - [alternatives {
   transcript: "once again cause the side is I would absolutely expect to be"
-  confidence: 0.8447409868240356
+  confidence: 0.8511831760406494
 }
 ]
-2018-04-11 19:00:43,394 - root - INFO - [alternatives {
-  transcript: "but yesterday the actor lost you who I was and you just dismissed me out of that"
-  confidence: 0.8333339691162109
-}
-]
-2018-04-11 19:00:43,431 - root - INFO - [alternatives {
-  transcript: "Perfect Situation file temporary"
-  confidence: 0.8128197193145752
-}
-]
-2018-04-11 19:00:43,487 - root - INFO - [alternatives {
+2018-04-11 19:54:30,131 - root - INFO - [alternatives {
   transcript: "who won the world knows who you are my mother has trouble remembering my name"
-  confidence: 0.9769507050514221
+  confidence: 0.904616117477417
 }
 ]
-2018-04-11 19:00:43,768 - root - INFO - [alternatives {
+2018-04-11 19:54:30,166 - root - INFO - []
+2018-04-11 19:54:30,187 - root - INFO - [alternatives {
+  transcript: "Perfect Situation file temporary"
+  confidence: 0.810650110244751
+}
+]
+2018-04-11 19:54:30,242 - root - INFO - [alternatives {
+  transcript: "decision"
+  confidence: 0.9133820533752441
+}
+]
+2018-04-11 19:54:30,288 - root - INFO - [alternatives {
+  transcript: "what you expect me to tell the truth about my life to the most Indiscreet man in English"
+  confidence: 0.8652631044387817
+}
+]
+2018-04-11 19:54:30,407 - root - INFO - [alternatives {
   transcript: "my relatively inexperienced how would I fear not"
-  confidence: 0.882384717464447
+  confidence: 0.8204449415206909
 }
 ]
-2018-04-11 19:00:43,986 - root - INFO - [alternatives {
+2018-04-11 19:54:30,408 - root - INFO - [alternatives {
+  transcript: "I\'ll just be going then it\'s nice to see you"
+  confidence: 0.9599835872650146
+}
+]
+2018-04-11 19:54:30,471 - root - INFO - [alternatives {
+  transcript: "but yesterday the actor lost you who I wasn\'t you just dismissed me out of that"
+  confidence: 0.8349409699440002
+}
+]
+2018-04-11 19:54:30,790 - root - INFO - [alternatives {
+  transcript: "whether you might let me see you a little"
+  confidence: 0.9252174496650696
+}
+, alternatives {
+  transcript: " or"
+  confidence: 0.9247369766235352
+}
+]
+2018-04-11 19:54:30,998 - root - INFO - [alternatives {
   transcript: "in the pink shirt"
-  confidence: 0.9284976720809937
+  confidence: 0.9081220626831055
 }
 ]
-2018-04-11 19:00:44,021 - root - INFO - [alternatives {
-  transcript: "really is real no it\'s"
-  confidence: 0.694740355014801
+2018-04-11 19:54:31,154 - root - INFO - [alternatives {
+  transcript: "really is real no is"
+  confidence: 0.7085043787956238
 }
 , alternatives {
   transcript: " I live in Notting Hill you live in Beverly Hills"
-  confidence: 0.9855687618255615
+  confidence: 0.9864005446434021
 }
 ]
-2018-04-11 19:00:44,448 - root - INFO - [alternatives {
+2018-04-11 19:54:31,265 - root - INFO - [alternatives {
   transcript: "added too many pictures of you too many"
-  confidence: 0.8172821998596191
+  confidence: 0.8797290921211243
 }
 , alternatives {
-  transcript: " are you driving I\'d be"
-  confidence: 0.8973550200462341
+  transcript: " yeah you go and I\'d be"
+  confidence: 0.8184964060783386
 }
 ]
-2018-04-11 19:00:44,609 - root - INFO - [alternatives {
+2018-04-11 19:54:31,369 - root - INFO - [alternatives {
   transcript: "text next just wondered whether if Mr Taco realized he been"
-  confidence: 0.8500396609306335
+  confidence: 0.8342235684394836
 }
 ]
-2018-04-11 19:00:45,041 - root - INFO - [alternatives {
+2018-04-11 19:54:32,302 - root - INFO - [alternatives {
   transcript: "adopt prick go down on his knees and begged you to reconsider whether you would in fact"
-  confidence: 0.9540681838989258
+  confidence: 0.9538190364837646
 }
 ]
-2018-04-11 19:00:45,092 - root - INFO - [alternatives {
-  transcript: "but what would you say I\'m sorry just the one question please"
-  confidence: 0.8884686827659607
+2018-04-11 19:54:32,303 - root - INFO - [alternatives {
+  transcript: "but what would you say I\'m sorry just the one question please it\'s all right"
+  confidence: 0.8528460264205933
 }
 , alternatives {
   transcript: " I was just wondering if"
-  confidence: 0.9849893450737
+  confidence: 0.9881893992424011
 }
 ]
-2018-04-11 19:00:46,440 - root - INFO - []
-2018-04-11 19:00:49,112 - root - INFO - [alternatives {
+2018-04-11 19:54:33,837 - root - INFO - [alternatives {
+  transcript: "definitely"
+  confidence: 0.9320515394210815
+}
+, alternatives {
+  transcript: " shark girl pictures"
+  confidence: 0.6190053224563599
+}
+]
+2018-04-11 19:54:33,838 - root - INFO - []
+2018-04-11 19:54:36,297 - root - INFO - [alternatives {
   transcript: "yes I believe I would"
-  confidence: 0.9746642112731934
+  confidence: 0.9843509793281555
 }
 , alternatives {
-  transcript: " that\'s very good news"
-  confidence: 0.9876290559768677
+  transcript: " what\'s very good news"
+  confidence: 0.8007928729057312
 }
 , alternatives {
-  transcript: " the readers of Horse & Hound will be absolutely Delight"
-  confidence: 0.9387497305870056
+  transcript: " the readers of Horse & Hound will be absolutely delighted"
+  confidence: 0.9279937744140625
 }
 , alternatives {
   transcript: " Frank Dominic if you\'d like to ask you a question again"
-  confidence: 0.9254508018493652
+  confidence: 0.892982542514801
 }
 ]
-2018-04-11 19:00:49,766 - root - INFO - []
-2018-04-11 19:00:49,775 - root - INFO - ### SpeechAPI END ###
-2018-04-11 19:00:49,775 - root - INFO - nonsilent_len : 66 dict _ len : 66
-2018-04-11 19:00:49,775 - root - INFO - ### Create srt START ###
-2018-04-11 19:00:49,776 - root - INFO - ### Create json START ###
-2018-04-11 19:00:50,119 - root - INFO - ### Create File END ###
-2018-04-11 19:00:50,119 - root - INFO - ### Python End ###
-2018-04-11 19:00:50,119 - root - INFO - ########################
-=======
-<<<<<<< HEAD
-2018-04-10 23:00:17,318 - root - INFO - ########################
-2018-04-10 23:00:17,318 - root - INFO - ### Python Start ###
-2018-04-10 23:00:17,318 - root - INFO - ### Split START ###
-2018-04-10 23:00:24,065 - root - INFO - ### Split End ###
-2018-04-10 23:00:24,066 - root - INFO - ### SpeechAPI START ###
-2018-04-10 23:00:27,901 - root - ERROR - 400 Sync input too long. For audio longer than 1 min use LongRunningRecognize with a 'uri' parameter.
-2018-04-10 23:00:38,833 - root - INFO - ### SpeechAPI END ###
-2018-04-10 23:00:38,833 - root - INFO - nonsilent_len : 13 dict _ len : 12
-2018-04-10 23:00:38,833 - root - INFO - ### Create srt START ###
-2018-04-10 23:00:38,833 - root - INFO - ### Create json START ###
-2018-04-10 23:00:38,884 - root - ERROR - list index out of range
-2018-04-10 23:00:38,884 - root - INFO - ### Create File END ###
-2018-04-10 23:00:38,884 - root - INFO - ### Python End ###
-2018-04-10 23:00:38,884 - root - INFO - ########################
-2018-04-10 23:01:29,883 - root - INFO - ########################
-2018-04-10 23:01:29,883 - root - INFO - ### Python Start ###
-2018-04-10 23:01:29,883 - root - INFO - ### Split START ###
-2018-04-10 23:01:36,757 - root - INFO - ### Split End ###
-2018-04-10 23:01:36,757 - root - INFO - ### SpeechAPI START ###
-2018-04-10 23:01:39,358 - root - ERROR - 400 Sync input too long. For audio longer than 1 min use LongRunningRecognize with a 'uri' parameter.
-2018-04-10 23:01:39,927 - root - ERROR - 400 Sync input too long. For audio longer than 1 min use LongRunningRecognize with a 'uri' parameter.
-2018-04-10 23:01:48,092 - root - INFO - ### SpeechAPI END ###
-2018-04-10 23:01:48,092 - root - INFO - nonsilent_len : 10 dict _ len : 8
-2018-04-10 23:01:48,092 - root - INFO - ### Create srt START ###
-2018-04-10 23:01:48,093 - root - INFO - ### Create json START ###
-2018-04-10 23:01:48,120 - root - ERROR - list index out of range
-2018-04-10 23:01:48,120 - root - INFO - ### Create File END ###
-2018-04-10 23:01:48,120 - root - INFO - ### Python End ###
-2018-04-10 23:01:48,120 - root - INFO - ########################
-2018-04-10 23:06:05,114 - root - INFO - ########################
-2018-04-10 23:06:05,115 - root - INFO - ### Python Start ###
-2018-04-10 23:06:05,115 - root - INFO - ### Split START ###
-2018-04-10 23:06:11,420 - root - INFO - ### Split End ###
-2018-04-10 23:06:11,420 - root - INFO - ### SpeechAPI START ###
-2018-04-10 23:06:14,086 - root - ERROR - 400 Sync input too long. For audio longer than 1 min use LongRunningRecognize with a 'uri' parameter.
-2018-04-10 23:06:23,369 - root - INFO - ### SpeechAPI END ###
-2018-04-10 23:06:23,369 - root - INFO - nonsilent_len : 20 dict _ len : 19
-2018-04-10 23:06:23,369 - root - INFO - ### Create srt START ###
-2018-04-10 23:06:23,375 - root - INFO - ### Create json START ###
-2018-04-10 23:06:23,593 - root - ERROR - list index out of range
-2018-04-10 23:06:23,593 - root - INFO - ### Create File END ###
-2018-04-10 23:06:23,593 - root - INFO - ### Python End ###
-2018-04-10 23:06:23,593 - root - INFO - ########################
-2018-04-10 23:07:12,673 - root - INFO - ########################
-2018-04-10 23:07:12,673 - root - INFO - ### Python Start ###
-2018-04-10 23:07:12,673 - root - INFO - ### Split START ###
-2018-04-10 23:07:19,004 - root - INFO - ### Split End ###
-2018-04-10 23:07:19,004 - root - INFO - ### SpeechAPI START ###
-2018-04-10 23:07:21,967 - root - ERROR - 400 Sync input too long. For audio longer than 1 min use LongRunningRecognize with a 'uri' parameter.
-2018-04-10 23:07:36,532 - root - INFO - ### SpeechAPI END ###
-2018-04-10 23:07:36,533 - root - INFO - nonsilent_len : 20 dict _ len : 19
-2018-04-10 23:07:36,533 - root - INFO - ### Create srt START ###
-2018-04-10 23:07:36,533 - root - INFO - ### Create json START ###
-2018-04-10 23:07:36,707 - root - ERROR - list index out of range
-2018-04-10 23:07:36,707 - root - INFO - ### Create File END ###
-2018-04-10 23:07:36,707 - root - INFO - ### Python End ###
-2018-04-10 23:07:36,707 - root - INFO - ########################
-2018-04-10 23:09:58,511 - root - INFO - ########################
-2018-04-10 23:09:58,511 - root - INFO - ### Python Start ###
-2018-04-10 23:09:58,511 - root - INFO - ### Split START ###
-2018-04-10 23:10:07,360 - root - INFO - ### Split End ###
-2018-04-10 23:10:07,361 - root - INFO - ### SpeechAPI START ###
-2018-04-10 23:10:19,152 - root - INFO - ### SpeechAPI END ###
-2018-04-10 23:10:19,152 - root - INFO - nonsilent_len : 88 dict _ len : 88
-2018-04-10 23:10:19,152 - root - INFO - ### Create srt START ###
-2018-04-10 23:10:19,153 - root - INFO - ### Create json START ###
-2018-04-10 23:10:19,782 - root - INFO - ### Create File END ###
-2018-04-10 23:10:19,783 - root - INFO - ### Python End ###
-2018-04-10 23:10:19,784 - root - INFO - ########################
-2018-04-10 23:11:21,069 - root - INFO - ########################
-2018-04-10 23:11:21,069 - root - INFO - ### Python Start ###
-2018-04-10 23:11:21,069 - root - INFO - ### Split START ###
-2018-04-10 23:11:29,067 - root - INFO - ### Split End ###
-2018-04-10 23:11:29,067 - root - INFO - ### SpeechAPI START ###
-2018-04-10 23:11:39,740 - root - INFO - ### SpeechAPI END ###
-2018-04-10 23:11:39,740 - root - INFO - nonsilent_len : 88 dict _ len : 88
-2018-04-10 23:11:39,740 - root - INFO - ### Create srt START ###
-2018-04-10 23:11:39,741 - root - INFO - ### Create json START ###
-2018-04-10 23:11:40,239 - root - INFO - ### Create File END ###
-2018-04-10 23:11:40,240 - root - INFO - ### Python End ###
-2018-04-10 23:11:40,240 - root - INFO - ########################
-2018-04-10 23:14:17,681 - root - INFO - ########################
-2018-04-10 23:14:17,682 - root - INFO - ### Python Start ###
-2018-04-10 23:14:17,682 - root - INFO - ### Split START ###
-2018-04-10 23:14:27,110 - root - INFO - ### Split End ###
-2018-04-10 23:14:27,110 - root - INFO - ### SpeechAPI START ###
-2018-04-10 23:14:36,485 - root - INFO - ### SpeechAPI END ###
-2018-04-10 23:14:36,485 - root - INFO - nonsilent_len : 62 dict _ len : 62
-2018-04-10 23:14:36,485 - root - INFO - ### Create srt START ###
-2018-04-10 23:14:36,486 - root - INFO - ### Create json START ###
-2018-04-10 23:14:36,913 - root - INFO - ### Create File END ###
-2018-04-10 23:14:36,914 - root - INFO - ### Python End ###
-2018-04-10 23:14:36,914 - root - INFO - ########################
-2018-04-10 23:19:12,777 - root - INFO - ########################
-2018-04-10 23:19:12,777 - root - INFO - ### Python Start ###
-2018-04-10 23:19:12,777 - root - INFO - ### Split START ###
-2018-04-10 23:19:12,777 - root - INFO - notting_hill.flac
-2018-04-10 23:19:22,468 - root - INFO - ### Split End ###
-2018-04-10 23:19:22,468 - root - INFO - ### SpeechAPI START ###
-2018-04-10 23:19:31,436 - root - INFO - ### SpeechAPI END ###
-2018-04-10 23:19:31,436 - root - INFO - nonsilent_len : 62 dict _ len : 62
-2018-04-10 23:19:31,436 - root - INFO - ### Create srt START ###
-2018-04-10 23:19:31,444 - root - INFO - ### Create json START ###
-2018-04-10 23:19:31,877 - root - INFO - ### Create File END ###
-2018-04-10 23:19:31,878 - root - INFO - ### Python End ###
-2018-04-10 23:19:31,878 - root - INFO - ########################
-2018-04-10 23:21:07,588 - root - INFO - ########################
-2018-04-10 23:21:07,588 - root - INFO - ### Python Start ###
-2018-04-10 23:21:07,588 - root - INFO - ### Split START ###
-2018-04-10 23:21:07,588 - root - INFO - notting_hill.flac
-2018-04-10 23:21:16,284 - root - INFO - ### Split End ###
-2018-04-10 23:21:16,285 - root - INFO - ### SpeechAPI START ###
-2018-04-10 23:21:25,692 - root - INFO - ### SpeechAPI END ###
-2018-04-10 23:21:25,692 - root - INFO - nonsilent_len : 62 dict _ len : 62
-2018-04-10 23:21:25,693 - root - INFO - ### Create srt START ###
-2018-04-10 23:21:25,693 - root - INFO - ### Create json START ###
-2018-04-10 23:21:25,694 - root - INFO - http://localhost:9200/classes/notting_hill.flac0
-2018-04-10 23:21:25,694 - root - INFO - {
-	"start_time": "00:00",
-	"end_time": "00:00:01.575",
-	"content": "go away today but I"
-}
-2018-04-10 23:21:25,702 - root - INFO - http://localhost:9200/classes/notting_hill.flac1
-2018-04-10 23:21:25,702 - root - INFO - {
-	"start_time": "00:00:02.535",
-	"end_time": "00:00:04.659",
-	"content": "wonder if I didn't"
-}
-2018-04-10 23:21:25,710 - root - INFO - http://localhost:9200/classes/notting_hill.flac2
-2018-04-10 23:21:25,710 - root - INFO - {
-	"start_time": "00:00:05.392",
-	"end_time": "00:00:11.304",
-	"content": "whether you might let me see you a littl or"
-}
-2018-04-10 23:21:25,717 - root - INFO - http://localhost:9200/classes/notting_hill.flac3
-2018-04-10 23:21:25,717 - root - INFO - {
-	"start_time": "00:00:11.950",
-	"end_time": "00:00:14.148",
-	"content": "mayb"
-}
-2018-04-10 23:21:25,724 - root - INFO - http://localhost:9200/classes/notting_hill.flac4
-2018-04-10 23:21:25,725 - root - INFO - {
-	"start_time": "00:00:16.328",
-	"end_time": "00:00:18.395",
-	"content": "see if you could like me again"
-}
-2018-04-10 23:21:25,732 - root - INFO - http://localhost:9200/classes/notting_hill.flac5
-2018-04-10 23:21:25,732 - root - INFO - {
-	"start_time": "00:00:19.419",
-	"end_time": "00:00:24.548",
-	"content": "but yesterday the actor lost you who I wasn't you just dismiss me out of"
-}
-2018-04-10 23:21:25,740 - root - INFO - http://localhost:9200/classes/notting_hill.flac6
-2018-04-10 23:21:25,740 - root - INFO - {
-	"start_time": "00:00:29.114",
-	"end_time": "00:00:30.554",
-	"content": "your microphon on"
-}
-2018-04-10 23:21:25,748 - root - INFO - http://localhost:9200/classes/notting_hill.flac7
-2018-04-10 23:21:25,748 - root - INFO - {
-	"start_time": "00:00:32.683",
-	"end_time": "00:00:37.142",
-	"content": "what you expect me to tell the truth about my life to the most indiscreet man in english"
-}
-2018-04-10 23:21:25,757 - root - INFO - http://localhost:9200/classes/notting_hill.flac8
-2018-04-10 23:21:25,757 - root - INFO - {
-	"start_time": "00:00:38.467",
-	"end_time": "00:00:41.005",
-	"content": "outlook"
-}
-2018-04-10 23:21:25,766 - root - INFO - http://localhost:9200/classes/notting_hill.flac9
-2018-04-10 23:21:25,766 - root - INFO - {
-	"start_time": "00:00:42.930",
-	"end_time": "00:00:45.411",
-	"content": "i'm a fatti level-head bloke"
-}
-2018-04-10 23:21:25,775 - root - INFO - http://localhost:9200/classes/notting_hill.flac10
-2018-04-10 23:21:25,775 - root - INFO - {
-	"start_time": "00:00:47.070",
-	"end_time": "00:00:47.675",
-	"content": "dolphin"
-}
-2018-04-10 23:21:25,786 - root - INFO - http://localhost:9200/classes/notting_hill.flac11
-2018-04-10 23:21:25,786 - root - INFO - {
-	"start_time": "00:00:48.295",
-	"end_time": "00:00:49.784",
-	"content": "an out of love"
-}
-2018-04-10 23:21:25,798 - root - INFO - http://localhost:9200/classes/notting_hill.flac12
-2018-04-10 23:21:25,799 - root - INFO - {
-	"start_time": "00:00:50.604",
-	"end_time": "00:00:51.754",
-	"content": "butter"
-}
-2018-04-10 23:21:25,807 - root - INFO - http://localhost:9200/classes/notting_hill.flac13
-2018-04-10 23:21:25,807 - root - INFO - {
-	"start_time": "00:00:55.335",
-	"end_time": "00:00:59.163",
-	"content": "can I just say no to you"
-}
-2018-04-10 23:21:25,816 - root - INFO - http://localhost:9200/classes/notting_hill.flac14
-2018-04-10 23:21:25,816 - root - INFO - {
-	"start_time": "00:00:59.688",
-	"end_time": "00:01:01.267",
-	"content": "countri crest"
-}
-2018-04-10 23:21:25,824 - root - INFO - http://localhost:9200/classes/notting_hill.flac15
-2018-04-10 23:21:25,824 - root - INFO - {
-	"start_time": "00:01:10.504",
-	"end_time": "00:01:12.882",
-	"content": "cours I"
-}
-2018-04-10 23:21:25,832 - root - INFO - http://localhost:9200/classes/notting_hill.flac16
-2018-04-10 23:21:25,832 - root - INFO - {
-	"start_time": "00:01:14.855",
-	"end_time": "00:01:15.708",
-	"content": "cours"
-}
-2018-04-10 23:21:25,840 - root - INFO - http://localhost:9200/classes/notting_hill.flac17
-2018-04-10 23:21:25,840 - root - INFO - {
-	"start_time": "00:01:18.067",
-	"end_time": "00:01:22.855",
-	"content": "i'll just be go then it' nice to see you"
-}
-2018-04-10 23:21:25,855 - root - INFO - http://localhost:9200/classes/notting_hill.flac18
-2018-04-10 23:21:25,856 - root - INFO - {
-	"start_time": "00:01:24.616",
-	"end_time": "00:01:26.077",
-	"content": "with you i'm in row"
-}
-2018-04-10 23:21:25,863 - root - INFO - http://localhost:9200/classes/notting_hill.flac19
-2018-04-10 23:21:25,863 - root - INFO - {
-	"start_time": "00:01:26.647",
-	"end_time": "00:01:29.247",
-	"content": "danger it seem like"
-}
-2018-04-10 23:21:25,871 - root - INFO - http://localhost:9200/classes/notting_hill.flac20
-2018-04-10 23:21:25,871 - root - INFO - {
-	"start_time": "00:01:29.877",
-	"end_time": "00:01:34.007",
-	"content": "perfect situat file temporari"
-}
-2018-04-10 23:21:25,880 - root - INFO - http://localhost:9200/classes/notting_hill.flac21
-2018-04-10 23:21:25,880 - root - INFO - {
-	"start_time": "00:01:34.761",
-	"end_time": "00:01:39.092",
-	"content": "my rel inexperienc how would I fear not"
-}
-2018-04-10 23:21:25,888 - root - INFO - http://localhost:9200/classes/notting_hill.flac22
-2018-04-10 23:21:25,889 - root - INFO - {
-	"start_time": "00:01:39.787",
-	"end_time": "00:01:41.642",
-	"content": "recov if I wa"
-}
-2018-04-10 23:21:25,897 - root - INFO - http://localhost:9200/classes/notting_hill.flac23
-2018-04-10 23:21:25,897 - root - INFO - {
-	"start_time": "00:01:42.628",
-	"end_time": "00:01:46.576",
-	"content": "onc again caus the side is I would absolut expect to be"
-}
-2018-04-10 23:21:25,906 - root - INFO - http://localhost:9200/classes/notting_hill.flac24
-2018-04-10 23:21:25,906 - root - INFO - {
-	"start_time": "00:01:47.517",
-	"end_time": "00:01:53.927",
-	"content": "ad too mani pictur of you too mani are you drive i'd be"
-}
-2018-04-10 23:21:25,915 - root - INFO - http://localhost:9200/classes/notting_hill.flac25
-2018-04-10 23:21:25,915 - root - INFO - {
-	"start_time": "00:01:59.445",
-	"end_time": "00:02:06.125",
-	"content": "realli is real no is I live in not hill you live in beverli hill"
-}
-2018-04-10 23:21:25,925 - root - INFO - http://localhost:9200/classes/notting_hill.flac26
-2018-04-10 23:21:25,925 - root - INFO - {
-	"start_time": "00:02:07.137",
-	"end_time": "00:02:11.205",
-	"content": "who won the world know who you are my mother ha troubl rememb my name"
-}
-2018-04-10 23:21:25,936 - root - INFO - http://localhost:9200/classes/notting_hill.flac27
-2018-04-10 23:21:25,936 - root - INFO - {
-	"start_time": "00:02:24.188",
-	"end_time": "00:02:26.971",
-	"content": "thing isn't realli real"
-}
-2018-04-10 23:21:25,946 - root - INFO - http://localhost:9200/classes/notting_hill.flac28
-2018-04-10 23:21:25,946 - root - INFO - {
-	"start_time": "00:02:31.480",
-	"end_time": "00:02:34.522",
-	"content": "don't forget"
-}
-2018-04-10 23:21:25,955 - root - INFO - http://localhost:9200/classes/notting_hill.flac29
-2018-04-10 23:21:25,955 - root - INFO - {
-	"start_time": "00:02:35.478",
-	"end_time": "00:02:37.287",
-	"content": "also just a girl"
-}
-2018-04-10 23:21:25,965 - root - INFO - http://localhost:9200/classes/notting_hill.flac30
-2018-04-10 23:21:25,965 - root - INFO - {
-	"start_time": "00:02:39.850",
-	"end_time": "00:02:41.654",
-	"content": "stand in front of a boy"
-}
-2018-04-10 23:21:25,974 - root - INFO - http://localhost:9200/classes/notting_hill.flac31
-2018-04-10 23:21:25,974 - root - INFO - {
-	"start_time": "00:02:42.923",
-	"end_time": "00:02:45.564",
-	"content": "ask him to love her"
-}
-2018-04-10 23:21:25,982 - root - INFO - http://localhost:9200/classes/notting_hill.flac32
-2018-04-10 23:21:25,982 - root - INFO - {
-	"start_time": "00:03:13.495",
-	"end_time": "00:03:20.270",
-	"content": "pink shirt"
-}
-2018-04-10 23:21:25,990 - root - INFO - http://localhost:9200/classes/notting_hill.flac33
-2018-04-10 23:21:25,990 - root - INFO - {
-	"start_time": "00:03:22.678",
-	"end_time": "00:03:22.999",
-	"content": "ye"
-}
-2018-04-10 23:21:25,999 - root - INFO - http://localhost:9200/classes/notting_hill.flac34
-2018-04-10 23:21:25,999 - root - INFO - {
-	"start_time": "00:03:25.188",
-	"end_time": "00:03:25.701",
-	"content": "discuss"
-}
-2018-04-10 23:21:26,008 - root - INFO - http://localhost:9200/classes/notting_hill.flac35
-2018-04-10 23:21:26,008 - root - INFO - {
-	"start_time": "00:03:26.768",
-	"end_time": "00:03:28.534",
-	"content": "are there ani circumst in which"
-}
-2018-04-10 23:21:26,017 - root - INFO - http://localhost:9200/classes/notting_hill.flac36
-2018-04-10 23:21:26,017 - root - INFO - {
-	"start_time": "00:03:29.764",
-	"end_time": "00:03:30.678",
-	"content": "are the two of you"
-}
-2018-04-10 23:21:26,026 - root - INFO - http://localhost:9200/classes/notting_hill.flac37
-2018-04-10 23:21:26,026 - root - INFO - {
-	"start_time": "00:03:32.747",
-	"end_time": "00:03:34.663",
-	"content": "might be more than just good friend"
-}
-2018-04-10 23:21:26,036 - root - INFO - http://localhost:9200/classes/notting_hill.flac38
-2018-04-10 23:21:26,036 - root - INFO - {
-	"start_time": "00:03:37.672",
-	"end_time": "00:03:39.623",
-	"content": "I hope there would be but now i'm"
-}
-2018-04-10 23:21:26,049 - root - INFO - http://localhost:9200/classes/notting_hill.flac39
-2018-04-10 23:21:26,049 - root - INFO - {
-	"start_time": "00:03:41.342",
-	"end_time": "00:03:42.289",
-	"content": "sure there aren't"
-}
-2018-04-10 23:21:26,060 - root - INFO - http://localhost:9200/classes/notting_hill.flac40
-2018-04-10 23:21:26,060 - root - INFO - {
-	"start_time": "00:03:42.814",
-	"end_time": "00:03:52.001",
-	"content": "what would you say i'm sorri just the one question pleas I wa just wonder if"
-}
-2018-04-10 23:21:26,069 - root - INFO - http://localhost:9200/classes/notting_hill.flac41
-2018-04-10 23:21:26,070 - root - INFO - {
-	"start_time": "00:03:53.632",
-	"end_time": "00:03:56.146",
-	"content": "it turn out that thi person"
-}
-2018-04-10 23:21:26,078 - root - INFO - http://localhost:9200/classes/notting_hill.flac42
-2018-04-10 23:21:26,078 - root - INFO - {
-	"start_time": "00:03:56.806",
-	"end_time": "00:03:59.235",
-	"content": "soccer soccer"
-}
-2018-04-10 23:21:26,088 - root - INFO - http://localhost:9200/classes/notting_hill.flac43
-2018-04-10 23:21:26,088 - root - INFO - {
-	"start_time": "00:03:59.826",
-	"end_time": "00:04:06.471",
-	"content": "text text just wonder whether if mr. sanka realiz he been"
-}
-2018-04-10 23:21:26,097 - root - INFO - http://localhost:9200/classes/notting_hill.flac44
-2018-04-10 23:21:26,097 - root - INFO - {
-	"start_time": "00:04:07.085",
-	"end_time": "00:04:15.652",
-	"content": "adopt prick got down on hi knee and beg you to reconsid whether you would in fact"
-}
-2018-04-10 23:21:26,105 - root - INFO - http://localhost:9200/classes/notting_hill.flac45
-2018-04-10 23:21:26,105 - root - INFO - {
-	"start_time": "00:04:16.399",
-	"end_time": "00:04:16.724",
-	"content": "then"
-}
-2018-04-10 23:21:26,113 - root - INFO - http://localhost:9200/classes/notting_hill.flac46
-2018-04-10 23:21:26,113 - root - INFO - {
-	"start_time": "00:04:19.016",
-	"end_time": "00:04:19.432",
-	"content": "consid"
-}
-2018-04-10 23:21:26,123 - root - INFO - http://localhost:9200/classes/notting_hill.flac47
-2018-04-10 23:21:26,123 - root - INFO - {
-	"start_time": "00:04:29.738",
-	"end_time": "00:04:57.591",
-	"content": "ye I believ I would that' veri good news the reader' oppos hound will be absolut delight frank domin if you'd like to ask you a question again"
-}
-2018-04-10 23:21:26,134 - root - INFO - http://localhost:9200/classes/notting_hill.flac48
-2018-04-10 23:21:26,135 - root - INFO - {
-	"start_time": "00:05:06.446",
-	"end_time": "00:05:21.968",
-	"content": "definit pictur"
-}
-2018-04-10 23:21:26,171 - root - INFO - ### Create File END ###
-2018-04-10 23:21:26,171 - root - INFO - ### Python End ###
-2018-04-10 23:21:26,171 - root - INFO - ########################
-2018-04-10 23:24:08,885 - root - INFO - ########################
-2018-04-10 23:24:08,885 - root - INFO - ### Python Start ###
-2018-04-10 23:24:08,885 - root - INFO - ### Split START ###
-2018-04-10 23:24:08,885 - root - INFO - notting_hill.flac
-2018-04-10 23:24:19,603 - root - INFO - ### Split End ###
-2018-04-10 23:24:19,604 - root - INFO - ### SpeechAPI START ###
-2018-04-10 23:24:28,464 - root - INFO - ### SpeechAPI END ###
-2018-04-10 23:24:28,464 - root - INFO - nonsilent_len : 62 dict _ len : 62
-2018-04-10 23:24:28,464 - root - INFO - ### Create srt START ###
-2018-04-10 23:24:28,465 - root - INFO - ### Create json START ###
-2018-04-10 23:24:28,465 - root - INFO - http://localhost:9200/classes/notting_hill.flac0
-2018-04-10 23:24:28,466 - root - INFO - {
-	"start_time": "00:00",
-	"end_time": "00:00:01.575",
-	"content": "go away today but I"
-}
-2018-04-10 23:24:28,474 - root - INFO - http://localhost:9200/classes/notting_hill.flac1
-2018-04-10 23:24:28,474 - root - INFO - {
-	"start_time": "00:00:02.535",
-	"end_time": "00:00:04.659",
-	"content": "wonder if I didn't"
-}
-2018-04-10 23:24:28,482 - root - INFO - http://localhost:9200/classes/notting_hill.flac2
-2018-04-10 23:24:28,482 - root - INFO - {
-	"start_time": "00:00:05.392",
-	"end_time": "00:00:11.304",
-	"content": "whether you might let me see you a littl or"
-}
-2018-04-10 23:24:28,490 - root - INFO - http://localhost:9200/classes/notting_hill.flac3
-2018-04-10 23:24:28,490 - root - INFO - {
-	"start_time": "00:00:11.949",
-	"end_time": "00:00:14.148",
-	"content": "mayb"
-}
-2018-04-10 23:24:28,497 - root - INFO - http://localhost:9200/classes/notting_hill.flac4
-2018-04-10 23:24:28,497 - root - INFO - {
-	"start_time": "00:00:16.328",
-	"end_time": "00:00:18.395",
-	"content": "see if you could like me again"
-}
-2018-04-10 23:24:28,504 - root - INFO - http://localhost:9200/classes/notting_hill.flac5
-2018-04-10 23:24:28,505 - root - INFO - {
-	"start_time": "00:00:19.419",
-	"end_time": "00:00:24.548",
-	"content": "but yesterday the actor lost you who I wasn't you just dismiss me out of"
-}
-2018-04-10 23:24:28,511 - root - INFO - http://localhost:9200/classes/notting_hill.flac6
-2018-04-10 23:24:28,512 - root - INFO - {
-	"start_time": "00:00:29.114",
-	"end_time": "00:00:30.554",
-	"content": "your microphon on"
-}
-2018-04-10 23:24:28,519 - root - INFO - http://localhost:9200/classes/notting_hill.flac7
-2018-04-10 23:24:28,519 - root - INFO - {
-	"start_time": "00:00:32.683",
-	"end_time": "00:00:37.142",
-	"content": "what you expect me to tell the truth about my life to the most indiscreet man in english"
-}
-2018-04-10 23:24:28,526 - root - INFO - http://localhost:9200/classes/notting_hill.flac8
-2018-04-10 23:24:28,527 - root - INFO - {
-	"start_time": "00:00:38.467",
-	"end_time": "00:00:41.005",
-	"content": "outlook"
-}
-2018-04-10 23:24:28,534 - root - INFO - http://localhost:9200/classes/notting_hill.flac9
-2018-04-10 23:24:28,534 - root - INFO - {
-	"start_time": "00:00:42.930",
-	"end_time": "00:00:45.411",
-	"content": "i'm a fatti level-head bloke"
-}
-2018-04-10 23:24:28,542 - root - INFO - http://localhost:9200/classes/notting_hill.flac10
-2018-04-10 23:24:28,542 - root - INFO - {
-	"start_time": "00:00:47.070",
-	"end_time": "00:00:47.675",
-	"content": "dolphin"
-}
-2018-04-10 23:24:28,549 - root - INFO - http://localhost:9200/classes/notting_hill.flac11
-2018-04-10 23:24:28,549 - root - INFO - {
-	"start_time": "00:00:48.295",
-	"end_time": "00:00:49.784",
-	"content": "an out of love"
-}
-2018-04-10 23:24:28,556 - root - INFO - http://localhost:9200/classes/notting_hill.flac12
-2018-04-10 23:24:28,556 - root - INFO - {
-	"start_time": "00:00:50.604",
-	"end_time": "00:00:51.754",
-	"content": "butter"
-}
-2018-04-10 23:24:28,565 - root - INFO - http://localhost:9200/classes/notting_hill.flac13
-2018-04-10 23:24:28,565 - root - INFO - {
-	"start_time": "00:00:55.335",
-	"end_time": "00:00:59.163",
-	"content": "can I just say no to you"
-}
-2018-04-10 23:24:28,573 - root - INFO - http://localhost:9200/classes/notting_hill.flac14
-2018-04-10 23:24:28,573 - root - INFO - {
-	"start_time": "00:00:59.688",
-	"end_time": "00:01:01.267",
-	"content": "countri crest"
-}
-2018-04-10 23:24:28,580 - root - INFO - http://localhost:9200/classes/notting_hill.flac15
-2018-04-10 23:24:28,580 - root - INFO - {
-	"start_time": "00:01:10.504",
-	"end_time": "00:01:12.882",
-	"content": "cours I"
-}
-2018-04-10 23:24:28,588 - root - INFO - http://localhost:9200/classes/notting_hill.flac16
-2018-04-10 23:24:28,588 - root - INFO - {
-	"start_time": "00:01:14.855",
-	"end_time": "00:01:15.708",
-	"content": "cours"
-}
-2018-04-10 23:24:28,595 - root - INFO - http://localhost:9200/classes/notting_hill.flac17
-2018-04-10 23:24:28,595 - root - INFO - {
-	"start_time": "00:01:18.067",
-	"end_time": "00:01:22.855",
-	"content": "i'll just be go then it' nice to see you"
-}
-2018-04-10 23:24:28,608 - root - INFO - http://localhost:9200/classes/notting_hill.flac18
-2018-04-10 23:24:28,608 - root - INFO - {
-	"start_time": "00:01:24.616",
-	"end_time": "00:01:26.077",
-	"content": "with you i'm in rout"
-}
-2018-04-10 23:24:28,616 - root - INFO - http://localhost:9200/classes/notting_hill.flac19
-2018-04-10 23:24:28,616 - root - INFO - {
-	"start_time": "00:01:26.647",
-	"end_time": "00:01:29.247",
-	"content": "danger it seem like"
-}
-2018-04-10 23:24:28,623 - root - INFO - http://localhost:9200/classes/notting_hill.flac20
-2018-04-10 23:24:28,623 - root - INFO - {
-	"start_time": "00:01:29.877",
-	"end_time": "00:01:34.007",
-	"content": "perfect situat file temporari"
-}
-2018-04-10 23:24:28,631 - root - INFO - http://localhost:9200/classes/notting_hill.flac21
-2018-04-10 23:24:28,631 - root - INFO - {
-	"start_time": "00:01:34.761",
-	"end_time": "00:01:39.092",
-	"content": "my rel inexperienc how would I fear not"
-}
-2018-04-10 23:24:28,639 - root - INFO - http://localhost:9200/classes/notting_hill.flac22
-2018-04-10 23:24:28,639 - root - INFO - {
-	"start_time": "00:01:39.787",
-	"end_time": "00:01:41.642",
-	"content": "recov if I wa"
-}
-2018-04-10 23:24:28,647 - root - INFO - http://localhost:9200/classes/notting_hill.flac23
-2018-04-10 23:24:28,647 - root - INFO - {
-	"start_time": "00:01:42.628",
-	"end_time": "00:01:46.576",
-	"content": "onc again caus the side is I would absolut expect to be"
-}
-2018-04-10 23:24:28,655 - root - INFO - http://localhost:9200/classes/notting_hill.flac24
-2018-04-10 23:24:28,655 - root - INFO - {
-	"start_time": "00:01:47.517",
-	"end_time": "00:01:53.927",
-	"content": "ad too mani pictur of you too mani are you drive i'd be"
-}
-2018-04-10 23:24:28,663 - root - INFO - http://localhost:9200/classes/notting_hill.flac25
-2018-04-10 23:24:28,663 - root - INFO - {
-	"start_time": "00:01:59.445",
-	"end_time": "00:02:06.125",
-	"content": "realli is real no it' I live in not hill you live in beverli hill"
-}
-2018-04-10 23:24:28,670 - root - INFO - http://localhost:9200/classes/notting_hill.flac26
-2018-04-10 23:24:28,671 - root - INFO - {
-	"start_time": "00:02:07.137",
-	"end_time": "00:02:11.205",
-	"content": "who won the world know who you are my mother ha troubl rememb my name"
-}
-2018-04-10 23:24:28,678 - root - INFO - http://localhost:9200/classes/notting_hill.flac27
-2018-04-10 23:24:28,678 - root - INFO - {
-	"start_time": "00:02:24.188",
-	"end_time": "00:02:26.971",
-	"content": "thing isn't realli real"
-}
-2018-04-10 23:24:28,685 - root - INFO - http://localhost:9200/classes/notting_hill.flac28
-2018-04-10 23:24:28,685 - root - INFO - {
-	"start_time": "00:02:31.480",
-	"end_time": "00:02:34.522",
-	"content": "don't forget"
-}
-2018-04-10 23:24:28,692 - root - INFO - http://localhost:9200/classes/notting_hill.flac29
-2018-04-10 23:24:28,692 - root - INFO - {
-	"start_time": "00:02:35.478",
-	"end_time": "00:02:37.287",
-	"content": "also just a girl"
-}
-2018-04-10 23:24:28,699 - root - INFO - http://localhost:9200/classes/notting_hill.flac30
-2018-04-10 23:24:28,699 - root - INFO - {
-	"start_time": "00:02:39.850",
-	"end_time": "00:02:41.654",
-	"content": "stand in front of a boy"
-}
-2018-04-10 23:24:28,706 - root - INFO - http://localhost:9200/classes/notting_hill.flac31
-2018-04-10 23:24:28,706 - root - INFO - {
-	"start_time": "00:02:42.923",
-	"end_time": "00:02:45.564",
-	"content": "ask him to love her"
-}
-2018-04-10 23:24:28,713 - root - INFO - http://localhost:9200/classes/notting_hill.flac32
-2018-04-10 23:24:28,713 - root - INFO - {
-	"start_time": "00:03:13.495",
-	"end_time": "00:03:20.270",
-	"content": "pink shirt"
-}
-2018-04-10 23:24:28,721 - root - INFO - http://localhost:9200/classes/notting_hill.flac33
-2018-04-10 23:24:28,721 - root - INFO - {
-	"start_time": "00:03:22.678",
-	"end_time": "00:03:22.999",
-	"content": "ye"
-}
-2018-04-10 23:24:28,728 - root - INFO - http://localhost:9200/classes/notting_hill.flac34
-2018-04-10 23:24:28,728 - root - INFO - {
-	"start_time": "00:03:25.188",
-	"end_time": "00:03:25.701",
-	"content": "discuss"
-}
-2018-04-10 23:24:28,736 - root - INFO - http://localhost:9200/classes/notting_hill.flac35
-2018-04-10 23:24:28,736 - root - INFO - {
-	"start_time": "00:03:26.768",
-	"end_time": "00:03:28.534",
-	"content": "are there ani circumst in which"
-}
-2018-04-10 23:24:28,743 - root - INFO - http://localhost:9200/classes/notting_hill.flac36
-2018-04-10 23:24:28,743 - root - INFO - {
-	"start_time": "00:03:29.764",
-	"end_time": "00:03:30.678",
-	"content": "are the two of you"
-}
-2018-04-10 23:24:28,750 - root - INFO - http://localhost:9200/classes/notting_hill.flac37
-2018-04-10 23:24:28,751 - root - INFO - {
-	"start_time": "00:03:32.747",
-	"end_time": "00:03:34.663",
-	"content": "might be more than just good friend"
-}
-2018-04-10 23:24:28,758 - root - INFO - http://localhost:9200/classes/notting_hill.flac38
-2018-04-10 23:24:28,758 - root - INFO - {
-	"start_time": "00:03:37.672",
-	"end_time": "00:03:39.623",
-	"content": "I hope there would be but now i'm"
-}
-2018-04-10 23:24:28,765 - root - INFO - http://localhost:9200/classes/notting_hill.flac39
-2018-04-10 23:24:28,765 - root - INFO - {
-	"start_time": "00:03:41.342",
-	"end_time": "00:03:42.289",
-	"content": "sure there aren't"
-}
-2018-04-10 23:24:28,772 - root - INFO - http://localhost:9200/classes/notting_hill.flac40
-2018-04-10 23:24:28,773 - root - INFO - {
-	"start_time": "00:03:42.814",
-	"end_time": "00:03:52.001",
-	"content": "what would you say i'm sorri just the one question pleas I wa just wonder if"
-}
-2018-04-10 23:24:28,780 - root - INFO - http://localhost:9200/classes/notting_hill.flac41
-2018-04-10 23:24:28,780 - root - INFO - {
-	"start_time": "00:03:53.632",
-	"end_time": "00:03:56.146",
-	"content": "it turn out that thi person"
-}
-2018-04-10 23:24:28,787 - root - INFO - http://localhost:9200/classes/notting_hill.flac42
-2018-04-10 23:24:28,787 - root - INFO - {
-	"start_time": "00:03:56.806",
-	"end_time": "00:03:59.235",
-	"content": "soccer soccer"
-}
-2018-04-10 23:24:28,795 - root - INFO - http://localhost:9200/classes/notting_hill.flac43
-2018-04-10 23:24:28,795 - root - INFO - {
-	"start_time": "00:03:59.826",
-	"end_time": "00:04:06.471",
-	"content": "text text just wonder whether if Mr taco realiz he been"
-}
-2018-04-10 23:24:28,802 - root - INFO - http://localhost:9200/classes/notting_hill.flac44
-2018-04-10 23:24:28,802 - root - INFO - {
-	"start_time": "00:04:07.085",
-	"end_time": "00:04:15.652",
-	"content": "adopt prick got down on hi knee and beg you to reconsid whether you would in fact"
-}
-2018-04-10 23:24:28,809 - root - INFO - http://localhost:9200/classes/notting_hill.flac45
-2018-04-10 23:24:28,809 - root - INFO - {
-	"start_time": "00:04:16.399",
-	"end_time": "00:04:16.724",
-	"content": "then"
-}
-2018-04-10 23:24:28,816 - root - INFO - http://localhost:9200/classes/notting_hill.flac46
-2018-04-10 23:24:28,816 - root - INFO - {
-	"start_time": "00:04:19.016",
-	"end_time": "00:04:19.432",
-	"content": "consid"
-}
-2018-04-10 23:24:28,824 - root - INFO - http://localhost:9200/classes/notting_hill.flac47
-2018-04-10 23:24:28,824 - root - INFO - {
-	"start_time": "00:04:29.738",
-	"end_time": "00:04:57.591",
-	"content": "ye I believ I would that' veri good news the reader' oppos hound will be absolut delight frank domin if you'd like to ask you a question again"
-}
-2018-04-10 23:24:28,831 - root - INFO - http://localhost:9200/classes/notting_hill.flac48
-2018-04-10 23:24:28,831 - root - INFO - {
-	"start_time": "00:05:06.446",
-	"end_time": "00:05:21.968",
-	"content": "definit pictur"
-}
-2018-04-10 23:24:28,839 - root - INFO - ### Create File END ###
-2018-04-10 23:24:28,839 - root - INFO - ### Python End ###
-2018-04-10 23:24:28,839 - root - INFO - ########################
-2018-04-10 23:25:47,162 - root - INFO - ########################
-2018-04-10 23:25:47,162 - root - INFO - ### Python Start ###
-2018-04-10 23:25:47,162 - root - INFO - ### Split START ###
-2018-04-10 23:25:47,162 - root - INFO - notting_hill.flac
-2018-04-10 23:25:55,802 - root - INFO - ### Split End ###
-2018-04-10 23:25:55,802 - root - INFO - ### SpeechAPI START ###
-2018-04-10 23:26:03,334 - root - INFO - ### SpeechAPI END ###
-2018-04-10 23:26:03,334 - root - INFO - nonsilent_len : 62 dict _ len : 62
-2018-04-10 23:26:03,334 - root - INFO - ### Create srt START ###
-2018-04-10 23:26:03,335 - root - INFO - ### Create json START ###
-2018-04-10 23:26:03,335 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,335 - root - INFO - {
-	"start_time": "00:00",
-	"end_time": "00:00:01.575",
-	"content": "go away today but I"
-}
-2018-04-10 23:26:03,344 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,344 - root - INFO - {
-	"start_time": "00:00:02.535",
-	"end_time": "00:00:04.659",
-	"content": "wonder if I didn't"
-}
-2018-04-10 23:26:03,352 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,352 - root - INFO - {
-	"start_time": "00:00:05.392",
-	"end_time": "00:00:11.304",
-	"content": "whether you might let me see you a littl or"
-}
-2018-04-10 23:26:03,360 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,360 - root - INFO - {
-	"start_time": "00:00:11.950",
-	"end_time": "00:00:14.148",
-	"content": "mayb"
-}
-2018-04-10 23:26:03,368 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,368 - root - INFO - {
-	"start_time": "00:00:16.328",
-	"end_time": "00:00:18.395",
-	"content": "see if you could like me again"
-}
-2018-04-10 23:26:03,377 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,377 - root - INFO - {
-	"start_time": "00:00:19.419",
-	"end_time": "00:00:24.548",
-	"content": "but yesterday the actor lost you who I wasn't you just dismiss me out of"
-}
-2018-04-10 23:26:03,384 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,384 - root - INFO - {
-	"start_time": "00:00:29.114",
-	"end_time": "00:00:30.554",
-	"content": "your microphon on"
-}
-2018-04-10 23:26:03,392 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,393 - root - INFO - {
-	"start_time": "00:00:32.683",
-	"end_time": "00:00:37.142",
-	"content": "what you expect me to tell the truth about my life to the most indiscreet man in england"
-}
-2018-04-10 23:26:03,400 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,401 - root - INFO - {
-	"start_time": "00:00:38.467",
-	"end_time": "00:00:41.005",
-	"content": "outlook"
-}
-2018-04-10 23:26:03,409 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,409 - root - INFO - {
-	"start_time": "00:00:42.930",
-	"end_time": "00:00:45.411",
-	"content": "i'm a fatti level-head bloke"
-}
-2018-04-10 23:26:03,416 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,416 - root - INFO - {
-	"start_time": "00:00:47.070",
-	"end_time": "00:00:47.675",
-	"content": "dolphin"
-}
-2018-04-10 23:26:03,424 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,424 - root - INFO - {
-	"start_time": "00:00:48.295",
-	"end_time": "00:00:49.784",
-	"content": "piano out of love"
-}
-2018-04-10 23:26:03,432 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,432 - root - INFO - {
-	"start_time": "00:00:50.604",
-	"end_time": "00:00:51.754",
-	"content": "butter"
-}
-2018-04-10 23:26:03,440 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,440 - root - INFO - {
-	"start_time": "00:00:55.335",
-	"end_time": "00:00:59.163",
-	"content": "tri to say no to you"
-}
-2018-04-10 23:26:03,448 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,448 - root - INFO - {
-	"start_time": "00:00:59.688",
-	"end_time": "00:01:01.267",
-	"content": "countri crest"
-}
-2018-04-10 23:26:03,456 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,456 - root - INFO - {
-	"start_time": "00:01:10.504",
-	"end_time": "00:01:12.882",
-	"content": "cours I"
-}
-2018-04-10 23:26:03,464 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,464 - root - INFO - {
-	"start_time": "00:01:14.855",
-	"end_time": "00:01:15.708",
-	"content": "cours"
-}
-2018-04-10 23:26:03,472 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,473 - root - INFO - {
-	"start_time": "00:01:18.067",
-	"end_time": "00:01:22.855",
-	"content": "i'll just be go then it' nice to see you"
-}
-2018-04-10 23:26:03,481 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,481 - root - INFO - {
-	"start_time": "00:01:24.616",
-	"end_time": "00:01:26.077",
-	"content": "with you i'm in rout"
-}
-2018-04-10 23:26:03,495 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,495 - root - INFO - {
-	"start_time": "00:01:26.647",
-	"end_time": "00:01:29.247",
-	"content": "danger it seem like"
-}
-2018-04-10 23:26:03,503 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,503 - root - INFO - {
-	"start_time": "00:01:29.877",
-	"end_time": "00:01:34.007",
-	"content": "perfect situat file temporari"
-}
-2018-04-10 23:26:03,511 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,511 - root - INFO - {
-	"start_time": "00:01:34.761",
-	"end_time": "00:01:39.092",
-	"content": "my rel inexperienc how would I fear not"
-}
-2018-04-10 23:26:03,519 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,519 - root - INFO - {
-	"start_time": "00:01:39.787",
-	"end_time": "00:01:41.642",
-	"content": "recov if I wa"
-}
-2018-04-10 23:26:03,526 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,526 - root - INFO - {
-	"start_time": "00:01:42.628",
-	"end_time": "00:01:46.576",
-	"content": "onc again caus the side is I would absolut expect to be"
-}
-2018-04-10 23:26:03,534 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,534 - root - INFO - {
-	"start_time": "00:01:47.517",
-	"end_time": "00:01:53.927",
-	"content": "ad too mani pictur of you too mani are you drive i'd be"
-}
-2018-04-10 23:26:03,542 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,542 - root - INFO - {
-	"start_time": "00:01:59.445",
-	"end_time": "00:02:06.125",
-	"content": "realli is real no it' I live in not hill you live in beverli hill"
-}
-2018-04-10 23:26:03,551 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,551 - root - INFO - {
-	"start_time": "00:02:07.137",
-	"end_time": "00:02:11.205",
-	"content": "who won the world know who you are my mother ha troubl rememb my name"
-}
-2018-04-10 23:26:03,600 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,600 - root - INFO - {
-	"start_time": "00:02:24.188",
-	"end_time": "00:02:26.971",
-	"content": "thing isn't realli real"
-}
-2018-04-10 23:26:03,617 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,617 - root - INFO - {
-	"start_time": "00:02:31.480",
-	"end_time": "00:02:34.522",
-	"content": "don't forget"
-}
-2018-04-10 23:26:03,624 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,624 - root - INFO - {
-	"start_time": "00:02:35.478",
-	"end_time": "00:02:37.287",
-	"content": "also just a girl"
-}
-2018-04-10 23:26:03,631 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,631 - root - INFO - {
-	"start_time": "00:02:39.850",
-	"end_time": "00:02:41.654",
-	"content": "stand in front of a boy"
-}
-2018-04-10 23:26:03,638 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,638 - root - INFO - {
-	"start_time": "00:02:42.923",
-	"end_time": "00:02:45.564",
-	"content": "ask him to love her"
-}
-2018-04-10 23:26:03,646 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,646 - root - INFO - {
-	"start_time": "00:03:13.495",
-	"end_time": "00:03:20.270",
-	"content": "pink shirt"
-}
-2018-04-10 23:26:03,672 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,672 - root - INFO - {
-	"start_time": "00:03:22.678",
-	"end_time": "00:03:22.999",
-	"content": "ye"
-}
-2018-04-10 23:26:03,681 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,681 - root - INFO - {
-	"start_time": "00:03:25.188",
-	"end_time": "00:03:25.701",
-	"content": "discuss"
-}
-2018-04-10 23:26:03,692 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,692 - root - INFO - {
-	"start_time": "00:03:26.768",
-	"end_time": "00:03:28.534",
-	"content": "are there ani circumst in which"
-}
-2018-04-10 23:26:03,700 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,700 - root - INFO - {
-	"start_time": "00:03:29.764",
-	"end_time": "00:03:30.678",
-	"content": "are the two of you"
-}
-2018-04-10 23:26:03,709 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,709 - root - INFO - {
-	"start_time": "00:03:32.747",
-	"end_time": "00:03:34.663",
-	"content": "might be more than just good friend"
-}
-2018-04-10 23:26:03,717 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,717 - root - INFO - {
-	"start_time": "00:03:37.672",
-	"end_time": "00:03:39.623",
-	"content": "I hope there would be but now i'm"
-}
-2018-04-10 23:26:03,724 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,725 - root - INFO - {
-	"start_time": "00:03:41.342",
-	"end_time": "00:03:42.289",
-	"content": "sure there aren't"
-}
-2018-04-10 23:26:03,733 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,733 - root - INFO - {
-	"start_time": "00:03:42.814",
-	"end_time": "00:03:52.001",
-	"content": "what would you say i'm sorri just the one question pleas I wa just wonder if"
-}
-2018-04-10 23:26:03,741 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,741 - root - INFO - {
-	"start_time": "00:03:53.632",
-	"end_time": "00:03:56.146",
-	"content": "it turn out that thi person"
-}
-2018-04-10 23:26:03,749 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,749 - root - INFO - {
-	"start_time": "00:03:56.806",
-	"end_time": "00:03:59.235",
-	"content": "soccer soccer"
-}
-2018-04-10 23:26:03,758 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,758 - root - INFO - {
-	"start_time": "00:03:59.826",
-	"end_time": "00:04:06.471",
-	"content": "text text just wonder whether if mr. taka realiz he been"
-}
-2018-04-10 23:26:03,766 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,766 - root - INFO - {
-	"start_time": "00:04:07.085",
-	"end_time": "00:04:15.652",
-	"content": "adopt prick got down on hi knee and beg you to reconsid whether you would in fact"
-}
-2018-04-10 23:26:03,776 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,776 - root - INFO - {
-	"start_time": "00:04:16.399",
-	"end_time": "00:04:16.724",
-	"content": "then"
-}
-2018-04-10 23:26:03,784 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,785 - root - INFO - {
-	"start_time": "00:04:19.016",
-	"end_time": "00:04:19.432",
-	"content": "consid"
-}
-2018-04-10 23:26:03,793 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,794 - root - INFO - {
-	"start_time": "00:04:29.738",
-	"end_time": "00:04:57.591",
-	"content": "ye I believ I would that' veri good news the reader' oppos hound will be absolut delight frank domin if you'd like to ask you a question again"
-}
-2018-04-10 23:26:03,802 - root - INFO - http://localhost:9200/classes/notting_hill.flac
-2018-04-10 23:26:03,802 - root - INFO - {
-	"start_time": "00:05:06.446",
-	"end_time": "00:05:21.968",
-	"content": "definit pictur"
-}
-2018-04-10 23:26:03,809 - root - INFO - ### Create File END ###
-2018-04-10 23:26:03,810 - root - INFO - ### Python End ###
-2018-04-10 23:26:03,810 - root - INFO - ########################
-2018-04-11 10:37:14,498 - root - INFO - ########################
-2018-04-11 10:37:14,498 - root - INFO - ### Python Start ###
-2018-04-11 10:37:14,498 - root - INFO - ### Split START ###
-2018-04-11 10:37:14,498 - root - INFO - notting_hill.flac
-2018-04-11 10:37:24,179 - root - INFO - ### Split End ###
-2018-04-11 10:37:24,179 - root - INFO - ### SpeechAPI START ###
-2018-04-11 10:37:33,683 - root - INFO - ### SpeechAPI END ###
-2018-04-11 10:37:33,683 - root - INFO - nonsilent_len : 62 dict _ len : 62
-2018-04-11 10:37:33,683 - root - INFO - ### Create srt START ###
-2018-04-11 10:37:33,684 - root - INFO - ### Create json START ###
-2018-04-11 10:37:33,684 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,685 - root - INFO - {
-	"start_time": "00:00",
-	"end_time": "00:00:01.575",
-	"content": "go away today but I"
-}
-2018-04-11 10:37:33,718 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,718 - root - INFO - {
-	"start_time": "00:00:02.535",
-	"end_time": "00:00:04.659",
-	"content": "wonder if I didn't"
-}
-2018-04-11 10:37:33,730 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,730 - root - INFO - {
-	"start_time": "00:00:05.392",
-	"end_time": "00:00:11.304",
-	"content": "whether you might let me see you a littl or"
-}
-2018-04-11 10:37:33,743 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,743 - root - INFO - {
-	"start_time": "00:00:11.949",
-	"end_time": "00:00:14.148",
-	"content": "mayb"
-}
-2018-04-11 10:37:33,753 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,753 - root - INFO - {
-	"start_time": "00:00:16.328",
-	"end_time": "00:00:18.395",
-	"content": "see if you could like me again"
-}
-2018-04-11 10:37:33,763 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,763 - root - INFO - {
-	"start_time": "00:00:19.419",
-	"end_time": "00:00:24.548",
-	"content": "but yesterday the actor lost you who I wasn't you just dismiss me out of"
-}
-2018-04-11 10:37:33,774 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,774 - root - INFO - {
-	"start_time": "00:00:29.114",
-	"end_time": "00:00:30.554",
-	"content": "your microphon on"
-}
-2018-04-11 10:37:33,784 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,784 - root - INFO - {
-	"start_time": "00:00:32.683",
-	"end_time": "00:00:37.142",
-	"content": "what you expect me to tell the truth about my life to the most indiscreet man in english"
-}
-2018-04-11 10:37:33,793 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,793 - root - INFO - {
-	"start_time": "00:00:38.467",
-	"end_time": "00:00:41.005",
-	"content": "outlook"
-}
-2018-04-11 10:37:33,804 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,804 - root - INFO - {
-	"start_time": "00:00:42.930",
-	"end_time": "00:00:45.411",
-	"content": "i'm a fatti level-head bloke"
-}
-2018-04-11 10:37:33,813 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,813 - root - INFO - {
-	"start_time": "00:00:47.070",
-	"end_time": "00:00:47.675",
-	"content": "dolphin"
-}
-2018-04-11 10:37:33,822 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,822 - root - INFO - {
-	"start_time": "00:00:48.295",
-	"end_time": "00:00:49.784",
-	"content": "yeah and out of love"
-}
-2018-04-11 10:37:33,831 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,831 - root - INFO - {
-	"start_time": "00:00:50.604",
-	"end_time": "00:00:51.754",
-	"content": "butter"
-}
-2018-04-11 10:37:33,840 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,840 - root - INFO - {
-	"start_time": "00:00:55.335",
-	"end_time": "00:00:59.163",
-	"content": "tri to say no to you"
-}
-2018-04-11 10:37:33,849 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,849 - root - INFO - {
-	"start_time": "00:00:59.688",
-	"end_time": "00:01:01.267",
-	"content": "countri crest"
-}
-2018-04-11 10:37:33,858 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,858 - root - INFO - {
-	"start_time": "00:01:10.504",
-	"end_time": "00:01:12.882",
-	"content": "cours I"
-}
-2018-04-11 10:37:33,867 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,867 - root - INFO - {
-	"start_time": "00:01:14.855",
-	"end_time": "00:01:15.708",
-	"content": "cours"
-}
-2018-04-11 10:37:33,878 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,878 - root - INFO - {
-	"start_time": "00:01:18.067",
-	"end_time": "00:01:22.855",
-	"content": "i'll just be go then it' nice to see you"
-}
-2018-04-11 10:37:33,887 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,887 - root - INFO - {
-	"start_time": "00:01:24.616",
-	"end_time": "00:01:26.077",
-	"content": "with you i'm in rout"
-}
-2018-04-11 10:37:33,900 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,900 - root - INFO - {
-	"start_time": "00:01:26.647",
-	"end_time": "00:01:29.247",
-	"content": "danger it seem like"
-}
-2018-04-11 10:37:33,909 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,909 - root - INFO - {
-	"start_time": "00:01:29.877",
-	"end_time": "00:01:34.007",
-	"content": "perfect situat file temporari"
-}
-2018-04-11 10:37:33,917 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,917 - root - INFO - {
-	"start_time": "00:01:34.761",
-	"end_time": "00:01:39.092",
-	"content": "my rel inexperienc how would I fear not"
-}
-2018-04-11 10:37:33,927 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,927 - root - INFO - {
-	"start_time": "00:01:39.787",
-	"end_time": "00:01:41.642",
-	"content": "recov if I wa"
-}
-2018-04-11 10:37:33,937 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,937 - root - INFO - {
-	"start_time": "00:01:42.628",
-	"end_time": "00:01:46.576",
-	"content": "onc again caus the side is I would absolut expect to be"
-}
-2018-04-11 10:37:33,949 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,949 - root - INFO - {
-	"start_time": "00:01:47.517",
-	"end_time": "00:01:53.927",
-	"content": "ad too mani pictur of you too mani are you drive i'd be"
-}
-2018-04-11 10:37:33,959 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,959 - root - INFO - {
-	"start_time": "00:01:59.445",
-	"end_time": "00:02:06.125",
-	"content": "realli is real no is I live in not hill you live in beverli hill"
-}
-2018-04-11 10:37:33,970 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,970 - root - INFO - {
-	"start_time": "00:02:07.137",
-	"end_time": "00:02:11.205",
-	"content": "who won the world know who you are my mother ha troubl rememb my name"
-}
-2018-04-11 10:37:33,980 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,980 - root - INFO - {
-	"start_time": "00:02:24.188",
-	"end_time": "00:02:26.971",
-	"content": "thing isn't realli real"
-}
-2018-04-11 10:37:33,991 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:33,991 - root - INFO - {
-	"start_time": "00:02:31.480",
-	"end_time": "00:02:34.522",
-	"content": "don't forget"
-}
-2018-04-11 10:37:34,000 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:34,000 - root - INFO - {
-	"start_time": "00:02:35.478",
-	"end_time": "00:02:37.287",
-	"content": "also just a girl"
-}
-2018-04-11 10:37:34,010 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:34,010 - root - INFO - {
-	"start_time": "00:02:39.850",
-	"end_time": "00:02:41.654",
-	"content": "stand in front of a boy"
-}
-2018-04-11 10:37:34,020 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:34,020 - root - INFO - {
-	"start_time": "00:02:42.923",
-	"end_time": "00:02:45.564",
-	"content": "ask him to love her"
-}
-2018-04-11 10:37:34,030 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:34,030 - root - INFO - {
-	"start_time": "00:03:13.495",
-	"end_time": "00:03:20.270",
-	"content": "pink shirt"
-}
-2018-04-11 10:37:34,039 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:34,039 - root - INFO - {
-	"start_time": "00:03:22.678",
-	"end_time": "00:03:22.999",
-	"content": "ye"
-}
-2018-04-11 10:37:34,049 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:34,049 - root - INFO - {
-	"start_time": "00:03:25.188",
-	"end_time": "00:03:25.701",
-	"content": "discuss"
-}
-2018-04-11 10:37:34,059 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:34,059 - root - INFO - {
-	"start_time": "00:03:26.768",
-	"end_time": "00:03:28.534",
-	"content": "are there ani circumst in which"
-}
-2018-04-11 10:37:34,070 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:34,070 - root - INFO - {
-	"start_time": "00:03:29.764",
-	"end_time": "00:03:30.678",
-	"content": "are the two of you"
-}
-2018-04-11 10:37:34,080 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:34,080 - root - INFO - {
-	"start_time": "00:03:32.747",
-	"end_time": "00:03:34.663",
-	"content": "might be more than just good friend"
-}
-2018-04-11 10:37:34,090 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:34,091 - root - INFO - {
-	"start_time": "00:03:37.672",
-	"end_time": "00:03:39.623",
-	"content": "I hope there would be but now i'm"
-}
-2018-04-11 10:37:34,101 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:34,101 - root - INFO - {
-	"start_time": "00:03:41.342",
-	"end_time": "00:03:42.289",
-	"content": "sure there aren't"
-}
-2018-04-11 10:37:34,112 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:34,112 - root - INFO - {
-	"start_time": "00:03:42.814",
-	"end_time": "00:03:52.001",
-	"content": "what would you say i'm sorri just the one question pleas I wa just wonder if"
-}
-2018-04-11 10:37:34,122 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:34,122 - root - INFO - {
-	"start_time": "00:03:53.632",
-	"end_time": "00:03:56.146",
-	"content": "it turn out that thi person"
-}
-2018-04-11 10:37:34,131 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:34,132 - root - INFO - {
-	"start_time": "00:03:56.806",
-	"end_time": "00:03:59.235",
-	"content": "soccer soccer"
-}
-2018-04-11 10:37:34,141 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:34,141 - root - INFO - {
-	"start_time": "00:03:59.826",
-	"end_time": "00:04:06.471",
-	"content": "text text just wonder whether if Mr taco realiz he been"
-}
-2018-04-11 10:37:34,152 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:34,152 - root - INFO - {
-	"start_time": "00:04:07.085",
-	"end_time": "00:04:15.652",
-	"content": "adopt prick got down on hi knee and beg you to reconsid whether you would in fact"
-}
-2018-04-11 10:37:34,161 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:34,162 - root - INFO - {
-	"start_time": "00:04:16.399",
-	"end_time": "00:04:16.724",
-	"content": "then"
-}
-2018-04-11 10:37:34,171 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:34,171 - root - INFO - {
-	"start_time": "00:04:19.016",
-	"end_time": "00:04:19.432",
-	"content": "consid"
-}
-2018-04-11 10:37:34,182 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:34,182 - root - INFO - {
-	"start_time": "00:04:29.738",
-	"end_time": "00:04:57.591",
-	"content": "ye I believ I would that' veri good news the reader' oppos hound will be absolut delight frank domin if you'd like to ask you a question again"
-}
-2018-04-11 10:37:34,191 - root - INFO - http://localhost:9200/classes/notting_hill.flac/
-2018-04-11 10:37:34,191 - root - INFO - {
-	"start_time": "00:05:06.446",
-	"end_time": "00:05:21.968",
-	"content": "definit pictur"
-}
-2018-04-11 10:37:34,200 - root - INFO - ### Create File END ###
-2018-04-11 10:37:34,201 - root - INFO - ### Python End ###
-2018-04-11 10:37:34,201 - root - INFO - ########################
-2018-04-11 10:39:55,768 - root - INFO - ########################
-2018-04-11 10:39:55,769 - root - INFO - ### Python Start ###
-2018-04-11 10:39:55,769 - root - INFO - ### Split START ###
-2018-04-11 10:39:55,769 - root - INFO - notting_hill.flac
-2018-04-11 10:40:04,740 - root - INFO - ### Split End ###
-2018-04-11 10:40:04,741 - root - INFO - ### SpeechAPI START ###
-2018-04-11 10:40:19,012 - root - INFO - ### SpeechAPI END ###
-2018-04-11 10:40:19,013 - root - INFO - nonsilent_len : 62 dict _ len : 62
-2018-04-11 10:40:19,013 - root - INFO - ### Create srt START ###
-2018-04-11 10:40:19,014 - root - INFO - ### Create json START ###
-2018-04-11 10:40:19,014 - root - INFO - http://localhost:9200/classes/notting_hill.flac/0
-2018-04-11 10:40:19,014 - root - INFO - {
-	"start_time": "00:00",
-	"end_time": "00:00:01.575",
-	"content": "go away today but I"
-}
-2018-04-11 10:40:19,024 - root - INFO - http://localhost:9200/classes/notting_hill.flac/1
-2018-04-11 10:40:19,024 - root - INFO - {
-	"start_time": "00:00:02.535",
-	"end_time": "00:00:04.659",
-	"content": "wonder if I didn't"
-}
-2018-04-11 10:40:19,034 - root - INFO - http://localhost:9200/classes/notting_hill.flac/2
-2018-04-11 10:40:19,034 - root - INFO - {
-	"start_time": "00:00:05.392",
-	"end_time": "00:00:11.304",
-	"content": "whether you might let me see you a littl or"
-}
-2018-04-11 10:40:19,046 - root - INFO - http://localhost:9200/classes/notting_hill.flac/3
-2018-04-11 10:40:19,046 - root - INFO - {
-	"start_time": "00:00:11.949",
-	"end_time": "00:00:14.148",
-	"content": "mayb"
-}
-2018-04-11 10:40:19,055 - root - INFO - http://localhost:9200/classes/notting_hill.flac/4
-2018-04-11 10:40:19,056 - root - INFO - {
-	"start_time": "00:00:16.328",
-	"end_time": "00:00:18.395",
-	"content": "see if you could like me again"
-}
-2018-04-11 10:40:19,065 - root - INFO - http://localhost:9200/classes/notting_hill.flac/5
-2018-04-11 10:40:19,065 - root - INFO - {
-	"start_time": "00:00:19.419",
-	"end_time": "00:00:24.548",
-	"content": "but yesterday the actor lost you who I wasn't you just dismiss me out of"
-}
-2018-04-11 10:40:19,074 - root - INFO - http://localhost:9200/classes/notting_hill.flac/6
-2018-04-11 10:40:19,074 - root - INFO - {
-	"start_time": "00:00:29.114",
-	"end_time": "00:00:30.554",
-	"content": "your microphon on"
-}
-2018-04-11 10:40:19,084 - root - INFO - http://localhost:9200/classes/notting_hill.flac/7
-2018-04-11 10:40:19,084 - root - INFO - {
-	"start_time": "00:00:32.683",
-	"end_time": "00:00:37.142",
-	"content": "what you expect me to tell the truth about my life to the most indiscreet man in english"
-}
-2018-04-11 10:40:19,093 - root - INFO - http://localhost:9200/classes/notting_hill.flac/8
-2018-04-11 10:40:19,093 - root - INFO - {
-	"start_time": "00:00:38.467",
-	"end_time": "00:00:41.005",
-	"content": "anna look"
-}
-2018-04-11 10:40:19,102 - root - INFO - http://localhost:9200/classes/notting_hill.flac/9
-2018-04-11 10:40:19,103 - root - INFO - {
-	"start_time": "00:00:42.930",
-	"end_time": "00:00:45.411",
-	"content": "i'm a fatti level-head bloke"
-}
-2018-04-11 10:40:19,112 - root - INFO - http://localhost:9200/classes/notting_hill.flac/10
-2018-04-11 10:40:19,112 - root - INFO - {
-	"start_time": "00:00:47.070",
-	"end_time": "00:00:47.675",
-	"content": "dolphin"
-}
-2018-04-11 10:40:19,121 - root - INFO - http://localhost:9200/classes/notting_hill.flac/11
-2018-04-11 10:40:19,121 - root - INFO - {
-	"start_time": "00:00:48.295",
-	"end_time": "00:00:49.784",
-	"content": "piano out of love"
-}
-2018-04-11 10:40:19,131 - root - INFO - http://localhost:9200/classes/notting_hill.flac/12
-2018-04-11 10:40:19,131 - root - INFO - {
-	"start_time": "00:00:50.604",
-	"end_time": "00:00:51.754",
-	"content": "butter"
-}
-2018-04-11 10:40:19,141 - root - INFO - http://localhost:9200/classes/notting_hill.flac/13
-2018-04-11 10:40:19,141 - root - INFO - {
-	"start_time": "00:00:55.335",
-	"end_time": "00:00:59.163",
-	"content": "tri to say no to you"
-}
-2018-04-11 10:40:19,150 - root - INFO - http://localhost:9200/classes/notting_hill.flac/14
-2018-04-11 10:40:19,151 - root - INFO - {
-	"start_time": "00:00:59.688",
-	"end_time": "00:01:01.267",
-	"content": "countri crest"
-}
-2018-04-11 10:40:19,160 - root - INFO - http://localhost:9200/classes/notting_hill.flac/15
-2018-04-11 10:40:19,160 - root - INFO - {
-	"start_time": "00:01:10.504",
-	"end_time": "00:01:12.882",
-	"content": "cours I"
-}
-2018-04-11 10:40:19,169 - root - INFO - http://localhost:9200/classes/notting_hill.flac/16
-2018-04-11 10:40:19,169 - root - INFO - {
-	"start_time": "00:01:14.855",
-	"end_time": "00:01:15.708",
-	"content": "cours"
-}
-2018-04-11 10:40:19,178 - root - INFO - http://localhost:9200/classes/notting_hill.flac/17
-2018-04-11 10:40:19,178 - root - INFO - {
-	"start_time": "00:01:18.067",
-	"end_time": "00:01:22.855",
-	"content": "i'll just be go then it' nice to see you"
-}
-2018-04-11 10:40:19,193 - root - INFO - http://localhost:9200/classes/notting_hill.flac/18
-2018-04-11 10:40:19,193 - root - INFO - {
-	"start_time": "00:01:24.616",
-	"end_time": "00:01:26.077",
-	"content": "with you i'm in rout"
-}
-2018-04-11 10:40:19,202 - root - INFO - http://localhost:9200/classes/notting_hill.flac/19
-2018-04-11 10:40:19,203 - root - INFO - {
-	"start_time": "00:01:26.647",
-	"end_time": "00:01:29.247",
-	"content": "danger it seem like"
-}
-2018-04-11 10:40:19,212 - root - INFO - http://localhost:9200/classes/notting_hill.flac/20
-2018-04-11 10:40:19,212 - root - INFO - {
-	"start_time": "00:01:29.877",
-	"end_time": "00:01:34.007",
-	"content": "perfect situat file temporari"
-}
-2018-04-11 10:40:19,221 - root - INFO - http://localhost:9200/classes/notting_hill.flac/21
-2018-04-11 10:40:19,222 - root - INFO - {
-	"start_time": "00:01:34.761",
-	"end_time": "00:01:39.092",
-	"content": "my rel inexperienc how would I fear not"
-}
-2018-04-11 10:40:19,231 - root - INFO - http://localhost:9200/classes/notting_hill.flac/22
-2018-04-11 10:40:19,231 - root - INFO - {
-	"start_time": "00:01:39.787",
-	"end_time": "00:01:41.642",
-	"content": "recov if I wa"
-}
-2018-04-11 10:40:19,240 - root - INFO - http://localhost:9200/classes/notting_hill.flac/23
-2018-04-11 10:40:19,240 - root - INFO - {
-	"start_time": "00:01:42.628",
-	"end_time": "00:01:46.576",
-	"content": "onc again caus the side is I would absolut expect to be"
-}
-2018-04-11 10:40:19,249 - root - INFO - http://localhost:9200/classes/notting_hill.flac/24
-2018-04-11 10:40:19,249 - root - INFO - {
-	"start_time": "00:01:47.517",
-	"end_time": "00:01:53.927",
-	"content": "ad too mani pictur of you too mani are you drive i'd be"
-}
-2018-04-11 10:40:19,258 - root - INFO - http://localhost:9200/classes/notting_hill.flac/25
-2018-04-11 10:40:19,258 - root - INFO - {
-	"start_time": "00:01:59.445",
-	"end_time": "00:02:06.125",
-	"content": "realli is real no is I live in not hill you live in beverli hill"
-}
-2018-04-11 10:40:19,269 - root - INFO - http://localhost:9200/classes/notting_hill.flac/26
-2018-04-11 10:40:19,269 - root - INFO - {
-	"start_time": "00:02:07.137",
-	"end_time": "00:02:11.205",
-	"content": "who won the world know who you are my mother ha troubl rememb my name"
-}
-2018-04-11 10:40:19,278 - root - INFO - http://localhost:9200/classes/notting_hill.flac/27
-2018-04-11 10:40:19,278 - root - INFO - {
-	"start_time": "00:02:24.188",
-	"end_time": "00:02:26.971",
-	"content": "thing isn't realli real"
-}
-2018-04-11 10:40:19,294 - root - INFO - http://localhost:9200/classes/notting_hill.flac/28
-2018-04-11 10:40:19,294 - root - INFO - {
-	"start_time": "00:02:31.480",
-	"end_time": "00:02:34.522",
-	"content": "don't forget"
-}
-2018-04-11 10:40:19,305 - root - INFO - http://localhost:9200/classes/notting_hill.flac/29
-2018-04-11 10:40:19,305 - root - INFO - {
-	"start_time": "00:02:35.478",
-	"end_time": "00:02:37.287",
-	"content": "also just a girl"
-}
-2018-04-11 10:40:19,315 - root - INFO - http://localhost:9200/classes/notting_hill.flac/30
-2018-04-11 10:40:19,315 - root - INFO - {
-	"start_time": "00:02:39.850",
-	"end_time": "00:02:41.654",
-	"content": "stand in front of a boy"
-}
-2018-04-11 10:40:19,328 - root - INFO - http://localhost:9200/classes/notting_hill.flac/31
-2018-04-11 10:40:19,328 - root - INFO - {
-	"start_time": "00:02:42.923",
-	"end_time": "00:02:45.564",
-	"content": "ask him to love her"
-}
-2018-04-11 10:40:19,338 - root - INFO - http://localhost:9200/classes/notting_hill.flac/32
-2018-04-11 10:40:19,338 - root - INFO - {
-	"start_time": "00:03:13.495",
-	"end_time": "00:03:20.270",
-	"content": "pink shirt"
-}
-2018-04-11 10:40:19,348 - root - INFO - http://localhost:9200/classes/notting_hill.flac/33
-2018-04-11 10:40:19,348 - root - INFO - {
-	"start_time": "00:03:22.678",
-	"end_time": "00:03:22.999",
-	"content": "ye"
-}
-2018-04-11 10:40:19,361 - root - INFO - http://localhost:9200/classes/notting_hill.flac/34
-2018-04-11 10:40:19,361 - root - INFO - {
-	"start_time": "00:03:25.188",
-	"end_time": "00:03:25.701",
-	"content": "discuss"
-}
-2018-04-11 10:40:19,373 - root - INFO - http://localhost:9200/classes/notting_hill.flac/35
-2018-04-11 10:40:19,373 - root - INFO - {
-	"start_time": "00:03:26.768",
-	"end_time": "00:03:28.534",
-	"content": "are there ani circumst in which"
-}
-2018-04-11 10:40:19,384 - root - INFO - http://localhost:9200/classes/notting_hill.flac/36
-2018-04-11 10:40:19,384 - root - INFO - {
-	"start_time": "00:03:29.764",
-	"end_time": "00:03:30.678",
-	"content": "are the two of you"
-}
-2018-04-11 10:40:19,395 - root - INFO - http://localhost:9200/classes/notting_hill.flac/37
-2018-04-11 10:40:19,395 - root - INFO - {
-	"start_time": "00:03:32.747",
-	"end_time": "00:03:34.663",
-	"content": "might be more than just good friend"
-}
-2018-04-11 10:40:19,406 - root - INFO - http://localhost:9200/classes/notting_hill.flac/38
-2018-04-11 10:40:19,406 - root - INFO - {
-	"start_time": "00:03:37.672",
-	"end_time": "00:03:39.623",
-	"content": "I hope there would be but now i'm"
-}
-2018-04-11 10:40:19,416 - root - INFO - http://localhost:9200/classes/notting_hill.flac/39
-2018-04-11 10:40:19,416 - root - INFO - {
-	"start_time": "00:03:41.342",
-	"end_time": "00:03:42.289",
-	"content": "sure there aren't"
-}
-2018-04-11 10:40:19,427 - root - INFO - http://localhost:9200/classes/notting_hill.flac/40
-2018-04-11 10:40:19,427 - root - INFO - {
-	"start_time": "00:03:42.814",
-	"end_time": "00:03:52.001",
-	"content": "what would you say i'm sorri just the one question pleas I wa just wonder if"
-}
-2018-04-11 10:40:19,437 - root - INFO - http://localhost:9200/classes/notting_hill.flac/41
-2018-04-11 10:40:19,437 - root - INFO - {
-	"start_time": "00:03:53.632",
-	"end_time": "00:03:56.146",
-	"content": "it turn out that thi person"
-}
-2018-04-11 10:40:19,448 - root - INFO - http://localhost:9200/classes/notting_hill.flac/42
-2018-04-11 10:40:19,448 - root - INFO - {
-	"start_time": "00:03:56.806",
-	"end_time": "00:03:59.235",
-	"content": "soccer soccer"
-}
-2018-04-11 10:40:19,460 - root - INFO - http://localhost:9200/classes/notting_hill.flac/43
-2018-04-11 10:40:19,460 - root - INFO - {
-	"start_time": "00:03:59.826",
-	"end_time": "00:04:06.471",
-	"content": "text next just wonder whether if Mr taco realiz he been"
-}
-2018-04-11 10:40:19,474 - root - INFO - http://localhost:9200/classes/notting_hill.flac/44
-2018-04-11 10:40:19,474 - root - INFO - {
-	"start_time": "00:04:07.085",
-	"end_time": "00:04:15.652",
-	"content": "adopt prick got down on hi knee and beg you to reconsid whether you would in fact"
-}
-2018-04-11 10:40:19,486 - root - INFO - http://localhost:9200/classes/notting_hill.flac/45
-2018-04-11 10:40:19,486 - root - INFO - {
-	"start_time": "00:04:16.399",
-	"end_time": "00:04:16.724",
-	"content": "then"
-}
-2018-04-11 10:40:19,498 - root - INFO - http://localhost:9200/classes/notting_hill.flac/46
-2018-04-11 10:40:19,498 - root - INFO - {
-	"start_time": "00:04:19.016",
-	"end_time": "00:04:19.432",
-	"content": "consid"
-}
-2018-04-11 10:40:19,509 - root - INFO - http://localhost:9200/classes/notting_hill.flac/47
-2018-04-11 10:40:19,509 - root - INFO - {
-	"start_time": "00:04:29.738",
-	"end_time": "00:04:57.591",
-	"content": "ye I believ I would that' veri good news the reader' oppos hound will be absolut delight frank domin if you'd like to ask you a question again"
-}
-2018-04-11 10:40:19,519 - root - INFO - http://localhost:9200/classes/notting_hill.flac/48
-2018-04-11 10:40:19,519 - root - INFO - {
-	"start_time": "00:05:06.446",
-	"end_time": "00:05:21.968",
-	"content": "definit pictur"
-}
-2018-04-11 10:40:19,529 - root - INFO - ### Create File END ###
-2018-04-11 10:40:19,529 - root - INFO - ### Python End ###
-2018-04-11 10:40:19,529 - root - INFO - ########################
-2018-04-11 11:16:36,766 - root - INFO - ########################
-2018-04-11 11:16:36,767 - root - INFO - ### Python Start ###
-2018-04-11 11:16:36,767 - root - INFO - ### Split START ###
-2018-04-11 11:16:36,767 - root - INFO - notting_hill.flac
-2018-04-11 11:16:45,920 - root - INFO - ### Split End ###
-2018-04-11 11:16:45,920 - root - INFO - ### SpeechAPI START ###
-2018-04-11 11:16:54,137 - root - INFO - ### SpeechAPI END ###
-2018-04-11 11:16:54,137 - root - INFO - nonsilent_len : 62 dict _ len : 62
-2018-04-11 11:16:54,137 - root - INFO - ### Create srt START ###
-2018-04-11 11:16:54,138 - root - INFO - ### Create json START ###
-2018-04-11 11:16:54,138 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,138 - root - INFO - {
-	"start_time": "00:00",
-	"end_time": "00:00:01.575",
-	"content": "go away today but I"
-}
-2018-04-11 11:16:54,206 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,206 - root - INFO - {
-	"start_time": "00:00:02.535",
-	"end_time": "00:00:04.659",
-	"content": "wonder if I didn't"
-}
-2018-04-11 11:16:54,215 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,215 - root - INFO - {
-	"start_time": "00:00:05.392",
-	"end_time": "00:00:11.304",
-	"content": "whether you might let me see you a littl or"
-}
-2018-04-11 11:16:54,223 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,223 - root - INFO - {
-	"start_time": "00:00:11.947",
-	"end_time": "00:00:14.148",
-	"content": "mayb"
-}
-2018-04-11 11:16:54,233 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,233 - root - INFO - {
-	"start_time": "00:00:16.328",
-	"end_time": "00:00:18.395",
-	"content": "see if you could like me again"
-}
-2018-04-11 11:16:54,242 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,243 - root - INFO - {
-	"start_time": "00:00:19.419",
-	"end_time": "00:00:24.548",
-	"content": "but yesterday the actor lost you who I wasn't you just dismiss me out of"
-}
-2018-04-11 11:16:54,251 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,251 - root - INFO - {
-	"start_time": "00:00:29.114",
-	"end_time": "00:00:30.554",
-	"content": "your microphon on"
-}
-2018-04-11 11:16:54,258 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,258 - root - INFO - {
-	"start_time": "00:00:32.683",
-	"end_time": "00:00:37.142",
-	"content": "what you expect me to tell the truth about my life to the most indiscreet man in english"
-}
-2018-04-11 11:16:54,264 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,264 - root - INFO - {
-	"start_time": "00:00:38.467",
-	"end_time": "00:00:41.005",
-	"content": "outlook"
-}
-2018-04-11 11:16:54,272 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,272 - root - INFO - {
-	"start_time": "00:00:42.930",
-	"end_time": "00:00:45.411",
-	"content": "i'm a fatti level-head bloke"
-}
-2018-04-11 11:16:54,279 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,279 - root - INFO - {
-	"start_time": "00:00:47.070",
-	"end_time": "00:00:47.675",
-	"content": "dolphin"
-}
-2018-04-11 11:16:54,285 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,285 - root - INFO - {
-	"start_time": "00:00:48.295",
-	"end_time": "00:00:49.784",
-	"content": "an out of love"
-}
-2018-04-11 11:16:54,291 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,291 - root - INFO - {
-	"start_time": "00:00:50.604",
-	"end_time": "00:00:51.754",
-	"content": "butter"
-}
-2018-04-11 11:16:54,298 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,298 - root - INFO - {
-	"start_time": "00:00:55.335",
-	"end_time": "00:00:59.163",
-	"content": "tri to say no to you"
-}
-2018-04-11 11:16:54,307 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,307 - root - INFO - {
-	"start_time": "00:00:59.688",
-	"end_time": "00:01:01.267",
-	"content": "countri crest"
-}
-2018-04-11 11:16:54,313 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,313 - root - INFO - {
-	"start_time": "00:01:10.504",
-	"end_time": "00:01:12.882",
-	"content": "cours I"
-}
-2018-04-11 11:16:54,321 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,322 - root - INFO - {
-	"start_time": "00:01:14.855",
-	"end_time": "00:01:15.708",
-	"content": "cours"
-}
-2018-04-11 11:16:54,330 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,330 - root - INFO - {
-	"start_time": "00:01:18.067",
-	"end_time": "00:01:22.855",
-	"content": "i'll just be go then it' nice to see you"
-}
-2018-04-11 11:16:54,338 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,338 - root - INFO - {
-	"start_time": "00:01:24.616",
-	"end_time": "00:01:26.077",
-	"content": "with you i'm in rout"
-}
-2018-04-11 11:16:54,353 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,353 - root - INFO - {
-	"start_time": "00:01:26.647",
-	"end_time": "00:01:29.247",
-	"content": "danger it seem like"
-}
-2018-04-11 11:16:54,359 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,359 - root - INFO - {
-	"start_time": "00:01:29.877",
-	"end_time": "00:01:34.007",
-	"content": "perfect situat file temporari"
-}
-2018-04-11 11:16:54,365 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,365 - root - INFO - {
-	"start_time": "00:01:34.761",
-	"end_time": "00:01:39.092",
-	"content": "my rel inexperienc hardwood I fear not"
-}
-2018-04-11 11:16:54,372 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,373 - root - INFO - {
-	"start_time": "00:01:39.787",
-	"end_time": "00:01:41.642",
-	"content": "recov if I wa"
-}
-2018-04-11 11:16:54,378 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,379 - root - INFO - {
-	"start_time": "00:01:42.628",
-	"end_time": "00:01:46.576",
-	"content": "onc again caus the side is I would absolut expect to be"
-}
-2018-04-11 11:16:54,385 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,385 - root - INFO - {
-	"start_time": "00:01:47.517",
-	"end_time": "00:01:53.927",
-	"content": "ad too mani pictur of you too mani are you drive i'd be"
-}
-2018-04-11 11:16:54,392 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,392 - root - INFO - {
-	"start_time": "00:01:59.445",
-	"end_time": "00:02:06.125",
-	"content": "realli is real no is I live in not hill you live in beverli hill"
-}
-2018-04-11 11:16:54,398 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,398 - root - INFO - {
-	"start_time": "00:02:07.137",
-	"end_time": "00:02:11.205",
-	"content": "who won the world know who you are my mother ha troubl rememb my name"
-}
-2018-04-11 11:16:54,405 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,405 - root - INFO - {
-	"start_time": "00:02:24.188",
-	"end_time": "00:02:26.971",
-	"content": "thing isn't realli real"
-}
-2018-04-11 11:16:54,412 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,413 - root - INFO - {
-	"start_time": "00:02:31.480",
-	"end_time": "00:02:34.522",
-	"content": "don't forget"
-}
-2018-04-11 11:16:54,419 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,419 - root - INFO - {
-	"start_time": "00:02:35.478",
-	"end_time": "00:02:37.287",
-	"content": "also just a girl"
-}
-2018-04-11 11:16:54,428 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,428 - root - INFO - {
-	"start_time": "00:02:39.850",
-	"end_time": "00:02:41.654",
-	"content": "stand in front of a boy"
-}
-2018-04-11 11:16:54,435 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,435 - root - INFO - {
-	"start_time": "00:02:42.923",
-	"end_time": "00:02:45.564",
-	"content": "ask him to love her"
-}
-2018-04-11 11:16:54,443 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,443 - root - INFO - {
-	"start_time": "00:03:13.495",
-	"end_time": "00:03:20.270",
-	"content": "pink shirt"
-}
-2018-04-11 11:16:54,449 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,450 - root - INFO - {
-	"start_time": "00:03:22.678",
-	"end_time": "00:03:22.999",
-	"content": "ye"
-}
-2018-04-11 11:16:54,456 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,456 - root - INFO - {
-	"start_time": "00:03:25.188",
-	"end_time": "00:03:25.701",
-	"content": "discuss"
-}
-2018-04-11 11:16:54,462 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,462 - root - INFO - {
-	"start_time": "00:03:26.768",
-	"end_time": "00:03:28.534",
-	"content": "are there ani circumst in which"
-}
-2018-04-11 11:16:54,469 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,469 - root - INFO - {
-	"start_time": "00:03:29.764",
-	"end_time": "00:03:30.678",
-	"content": "are the two of you"
-}
-2018-04-11 11:16:54,476 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,476 - root - INFO - {
-	"start_time": "00:03:32.747",
-	"end_time": "00:03:34.663",
-	"content": "might be more than just good friend"
-}
-2018-04-11 11:16:54,482 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,482 - root - INFO - {
-	"start_time": "00:03:37.672",
-	"end_time": "00:03:39.623",
-	"content": "I hope there would be but now i'm"
-}
-2018-04-11 11:16:54,489 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,489 - root - INFO - {
-	"start_time": "00:03:41.342",
-	"end_time": "00:03:42.289",
-	"content": "sure there aren't"
-}
-2018-04-11 11:16:54,495 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,495 - root - INFO - {
-	"start_time": "00:03:42.814",
-	"end_time": "00:03:52.001",
-	"content": "what would you say i'm sorri just the one question pleas I wa just wonder if"
-}
-2018-04-11 11:16:54,502 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,502 - root - INFO - {
-	"start_time": "00:03:53.632",
-	"end_time": "00:03:56.146",
-	"content": "it turn out that thi person"
-}
-2018-04-11 11:16:54,509 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,510 - root - INFO - {
-	"start_time": "00:03:56.806",
-	"end_time": "00:03:59.235",
-	"content": "soccer soccer"
-}
-2018-04-11 11:16:54,517 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,517 - root - INFO - {
-	"start_time": "00:03:59.826",
-	"end_time": "00:04:06.471",
-	"content": "text next just wonder whether if Mr taco realiz he been"
-}
-2018-04-11 11:16:54,523 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,523 - root - INFO - {
-	"start_time": "00:04:07.085",
-	"end_time": "00:04:15.652",
-	"content": "adopt prick got down on hi knee and beg you to reconsid whether you would in fact"
-}
-2018-04-11 11:16:54,529 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,530 - root - INFO - {
-	"start_time": "00:04:16.399",
-	"end_time": "00:04:16.724",
-	"content": "then"
-}
-2018-04-11 11:16:54,536 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,536 - root - INFO - {
-	"start_time": "00:04:19.016",
-	"end_time": "00:04:19.432",
-	"content": "consid"
-}
-2018-04-11 11:16:54,542 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,542 - root - INFO - {
-	"start_time": "00:04:29.738",
-	"end_time": "00:04:57.591",
-	"content": "ye I believ I would that' veri good news the reader' oppos hound will be absolut delight frank domin if you'd like to ask you a question again"
-}
-2018-04-11 11:16:54,548 - root - INFO - http://localhost:9200/notting_hill/notting_hill.flac?pretty
-2018-04-11 11:16:54,548 - root - INFO - {
-	"start_time": "00:05:06.446",
-	"end_time": "00:05:21.968",
-	"content": "definit pictur"
-}
-2018-04-11 11:16:54,554 - root - INFO - ### Create File END ###
-2018-04-11 11:16:54,555 - root - INFO - ### Python End ###
-2018-04-11 11:16:54,555 - root - INFO - ########################
-2018-04-11 11:28:25,207 - root - INFO - ########################
-2018-04-11 11:28:25,208 - root - INFO - ### Python Start ###
-2018-04-11 11:28:25,208 - root - INFO - ### Split START ###
-2018-04-11 11:28:25,208 - root - INFO - notting_hill.flac
-2018-04-11 11:28:35,123 - root - INFO - ### Split End ###
-2018-04-11 11:28:35,123 - root - INFO - ### SpeechAPI START ###
-2018-04-11 11:28:45,581 - root - INFO - ### SpeechAPI END ###
-2018-04-11 11:28:45,581 - root - INFO - nonsilent_len : 62 dict _ len : 62
-2018-04-11 11:28:45,581 - root - INFO - ### Create srt START ###
-2018-04-11 11:28:45,582 - root - INFO - ### Create json START ###
-2018-04-11 11:28:45,921 - root - INFO - ### Create File END ###
-2018-04-11 11:28:45,922 - root - INFO - ### Python End ###
-2018-04-11 11:28:45,922 - root - INFO - ########################
-2018-04-11 11:29:06,927 - root - INFO - ########################
-2018-04-11 11:29:06,927 - root - INFO - ### Python Start ###
-2018-04-11 11:29:06,927 - root - INFO - ### Split START ###
-2018-04-11 11:29:06,927 - root - INFO - test.flac
-2018-04-11 11:29:08,673 - root - INFO - ### Split End ###
-2018-04-11 11:29:08,674 - root - INFO - ### SpeechAPI START ###
-2018-04-11 11:29:12,602 - root - INFO - ### SpeechAPI END ###
-2018-04-11 11:29:12,602 - root - INFO - nonsilent_len : 16 dict _ len : 16
-2018-04-11 11:29:12,602 - root - INFO - ### Create srt START ###
-2018-04-11 11:29:12,603 - root - INFO - ### Create json START ###
-2018-04-11 11:29:12,719 - root - INFO - ### Create File END ###
-2018-04-11 11:29:12,719 - root - INFO - ### Python End ###
-2018-04-11 11:29:12,719 - root - INFO - ########################
-=======
-2018-04-03 21:31:49,005 - root - INFO - ########################
-2018-04-03 21:31:49,005 - root - INFO - ### Python Start ###
-2018-04-03 21:31:49,005 - root - INFO - ### Split START ###
-2018-04-03 21:32:18,276 - root - INFO - ########################
-2018-04-03 21:32:18,276 - root - INFO - ### Python Start ###
-2018-04-03 21:32:18,276 - root - INFO - ### Split START ###
-2018-04-03 21:32:21,410 - root - INFO - ### Split End ###
-2018-04-03 21:32:21,410 - root - INFO - ### SpeechAPI START ###
-2018-04-03 21:32:37,992 - root - INFO - ### SpeechAPI END ###
-2018-04-03 21:32:37,993 - root - INFO - ### Create File START ###
-2018-04-03 21:32:50,742 - root - INFO - ########################
-2018-04-03 21:32:50,743 - root - INFO - ### Python Start ###
-2018-04-03 21:32:50,743 - root - INFO - ### Split START ###
-2018-04-03 21:32:55,050 - root - INFO - ### Split End ###
-2018-04-03 21:32:55,051 - root - INFO - ### SpeechAPI START ###
-2018-04-03 21:33:12,231 - root - INFO - ### SpeechAPI END ###
-2018-04-03 21:33:12,233 - root - INFO - ### Create File START ###
-2018-04-03 21:33:13,298 - root - INFO - ### Create File END ###
-2018-04-03 21:33:13,298 - root - INFO - ### Python End ###
-2018-04-03 21:33:13,299 - root - INFO - ########################
-2018-04-04 00:39:19,167 - root - INFO - ########################
-2018-04-04 00:39:19,167 - root - INFO - ### Python Start ###
-2018-04-04 00:39:19,167 - root - INFO - ### Split START ###
-2018-04-04 00:39:22,791 - root - INFO - ### Split End ###
-2018-04-04 00:39:22,792 - root - INFO - ### SpeechAPI START ###
-2018-04-04 00:39:29,334 - root - INFO - ### SpeechAPI END ###
-2018-04-04 00:39:29,335 - root - INFO - ### Create File START ###
-2018-04-04 00:39:30,071 - root - INFO - ### Create File END ###
-2018-04-04 00:39:30,071 - root - INFO - ### Python End ###
-2018-04-04 00:39:30,072 - root - INFO - ########################
-2018-04-04 12:37:54,940 - root - INFO - ########################
-2018-04-04 12:37:54,940 - root - INFO - ### Python Start ###
-2018-04-04 12:37:54,940 - root - INFO - ### Split START ###
-2018-04-04 12:38:45,089 - root - INFO - ########################
-2018-04-04 12:38:45,089 - root - INFO - ### Python Start ###
-2018-04-04 12:38:45,090 - root - INFO - ### Split START ###
-2018-04-04 12:39:11,493 - root - INFO - ########################
-2018-04-04 12:39:11,493 - root - INFO - ### Python Start ###
-2018-04-04 12:39:11,493 - root - INFO - ### Split START ###
-2018-04-04 12:39:32,997 - root - INFO - ########################
-2018-04-04 12:39:32,998 - root - INFO - ### Python Start ###
-2018-04-04 12:39:32,998 - root - INFO - ### Split START ###
-2018-04-04 12:39:36,527 - root - INFO - ### Split End ###
-2018-04-04 12:39:36,527 - root - INFO - ### SpeechAPI START ###
-2018-04-04 12:39:44,905 - root - INFO - ### SpeechAPI END ###
-2018-04-04 12:39:44,905 - root - INFO - ### Create File START ###
-2018-04-04 12:39:45,571 - root - INFO - ### Create File END ###
-2018-04-04 12:39:45,571 - root - INFO - ### Python End ###
-2018-04-04 12:39:45,571 - root - INFO - ########################
-2018-04-04 12:44:49,923 - root - INFO - ########################
-2018-04-04 12:44:49,924 - root - INFO - ### Python Start ###
-2018-04-04 12:44:49,924 - root - INFO - ### Split START ###
-2018-04-04 12:44:53,048 - root - INFO - ### Split End ###
-2018-04-04 12:44:53,049 - root - INFO - ### SpeechAPI START ###
-2018-04-04 12:44:57,400 - root - INFO - ### SpeechAPI END ###
-2018-04-04 12:44:57,400 - root - INFO - ### Create File START ###
-2018-04-04 12:44:57,782 - root - INFO - ### Create File END ###
-2018-04-04 12:44:57,783 - root - INFO - ### Python End ###
-2018-04-04 12:44:57,783 - root - INFO - ########################
-2018-04-04 13:27:32,856 - root - INFO - ########################
-2018-04-04 13:27:32,856 - root - INFO - ### Python Start ###
-2018-04-04 13:27:32,856 - root - INFO - ### Split START ###
-2018-04-04 13:27:36,135 - root - INFO - ### Split End ###
-2018-04-04 13:27:36,136 - root - INFO - ### SpeechAPI START ###
-2018-04-04 13:27:40,351 - root - INFO - ### SpeechAPI END ###
-2018-04-04 13:27:40,351 - root - INFO - ### Create File START ###
-2018-04-04 13:27:40,686 - root - INFO - ### Create File END ###
-2018-04-04 13:27:40,687 - root - INFO - ### Python End ###
-2018-04-04 13:27:40,687 - root - INFO - ########################
-2018-04-04 13:49:50,215 - root - INFO - ########################
-2018-04-04 13:49:50,215 - root - INFO - ### Python Start ###
-2018-04-04 13:49:50,215 - root - INFO - ### Split START ###
-2018-04-04 13:49:51,888 - root - INFO - ### Split End ###
-2018-04-04 13:49:51,889 - root - INFO - ### SpeechAPI START ###
-2018-04-04 13:49:55,426 - root - INFO - ### SpeechAPI END ###
-2018-04-04 13:49:55,426 - root - INFO - ### Create File START ###
-2018-04-04 13:54:07,450 - root - INFO - ########################
-2018-04-04 13:54:07,450 - root - INFO - ### Python Start ###
-2018-04-04 13:54:07,450 - root - INFO - ### Split START ###
-2018-04-04 13:54:09,130 - root - INFO - ### Split End ###
-2018-04-04 13:54:09,130 - root - INFO - ### SpeechAPI START ###
-2018-04-04 13:54:12,508 - root - INFO - ### SpeechAPI END ###
-2018-04-04 13:54:12,508 - root - INFO - ### Create File START ###
-2018-04-04 13:54:13,024 - root - INFO - ### Create File END ###
-2018-04-04 13:54:13,025 - root - INFO - ### Python End ###
-2018-04-04 13:54:13,025 - root - INFO - ########################
-2018-04-04 13:57:03,106 - root - INFO - ########################
-2018-04-04 13:57:03,106 - root - INFO - ### Python Start ###
-2018-04-04 13:57:03,106 - root - INFO - ### Split START ###
-2018-04-04 13:57:04,747 - root - INFO - ### Split End ###
-2018-04-04 13:57:04,748 - root - INFO - ### SpeechAPI START ###
-2018-04-04 13:57:08,422 - root - INFO - ### SpeechAPI END ###
-2018-04-04 13:57:08,422 - root - INFO - ### Create File START ###
-2018-04-04 13:59:16,892 - root - INFO - ########################
-2018-04-04 13:59:16,893 - root - INFO - ### Python Start ###
-2018-04-04 13:59:16,893 - root - INFO - ### Split START ###
-2018-04-04 13:59:17,913 - root - INFO - ########################
-2018-04-04 13:59:17,913 - root - INFO - ### Python Start ###
-2018-04-04 13:59:17,913 - root - INFO - ### Split START ###
-2018-04-04 13:59:18,595 - root - INFO - ### Split End ###
-2018-04-04 13:59:18,595 - root - INFO - ### SpeechAPI START ###
-2018-04-04 13:59:19,758 - root - INFO - ### Split End ###
-2018-04-04 13:59:19,759 - root - INFO - ### SpeechAPI START ###
-2018-04-04 13:59:22,979 - root - INFO - ### SpeechAPI END ###
-2018-04-04 13:59:22,979 - root - INFO - ### Create File START ###
-2018-04-04 13:59:23,897 - root - INFO - ### SpeechAPI END ###
-2018-04-04 13:59:23,897 - root - INFO - ### Create File START ###
-2018-04-04 14:00:10,624 - root - INFO - ########################
-2018-04-04 14:00:10,624 - root - INFO - ### Python Start ###
-2018-04-04 14:00:10,624 - root - INFO - ### Split START ###
-2018-04-04 14:00:12,270 - root - INFO - ### Split End ###
-2018-04-04 14:00:12,271 - root - INFO - ### SpeechAPI START ###
-2018-04-04 14:00:16,502 - root - INFO - ### SpeechAPI END ###
-2018-04-04 14:00:16,502 - root - INFO - ### Create File START ###
-2018-04-04 14:00:16,506 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 14:00:16,509 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 14:00:16,511 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 14:00:16,513 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 14:00:16,516 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 14:00:16,520 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 14:00:16,523 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 14:00:16,525 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 14:00:16,527 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 14:00:16,530 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 14:00:16,532 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 14:00:16,535 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 14:00:16,537 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 14:00:16,537 - root - INFO - ### Create File END ###
-2018-04-04 14:00:16,537 - root - INFO - ### Python End ###
-2018-04-04 14:00:16,537 - root - INFO - ########################
-2018-04-04 16:00:01,799 - root - INFO - ########################
-2018-04-04 16:00:01,799 - root - INFO - ### Python Start ###
-2018-04-04 16:00:01,799 - root - INFO - ### Split START ###
-2018-04-04 16:00:03,699 - root - INFO - ### Split End ###
-2018-04-04 16:00:03,699 - root - INFO - ### SpeechAPI START ###
-2018-04-04 16:00:07,574 - root - INFO - ### SpeechAPI END ###
-2018-04-04 16:00:07,574 - root - INFO - ### Create File START ###
-2018-04-04 16:00:07,579 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:00:07,583 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:00:07,586 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:00:07,589 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:00:07,592 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:00:07,596 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:00:07,600 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:00:07,603 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:00:07,606 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:00:07,610 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:00:07,613 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:00:07,617 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:00:07,620 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:00:07,620 - root - INFO - ### Create File END ###
-2018-04-04 16:00:07,620 - root - INFO - ### Python End ###
-2018-04-04 16:00:07,620 - root - INFO - ########################
-2018-04-04 16:06:52,153 - root - INFO - ########################
-2018-04-04 16:06:52,154 - root - INFO - ### Python Start ###
-2018-04-04 16:06:52,154 - root - INFO - ### Split START ###
-2018-04-04 16:06:53,847 - root - INFO - ### Split End ###
-2018-04-04 16:06:53,847 - root - INFO - ### SpeechAPI START ###
-2018-04-04 16:06:57,678 - root - INFO - ### SpeechAPI END ###
-2018-04-04 16:06:57,678 - root - INFO - ### Create File START ###
-2018-04-04 16:06:57,682 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:06:57,685 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:06:57,688 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:06:57,691 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:06:57,694 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:06:57,697 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:06:57,700 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:06:57,703 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:06:57,705 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:06:57,708 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:06:57,710 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:06:57,713 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:06:57,715 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:06:57,715 - root - INFO - ### Create File END ###
-2018-04-04 16:06:57,715 - root - INFO - ### Python End ###
-2018-04-04 16:06:57,715 - root - INFO - ########################
-<<<<<<< HEAD
-2018-04-04 16:16:15,736 - root - INFO - ########################
-2018-04-04 16:16:15,736 - root - INFO - ### Python Start ###
-2018-04-04 16:16:15,736 - root - INFO - ### Split START ###
-2018-04-04 16:16:18,684 - root - INFO - ### Split End ###
-2018-04-04 16:16:18,685 - root - INFO - ### SpeechAPI START ###
-2018-04-04 16:16:22,713 - root - INFO - ### SpeechAPI END ###
-2018-04-04 16:16:22,713 - root - INFO - ### Create File START ###
-2018-04-04 16:16:22,951 - root - INFO - ### Create File END ###
-2018-04-04 16:16:22,951 - root - INFO - ### Python End ###
-2018-04-04 16:16:22,951 - root - INFO - ########################
-2018-04-04 16:57:32,283 - root - INFO - ########################
-2018-04-04 16:57:32,283 - root - INFO - ### Python Start ###
-2018-04-04 16:57:32,283 - root - INFO - ### Split START ###
-2018-04-04 16:57:35,223 - root - INFO - ### Split End ###
-2018-04-04 16:57:35,223 - root - INFO - ### SpeechAPI START ###
-2018-04-04 16:57:39,262 - root - INFO - ### SpeechAPI END ###
-2018-04-04 16:57:39,262 - root - INFO - ### Create File START ###
-2018-04-04 16:57:39,626 - root - INFO - ### Create File END ###
-2018-04-04 16:57:39,626 - root - INFO - ### Python End ###
-2018-04-04 16:57:39,626 - root - INFO - ########################
-=======
-2018-04-04 16:19:20,061 - root - INFO - ########################
-2018-04-04 16:19:20,061 - root - INFO - ### Python Start ###
-2018-04-04 16:19:20,061 - root - INFO - ### Split START ###
-2018-04-04 16:19:21,803 - root - INFO - ### Split End ###
-2018-04-04 16:19:21,803 - root - INFO - ### SpeechAPI START ###
-2018-04-04 16:19:25,825 - root - INFO - ### SpeechAPI END ###
-2018-04-04 16:19:25,825 - root - INFO - ### Create File START ###
-2018-04-04 16:19:25,831 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:19:25,835 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:19:25,839 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:19:25,845 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:19:25,850 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:19:25,855 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:19:25,862 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:19:25,866 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:19:25,871 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:19:25,876 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:19:25,881 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:19:25,884 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:19:25,888 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:19:25,888 - root - INFO - ### Create File END ###
-2018-04-04 16:19:25,888 - root - INFO - ### Python End ###
-2018-04-04 16:19:25,888 - root - INFO - ########################
-2018-04-04 16:25:43,436 - root - INFO - ########################
-2018-04-04 16:25:43,437 - root - INFO - ### Python Start ###
-2018-04-04 16:25:43,437 - root - INFO - ### Split START ###
-2018-04-04 16:25:45,194 - root - INFO - ### Split End ###
-2018-04-04 16:25:45,194 - root - INFO - ### SpeechAPI START ###
-2018-04-04 16:25:48,585 - root - INFO - ### SpeechAPI END ###
-2018-04-04 16:25:48,586 - root - INFO - ### Create File START ###
-2018-04-04 16:25:48,593 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:25:48,600 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:25:48,605 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:25:48,610 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:25:48,613 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:25:48,618 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:25:48,621 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:25:48,628 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:25:48,634 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:25:48,639 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:25:48,648 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:25:48,653 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:25:48,658 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-04 16:25:48,658 - root - INFO - ### Create File END ###
-2018-04-04 16:25:48,658 - root - INFO - ### Python End ###
-2018-04-04 16:25:48,658 - root - INFO - ########################
->>>>>>> 4967871e843c7e704439ed8a609ce44c89c2a11c
-2018-04-10 19:49:28,511 - root - INFO - ########################
-2018-04-10 19:49:28,512 - root - INFO - ### Python Start ###
-2018-04-10 19:49:28,512 - root - INFO - ### Split START ###
-2018-04-10 19:49:31,758 - root - INFO - ### Split End ###
-2018-04-10 19:49:31,758 - root - INFO - ### SpeechAPI START ###
-2018-04-10 19:49:48,377 - root - INFO - ### SpeechAPI END ###
-2018-04-10 19:49:48,377 - root - INFO - ### Create File START ###
-2018-04-10 19:49:49,517 - root - INFO - ### Create File END ###
-2018-04-10 19:49:49,517 - root - INFO - ### Python End ###
-2018-04-10 19:49:49,518 - root - INFO - ########################
-2018-04-10 21:20:51,897 - root - INFO - ########################
-2018-04-10 21:20:51,897 - root - INFO - ### Python Start ###
-2018-04-10 21:20:51,897 - root - INFO - ### Split START ###
-2018-04-10 21:20:54,802 - root - INFO - ### Split End ###
-2018-04-10 21:20:54,802 - root - INFO - ### SpeechAPI START ###
-2018-04-10 21:21:00,042 - root - INFO - ### SpeechAPI END ###
-2018-04-10 21:21:00,042 - root - INFO - ### Create File START ###
-2018-04-10 21:21:00,812 - root - INFO - ### Create File END ###
-2018-04-10 21:21:00,812 - root - INFO - ### Python End ###
-2018-04-10 21:21:00,812 - root - INFO - ########################
-2018-04-10 21:22:11,357 - root - INFO - ########################
-2018-04-10 21:22:11,357 - root - INFO - ### Python Start ###
-2018-04-10 21:22:11,357 - root - INFO - ### Split START ###
-2018-04-10 21:22:25,887 - root - INFO - ### Split End ###
-2018-04-10 21:22:25,887 - root - INFO - ### SpeechAPI START ###
-2018-04-10 21:22:48,485 - root - INFO - ### SpeechAPI END ###
-2018-04-10 21:22:48,492 - root - INFO - ### Create File START ###
-2018-04-10 22:26:32,188 - root - INFO - ########################
-2018-04-10 22:26:32,189 - root - INFO - ### Python Start ###
-2018-04-10 22:26:32,189 - root - INFO - ### Split START ###
-2018-04-10 22:26:49,784 - root - INFO - ### Split End ###
-2018-04-10 22:26:49,784 - root - INFO - ### SpeechAPI START ###
-2018-04-10 22:27:07,373 - root - INFO - ### SpeechAPI END ###
-2018-04-10 22:27:07,373 - root - INFO - ### Create File START ###
-2018-04-10 22:28:01,633 - root - INFO - ########################
-2018-04-10 22:28:01,634 - root - INFO - ### Python Start ###
-2018-04-10 22:28:01,634 - root - INFO - ### Split START ###
-2018-04-10 22:28:17,361 - root - INFO - ### Split End ###
-2018-04-10 22:28:17,362 - root - INFO - ### SpeechAPI START ###
-2018-04-10 22:28:35,982 - root - INFO - ### SpeechAPI END ###
-2018-04-10 22:28:35,984 - root - INFO - ### Create File START ###
-2018-04-10 22:32:06,711 - root - INFO - ########################
-2018-04-10 22:32:06,712 - root - INFO - ### Python Start ###
-2018-04-10 22:32:06,712 - root - INFO - ### Split START ###
-2018-04-10 22:32:24,337 - root - INFO - ########################
-2018-04-10 22:32:24,337 - root - INFO - ### Python Start ###
-2018-04-10 22:32:24,338 - root - INFO - ### Split START ###
-2018-04-10 22:32:27,170 - root - INFO - ### Split End ###
-2018-04-10 22:32:27,170 - root - INFO - ### SpeechAPI START ###
-2018-04-10 22:32:33,313 - root - INFO - ### SpeechAPI END ###
-2018-04-10 22:32:33,313 - root - INFO - ### Create File START ###
-2018-04-10 22:32:33,564 - root - INFO - ### Create File END ###
-2018-04-10 22:32:33,565 - root - INFO - ### Python End ###
-2018-04-10 22:32:33,565 - root - INFO - ########################
-2018-04-10 22:33:10,599 - root - INFO - ########################
-2018-04-10 22:33:10,600 - root - INFO - ### Python Start ###
-2018-04-10 22:33:10,600 - root - INFO - ### Split START ###
-2018-04-10 22:33:24,215 - root - INFO - ### Split End ###
-2018-04-10 22:33:24,216 - root - INFO - ### SpeechAPI START ###
-2018-04-10 22:33:41,409 - root - INFO - ### SpeechAPI END ###
-2018-04-10 22:33:41,410 - root - INFO - ### Create File START ###
-2018-04-10 22:41:17,094 - root - INFO - ########################
-2018-04-10 22:41:17,094 - root - INFO - ### Python Start ###
-2018-04-10 22:41:17,094 - root - INFO - ### Split START ###
-2018-04-10 22:41:30,978 - root - INFO - ### Split End ###
-2018-04-10 22:41:30,979 - root - INFO - ### SpeechAPI START ###
-2018-04-10 22:41:49,951 - root - INFO - ### SpeechAPI END ###
-2018-04-10 22:41:49,951 - root - INFO - ### Create File START ###
->>>>>>> ebb046c40e959a2b7ba615537a0cb87edddea2e6
-2018-04-11 15:40:17,188 - root - INFO - ########################
-2018-04-11 15:40:17,188 - root - INFO - ### Python Start ###
-2018-04-11 15:40:17,188 - root - INFO - ### Split START ###
-2018-04-11 15:40:17,188 - root - INFO - test.flac
-2018-04-11 15:40:19,947 - root - INFO - ### Split End ###
-2018-04-11 15:40:19,948 - root - INFO - ### SpeechAPI START ###
-2018-04-11 15:40:24,272 - root - INFO - ### SpeechAPI END ###
-2018-04-11 15:40:24,272 - root - INFO - nonsilent_len : 16 dict _ len : 16
-2018-04-11 15:40:24,273 - root - INFO - ### Create srt START ###
-2018-04-11 15:40:24,275 - root - INFO - ### Create json START ###
-2018-04-11 15:40:24,279 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-11 15:40:24,283 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-11 15:40:24,287 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-11 15:40:24,291 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-11 15:40:24,296 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-11 15:40:24,301 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-11 15:40:24,306 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-11 15:40:24,310 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-11 15:40:24,314 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-11 15:40:24,318 - root - ERROR - ### ElasticSearch Post ERROR ###
-2018-04-11 15:40:24,318 - root - INFO - ### Create File END ###
-2018-04-11 15:40:24,318 - root - INFO - ### Python End ###
-2018-04-11 15:40:24,318 - root - INFO - ########################
-2018-04-11 15:41:07,223 - root - INFO - ########################
-2018-04-11 15:41:07,224 - root - INFO - ### Python Start ###
-2018-04-11 15:41:07,224 - root - INFO - ### Split START ###
-2018-04-11 15:41:07,224 - root - INFO - test.flac
-2018-04-11 15:41:10,642 - root - INFO - ### Split End ###
-2018-04-11 15:41:10,643 - root - INFO - ### SpeechAPI START ###
-2018-04-11 15:41:16,173 - root - INFO - ### SpeechAPI END ###
-2018-04-11 15:41:16,173 - root - INFO - nonsilent_len : 16 dict _ len : 16
-2018-04-11 15:41:16,173 - root - INFO - ### Create srt START ###
-2018-04-11 15:41:16,175 - root - INFO - ### Create json START ###
-2018-04-11 15:41:17,840 - root - INFO - ### Create File END ###
-2018-04-11 15:41:17,840 - root - INFO - ### Python End ###
-2018-04-11 15:41:17,841 - root - INFO - ########################
-2018-04-11 15:52:37,781 - root - INFO - ########################
-2018-04-11 15:52:37,781 - root - INFO - ### Python Start ###
-2018-04-11 15:52:37,781 - root - INFO - ### Split START ###
-2018-04-11 15:52:37,781 - root - INFO - notting_hill.flac
-2018-04-11 15:52:53,882 - root - INFO - ### Split End ###
-2018-04-11 15:52:53,883 - root - INFO - ### SpeechAPI START ###
-2018-04-11 15:53:14,783 - root - INFO - ### SpeechAPI END ###
-2018-04-11 15:53:14,784 - root - INFO - nonsilent_len : 62 dict _ len : 62
-2018-04-11 15:53:14,784 - root - INFO - ### Create srt START ###
-2018-04-11 15:53:14,785 - root - INFO - ### Create json START ###
-2018-04-11 15:53:17,093 - root - INFO - ### Create File END ###
-2018-04-11 15:53:17,095 - root - INFO - ### Python End ###
-2018-04-11 15:53:17,095 - root - INFO - ########################
-2018-04-11 16:06:35,239 - root - INFO - ########################
-2018-04-11 16:06:35,239 - root - INFO - ### Python Start ###
-2018-04-11 16:06:35,239 - root - INFO - ### Split START ###
-2018-04-11 16:06:35,239 - root - INFO - notting_hill.flac
-2018-04-11 16:06:52,179 - root - INFO - ### Split End ###
-2018-04-11 16:06:52,180 - root - INFO - ### SpeechAPI START ###
-2018-04-11 16:07:12,075 - root - INFO - ### SpeechAPI END ###
-2018-04-11 16:07:12,076 - root - INFO - nonsilent_len : 62 dict _ len : 62
-2018-04-11 16:07:12,076 - root - INFO - ### Create srt START ###
-2018-04-11 16:07:12,078 - root - INFO - ### Create json START ###
-2018-04-11 16:07:14,431 - root - INFO - ### Create File END ###
-2018-04-11 16:07:14,433 - root - INFO - ### Python End ###
-2018-04-11 16:07:14,433 - root - INFO - ########################
-2018-04-11 16:07:31,881 - root - INFO - ########################
-2018-04-11 16:07:31,881 - root - INFO - ### Python Start ###
-2018-04-11 16:07:31,881 - root - INFO - ### Split START ###
-2018-04-11 16:07:31,881 - root - INFO - test.flac
-2018-04-11 16:07:34,809 - root - INFO - ### Split End ###
-2018-04-11 16:07:34,809 - root - INFO - ### SpeechAPI START ###
-2018-04-11 16:07:40,413 - root - INFO - ### SpeechAPI END ###
-2018-04-11 16:07:40,413 - root - INFO - nonsilent_len : 16 dict _ len : 16
-2018-04-11 16:07:40,413 - root - INFO - ### Create srt START ###
-2018-04-11 16:07:40,417 - root - INFO - ### Create json START ###
-2018-04-11 16:07:41,451 - root - INFO - ### Create File END ###
-2018-04-11 16:07:41,452 - root - INFO - ### Python End ###
-2018-04-11 16:07:41,452 - root - INFO - ########################
->>>>>>> 5f2f17301118a3e066381417c76e47b974f193a6
+2018-04-11 19:54:36,308 - root - INFO - ### SpeechAPI END ###
+2018-04-11 19:54:36,308 - root - INFO - nonsilent_len : 62 dict _ len : 62
+2018-04-11 19:54:36,308 - root - INFO - ### Create srt START ###
+2018-04-11 19:54:36,309 - root - INFO - ### Create json START ###
+2018-04-11 19:54:36,698 - root - INFO - ### Create File END ###
+2018-04-11 19:54:36,699 - root - INFO - ### Python End ###
+2018-04-11 19:54:36,699 - root - INFO - ########################
+2018-04-11 20:00:20,228 - root - INFO - ########################
+2018-04-11 20:00:20,228 - root - INFO - ### Python Start ###
+2018-04-11 20:00:20,228 - root - INFO - ### Split START ###
+2018-04-11 20:00:20,228 - root - INFO - notting_hill.flac
+2018-04-11 20:00:28,900 - root - INFO - ### Split End ###
+2018-04-11 20:00:28,901 - root - INFO - ### SpeechAPI START ###
+2018-04-11 20:00:28,901 - root - INFO - ./audioFile_python/result0.flac
+2018-04-11 20:00:28,901 - root - INFO - ./audioFile_python/result1.flac
+2018-04-11 20:00:28,902 - root - INFO - ./audioFile_python/result2.flac
+2018-04-11 20:00:28,903 - root - INFO - ./audioFile_python/result3.flac
+2018-04-11 20:00:28,904 - root - INFO - ./audioFile_python/result4.flac
+2018-04-11 20:00:28,904 - root - INFO - ./audioFile_python/result5.flac
+2018-04-11 20:00:28,905 - root - INFO - ./audioFile_python/result6.flac
+2018-04-11 20:00:28,906 - root - INFO - ./audioFile_python/result7.flac
+2018-04-11 20:00:28,907 - root - INFO - ./audioFile_python/result8.flac
+2018-04-11 20:00:28,907 - root - INFO - ./audioFile_python/result9.flac
+2018-04-11 20:00:28,908 - root - INFO - ./audioFile_python/result10.flac
+2018-04-11 20:00:28,908 - root - INFO - ./audioFile_python/result11.flac
+2018-04-11 20:00:28,909 - root - INFO - ./audioFile_python/result12.flac
+2018-04-11 20:00:28,909 - root - INFO - ./audioFile_python/result13.flac
+2018-04-11 20:00:28,910 - root - INFO - ./audioFile_python/result14.flac
+2018-04-11 20:00:28,910 - root - INFO - ./audioFile_python/result15.flac
+2018-04-11 20:00:28,911 - root - INFO - ./audioFile_python/result16.flac
+2018-04-11 20:00:28,911 - root - INFO - ./audioFile_python/result17.flac
+2018-04-11 20:00:28,912 - root - INFO - ./audioFile_python/result18.flac
+2018-04-11 20:00:28,912 - root - INFO - ./audioFile_python/result19.flac
+2018-04-11 20:00:28,914 - root - INFO - ./audioFile_python/result20.flac
+2018-04-11 20:00:28,915 - root - INFO - ./audioFile_python/result21.flac
+2018-04-11 20:00:28,915 - root - INFO - ./audioFile_python/result22.flac
+2018-04-11 20:00:28,916 - root - INFO - ./audioFile_python/result23.flac
+2018-04-11 20:00:28,916 - root - INFO - ./audioFile_python/result24.flac
+2018-04-11 20:00:28,916 - root - INFO - ./audioFile_python/result25.flac
+2018-04-11 20:00:28,917 - root - INFO - ./audioFile_python/result26.flac
+2018-04-11 20:00:28,917 - root - INFO - ./audioFile_python/result27.flac
+2018-04-11 20:00:28,918 - root - INFO - ./audioFile_python/result28.flac
+2018-04-11 20:00:28,918 - root - INFO - ./audioFile_python/result29.flac
+2018-04-11 20:00:28,919 - root - INFO - ./audioFile_python/result30.flac
+2018-04-11 20:00:28,919 - root - INFO - ./audioFile_python/result31.flac
+2018-04-11 20:00:28,920 - root - INFO - ./audioFile_python/result32.flac
+2018-04-11 20:00:28,920 - root - INFO - ./audioFile_python/result33.flac
+2018-04-11 20:00:28,921 - root - INFO - ./audioFile_python/result34.flac
+2018-04-11 20:00:28,922 - root - INFO - ./audioFile_python/result35.flac
+2018-04-11 20:00:28,922 - root - INFO - ./audioFile_python/result36.flac
+2018-04-11 20:00:28,922 - root - INFO - ./audioFile_python/result37.flac
+2018-04-11 20:00:28,923 - root - INFO - ./audioFile_python/result38.flac
+2018-04-11 20:00:28,923 - root - INFO - ./audioFile_python/result39.flac
+2018-04-11 20:00:28,924 - root - INFO - ./audioFile_python/result40.flac
+2018-04-11 20:00:28,924 - root - INFO - ./audioFile_python/result41.flac
+2018-04-11 20:00:28,925 - root - INFO - ./audioFile_python/result42.flac
+2018-04-11 20:00:28,925 - root - INFO - ./audioFile_python/result43.flac
+2018-04-11 20:00:28,926 - root - INFO - ./audioFile_python/result44.flac
+2018-04-11 20:00:28,927 - root - INFO - ./audioFile_python/result45.flac
+2018-04-11 20:00:28,928 - root - INFO - ./audioFile_python/result46.flac
+2018-04-11 20:00:28,929 - root - INFO - ./audioFile_python/result47.flac
+2018-04-11 20:00:28,930 - root - INFO - ./audioFile_python/result48.flac
+2018-04-11 20:00:28,932 - root - INFO - ./audioFile_python/result49.flac
+2018-04-11 20:00:28,934 - root - INFO - ./audioFile_python/result50.flac
+2018-04-11 20:00:28,936 - root - INFO - ./audioFile_python/result51.flac
+2018-04-11 20:00:28,937 - root - INFO - ./audioFile_python/result52.flac
+2018-04-11 20:00:28,939 - root - INFO - ./audioFile_python/result53.flac
+2018-04-11 20:00:28,939 - root - INFO - ./audioFile_python/result54.flac
+2018-04-11 20:00:28,940 - root - INFO - ./audioFile_python/result55.flac
+2018-04-11 20:00:28,941 - root - INFO - ./audioFile_python/result56.flac
+2018-04-11 20:00:28,943 - root - INFO - ./audioFile_python/result57.flac
+2018-04-11 20:00:28,944 - root - INFO - ./audioFile_python/result58.flac
+2018-04-11 20:00:28,945 - root - INFO - ./audioFile_python/result59.flac
+2018-04-11 20:00:28,946 - root - INFO - ./audioFile_python/result60.flac
+2018-04-11 20:00:28,946 - root - INFO - ./audioFile_python/result61.flac
+2018-04-11 20:00:31,083 - root - INFO - []
+2018-04-11 20:00:31,271 - root - INFO - []
+2018-04-11 20:00:31,346 - root - INFO - [alternatives {
+  transcript: "the Scott"
+  confidence: 0.6938376426696777
+}
+]
+2018-04-11 20:00:31,386 - root - INFO - [alternatives {
+  transcript: "then"
+  confidence: 0.96339350938797
+}
+]
+2018-04-11 20:00:31,576 - root - INFO - [alternatives {
+  transcript: "of course"
+  confidence: 0.8890514969825745
+}
+]
+2018-04-11 20:00:31,685 - root - INFO - [alternatives {
+  transcript: "RI"
+  confidence: 0.7058060765266418
+}
+]
+2018-04-11 20:00:31,753 - root - INFO - [alternatives {
+  transcript: "I\'m a fatty level-headed bloke"
+  confidence: 0.8960853219032288
+}
+]
+2018-04-11 20:00:31,793 - root - INFO - [alternatives {
+  transcript: "consider"
+  confidence: 0.8677268028259277
+}
+]
+2018-04-11 20:00:31,817 - root - INFO - []
+2018-04-11 20:00:31,862 - root - INFO - [alternatives {
+  transcript: "Outlook"
+  confidence: 0.6595644950866699
+}
+]
+2018-04-11 20:00:31,887 - root - INFO - [alternatives {
+  transcript: "I heard"
+  confidence: 0.7604616284370422
+}
+]
+2018-04-11 20:00:31,895 - root - INFO - []
+2018-04-11 20:00:31,978 - root - INFO - [alternatives {
+  transcript: "are the two of you"
+  confidence: 0.9796811938285828
+}
+]
+2018-04-11 20:00:32,058 - root - INFO - [alternatives {
+  transcript: "go away today but I"
+  confidence: 0.868928849697113
+}
+]
+2018-04-11 20:00:32,098 - root - INFO - [alternatives {
+  transcript: "well bucket"
+  confidence: 0.7631537914276123
+}
+]
+2018-04-11 20:00:32,178 - root - INFO - [alternatives {
+  transcript: "course I"
+  confidence: 0.8692187666893005
+}
+]
+2018-04-11 20:00:32,276 - root - INFO - [alternatives {
+  transcript: "yes"
+  confidence: 0.9827892184257507
+}
+]
+2018-04-11 20:00:32,293 - root - INFO - [alternatives {
+  transcript: "see if you could like me again"
+  confidence: 0.9634978771209717
+}
+]
+2018-04-11 20:00:32,377 - root - INFO - [alternatives {
+  transcript: "notify"
+  confidence: 0.7047414779663086
+}
+]
+2018-04-11 20:00:32,405 - root - INFO - [alternatives {
+  transcript: "short there aren\'t"
+  confidence: 0.9388814568519592
+}
+]
+2018-04-11 20:00:32,509 - root - INFO - [alternatives {
+  transcript: "butter"
+  confidence: 0.9146407246589661
+}
+]
+2018-04-11 20:00:32,531 - root - INFO - [alternatives {
+  transcript: "I hoped there would be but now I\'m"
+  confidence: 0.9026369452476501
+}
+]
+2018-04-11 20:00:32,550 - root - INFO - [alternatives {
+  transcript: "might be more than just good friends"
+  confidence: 0.9718559980392456
+}
+]
+2018-04-11 20:00:32,593 - root - INFO - [alternatives {
+  transcript: "yeah and Out of Love"
+  confidence: 0.8091813921928406
+}
+]
+2018-04-11 20:00:32,700 - root - INFO - [alternatives {
+  transcript: "also just a girl"
+  confidence: 0.8282368779182434
+}
+]
+2018-04-11 20:00:32,789 - root - INFO - [alternatives {
+  transcript: "can I just say no to you"
+  confidence: 0.9523583054542542
+}
+]
+2018-04-11 20:00:32,851 - root - INFO - [alternatives {
+  transcript: "starting in front of a boy"
+  confidence: 0.93202143907547
+}
+]
+2018-04-11 20:00:32,941 - root - INFO - [alternatives {
+  transcript: "with you I\'m enrolled"
+  confidence: 0.9452918767929077
+}
+]
+2018-04-11 20:00:32,998 - root - INFO - [alternatives {
+  transcript: "are there any circumstances in which"
+  confidence: 0.9874055981636047
+}
+]
+2018-04-11 20:00:33,029 - root - INFO - []
+2018-04-11 20:00:33,102 - root - INFO - [alternatives {
+  transcript: "don\'t forget"
+  confidence: 0.9539801478385925
+}
+]
+2018-04-11 20:00:33,132 - root - INFO - []
+2018-04-11 20:00:33,142 - root - INFO - [alternatives {
+  transcript: "Maybe"
+  confidence: 0.9005589485168457
+}
+]
+2018-04-11 20:00:33,142 - root - INFO - [alternatives {
+  transcript: "it turned out that this person"
+  confidence: 0.9597914814949036
+}
+]
+2018-04-11 20:00:33,201 - root - INFO - [alternatives {
+  transcript: "wondered if I didn\'t"
+  confidence: 0.9543072581291199
+}
+]
+2018-04-11 20:00:33,202 - root - INFO - [alternatives {
+  transcript: "recover if I was"
+  confidence: 0.9855256080627441
+}
+]
+2018-04-11 20:00:33,349 - root - INFO - []
+2018-04-11 20:00:33,607 - root - INFO - [alternatives {
+  transcript: "thing isn\'t really real"
+  confidence: 0.9049838781356812
+}
+]
+2018-04-11 20:00:33,622 - root - INFO - [alternatives {
+  transcript: "danger it seems like a"
+  confidence: 0.9085809588432312
+}
+]
+2018-04-11 20:00:33,659 - root - INFO - [alternatives {
+  transcript: "Perfect Situation file temporary"
+  confidence: 0.8406541347503662
+}
+]
+2018-04-11 20:00:33,671 - root - INFO - [alternatives {
+  transcript: "in the pink shirt"
+  confidence: 0.8684134483337402
+}
+]
+2018-04-11 20:00:33,831 - root - INFO - [alternatives {
+  transcript: "asking him to love her"
+  confidence: 0.9315571784973145
+}
+]
+2018-04-11 20:00:33,899 - root - INFO - [alternatives {
+  transcript: "I\'ll just be going then it\'s nice to see you"
+  confidence: 0.9557269811630249
+}
+]
+2018-04-11 20:00:33,936 - root - INFO - [alternatives {
+  transcript: "my relatively inexperienced how would I fear not"
+  confidence: 0.8175938129425049
+}
+]
+2018-04-11 20:00:33,987 - root - INFO - [alternatives {
+  transcript: "Becca is nice soccer"
+  confidence: 0.77860426902771
+}
+]
+2018-04-11 20:00:34,075 - root - INFO - [alternatives {
+  transcript: "once again cause the side is I would absolutely expect to be"
+  confidence: 0.8521444797515869
+}
+]
+2018-04-11 20:00:34,147 - root - INFO - [alternatives {
+  transcript: "decision"
+  confidence: 0.8159875273704529
+}
+]
+2018-04-11 20:00:34,159 - root - INFO - [alternatives {
+  transcript: "what you expect me to tell the truth about my life to the most Indiscreet man in England"
+  confidence: 0.8791897296905518
+}
+]
+2018-04-11 20:00:34,375 - root - INFO - [alternatives {
+  transcript: "who won the world knows who you are my mother has trouble remembering my name"
+  confidence: 0.9159715175628662
+}
+]
+2018-04-11 20:00:34,427 - root - INFO - [alternatives {
+  transcript: "but yesterday the actor lost you who I wasn\'t you just dismissed me out of that"
+  confidence: 0.8478679656982422
+}
+]
+2018-04-11 20:00:34,661 - root - INFO - [alternatives {
+  transcript: "whether you might let me see you a little"
+  confidence: 0.9158178567886353
+}
+, alternatives {
+  transcript: " or"
+  confidence: 0.8999775052070618
+}
+]
+2018-04-11 20:00:34,689 - root - INFO - []
+2018-04-11 20:00:34,821 - root - INFO - [alternatives {
+  transcript: "really is real no is"
+  confidence: 0.6910153031349182
+}
+, alternatives {
+  transcript: " I live in Notting Hill you live in Beverly Hills"
+  confidence: 0.9864251613616943
+}
+]
+2018-04-11 20:00:34,965 - root - INFO - [alternatives {
+  transcript: "text next just wondered whether if Mr Taco realized he been"
+  confidence: 0.8324296474456787
+}
+]
+2018-04-11 20:00:34,978 - root - INFO - [alternatives {
+  transcript: "added too many pictures of you too many"
+  confidence: 0.8577674627304077
+}
+, alternatives {
+  transcript: " yeah you go and I\'d be"
+  confidence: 0.8521851301193237
+}
+]
+2018-04-11 20:00:35,721 - root - INFO - [alternatives {
+  transcript: "adopt prick got down on his knees and begged you to reconsider whether you would in fact"
+  confidence: 0.9222629070281982
+}
+]
+2018-04-11 20:00:35,722 - root - INFO - [alternatives {
+  transcript: "but what would you say I\'m sorry just the one question please it\'s all right"
+  confidence: 0.8265889286994934
+}
+, alternatives {
+  transcript: " I was just wondering if"
+  confidence: 0.9881893992424011
+}
+]
+2018-04-11 20:00:37,161 - root - INFO - []
+2018-04-11 20:00:37,395 - root - INFO - [alternatives {
+  transcript: "definitely"
+  confidence: 0.9460734128952026
+}
+, alternatives {
+  transcript: " shirt and Richardson"
+  confidence: 0.5338712334632874
+}
+]
+2018-04-11 20:00:38,041 - root - INFO - [alternatives {
+  transcript: "your microphone on"
+  confidence: 0.6802347898483276
+}
+]
+2018-04-11 20:00:39,433 - root - INFO - [alternatives {
+  transcript: "yes I believe I would"
+  confidence: 0.9860885739326477
+}
+, alternatives {
+  transcript: " that\'s very good news"
+  confidence: 0.9830916523933411
+}
+, alternatives {
+  transcript: " the readers of Horse & Hound will be absolutely delighted"
+  confidence: 0.9295216202735901
+}
+, alternatives {
+  transcript: " Frank Dominic if you\'d like to ask you a question again"
+  confidence: 0.9065969586372375
+}
+]
+2018-04-11 20:00:44,014 - root - INFO - [alternatives {
+  transcript: "country crest"
+  confidence: 0.758861243724823
+}
+]
+2018-04-11 20:00:44,023 - root - INFO - ### SpeechAPI END ###
+2018-04-11 20:00:44,023 - root - INFO - nonsilent_len : 62 dict _ len : 62
+2018-04-11 20:00:44,024 - root - INFO - ### Create srt START ###
+2018-04-11 20:00:44,025 - root - INFO - ### Create json START ###
+2018-04-11 20:00:44,544 - root - INFO - ### Create File END ###
+2018-04-11 20:00:44,545 - root - INFO - ### Python End ###
+2018-04-11 20:00:44,545 - root - INFO - ########################
