@@ -11,7 +11,7 @@
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css"/>
 
   <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 
@@ -19,7 +19,7 @@
 </head>
 
 <body ondragstart="return false">
-  <div class="container">
+  <div class="container-fluid">
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
 
@@ -40,12 +40,21 @@
           <form id="keyword" class="navbar-form navbar-left">
             <div class="form-group">
               <input id="keywordBox" type="text" class="form-control" placeholder="키워드">
+
             </div>
             <button id="sendKeyword" type="button" class="btn btn-default">검색</button>
           </form>
 
-          <ul class="nav navbar-nav navbar-right">
+          
+          <form action="/" method="post" class="navbar-form navbar-left" enctype="multipart/form-data" name="videotest" id="videotest">
+            <div class="form-group">
+            
+              <input type="file" class="form-control" name="myfile1">
+              <input type="button" class="btn btn-default form-control" id="UploadVideo" value="Upload">
+            </div>
+          </form>
 
+          <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">메뉴
                 <span class="caret"></span>
@@ -54,43 +63,40 @@
                 <li>
                   <a href="#">로그인</a>
                 </li>
-                <li>
-                  <a href="#">Another action</a>
-                </li>
-                <li>
-                  <a href="#">Something else here</a>
-                </li>
+                
               </ul>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
-    <form action="/" method="post" enctype="multipart/form-data" name="videotest" id="videotest">
-      <label>Upload video URL:</label>
-      <br/> name :
-      <input type="text" name="username">
-      <br/> file :
-      <input type="file" name="myfile1">
-      <br/>
-      <input type="button" class="btn btn-default" id="UploadVideo" value="Upload">
-    </form>
-
-    <div class="col-sm-12 col-md-5">
-      <input type="button" class="btn btn-default" id="PlayVideo" value="Video">
-      <div class="embed-responsive embed-responsive-16by9" id="myVideo">
-      </div>
+    <!--
+    <div class="col-md-4">
+      <form action="/" method="post" enctype="multipart/form-data" name="videotest" id="videotest">
+        <label>Upload video URL:</label>
+        
+        <input type="file" name="myfile1">
+        <input type="button" class="btn btn-default" id="UploadVideo" value="Upload">
+      </form>
     </div>
-    <input type="button" class="btn btn-default" id="Time" value="VideoTime">
-
-    <div id=TimeList></div>
-    <br/>
-
-    <div id="Videos">
+    -->
+    <div class="col-md-4" id="Videos">
       <ul id="VideoList">VideoList</ul>
     </div>
-
+    <div class="col-sm-12 col-md-6">
+      <div class="btn-group" role="group" aria-label="...">
+        <button type="button" class="btn btn-default" id="PlayVideo" value="Video">비디오</button>
+        <button type="button" class="btn btn-default" id="Time" value="VideoTime">영상시간</button>
+      </div>
+      <!--<input type="button" class="btn btn-default" id="PlayVideo" value="Video">-->
+      <div class="embed-responsive embed-responsive-16by9 col-md-10" id="myVideo"></div>
+      <div id=TimeList class="col-md-2">
+        
+      </div>
+      <div id="screenShots"></div>
+    </div>
+    
+    <!--<input type="button" class="btn btn-default" id="Time" value="VideoTime">-->
   </div>
 </body>
 

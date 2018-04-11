@@ -46,12 +46,9 @@ function requestSendVideo(url){
  })
 }
 
-<<<<<<< HEAD
-function sendKeyword(url){
 
-=======
 function sendKeyword(url,keyword){
->>>>>>> 8cbef0fe74c035f58c1df3472766630f20faaf24
+
  $.ajax({
    type: "GET",
    dataType : "JSON",
@@ -221,7 +218,4 @@ function requestVideoTime(url) {
    }
  })
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 8cbef0fe74c035f58c1df3472766630f20faaf24
