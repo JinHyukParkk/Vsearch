@@ -3,27 +3,25 @@ window.onload = function(){
 
   document.getElementById("UploadVideo").onclick = function(){
     // makeRequestVideo('http://210.204.165.166:4088/test')
-    requestSendVideo('http://localhost:8080/videoUpload')
+    sendVideo('http://localhost:8080/videoUpload')
   }
 
   document.getElementById("Time").onclick = function() {
-    requestVideoTime('http://localhost:8080/test1')
+    makeVideoTimeTable('http://localhost:8080/test1')
   }
 
   document.getElementById("PlayVideo").onclick = function() {
-    requestReceiveVideo('http://localhost:8080/test2')
+    receiveVideo('http://localhost:8080/test2')
   }
   document.getElementById("sendKeyword").onclick = function() {
     var keyword = document.getElementById("keywordBox").value;
     var url = "http://localhost:8080/keyword/" + keyword;
     sendKeyword(url,keyword);
   }
- /*document.getElementById("RequestVideoList").onclick = function(){
-    requestVideoList('http://localhost:8080/videoList');
-  }*/
 }
 
-function requestSendVideo(url){
+// 비디오를 서버에 올림
+function sendVideo(url){
  var form = document.getElementById("videotest");
  var formData = new FormData(form);
  var response;
@@ -46,6 +44,7 @@ function requestSendVideo(url){
  })
 }
 
+// 키워드를 보내는 함수
 function sendKeyword(url,keyword){
  $.ajax({
    type: "GET",
@@ -54,15 +53,27 @@ function sendKeyword(url,keyword){
    url: url,
 
    success:function(resp){
+    // 버튼 생성
     var VideoName = resp.video_list[0].file_name;
     for(var i = 0; i < resp.video_list.length; i++){
       var videoBtn = document.createElement("button");
+      videoBtn.value = resp.video_list[i].file_name;
       videoBtn.innerHTML = "name: " + resp.video_list[i].file_name + "/ count: " + resp.video_list[i].Count;
-      
+ 
       var tempList = document.createElement("li");
       tempList.appendChild(videoBtn);
       document.getElementById("VideoList").appendChild(tempList);
-    } 
+    }
+    
+    // 버튼에 클릭 속성 달아줌
+    var buttons = document.getElementById("VideoList").childNodes;
+    for(var i = 0; i < resp.video_list.length; ++i){
+      var btn = buttons[i].firstChild;
+      btn.onclick = function(){
+        var newUrl = "http://localhost:8080/oneKeyword/" + this.value + "/" + keyword;
+        receiveVideo(url);
+      } 
+    }
    },
    error:function(){
      alert("Method Error: sendKeyword");
@@ -71,8 +82,33 @@ function sendKeyword(url,keyword){
 }
 
 
-function requestReceiveVideo(url) {
- /*
+// 비디오 제목과 키워드를 보내서 비디오과 시간 테이블을 띄움
+function receiveVideo(url) {
+ $.ajax({
+   type: "GET",
+   url: url,
+   dataType: "JSON",
+   processData: false,
+   async: false,
+
+   success:function(resp){
+     alert("success");
+
+     document.getElementById('myVideo').innerHTML = "";
+     var myVideo = document.createElement("video");
+     myVideo.id = "VideoPlayer";
+     myVideo.className = "embed-responsive-item";
+     myVideo.src = resp.Url;
+     myVideo.autoplay = true;
+     myVideo.controls = true;
+     document.getElementById("myVideo").appendChild(myVideo);
+
+   },
+   error:function(){
+     alert("error");
+   }
+
+    /*
  <<< dub용 코드. >>>
  <<< 혹시 몰라서 주석처리 해둠. >>>
 
@@ -118,59 +154,13 @@ function requestReceiveVideo(url) {
        }
    });
  */
- $.ajax({
-   type: "GET",
-   url: url,
-   dataType: "JSON",
-   processData: false,
-   async: false,
-
-   success:function(resp){
-     alert("success");
-
-     document.getElementById('myVideo').innerHTML = "";
-     var myVideo = document.createElement("video");
-     myVideo.width = 600;
-     myVideo.height = 500;
-     myVideo.id = "VideoPlayer";
-
-     var myVideo = document.createElement("iframe");
-     //myVideo.width = 600;
-     //myVideo.height = 500;
-     myVideo.id = "VideoPlayer";
-     myVideo.className = "embed-responsive-item";
-     myVideo.src = resp.Url;
-     myVideo.autoplay = true;
-     myVideo.controls = true;
-     document.getElementById("myVideo").appendChild(myVideo);
-
-   },
-   error:function(){
-     alert("error");
-   }
  })
 
 
 }
 
-function requestVideoList(url) {
- $.ajax({
-   type: "GET",
-   url: url,
-   dataType: "json",
-   async:false,
-
-   success:function(resp){
-     VideoList = JSON.parse(resp.responseText);
-     alert("success");
-   },
-   error:function(){
-     alert("error");
-   }
- })
-}
-
-function requestVideoTime(url) {
+// 비디오 시간 만들어주는 함수
+function makeVideoTimeTable(url) {
  $.ajax({
    type: "GET",
    url: url,
@@ -204,9 +194,7 @@ function requestVideoTime(url) {
      for(var j = 0; j < buttons.length; j++){
        buttons[j].onclick = function(){
        document.getElementById("VideoPlayer").currentTime = this.value;
-
        }
-
      }
 
    },
