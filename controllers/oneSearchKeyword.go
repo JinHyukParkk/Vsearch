@@ -32,6 +32,7 @@ func calcul_second(time string) float64 {
 	return sum
 }
 func OneSearchKeyword(c echo.Context) error {
+	log.Println("OneSearchKeyword Method")
 	keyword := c.Param("keyword")
 	filename := c.Param("filename")
 	sArr := strings.Split(keyword, " ")
@@ -43,7 +44,7 @@ func OneSearchKeyword(c echo.Context) error {
 		str += stemmed
 		str += " "
 	}
-	log.Println(keyword, filename)
+	// log.Println(keyword, filename)
 	// Create elastic request url
 	url := "http://localhost:9200/" + filename + "/_search?q=content:" + keyword + "&sort=id:asc&size=10000"
 	resp, err := http.Get(url)
@@ -68,30 +69,16 @@ func OneSearchKeyword(c echo.Context) error {
 	dat2 := dat1["hits"].([]interface{})
 
 	for _, d := range dat2 {
-		log.Println(d)
+		// log.Println(d)
 		dat3 := d.(map[string]interface{})
 		dat4 := dat3["_source"].(map[string]interface{})
 		time_list = append(time_list, models.Time{FloatToString1(calcul_second(dat4["start_time"].(string))), FloatToString1(calcul_second(dat4["end_time"].(string)))})
 	}
 	dat3 := dat2[0].(map[string]interface{})
-	rep_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + dat3["_type"].(string)
+	rep_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + dat3["_index"].(string) + ".mp4"
 	u := &models.KeywordModel{
 		URL:   rep_url,
 		Times: time_list,
 	}
 	return c.JSON(http.StatusOK, u)
 }
-
-// times := []models.Time{
-// 	{
-// 		dat3["_type"].(string),
-// 		FloatToString(calcul_second(dat4["start_time"].(string))),
-// 		FloatToString(calcul_second(dat4["end_time"].(string))),
-// 	},
-// 	{
-// 		dat3["_type"].(string),
-// 		"30",
-// 		"40",
-// 	},
-// }
-// times = append(times, models.Time{dat3["_type"].(string), "50", "60"})
