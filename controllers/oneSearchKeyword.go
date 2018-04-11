@@ -75,7 +75,7 @@ func OneSearchKeyword(c echo.Context) error {
 		time_list = append(time_list, models.Time{FloatToString1(calcul_second(dat4["start_time"].(string))), FloatToString1(calcul_second(dat4["end_time"].(string)))})
 	}
 	dat3 := dat2[0].(map[string]interface{})
-	rep_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + dat3["_type"].(string)
+	rep_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + dat3["_index"].(string) + ".mp4"
 	u := &models.KeywordModel{
 		URL:   rep_url,
 		Times: time_list,
