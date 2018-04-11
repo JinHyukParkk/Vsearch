@@ -107,6 +107,54 @@ function receiveVideo(url) {
    error:function(){
      alert("error");
    }
+ })
+}
+
+// 비디오 시간 만들어주는 함수
+function makeVideoTimeTable(url) {
+ $.ajax({
+   type: "GET",
+   url: url,
+   dataType: "json",
+
+   success:function(resp){
+     alert("success");
+
+     document.getElementById('TimeList').innerHTML = "";
+
+     //영상 중간재생 버튼 생성.
+     for(var i = 0; i < resp.times.length; i++){
+
+       var btn = document.createElement("input");
+       btn.type = "button";
+       btn.className = "btn btn-default";
+       btn.id = "th"+i;
+       btn.value = resp.times[i].start_time;
+       console.log(resp.times[i].start_time);
+       btn.placeholder = "start: " + resp.times[i].start_time + "~ end: " + resp.times[i].end_time;
+
+       document.getElementById("TimeList").appendChild(btn);
+
+       var br = document.createElement("br");
+       document.getElementById("TimeList").appendChild(br);
+     }
+
+
+     //버튼클릭시 해당 영상 시간으로 이동.
+     var buttons = document.getElementById("TimeList").childNodes;
+     for(var j = 0; j < buttons.length; j++){
+       buttons[j].onclick = function(){
+       document.getElementById("VideoPlayer").currentTime = this.value;
+       }
+     }
+
+   },
+   error:function(){
+     alert("error");
+   }
+ })
+}
+
 
     /*
  <<< dub용 코드. >>>
@@ -154,52 +202,3 @@ function receiveVideo(url) {
        }
    });
  */
- })
-
-
-}
-
-// 비디오 시간 만들어주는 함수
-function makeVideoTimeTable(url) {
- $.ajax({
-   type: "GET",
-   url: url,
-   dataType: "json",
-
-   success:function(resp){
-     alert("success");
-
-     document.getElementById('TimeList').innerHTML = "";
-
-     //영상 중간재생 버튼 생성.
-     for(var i = 0; i < resp.times.length; i++){
-
-       var btn = document.createElement("input");
-       btn.type = "button";
-       btn.className = "btn btn-default";
-       btn.id = "th"+i;
-       btn.value = resp.times[i].start_time;
-       console.log(resp.times[i].start_time);
-       btn.placeholder = "start: " + resp.times[i].start_time + "~ end: " + resp.times[i].end_time;
-
-       document.getElementById("TimeList").appendChild(btn);
-
-       var br = document.createElement("br");
-       document.getElementById("TimeList").appendChild(br);
-     }
-
-
-     //버튼클릭시 해당 영상 시간으로 이동.
-     var buttons = document.getElementById("TimeList").childNodes;
-     for(var j = 0; j < buttons.length; j++){
-       buttons[j].onclick = function(){
-       document.getElementById("VideoPlayer").currentTime = this.value;
-       }
-     }
-
-   },
-   error:function(){
-     alert("error");
-   }
- })
-}
