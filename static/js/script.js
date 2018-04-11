@@ -56,6 +56,7 @@ function sendKeyword(url,keyword){
 
    success:function(resp){
     // 버튼 생성
+    $("#VideoList > li").remove();
     var VideoName = resp.video_list[0].file_name;
     for(var i = 0; i < resp.video_list.length; i++){
       var videoBtn = document.createElement("button");
@@ -111,6 +112,33 @@ function receiveVideo(url) {
      myVideo.autoplay = true;
      myVideo.controls = true;
      document.getElementById("myVideo").appendChild(myVideo);
+     document.getElementById('TimeList').innerHTML = "";
+
+     //영상 중간재생 버튼 생성.
+     for(var i = 0; i < resp.times.length; i++){
+
+       var btn = document.createElement("input");
+       btn.type = "button";
+       btn.className = "btn btn-default";
+       btn.id = "th"+i;
+       btn.value = resp.times[i].start_time;
+       console.log(resp.times[i].start_time);
+       btn.placeholder = "start: " + resp.times[i].start_time + "~ end: " + resp.times[i].end_time;
+
+       document.getElementById("TimeList").appendChild(btn);
+
+       var br = document.createElement("br");
+       document.getElementById("TimeList").appendChild(br);
+     }
+
+
+     //버튼클릭시 해당 영상 시간으로 이동.
+     var buttons = document.getElementById("TimeList").childNodes;
+     for(var j = 0; j < buttons.length; j++){
+       buttons[j].onclick = function(){
+       document.getElementById("VideoPlayer").currentTime = this.value;
+       }
+     }  
 
    },
    error:function(){
