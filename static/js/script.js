@@ -55,7 +55,7 @@ function sendKeyword(url){
 
     success:function(resp){
 
-      console.log(resp.times[0].start_time);
+      console.log(resp);
       // console.log("success");
       // alert();
       // uploadImage(resp);
@@ -126,11 +126,7 @@ function requestReceiveVideo(url) {
 
       document.getElementById('myVideo').innerHTML = "";
       var myVideo = document.createElement("video");
-      myVideo.width = 600;
-      myVideo.height = 500;
-      myVideo.id = "VideoPlayer";
-
-      var myVideo = document.createElement("iframe");
+      
       //myVideo.width = 600;
       //myVideo.height = 500;
       myVideo.id = "VideoPlayer";

@@ -2363,3 +2363,51 @@
 2018-04-11 16:07:41,451 - root - INFO - ### Create File END ###
 2018-04-11 16:07:41,452 - root - INFO - ### Python End ###
 2018-04-11 16:07:41,452 - root - INFO - ########################
+2018-04-11 19:09:55,044 - root - INFO - ########################
+2018-04-11 19:09:55,045 - root - INFO - ### Python Start ###
+2018-04-11 19:09:55,045 - root - INFO - ### Split START ###
+2018-04-11 19:09:55,045 - root - INFO - test.flac
+2018-04-11 19:09:56,886 - root - INFO - ### Split End ###
+2018-04-11 19:09:56,886 - root - INFO - ### SpeechAPI START ###
+2018-04-11 19:10:00,006 - root - INFO - ### SpeechAPI END ###
+2018-04-11 19:10:00,007 - root - INFO - nonsilent_len : 16 dict _ len : 16
+2018-04-11 19:10:00,007 - root - INFO - ### Create srt START ###
+2018-04-11 19:10:00,007 - root - INFO - ### Create json START ###
+2018-04-11 19:10:36,525 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-11 19:10:36,532 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-11 19:10:36,539 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-11 19:10:36,545 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-11 19:10:36,554 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-11 19:10:36,560 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-11 19:10:36,567 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-11 19:10:36,573 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-11 19:10:36,580 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-04-11 19:10:36,581 - root - INFO - ### Create File END ###
+2018-04-11 19:10:36,581 - root - INFO - ### Python End ###
+2018-04-11 19:10:36,581 - root - INFO - ########################
+2018-04-11 19:12:14,550 - root - INFO - ########################
+2018-04-11 19:12:14,551 - root - INFO - ### Python Start ###
+2018-04-11 19:12:14,551 - root - INFO - ### Split START ###
+2018-04-11 19:12:14,551 - root - INFO - test.flac
+2018-04-11 19:12:16,435 - root - INFO - ### Split End ###
+2018-04-11 19:12:16,435 - root - INFO - ### SpeechAPI START ###
+2018-04-11 19:12:19,679 - root - INFO - ### SpeechAPI END ###
+2018-04-11 19:12:19,680 - root - INFO - nonsilent_len : 16 dict _ len : 16
+2018-04-11 19:12:19,680 - root - INFO - ### Create srt START ###
+2018-04-11 19:12:19,681 - root - INFO - ### Create json START ###
+2018-04-11 19:12:20,549 - root - INFO - ### Create File END ###
+2018-04-11 19:12:20,550 - root - INFO - ### Python End ###
+2018-04-11 19:12:20,550 - root - INFO - ########################
+2018-04-11 19:16:34,531 - root - INFO - ########################
+2018-04-11 19:16:34,531 - root - INFO - ### Python Start ###
+2018-04-11 19:16:34,531 - root - INFO - ### Split START ###
+2018-04-11 19:16:34,531 - root - INFO - test.flac
+2018-04-11 19:16:36,400 - root - INFO - ### Split End ###
+2018-04-11 19:16:36,400 - root - INFO - ### SpeechAPI START ###
+2018-04-11 19:16:40,288 - root - INFO - ### SpeechAPI END ###
+2018-04-11 19:16:40,288 - root - INFO - nonsilent_len : 16 dict _ len : 16
+2018-04-11 19:16:40,288 - root - INFO - ### Create srt START ###
+2018-04-11 19:16:40,289 - root - INFO - ### Create json START ###
+2018-04-11 19:16:40,391 - root - INFO - ### Create File END ###
+2018-04-11 19:16:40,391 - root - INFO - ### Python End ###
+2018-04-11 19:16:40,391 - root - INFO - ########################
