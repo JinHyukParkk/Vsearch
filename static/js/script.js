@@ -1,6 +1,5 @@
 window.onload = function(){
 
-
   document.getElementById("UploadVideo").onclick = function(){
     sendVideo('http://localhost:8080/videoUpload')
   }
@@ -13,7 +12,16 @@ window.onload = function(){
     var keyword = document.getElementById("keywordBox").value;
     var url = "http://localhost:8080/keyword/" + keyword;
     sendKeyword(url,keyword);
+    $("#keywordBox").val("");
   }
+  $("#keywordBox").keypress(function(e){
+    if(e.keyCode == 13){
+      var keyword = document.getElementById("keywordBox").value;
+      var url = "http://localhost:8080/keyword/" + keyword;
+      sendKeyword(url,keyword);
+      $("#keywordBox").val("");
+    }
+  })
 }
 
 // 비디오를 서버에 올리는 함수
@@ -38,6 +46,7 @@ function sendVideo(url){
    }
  })
 }
+
 
 
 // 키워드를 서버로 보내는 함수
@@ -67,7 +76,6 @@ function sendKeyword(url,keyword){
     var buttons = document.getElementById("VideoList").childNodes;
     for(var j = 1; j < buttons.length; j++){
       (buttons[j].firstChild).onclick = function(){
-        
         var newUrl = "http://localhost:8080/oneKeyword/" + this.value + "/" + keyword;
         receiveVideo(newUrl);
       } 
