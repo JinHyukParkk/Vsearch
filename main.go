@@ -1,8 +1,10 @@
 package main
 
 import (
+	"fmt"
 	"html/template"
 	"io"
+	"net/http"
 
 	"github.com/JinHyukParkk/CapstoneProject/controllers"
 	"github.com/labstack/echo"
@@ -22,10 +24,22 @@ func (t *TemplateRenderer) Render(w io.Writer, name string, data interface{}, c 
 	}
 	return t.templates.ExecuteTemplate(w, name, data)
 }
-
+func customHTTPErrorHandler(err error, c echo.Context) {
+	code := http.StatusInternalServerError
+	if he, ok := err.(*echo.HTTPError); ok {
+		code = he.Code
+	}
+	errorPage := fmt.Sprintf("%d.html", code)
+	if err := c.File(errorPage); err != nil {
+		c.Logger().Error(err)
+	}
+	c.Logger().Error(err)
+}
 func main() {
 	e := echo.New()
 
+	//HTTP Error Handler
+	e.HTTPErrorHandler = customHTTPErrorHandler
 	//middleware
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
