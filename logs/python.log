@@ -1,0 +1,13 @@
+2018-05-02 15:44:07,490 - root - INFO - ########################
+2018-05-02 15:44:07,490 - root - INFO - ### Python Start ###
+2018-05-02 15:44:07,490 - root - INFO - ### Split START ###
+2018-05-02 15:44:07,490 - root - INFO - notting_hill.flac
+2018-05-02 15:44:16,205 - root - INFO - ### Split End ###
+2018-05-02 15:44:16,206 - root - INFO - ### SpeechAPI START ###
+2018-05-02 15:44:27,215 - root - INFO - ### SpeechAPI END ###
+2018-05-02 15:44:27,215 - root - INFO - nonsilent_len : 62 dict _ len : 62
+2018-05-02 15:44:27,215 - root - INFO - ### Create srt START ###
+2018-05-02 15:44:27,217 - root - INFO - ### Create json START ###
+2018-05-02 15:44:27,965 - root - INFO - ### Create File END ###
+2018-05-02 15:44:27,966 - root - INFO - ### Python End ###
+2018-05-02 15:44:27,966 - root - INFO - ########################
