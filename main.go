@@ -44,6 +44,7 @@ func main() {
 	e.File("/", "template/index.html")
 
 	// route
+	e.GET("/videoList", controllers.VideoList)
 	e.POST("/videoUpload", controllers.VideoUpload)
 	e.GET("/keyword/:keyword", controllers.SearchKeyword)
 	e.GET("/oneKeyword/:filename/:keyword", controllers.OneSearchKeyword)
