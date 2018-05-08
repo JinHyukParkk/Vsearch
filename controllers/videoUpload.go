@@ -21,8 +21,28 @@ func VideoUpload(c echo.Context) error {
 		return err
 	}
 
+	title := c.FormValue("title")
+	images := form.File["myfile2"]
 	files := form.File["myfile1"]
+
 	log.Println("File is good")
+	log.Println("Video Title : " + title)
+
+	for _, image := range images {
+		src, err := image.Open()
+		if err != nil {
+			return err
+		}
+		defer src.Close()
+
+		dst, err := os.Create("./audioFile/" + image.Filename)
+		if err != nil {
+			return nil
+		}
+		if _, err = io.Copy(dst, src); err != nil {
+			return nil
+		}
+	}
 
 	for _, file := range files {
 		src, err := file.Open()
