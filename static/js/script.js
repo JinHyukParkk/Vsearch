@@ -1,6 +1,5 @@
 window.onload = function(){
 
-
   document.getElementById("UploadVideo").onclick = function(){
     // makeRequestVideo('http://210.204.165.166:4088/test')
     sendVideo('http://localhost:8080/videoUpload')
