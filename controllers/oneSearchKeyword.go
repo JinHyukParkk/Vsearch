@@ -48,17 +48,16 @@ func OneSearchKeyword(c echo.Context) error {
 	// Create elastic request url
 	url := "http://localhost:9200/" + filename + "/_search?q=content:" + keyword + "&sort=id:asc&size=10000"
 	resp, err := http.Get(url)
-	if err != nil {
-		panic(err)
-	}
+	check(err)
+
 	defer resp.Body.Close()
 
 	data, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		panic(err)
-	}
+	check(err)
 
 	var dat map[string]interface{}
+	// err := json.Unmarshal(data, &dat)
+	// check(err)
 	if err := json.Unmarshal(data, &dat); err != nil {
 		panic(err)
 	}
