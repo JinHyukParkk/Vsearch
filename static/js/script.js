@@ -1,7 +1,7 @@
 window.onload = function(){
 
   document.getElementById("UploadVideo").onclick = function(){
-    sendVideo('http://localhost:8080/videoUpload')
+    sendVideo('http://localhost:8080/videoUpload');
   }
 
   document.getElementById("Time").onclick = function() {
