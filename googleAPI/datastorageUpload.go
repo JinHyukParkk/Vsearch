@@ -10,7 +10,7 @@ import (
 	"golang.org/x/net/context"
 )
 
-func DataStorageUpload(video string, image string) {
+func DataStorageUpload(video string, image string, title string) {
 	ctx := context.Background()
 
 	// Set your Google Cloud Platform project ID.
@@ -19,19 +19,20 @@ func DataStorageUpload(video string, image string) {
 	// Creates a client.
 	client, err := datastore.NewClient(ctx, projectID)
 	if err != nil {
-		log.Fatalf("Failed to create client: %v", err)
+		log.Fatal(err)
 	}
 
 	// Creates a Task instance.
 	task := &models.ImageVideo{
 		Image_name: image,
 		Video_name: video,
+		Title:      title,
 	}
 
 	key := datastore.IncompleteKey("VideoList", nil)
 
 	// Saves the new entity.
 	if _, err := client.Put(ctx, key, task); err != nil {
-		log.Fatalf("Failed to save task: %v", err)
+		log.Fatal(err)
 	}
 }

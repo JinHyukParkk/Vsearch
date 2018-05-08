@@ -1,0 +1,132 @@
+2018-05-02 15:44:07,490 - root - INFO - ########################
+2018-05-02 15:44:07,490 - root - INFO - ### Python Start ###
+2018-05-02 15:44:07,490 - root - INFO - ### Split START ###
+2018-05-02 15:44:07,490 - root - INFO - notting_hill.flac
+2018-05-02 15:44:16,205 - root - INFO - ### Split End ###
+2018-05-02 15:44:16,206 - root - INFO - ### SpeechAPI START ###
+2018-05-02 15:44:27,215 - root - INFO - ### SpeechAPI END ###
+2018-05-02 15:44:27,215 - root - INFO - nonsilent_len : 62 dict _ len : 62
+2018-05-02 15:44:27,215 - root - INFO - ### Create srt START ###
+2018-05-02 15:44:27,217 - root - INFO - ### Create json START ###
+2018-05-02 15:44:27,965 - root - INFO - ### Create File END ###
+2018-05-02 15:44:27,966 - root - INFO - ### Python End ###
+2018-05-02 15:44:27,966 - root - INFO - ########################
+2018-05-02 21:07:31,868 - root - INFO - ########################
+2018-05-02 21:07:31,868 - root - INFO - ### Python Start ###
+2018-05-02 21:07:31,868 - root - INFO - ### Split START ###
+2018-05-02 21:07:31,868 - root - INFO - test.flac
+2018-05-02 21:07:33,965 - root - INFO - ### Split End ###
+2018-05-02 21:07:33,965 - root - INFO - ### SpeechAPI START ###
+2018-05-02 21:07:37,939 - root - INFO - ### SpeechAPI END ###
+2018-05-02 21:07:37,939 - root - INFO - nonsilent_len : 16 dict _ len : 16
+2018-05-02 21:07:37,939 - root - INFO - ### Create srt START ###
+2018-05-02 21:07:37,946 - root - INFO - ### Create json START ###
+2018-05-02 21:07:37,951 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-02 21:07:37,957 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-02 21:07:37,962 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-02 21:07:37,967 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-02 21:07:37,973 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-02 21:07:37,980 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-02 21:07:37,984 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-02 21:07:37,988 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-02 21:07:37,992 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-02 21:07:37,997 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-02 21:07:38,002 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-02 21:07:38,007 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-02 21:07:38,012 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-02 21:07:38,018 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-02 21:07:38,018 - root - INFO - ### Create File END ###
+2018-05-02 21:07:38,018 - root - INFO - ### Python End ###
+2018-05-02 21:07:38,018 - root - INFO - ########################
+2018-05-08 17:40:51,109 - root - INFO - ########################
+2018-05-08 17:40:51,110 - root - INFO - ### Python Start ###
+2018-05-08 17:40:51,110 - root - INFO - ### Split START ###
+2018-05-08 17:40:51,110 - root - INFO - notting_hill.flac
+2018-05-08 17:40:59,972 - root - INFO - ### Split End ###
+2018-05-08 17:40:59,972 - root - INFO - ### SpeechAPI START ###
+2018-05-08 17:41:10,307 - root - INFO - ### SpeechAPI END ###
+2018-05-08 17:41:10,307 - root - INFO - nonsilent_len : 62 dict _ len : 62
+2018-05-08 17:41:10,307 - root - INFO - ### Create srt START ###
+2018-05-08 17:41:10,314 - root - INFO - ### Create json START ###
+2018-05-08 17:41:10,319 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,321 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,325 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,328 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,331 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,341 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,344 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,346 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,349 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,352 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,354 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,357 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,359 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,362 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,364 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,366 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,369 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,371 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,373 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,375 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,378 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,380 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,383 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,385 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,388 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,390 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,393 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,395 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,398 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,400 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,402 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,405 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,407 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,409 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,412 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,414 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,416 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,419 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,421 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,424 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,426 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,429 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,431 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,433 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,436 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,438 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,441 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,443 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,445 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,447 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,450 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,453 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 17:41:10,453 - root - INFO - ### Create File END ###
+2018-05-08 17:41:10,453 - root - INFO - ### Python End ###
+2018-05-08 17:41:10,453 - root - INFO - ########################
+2018-05-08 18:36:00,828 - root - INFO - ########################
+2018-05-08 18:36:00,829 - root - INFO - ### Python Start ###
+2018-05-08 18:36:00,829 - root - INFO - ### Split START ###
+2018-05-08 18:36:00,829 - root - INFO - test.flac
+2018-05-08 18:36:02,583 - root - INFO - ### Split End ###
+2018-05-08 18:36:02,584 - root - INFO - ### SpeechAPI START ###
+2018-05-08 18:36:06,361 - root - INFO - ### SpeechAPI END ###
+2018-05-08 18:36:06,362 - root - INFO - nonsilent_len : 16 dict _ len : 16
+2018-05-08 18:36:06,362 - root - INFO - ### Create srt START ###
+2018-05-08 18:36:06,363 - root - INFO - ### Create json START ###
+2018-05-08 18:36:06,366 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 18:36:06,369 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 18:36:06,372 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 18:36:06,376 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 18:36:06,379 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 18:36:06,384 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 18:36:06,387 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 18:36:06,390 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 18:36:06,394 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 18:36:06,397 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 18:36:06,401 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 18:36:06,404 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 18:36:06,407 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 18:36:06,411 - root - ERROR - ### ElasticSearch Post ERROR ###
+2018-05-08 18:36:06,411 - root - INFO - ### Create File END ###
+2018-05-08 18:36:06,411 - root - INFO - ### Python End ###
+2018-05-08 18:36:06,411 - root - INFO - ########################
