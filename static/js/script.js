@@ -10,6 +10,7 @@ window.onload = function(){
     sendKeyword(url,keyword);
     $("#keywordBox").val("");
   }
+  
   $("#keywordBox").keypress(function(e){
     if(e.keyCode == 13){
       var keyword = document.getElementById("keywordBox").value;
