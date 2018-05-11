@@ -56,6 +56,7 @@ func main() {
 
 	//처음 시작하는 파일 설정.
 	e.File("/", "template/index.html")
+
 	// route
 	e.GET("/videoList", controllers.VideoList)
 	e.POST("/videoUpload", controllers.VideoUpload)

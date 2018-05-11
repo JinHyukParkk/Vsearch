@@ -13,8 +13,7 @@ python3 $modulePath/main.py $1.flac
 
 rm $resPath/*.flac
 
-rm $AudioFile/*.flac
-rm $AudioFile/*.mp4
+rm $AudioFile/*
 
 
 

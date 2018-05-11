@@ -17,9 +17,7 @@ func VideoUpload(c echo.Context) error {
 	log.Println("Connection")
 
 	form, err := c.MultipartForm()
-	if err != nil {
-		return err
-	}
+	check(err)
 
 	title := c.FormValue("title")
 	images := form.File["myfile2"]
@@ -30,15 +28,13 @@ func VideoUpload(c echo.Context) error {
 
 	for _, image := range images {
 		src, err := image.Open()
-		if err != nil {
-			return err
-		}
+		check(err)
+
 		defer src.Close()
 
 		dst, err := os.Create("./audioFile/" + image.Filename)
-		if err != nil {
-			return nil
-		}
+		check(err)
+
 		if _, err = io.Copy(dst, src); err != nil {
 			return nil
 		}
@@ -46,15 +42,12 @@ func VideoUpload(c echo.Context) error {
 
 	for _, file := range files {
 		src, err := file.Open()
-		if err != nil {
-			return err
-		}
+		check(err)
+
 		defer src.Close()
 
 		dst, err := os.Create("./audioFile/" + file.Filename)
-		if err != nil {
-			return nil
-		}
+		check(err)
 
 		if _, err = io.Copy(dst, src); err != nil {
 			return nil
@@ -63,6 +56,7 @@ func VideoUpload(c echo.Context) error {
 
 	log.Println("====Upload CloudStorage====")
 	googleApi.StorageUpload(files[0].Filename)
+	googleApi.StorageUpload(images[0].Filename)
 	log.Println("====Finish Upload CloudStorage====")
 
 	log.Println("====Upload dataStroage====")
