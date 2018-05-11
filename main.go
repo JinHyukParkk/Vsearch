@@ -62,7 +62,7 @@ func main() {
 	e.POST("/videoUpload", controllers.VideoUpload)
 	e.GET("/keyword/:keyword", controllers.SearchKeyword)
 	e.GET("/oneKeyword/:filename/:keyword", controllers.OneSearchKeyword)
-	e.DELETE("/deleteVideo/:file", controllers.DeleteVideo)
+	e.GET("/deleteVideo/:file", controllers.DeleteVideo)
 
 	e.Logger.Fatal(e.Start(":8080"))
 }

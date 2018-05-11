@@ -14,6 +14,6 @@ func DeleteVideo(c echo.Context) error {
 	resp, err := client.Do(req)
 	check(err)
 	defer resp.Body.Close()
-	return c.NoContent(http.StatusOK)
-	// return c.Redirect(http.StatusMovedPermanently, "http://localhost:8080")
+	// return c.NoContent(http.StatusOK)
+	return c.Redirect(http.StatusMovedPermanently, "http://localhost:8080")
 }
