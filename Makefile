@@ -1,4 +1,4 @@
-all: clean build exec
+all: build exec
 
 clean:
 	@./shell/clean.sh

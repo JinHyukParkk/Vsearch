@@ -3,6 +3,7 @@ package controllers
 import (
 	"net/http"
 	"strconv"
+	"strings"
 
 	"github.com/JinHyukParkk/CapstoneProject/GoogleAPI"
 	"github.com/JinHyukParkk/CapstoneProject/models"
@@ -15,7 +16,9 @@ func VideoList(c echo.Context) error {
 	videoList := []models.Video{}
 
 	for _, data := range listData {
-		videoList = append(videoList, models.Video{data})
+		if strings.Contains(data, ".mp4") {
+			videoList = append(videoList, models.Video{data})
+		}
 	}
 
 	u := &models.VideoListModel{
