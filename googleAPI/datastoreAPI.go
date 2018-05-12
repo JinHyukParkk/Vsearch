@@ -9,7 +9,7 @@ import (
 	"golang.org/x/net/context"
 )
 
-func DataStorageUpload(video string, image string, title string) {
+func DataStoreUpload(video string, image string, title string) {
 	ctx := context.Background()
 
 	// Set your Google Cloud Platform project ID.
@@ -36,23 +36,19 @@ func DataStorageUpload(video string, image string, title string) {
 	}
 }
 
-func DataStorageRead(videoName string) {
+func DataStoreRead(videoName string) (*models.ImageVideo, error) {
 	var entity models.ImageVideo
 
 	ctx := context.Background()
 	projectID := os.Getenv("GOOGLE_PROJECT_ID")
 
 	client, err := datastore.NewClient(ctx, projectID)
-	if err != nil {
-		log.Fatal(err)
-	}
+	check(err)
 	VideoKey := datastore.NameKey("VideoList", videoName, nil)
 
 	if err := client.Get(ctx, VideoKey, &entity); err != nil {
-		log.Fatal("ERROR")
-	}
+		return nil, err
 
-	log.Println(entity.Image_name)
-	log.Println(entity.Title)
-	log.Println(entity.Video_name)
+	}
+	return &entity, nil
 }

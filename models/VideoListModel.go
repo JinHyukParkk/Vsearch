@@ -5,5 +5,6 @@ type VideoListModel struct {
 	Total      string  `json:"total"`
 }
 type Video struct {
-	File_name string `json:"file_name"`
+	Image_url string `json:"image_url"`
+	Title     string `json:"title"`
 }
