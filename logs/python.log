@@ -1,0 +1,39 @@
+2018-05-12 16:25:00,139 - root - INFO - ########################
+2018-05-12 16:25:00,139 - root - INFO - ### Python Start ###
+2018-05-12 16:25:00,139 - root - INFO - ### Split START ###
+2018-05-12 16:25:00,139 - root - INFO - test.flac
+2018-05-12 16:25:01,884 - root - INFO - ### Split End ###
+2018-05-12 16:25:01,884 - root - INFO - ### SpeechAPI START ###
+2018-05-12 16:25:05,633 - root - INFO - ### SpeechAPI END ###
+2018-05-12 16:25:05,633 - root - INFO - nonsilent_len : 16 dict _ len : 16
+2018-05-12 16:25:05,633 - root - INFO - ### Create json START ###
+2018-05-12 16:25:05,761 - root - INFO - ### Create File END ###
+2018-05-12 16:25:05,761 - root - INFO - ### Python End ###
+2018-05-12 16:25:05,761 - root - INFO - ########################
+2018-05-12 16:31:30,352 - root - INFO - ########################
+2018-05-12 16:31:30,352 - root - INFO - ### Python Start ###
+2018-05-12 16:31:30,352 - root - INFO - ### Split START ###
+2018-05-12 16:31:30,352 - root - INFO - Imitation_Game.flac
+2018-05-12 16:31:39,276 - root - INFO - ### Split End ###
+2018-05-12 16:31:39,276 - root - INFO - ### SpeechAPI START ###
+2018-05-12 16:31:42,661 - root - ERROR - 400 Sync input too long. For audio longer than 1 min use LongRunningRecognize with a 'uri' parameter.
+2018-05-12 16:31:47,997 - root - ERROR - 400 Sync input too long. For audio longer than 1 min use LongRunningRecognize with a 'uri' parameter.
+2018-05-12 16:31:56,508 - root - INFO - ### SpeechAPI END ###
+2018-05-12 16:31:56,508 - root - INFO - nonsilent_len : 26 dict _ len : 24
+2018-05-12 16:31:56,508 - root - INFO - ### Create json START ###
+2018-05-12 16:31:56,617 - root - ERROR - list index out of range
+2018-05-12 16:31:56,617 - root - INFO - ### Create File END ###
+2018-05-12 16:31:56,618 - root - INFO - ### Python End ###
+2018-05-12 16:31:56,618 - root - INFO - ########################
+2018-05-12 16:54:51,891 - root - INFO - ########################
+2018-05-12 16:54:51,891 - root - INFO - ### Python Start ###
+2018-05-12 16:54:51,891 - root - INFO - ### Split START ###
+2018-05-12 16:54:51,891 - root - INFO - test.flac
+2018-05-12 16:54:53,642 - root - INFO - ### Split End ###
+2018-05-12 16:54:53,642 - root - INFO - ### SpeechAPI START ###
+2018-05-12 16:54:57,608 - root - INFO - ### SpeechAPI END ###
+2018-05-12 16:54:57,608 - root - INFO - nonsilent_len : 16 dict _ len : 16
+2018-05-12 16:54:57,608 - root - INFO - ### Create json START ###
+2018-05-12 16:54:57,745 - root - INFO - ### Create File END ###
+2018-05-12 16:54:57,745 - root - INFO - ### Python End ###
+2018-05-12 16:54:57,745 - root - INFO - ########################

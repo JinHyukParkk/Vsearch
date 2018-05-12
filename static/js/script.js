@@ -37,19 +37,41 @@ function home(url){
       console.log(resp.video_list[0].title);
       for(var i=0; i<resp.video_list.length; i++){
         var homeDiv = document.createElement("div");
-        homeDiv.className = "thumbnail";
+        homeDiv.className = "thumbnail col-md-4";
+        
         var homeImg = document.createElement("img");
         homeImg.src = resp.video_list[i].image_url;
+        homeImg.style.height = "200px";
+        homeImg.style.width = "300px";
         var pZone = document.createElement("div");
         pZone.className = "caption";
         var title = document.createElement("h3");
-        title.innerHTML = "hi";
+        title.innerHTML = resp.video_list[i].title;
+        var videoBtn = document.createElement("button");
+        videoBtn.type = "button";
+        videoBtn.value = resp.video_list[i].file_name;
+        videoBtn.className = "btn btn-primary";
+        videoBtn.innerHTML = "재생";
+     
         //homeImg.value = resp.video_list[i].file_name;
         pZone.appendChild(title);
+        pZone.appendChild(videoBtn);
         homeDiv.appendChild(homeImg);
         homeDiv.appendChild(pZone);
         
         document.getElementById("mainHome").appendChild(homeDiv);
+        var buttonChild = document.getElementById("mainHome").childNodes;
+        console.log(buttonChild);
+        for(var j = 3; j < buttonChild.length; j++){
+          console.log(buttonChild[j]);
+          var secondChild = buttonChild[j].childNodes;
+          var thirdChild = secondChild[1].childNodes;
+          console.log(thirdChild[1]);
+          /*thirdChild[1].onclick = function(){
+            var newUrl = "http://localhost:8080/oneKeyword/" + this.value + "/" + keyword;
+            receiveVideo(newUrl);
+          }*/
+        }
       }
     },
     error:function(){
