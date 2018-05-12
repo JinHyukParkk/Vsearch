@@ -44,8 +44,8 @@ def main():
     for line in sorted_dict_lines:
         srt_lines.append(line[1])
 
-    log("### Create srt START ###", logging.info)
-    create_srt_file(srt_lines, nonsilent_ranges)  # 자막파일 생성
+    # log("### Create srt START ###", logging.info)
+    # create_srt_file(srt_lines, nonsilent_ranges)  # 자막파일 생성
     log("### Create json START ###", logging.info)
     create_json_file(srt_lines, nonsilent_ranges, file_name_origin)  # JSON 파일 생성
     log("### Create File END ###", logging.info)
