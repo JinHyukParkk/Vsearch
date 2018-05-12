@@ -1,12 +1,49 @@
 window.onload = function(){
+  var url = "http://localhost:8080/videoList";
+  home(url);
+  function home(url){
+    $.ajax({
+      type: "GET",
+      url: url,
+      dataType: "JSON",
+      processData: false,
+      async: false,
 
+      success:function(resp){
+        console.log(resp);
+        //console.log(resp.video_list[0].file_name);
+        for(var i=0; i<resp.video_list.length; i++){
+
+        }
+        var homeDiv = document.createElement("div");
+        homeDiv.className = "thumbnail";
+        var homeImg = document.createElement("img");
+        homeImg.src = resp.URL;
+        var pZone = document.createElement("div");
+        pZone.className = "caption";
+        var title = document.createElement("h3");
+        title.innerHTML = "hi";
+        //homeImg.value = resp.video_list[i].file_name;
+        pZone.appendChild(title);
+        homeDiv.appendChild(homeImg);
+        homeDiv.appendChild(pZone);
+        
+        document.getElementById("mainHome").appendChild(homeDiv);
+
+      },
+      error:function(){
+        alert("error");
+      }
+
+    })
+  }
   document.getElementById("UploadVideo").onclick = function(){
-    sendVideo('http://localhost:8080/videoUpload');
+    sendVideo('http://localhost:8080/videoUpload')
   }
 
-  document.getElementById("Time").onclick = function() {
+  /*document.getElementById("Time").onclick = function(){
     makeVideoKeywordTimeTable('http://localhost:8080/test1')
-  }
+  }*/
 
   document.getElementById("sendKeyword").onclick = function() {
     var keyword = document.getElementById("keywordBox").value;
@@ -64,18 +101,23 @@ function sendKeyword(url,keyword){
     var VideoName = resp.video_list[0].file_name;
     for(var i = 0; i < resp.video_list.length; i++){
       var videoBtn = document.createElement("button");
+      videoBtn.type = "button";
       videoBtn.value = resp.video_list[i].file_name;
+      videoBtn.className = "list-group-item active";
       videoBtn.innerHTML = "name: " + resp.video_list[i].file_name + "/ count: " + resp.video_list[i].Count;
  
-      var tempList = document.createElement("li");
+      /*var tempList = document.createElement("li");
       tempList.appendChild(videoBtn);
-      document.getElementById("VideoList").appendChild(tempList);
+      document.getElementById("VideoList").appendChild(tempList);*/
+      document.getElementById("VideoList").appendChild(videoBtn);
     }
     
     // 버튼을 누르면 비디오가 재생되는 클릭 속성 달아줌
     var buttons = document.getElementById("VideoList").childNodes;
+    console.log(buttons);
     for(var j = 1; j < buttons.length; j++){
-      (buttons[j].firstChild).onclick = function(){
+      /*(buttons[j].firstChild).onclick = function(){*/
+      (buttons[j]).onclick = function(){
         var newUrl = "http://localhost:8080/oneKeyword/" + this.value + "/" + keyword;
         receiveVideo(newUrl);
       } 
@@ -98,6 +140,7 @@ function receiveVideo(url) {
    async: false,
 
    success:function(resp){
+    console.log(resp);
      alert("success");
      document.getElementById('myVideo').innerHTML = "";
      var myVideo = document.createElement("video");

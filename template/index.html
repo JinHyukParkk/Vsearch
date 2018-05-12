@@ -12,7 +12,7 @@
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
   <link rel="stylesheet" href="css/style.css"/>
-
+  <link rel="stylesheet" href="css/main.css" media="screen">
   <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 
   <title>Test</title>
@@ -43,15 +43,36 @@
             </div>
             <button id="sendKeyword" type="button" class="btn btn-default">검색</button>
           </form>
-
-          
-          <form action="/" method="post" class="navbar-form navbar-left" enctype="multipart/form-data" name="videotest" id="videotest">
+          <form class="navbar-form navbar-left">
             <div class="form-group">
-            
-              <input type="file" class="form-control" name="myfile1">
-              <input type="button" class="btn btn-default form-control" id="UploadVideo" value="Upload">
+              <button type="button" class="btn btn-default form-control" data-toggle="modal" data-target="#myModal">영상 업로드</button>
             </div>
           </form>
+          
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">영상 업로드</h4>
+                  </div>
+
+                  <form class="modal-body"action="/" method="post" class="navbar-form navbar-left" enctype="multipart/form-data" name="videotest" id="videotest">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="title" placeholder="영상 제목을 입력해주세요.">
+                      </br>
+                      <input type="file" class="form-control" name="myfile1" placeholder="영상 파일을 업로드 해주세요.">
+                      </br>
+                      <input type="file" class="form-control" name="myfile2" placeholder="썸네일을 업로드 해주세요.">
+                    </div>
+                  </form>
+
+                  <div class="modal-footer">
+                    <input type="button" class="btn btn-default" data-dismiss="modal" id="UploadVideo" value="Upload">
+                  </div>
+                </div>
+            </div>
+          </div>
 
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
@@ -69,18 +90,31 @@
         </div>
       </div>
     </nav>
+    <div class="col-md-8" id="mainHome">
 
-
-   
-   
-    <div class="col-md-4" id="Videos">
-      <ul id="VideoList">VideoList</ul>
+      <div class="thumbnail">
+        <img src="..." alt="...">
+        <div class="caption">
+          <h3>Thumbnail label</h3>
+          
+          <button class="btn btn-primary">button</button>
+          <!--<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>-->
+        </div>
+      </div>
     </div>
-    <div class="col-sm-12 col-md-6">
-      <div class="btn-group" role="group" aria-label="...">
+    <div class="col-md-2" id="Videos" class="videoCol">
+      <!--<div class="list-group">
+        <button type="button" class="list-group-item">Cras justo odio</button>
+        <button type="button" class="list-group-item">Cras justo odio</button>
+        <button type="button" class="list-group-item">Cras justo odio</button>
+      </div>-->
+      <div id="VideoList" class="list-group">VideoList</div>
+    </div>
+    <div class="col-sm-12 col-md-8">
+      <!--<div class="btn-group" role="group" aria-label="...">
         <button type="button" class="btn btn-default" id="PlayVideo" value="Video">비디오</button>
         <button type="button" class="btn btn-default" id="Time" value="VideoTime">영상시간</button>
-      </div>
+      </div>-->
       <div class="embed-responsive embed-responsive-16by9 col-md-10" id="myVideo"></div>
       
     </div>
