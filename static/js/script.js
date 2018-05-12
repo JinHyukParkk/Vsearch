@@ -67,10 +67,16 @@ function home(url){
           var secondChild = buttonChild[j].childNodes;
           var thirdChild = secondChild[1].childNodes;
           console.log(thirdChild[1]);
-          /*thirdChild[1].onclick = function(){
-            var newUrl = "http://localhost:8080/oneKeyword/" + this.value + "/" + keyword;
-            receiveVideo(newUrl);
-          }*/
+          thirdChild[1].onclick = function(){
+            document.getElementById('myVideo').innerHTML = "";
+            var myVideo = document.createElement("video");
+            myVideo.id = "VideoPlayer";
+            myVideo.className = "embed-responsive-item";
+            myVideo.src = resp.video_list[i].video;
+            myVideo.autoplay = true;
+            myVideo.controls = true;
+            document.getElementById("myVideo").appendChild(myVideo);
+          }
         }
       }
     },
