@@ -11,25 +11,25 @@ window.onload = function(){
 
       success:function(resp){
         console.log(resp);
-        //console.log(resp.video_list[0].file_name);
+        console.log(resp.video_list[0].title);
         for(var i=0; i<resp.video_list.length; i++){
+          var homeDiv = document.createElement("div");
+          homeDiv.className = "thumbnail";
+          var homeImg = document.createElement("img");
+          homeImg.src = resp.video_list.image_url;
+          var pZone = document.createElement("div");
+          pZone.className = "caption";
+          var title = document.createElement("h3");
+          title.innerHTML = "hi";
+          //homeImg.value = resp.video_list[i].file_name;
+          pZone.appendChild(title);
+          homeDiv.appendChild(homeImg);
+          homeDiv.appendChild(pZone);
+          
+          document.getElementById("mainHome").appendChild(homeDiv);
 
         }
-        var homeDiv = document.createElement("div");
-        homeDiv.className = "thumbnail";
-        var homeImg = document.createElement("img");
-        homeImg.src = resp.URL;
-        var pZone = document.createElement("div");
-        pZone.className = "caption";
-        var title = document.createElement("h3");
-        title.innerHTML = "hi";
-        //homeImg.value = resp.video_list[i].file_name;
-        pZone.appendChild(title);
-        homeDiv.appendChild(homeImg);
-        homeDiv.appendChild(pZone);
         
-        document.getElementById("mainHome").appendChild(homeDiv);
-
       },
       error:function(){
         alert("error");
