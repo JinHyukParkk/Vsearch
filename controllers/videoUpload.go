@@ -64,7 +64,7 @@ func VideoUpload(c echo.Context) error {
 	log.Println("====Finish Upload CloudStorage====")
 
 	log.Println("====Upload dataStroage====")
-	googleApi.DataStorageUpload(files[0].Filename, imageName, title)
+	googleApi.DataStoreUpload(files[0].Filename, imageName, title)
 	log.Println("====Finish Upload dataStorage====")
 
 	s := strings.Split(files[0].Filename, ".")

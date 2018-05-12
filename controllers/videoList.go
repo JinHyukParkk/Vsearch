@@ -11,13 +11,16 @@ import (
 )
 
 func VideoList(c echo.Context) error {
+
 	listData, err := googleApi.ListAPI()
 	check(err)
 	videoList := []models.Video{}
 
 	for _, data := range listData {
 		if strings.Contains(data, ".mp4") {
-			videoList = append(videoList, models.Video{data})
+			entity, err := googleApi.DataStoreRead(data)
+			check(err)
+			videoList = append(videoList, models.Video{Image_url: entity.Image_name, Title: entity.Title})
 		}
 	}
 
