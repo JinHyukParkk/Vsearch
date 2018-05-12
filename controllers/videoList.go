@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"net/http"
+	"os"
 	"strconv"
 	"strings"
 
@@ -20,7 +21,8 @@ func VideoList(c echo.Context) error {
 		if strings.Contains(data, ".mp4") {
 			entity, err := googleApi.DataStoreRead(data)
 			check(err)
-			videoList = append(videoList, models.Video{Image_url: entity.Image_name, Title: entity.Title})
+			image_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Image_name
+			videoList = append(videoList, models.Video{Image_url: image_url, Title: entity.Title})
 		}
 	}
 
