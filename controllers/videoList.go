@@ -24,7 +24,8 @@ func VideoList(c echo.Context) error {
 			entity, err := googleApi.DataStoreRead(data)
 			check(err)
 			image_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Image_name
-			videoList = append(videoList, models.Video{Image_url: image_url, Title: entity.Title})
+			video_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Video_name
+			videoList = append(videoList, models.Video{Video_url: video_url, Image_url: image_url, Title: entity.Title})
 		}
 	}
 	u := &models.VideoListModel{
