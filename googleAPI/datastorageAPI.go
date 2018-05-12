@@ -50,8 +50,8 @@ func DataStorageRead(videoName string) {
 
 	if err := client.Get(ctx, VideoKey, &entity); err != nil {
 		log.Fatal("ERROR")
-
 	}
+
 	log.Println(entity.Image_name)
 	log.Println(entity.Title)
 	log.Println(entity.Video_name)
