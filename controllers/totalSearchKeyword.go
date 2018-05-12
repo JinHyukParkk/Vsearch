@@ -6,9 +6,11 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"os"
 	"strconv"
 	"strings"
 
+	"github.com/JinHyukParkk/CapstoneProject/GoogleAPI"
 	"github.com/JinHyukParkk/CapstoneProject/models"
 	"github.com/kljensen/snowball"
 	"github.com/labstack/echo"
@@ -79,9 +81,12 @@ func SearchKeyword(c echo.Context) error {
 
 	for _, d := range dat3 {
 		dat4 := d.(map[string]interface{})
-		log.Println(dat4["key"].(string))
-		video_list = append(video_list, models.VideoInfo{dat4["key"].(string), FloatToString(dat4["doc_count"].(float64))})
-
+		// log.Println(dat4["key"].(string))
+		entity, err := googleApi.DataStoreRead(dat4["key"].(string) + ".mp4")
+		check(err)
+		image_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Image_name
+		video_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Video_name
+		video_list = append(video_list, models.VideoInfo{image_url, video_url, entity.Title, FloatToString(dat4["doc_count"].(float64))})
 	}
 	u := &models.KeywordVideoModel{
 		Video_List: video_list,
