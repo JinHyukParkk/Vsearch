@@ -40,17 +40,16 @@ window.onload = function(){
   document.getElementById("UploadVideo").onclick = function(){
     sendVideo('http://localhost:8080/videoUpload')
   }
-
   /*document.getElementById("Time").onclick = function(){
     makeVideoKeywordTimeTable('http://localhost:8080/test1')
   }*/
-
   document.getElementById("sendKeyword").onclick = function() {
     var keyword = document.getElementById("keywordBox").value;
     var url = "http://localhost:8080/keyword/" + keyword;
     sendKeyword(url,keyword);
     $("#keywordBox").val("");
   }
+  
   $("#keywordBox").keypress(function(e){
     if(e.keyCode == 13){
       var keyword = document.getElementById("keywordBox").value;
@@ -184,48 +183,4 @@ function receiveVideo(url) {
 
  })
 
-}
-
-// 비디오의 키워드 시간 테이블을 만들어주는 함수
-function makeVideoKeywordTimeTable(url) {
- $.ajax({
-   type: "GET",
-   url: url,
-   dataType: "json",
-
-   success:function(resp){
-     alert("success");
-
-     document.getElementById('TimeList').innerHTML = "";
-
-     // 버튼의 입력된 시점에 맞게 영상을 중간재생 해주는 버튼 생성.
-     for(var i = 0; i < resp.times.length; i++){
-
-       var btn = document.createElement("input");
-       btn.type = "button";
-       btn.className = "btn btn-default";
-       btn.id = "th"+i;
-       btn.value = resp.times[i].start_time;
-       btn.placeholder = "start: " + resp.times[i].start_time + "~ end: " + resp.times[i].end_time;
-
-       document.getElementById("TimeList").appendChild(btn);
-
-       var br = document.createElement("br");
-       document.getElementById("TimeList").appendChild(br);
-     }
-
-
-     // 버튼 클릭시 해당 시점으로 영상의 재생 시점이 이동.
-     var buttons = document.getElementById("TimeList").childNodes;
-     for(var j = 0; j < buttons.length; j++){
-       buttons[j].onclick = function(){
-       document.getElementById("VideoPlayer").currentTime = this.value;
-       }
-     }
-
-   },
-   error:function(){
-     alert("error");
-   }
- })
 }

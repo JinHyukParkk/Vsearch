@@ -17,44 +17,41 @@ func VideoUpload(c echo.Context) error {
 	log.Println("Connection")
 
 	form, err := c.MultipartForm()
-	if err != nil {
-		return err
-	}
+	check(err)
 
 	title := c.FormValue("title")
-	// images := form.File["myfile2"]
+	images := form.File["myfile2"]
 	files := form.File["myfile1"]
+
+	temp := files[0].Filename
+	temp2 := strings.Split(temp, ".")
+	imageName := temp2[0] + ".jpg"
 
 	log.Println("File is good")
 	log.Println("Video Title : " + title)
+	log.Println("ImageName : " + imageName)
+	for _, image := range images {
+		src, err := image.Open()
+		check(err)
 
-	// for _, image := range images {
-	// 	src, err := image.Open()
-	// 	if err != nil {
-	// 		return err
-	// 	}
-	// 	defer src.Close()
+		defer src.Close()
 
-	// 	dst, err := os.Create("./audioFile/" + image.Filename)
-	// 	if err != nil {
-	// 		return nil
-	// 	}
-	// 	if _, err = io.Copy(dst, src); err != nil {
-	// 		return nil
-	// 	}
-	// }
+		dst, err := os.Create("./audioFile/" + imageName)
+		check(err)
+
+		if _, err = io.Copy(dst, src); err != nil {
+			return nil
+		}
+	}
 
 	for _, file := range files {
 		src, err := file.Open()
-		if err != nil {
-			return err
-		}
+		check(err)
+
 		defer src.Close()
 
 		dst, err := os.Create("./audioFile/" + file.Filename)
-		if err != nil {
-			return nil
-		}
+		check(err)
 
 		if _, err = io.Copy(dst, src); err != nil {
 			return nil
@@ -63,10 +60,11 @@ func VideoUpload(c echo.Context) error {
 
 	log.Println("====Upload CloudStorage====")
 	googleApi.StorageUpload(files[0].Filename)
+	googleApi.StorageUpload(imageName)
 	log.Println("====Finish Upload CloudStorage====")
 
 	log.Println("====Upload dataStroage====")
-	googleApi.DataStorageUpload(files[0].Filename, files[0].Filename, "temp_title")
+	googleApi.DataStoreUpload(files[0].Filename, imageName, title)
 	log.Println("====Finish Upload dataStorage====")
 
 	s := strings.Split(files[0].Filename, ".")

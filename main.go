@@ -56,11 +56,13 @@ func main() {
 
 	//처음 시작하는 파일 설정.
 	e.File("/", "template/index.html")
+
 	// route
 	e.GET("/videoList", controllers.VideoList)
 	e.POST("/videoUpload", controllers.VideoUpload)
 	e.GET("/keyword/:keyword", controllers.SearchKeyword)
 	e.GET("/oneKeyword/:filename/:keyword", controllers.OneSearchKeyword)
+	e.DELETE("/deleteVideo/:file", controllers.DeleteVideo)
 
 	e.Logger.Fatal(e.Start(":8080"))
 }

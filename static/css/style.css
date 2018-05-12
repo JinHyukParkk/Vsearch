@@ -1,4 +1,9 @@
 
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
 .img_file input[type="file"] {
   text-align: center;
   cursor: pointer;

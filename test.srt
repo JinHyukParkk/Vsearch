@@ -51,7 +51,12 @@ but allow me to buy you another time and I'll tell you why you're wrong accident
 open settings looks like a $600 for the day of clear rain in the evening
 
 14
+<<<<<<< HEAD
 00:02:20.155 --> 00:02:39.191
+=======
+00:00:47.798 --> 00:00:48.009
+good luck
+>>>>>>> 67e8c2235a7c6e25699a85c00483fc6f7031d859
 
 
 15

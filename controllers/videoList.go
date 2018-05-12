@@ -2,7 +2,9 @@ package controllers
 
 import (
 	"net/http"
+	"os"
 	"strconv"
+	"strings"
 
 	"github.com/JinHyukParkk/CapstoneProject/GoogleAPI"
 	"github.com/JinHyukParkk/CapstoneProject/models"
@@ -10,12 +12,18 @@ import (
 )
 
 func VideoList(c echo.Context) error {
+
 	listData, err := googleApi.ListAPI()
 	check(err)
 	videoList := []models.Video{}
 
 	for _, data := range listData {
-		videoList = append(videoList, models.Video{data})
+		if strings.Contains(data, ".mp4") {
+			entity, err := googleApi.DataStoreRead(data)
+			check(err)
+			image_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Image_name
+			videoList = append(videoList, models.Video{Image_url: image_url, Title: entity.Title})
+		}
 	}
 
 	u := &models.VideoListModel{
