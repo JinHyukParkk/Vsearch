@@ -1,42 +1,6 @@
 window.onload = function(){
   var url = "http://localhost:8080/videoList";
   home(url);
-  function home(url){
-    $.ajax({
-      type: "GET",
-      url: url,
-      dataType: "JSON",
-      processData: false,
-      async: false,
-
-      success:function(resp){
-        console.log(resp);
-        console.log(resp.video_list[0].title);
-        for(var i=0; i<resp.video_list.length; i++){
-          var homeDiv = document.createElement("div");
-          homeDiv.className = "thumbnail";
-          var homeImg = document.createElement("img");
-          homeImg.src = resp.video_list[i].image_url;
-          var pZone = document.createElement("div");
-          pZone.className = "caption";
-          var title = document.createElement("h3");
-          title.innerHTML = "hi";
-          //homeImg.value = resp.video_list[i].file_name;
-          pZone.appendChild(title);
-          homeDiv.appendChild(homeImg);
-          homeDiv.appendChild(pZone);
-          
-          document.getElementById("mainHome").appendChild(homeDiv);
-
-        }
-        
-      },
-      error:function(){
-        alert("error");
-      }
-
-    })
-  }
   document.getElementById("UploadVideo").onclick = function(){
     sendVideo('http://localhost:8080/videoUpload')
   }
@@ -57,6 +21,41 @@ window.onload = function(){
       sendKeyword(url,keyword);
       $("#keywordBox").val("");
     }
+  })
+}
+function home(url){
+  console.log("test");
+  $.ajax({
+    type: "GET",
+    url: url,
+    dataType: "JSON",
+    processData: false,
+    async: false,
+
+    success:function(resp){
+      console.log(resp);
+      console.log(resp.video_list[0].title);
+      for(var i=0; i<resp.video_list.length; i++){
+        var homeDiv = document.createElement("div");
+        homeDiv.className = "thumbnail";
+        var homeImg = document.createElement("img");
+        homeImg.src = resp.video_list[i].image_url;
+        var pZone = document.createElement("div");
+        pZone.className = "caption";
+        var title = document.createElement("h3");
+        title.innerHTML = "hi";
+        //homeImg.value = resp.video_list[i].file_name;
+        pZone.appendChild(title);
+        homeDiv.appendChild(homeImg);
+        homeDiv.appendChild(pZone);
+        
+        document.getElementById("mainHome").appendChild(homeDiv);
+      }
+    },
+    error:function(){
+      alert("error");
+    }
+
   })
 }
 
@@ -166,8 +165,6 @@ function receiveVideo(url) {
        var br = document.createElement("br");
        document.getElementById("TimeList").appendChild(br);
      }
-
-
      //버튼클릭시 해당 영상 시간으로 이동.
      var buttons = document.getElementById("TimeList").childNodes;
      for(var j = 0; j < buttons.length; j++){
