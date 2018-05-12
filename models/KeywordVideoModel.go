@@ -5,6 +5,8 @@ type KeywordVideoModel struct {
 	Total      string      `json:"total"`
 }
 type VideoInfo struct {
-	File_name string `json:"file_name"`
+	Image_url string `json:"image_url"`
+	Video_url string `json:"video_url"`
+	Title     string `json:"title"`
 	Count     string `json:"count`
 }
