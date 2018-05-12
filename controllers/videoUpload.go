@@ -23,16 +23,20 @@ func VideoUpload(c echo.Context) error {
 	images := form.File["myfile2"]
 	files := form.File["myfile1"]
 
+	temp := files[0].Filename
+	temp2 := strings.Split(temp, ".")
+	imageName := temp2[0] + ".jpg"
+
 	log.Println("File is good")
 	log.Println("Video Title : " + title)
-
+	log.Println("ImageName : " + imageName)
 	for _, image := range images {
 		src, err := image.Open()
 		check(err)
 
 		defer src.Close()
 
-		dst, err := os.Create("./audioFile/" + image.Filename)
+		dst, err := os.Create("./audioFile/" + imageName)
 		check(err)
 
 		if _, err = io.Copy(dst, src); err != nil {
@@ -56,11 +60,11 @@ func VideoUpload(c echo.Context) error {
 
 	log.Println("====Upload CloudStorage====")
 	googleApi.StorageUpload(files[0].Filename)
-	googleApi.StorageUpload(images[0].Filename)
+	googleApi.StorageUpload(imageName)
 	log.Println("====Finish Upload CloudStorage====")
 
 	log.Println("====Upload dataStroage====")
-	googleApi.DataStorageUpload(files[0].Filename, images[0].Filename, title)
+	googleApi.DataStorageUpload(files[0].Filename, imageName, title)
 	log.Println("====Finish Upload dataStorage====")
 
 	s := strings.Split(files[0].Filename, ".")
