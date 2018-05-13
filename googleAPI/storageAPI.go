@@ -3,6 +3,8 @@ package googleApi
 
 import (
 	"fmt"
+	"io"
+	"io/ioutil"
 	"log"
 	"os"
 
@@ -75,4 +77,60 @@ func ListAPI() ([]string, error) {
 	}
 	// [END storage_list_files]
 	return objects, nil
+}
+func StorageRead(object string) ([]byte, error) {
+	ctx := context.Background()
+
+	//Client
+	client, err := storage.NewClient(ctx)
+	check(err)
+	bucket := os.Getenv("cloudStorage")
+	rc, err := client.Bucket(bucket).Object(object).NewReader(ctx)
+	check(err)
+	defer rc.Close()
+	// log.Println("rc Read")
+	data, err := ioutil.ReadAll(rc)
+	// log.Println("Finish rc Read")
+	check(err)
+
+	return data, nil
+}
+
+func StorageUpload(object1 string) error {
+	ctx := context.Background()
+
+	//Client
+	client, err := storage.NewClient(ctx)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	f, err := os.Open("./audioFile/" + object1)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer f.Close()
+
+	//bucket
+	bucketName := os.Getenv("cloudStorage")
+	// bucket := client.Bucket(bucketName)
+
+	wc := client.Bucket(bucketName).Object(object1).NewWriter(ctx)
+
+	if _, err := io.Copy(wc, f); err != nil {
+		log.Println(err)
+		log.Panic(err)
+	}
+
+	if err := wc.Close(); err != nil {
+		log.Println(err)
+		log.Panic(err)
+	}
+	// open link
+	acl := client.Bucket(bucketName).Object(object1).ACL()
+	if err := acl.Set(ctx, storage.AllUsers, storage.RoleReader); err != nil {
+		log.Fatal(err)
+	}
+	return nil
+
 }

@@ -13,7 +13,6 @@ import (
 )
 
 func VideoList(c echo.Context) error {
-
 	listData, err := googleApi.ListAPI()
 	check(err)
 	videoList := []models.Video{}
@@ -25,7 +24,8 @@ func VideoList(c echo.Context) error {
 			check(err)
 			image_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Image_name
 			video_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Video_name
-			videoList = append(videoList, models.Video{Video_url: video_url, Image_url: image_url, Title: entity.Title})
+			s := strings.Split(data, ".")
+			videoList = append(videoList, models.Video{Video_url: video_url, Image_url: image_url, Title: entity.Title, File_name: s[0]})
 		}
 	}
 	u := &models.VideoListModel{
