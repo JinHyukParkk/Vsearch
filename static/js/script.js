@@ -56,13 +56,15 @@ function home(url){
         var inputSet = document.createElement("input");
         inputSet.type = "hidden";
         inputSet.value = resp.video_list[i].video_url;
-        //homeImg.value = resp.video_list[i].file_name;
+        
         pZone.appendChild(title);
         pZone.appendChild(videoBtn);
         pZone.appendChild(inputSet);
         homeDiv.appendChild(homeImg);
         homeDiv.appendChild(pZone);   
+
         document.getElementById("mainHome").appendChild(homeDiv);
+
       }
 
       var buttonChild = document.getElementById("mainHome").childNodes;
@@ -71,6 +73,7 @@ function home(url){
         var thirdChild = secondChild[1].childNodes;
         (thirdChild[1]).onclick = function(){
           document.getElementById('myVideo').innerHTML = "";
+          document.getElementById("oneFormDiv").innerHTML = "";
           var videoDiv = document.createElement("div");
           videoDiv.className = "embed-responsive embed-responsive-16by9";
           var myVideo = document.createElement("video");
@@ -81,6 +84,16 @@ function home(url){
           myVideo.controls = true;
           videoDiv.appendChild(myVideo);
           document.getElementById("myVideo").appendChild(videoDiv);
+          var oneKeywordSet = document.createElement("input");
+          oneKeywordSet.type = "text";
+          oneKeywordSet.className = "form-control";
+          document.getElementById("oneFormDiv").appendChild(oneKeywordSet);
+          var oneKeywordButton = document.createElement("button");
+          oneKeywordButton.type = "button";
+          oneKeywordButton.innerHTML = "검색";
+          oneKeywordButton.className = "btn btn-default";
+          document.getElementById("oneFormDiv").appendChild(oneKeywordButton);
+
         }
       }
     },
