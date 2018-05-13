@@ -49,34 +49,38 @@ function home(url){
         title.innerHTML = resp.video_list[i].title;
         var videoBtn = document.createElement("button");
         videoBtn.type = "button";
-        videoBtn.value = resp.video_list[i].file_name;
+        // videoBtn.value = resp.video_list[i].file_name;
         videoBtn.className = "btn btn-primary";
         videoBtn.innerHTML = "재생";
-     
+        videoBtn.value = resp.video_list[i].video_url;
+        var inputSet = document.createElement("input");
+        inputSet.type = "hidden";
+        inputSet.value = resp.video_list[i].video_url;
         //homeImg.value = resp.video_list[i].file_name;
         pZone.appendChild(title);
         pZone.appendChild(videoBtn);
+        pZone.appendChild(inputSet);
         homeDiv.appendChild(homeImg);
-        homeDiv.appendChild(pZone);
-        
+        homeDiv.appendChild(pZone);   
         document.getElementById("mainHome").appendChild(homeDiv);
-        var buttonChild = document.getElementById("mainHome").childNodes;
-        console.log(buttonChild);
-        for(var j = 3; j < buttonChild.length; j++){
-          console.log(buttonChild[j]);
-          var secondChild = buttonChild[j].childNodes;
-          var thirdChild = secondChild[1].childNodes;
-          console.log(thirdChild[1]);
-          thirdChild[1].onclick = function(){
-            document.getElementById('myVideo').innerHTML = "";
-            var myVideo = document.createElement("video");
-            myVideo.id = "VideoPlayer";
-            myVideo.className = "embed-responsive-item";
-            myVideo.src = resp.video_list[i].video;
-            myVideo.autoplay = true;
-            myVideo.controls = true;
-            document.getElementById("myVideo").appendChild(myVideo);
-          }
+      }
+
+      var buttonChild = document.getElementById("mainHome").childNodes;
+      for(var j = 3; j < buttonChild.length; j++){
+        var secondChild = buttonChild[j].childNodes;
+        var thirdChild = secondChild[1].childNodes;
+        (thirdChild[1]).onclick = function(){
+          document.getElementById('myVideo').innerHTML = "";
+          var videoDiv = document.createElement("div");
+          videoDiv.className = "embed-responsive embed-responsive-16by9";
+          var myVideo = document.createElement("video");
+          myVideo.id = "VideoPlayer";
+          myVideo.className = "embed-responsive-item";
+          myVideo.src = this.value;
+          myVideo.autoplay = true;
+          myVideo.controls = true;
+          videoDiv.appendChild(myVideo);
+          document.getElementById("myVideo").appendChild(videoDiv);
         }
       }
     },
