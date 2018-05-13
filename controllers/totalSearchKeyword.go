@@ -117,7 +117,6 @@ func SearchKeyword(c echo.Context) error {
 
 	for _, d := range title_dat2 {
 		title_dat3 := d.(map[string]interface{})
-		log.Println(title_dat3)
 		title_dat4 := title_dat3["_source"].(map[string]interface{})
 		entity, err := googleApi.DataStoreRead(title_dat4["filename"].(string))
 		check(err)
@@ -126,6 +125,7 @@ func SearchKeyword(c echo.Context) error {
 		video_list = append(video_list, models.VideoInfo{"title", image_url, video_url, entity.Title, "0"})
 		count++
 	}
+	log.Println("=======Title Search Success=======")
 
 	u := &models.KeywordVideoModel{
 		Video_List: video_list,
