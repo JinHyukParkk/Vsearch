@@ -14,13 +14,23 @@ import (
 
 	"github.com/JinHyukParkk/CapstoneProject/GoogleAPI"
 	"github.com/JinHyukParkk/CapstoneProject/models"
+	"github.com/kljensen/snowball"
 	"github.com/labstack/echo"
 )
 
 func ElasticPost(filename string, title string) error {
 	url := "http://localhost:9200/mapping/titles"
+	sArr := strings.Split(title, " ")
+	var str string
+
+	for _, s := range sArr {
+		stemmed, err := snowball.Stem(s, "english", true)
+		check(err)
+		str += stemmed
+		str += " "
+	}
 	doc := &models.TitleMapping{
-		Title:    title,
+		Title:    str,
 		Filename: filename,
 	}
 	jsonValue, _ := json.Marshal(doc)

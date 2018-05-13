@@ -86,8 +86,9 @@ func SearchKeyword(c echo.Context) error {
 		check(err)
 		image_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Image_name
 		video_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Video_name
-		video_list = append(video_list, models.VideoInfo{image_url, video_url, entity.Title, FloatToString(dat4["doc_count"].(float64))})
+		video_list = append(video_list, models.VideoInfo{"keyword", image_url, video_url, entity.Title, FloatToString(dat4["doc_count"].(float64))})
 	}
+
 	u := &models.KeywordVideoModel{
 		Video_List: video_list,
 		Total:      strconv.Itoa(len(dat3)),
