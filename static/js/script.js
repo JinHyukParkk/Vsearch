@@ -89,6 +89,7 @@ function home(url){
           var oneKeywordSet = document.createElement("input");
           oneKeywordSet.id = "oneKeywordText";
           oneKeywordSet.type = "text";
+          oneKeywordSet.placeholder = "영상키워드";
           oneKeywordSet.className = "form-control";
           document.getElementById("oneFormDiv").appendChild(oneKeywordSet);
           var oneKeywordButton = document.createElement("button");
@@ -216,13 +217,15 @@ function receiveVideo(url) {
      myVideo.controls = true;
      document.getElementById("myVideo").appendChild(myVideo);*/
      document.getElementById('TimeList').innerHTML = "";
-
+     var headerPart = document.createElement("h3");
+     headerPart.innerHTML = "TimeList";
+     document.getElementById("TimeList").appendChild(headerPart);
      //영상 중간재생 버튼 생성.
      for(var i = 0; i < resp.times.length; i++){
 
        var btn = document.createElement("input");
        btn.type = "button";
-       btn.className = "btn btn-default";
+       btn.className = "btn btn-primary";
        btn.id = "th"+i;
        btn.value = resp.times[i].start_time;
        btn.placeholder = "start: " + resp.times[i].start_time + "~ end: " + resp.times[i].end_time;
