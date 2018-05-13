@@ -2,6 +2,9 @@ body{
 	font-size:12pt; 
 	height:100%;
 }
+div{
+	margin:10pt;
+}
 #buttonbar{
 	display:none; 
 }

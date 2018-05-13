@@ -141,6 +141,7 @@ function sendVideo(url){
 
    success:function(resp){
      alert("success");
+     location.reload();
    },
    error:function(){
      alert("error");

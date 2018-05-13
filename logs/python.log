@@ -1,0 +1,14 @@
+2018-05-13 15:43:26,450 - root - INFO - ########################
+2018-05-13 15:43:26,450 - root - INFO - ### Python Start ###
+2018-05-13 15:43:26,450 - root - INFO - ### Split START ###
+2018-05-13 15:43:26,450 - root - INFO - notting_hill.flac
+2018-05-13 15:43:35,242 - root - INFO - ### Split End ###
+2018-05-13 15:43:35,242 - root - INFO - ### SpeechAPI START ###
+2018-05-13 15:45:56,848 - root - ERROR - 500 Internal server error, code=7. Try your request again.
+2018-05-13 15:45:56,867 - root - INFO - ### SpeechAPI END ###
+2018-05-13 15:45:56,867 - root - INFO - nonsilent_len : 62 dict _ len : 59
+2018-05-13 15:45:56,867 - root - INFO - ### Create json START ###
+2018-05-13 15:45:57,388 - root - ERROR - list index out of range
+2018-05-13 15:45:57,388 - root - INFO - ### Create File END ###
+2018-05-13 15:45:57,389 - root - INFO - ### Python End ###
+2018-05-13 15:45:57,389 - root - INFO - ########################
