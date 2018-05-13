@@ -24,7 +24,6 @@ window.onload = function(){
   })
 }
 function home(url){
-  console.log("test");
   $.ajax({
     type: "GET",
     url: url,
@@ -55,22 +54,28 @@ function home(url){
         videoBtn.value = resp.video_list[i].video_url;
         var inputSet = document.createElement("input");
         inputSet.type = "hidden";
-        inputSet.value = resp.video_list[i].video_url;
-        //homeImg.value = resp.video_list[i].file_name;
+        inputSet.value = resp.video_list[i].filename;
+        
         pZone.appendChild(title);
         pZone.appendChild(videoBtn);
         pZone.appendChild(inputSet);
         homeDiv.appendChild(homeImg);
         homeDiv.appendChild(pZone);   
+
         document.getElementById("mainHome").appendChild(homeDiv);
+
       }
 
       var buttonChild = document.getElementById("mainHome").childNodes;
       for(var j = 3; j < buttonChild.length; j++){
         var secondChild = buttonChild[j].childNodes;
         var thirdChild = secondChild[1].childNodes;
+        console.log(thirdChild);
         (thirdChild[1]).onclick = function(){
+          console.log(this.nextSibling);
           document.getElementById('myVideo').innerHTML = "";
+          document.getElementById("oneFormDiv").innerHTML = "";
+          document.getElementById('TimeList').innerHTML = "";
           var videoDiv = document.createElement("div");
           videoDiv.className = "embed-responsive embed-responsive-16by9";
           var myVideo = document.createElement("video");
@@ -81,8 +86,37 @@ function home(url){
           myVideo.controls = true;
           videoDiv.appendChild(myVideo);
           document.getElementById("myVideo").appendChild(videoDiv);
+          var oneKeywordSet = document.createElement("input");
+          oneKeywordSet.id = "oneKeywordText";
+          oneKeywordSet.type = "text";
+          oneKeywordSet.className = "form-control";
+          document.getElementById("oneFormDiv").appendChild(oneKeywordSet);
+          var oneKeywordButton = document.createElement("button");
+          oneKeywordButton.id = "clickButton";
+          oneKeywordButton.type = "button";
+          oneKeywordButton.innerHTML = "검색";
+          oneKeywordButton.value = this.nextSibling.value;
+          oneKeywordButton.className = "btn btn-default";
+          document.getElementById("oneFormDiv").appendChild(oneKeywordButton);
+          
+          oneKeywordButton.onclick = function(){
+            var putText = document.getElementById("oneKeywordText").value;
+            var newUrl = "http://localhost:8080/oneKeyword/" + this.value + "/" + putText;
+            receiveVideo(newUrl);
+          }
+
         }
       }
+      /*var buttons = document.getElementById("oneFormDiv").childNodes;
+      console.log(buttons);
+      (buttons[1]).onclick = function(){
+        var putText = document.getElementById("oneKeywordText").value;
+        var newUrl = "http://localhost:8080/oneKeyword/" + this.value + "/" + putText;
+        receiveVideo(newUrl);
+      }*/
+      
+     
+      
     },
     error:function(){
       alert("error");
@@ -107,6 +141,7 @@ function sendVideo(url){
 
    success:function(resp){
      alert("success");
+     location.reload();
    },
    error:function(){
      alert("error");
@@ -171,7 +206,7 @@ function receiveVideo(url) {
 
    success:function(resp){
     console.log(resp);
-     alert("success");
+     /*alert("success");
      document.getElementById('myVideo').innerHTML = "";
      var myVideo = document.createElement("video");
      myVideo.id = "VideoPlayer";
@@ -179,7 +214,7 @@ function receiveVideo(url) {
      myVideo.src = resp.URL;
      myVideo.autoplay = true;
      myVideo.controls = true;
-     document.getElementById("myVideo").appendChild(myVideo);
+     document.getElementById("myVideo").appendChild(myVideo);*/
      document.getElementById('TimeList').innerHTML = "";
 
      //영상 중간재생 버튼 생성.
