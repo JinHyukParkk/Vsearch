@@ -71,7 +71,6 @@ func OneSearchKeyword(c echo.Context) error {
 	} else {
 		log.Println(dat1)
 		dat2 := dat1["hits"].([]interface{})
-
 		for _, d := range dat2 {
 			dat3 := d.(map[string]interface{})
 			dat4 := dat3["_source"].(map[string]interface{})
