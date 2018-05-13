@@ -88,7 +88,7 @@ func SearchKeyword(c echo.Context) error {
 			check(err)
 			image_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Image_name
 			video_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Video_name
-			video_list = append(video_list, models.VideoInfo{"keyword", image_url, video_url, entity.Title, FloatToString(dat4["doc_count"].(float64))})
+			video_list = append(video_list, models.VideoInfo{"keyword", dat4["key"].(string), image_url, video_url, entity.Title, FloatToString(dat4["doc_count"].(float64))})
 			count++
 		}
 	}
@@ -120,9 +120,10 @@ func SearchKeyword(c echo.Context) error {
 		title_dat4 := title_dat3["_source"].(map[string]interface{})
 		entity, err := googleApi.DataStoreRead(title_dat4["filename"].(string))
 		check(err)
+		s := strings.Split(title_dat4["filename"].(string), ".")
 		image_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Image_name
 		video_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Video_name
-		video_list = append(video_list, models.VideoInfo{"title", image_url, video_url, entity.Title, "0"})
+		video_list = append(video_list, models.VideoInfo{"title", s[0], image_url, video_url, entity.Title, "0"})
 		count++
 	}
 	log.Println("=======Title Search Success=======")

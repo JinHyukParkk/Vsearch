@@ -6,6 +6,7 @@ type KeywordVideoModel struct {
 }
 type VideoInfo struct {
 	SearchType string `json:"serach_type"`
+	Filename   string `json:"filename"`
 	Image_url  string `json:"image_url"`
 	Video_url  string `json:"video_url"`
 	Title      string `json:"title"`
