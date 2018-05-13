@@ -1,8 +1,11 @@
 package controllers
 
 import (
+	"bytes"
+	"encoding/json"
 	"fmt"
 	"io"
+	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
@@ -10,8 +13,35 @@ import (
 	"strings"
 
 	"github.com/JinHyukParkk/CapstoneProject/GoogleAPI"
+	"github.com/JinHyukParkk/CapstoneProject/models"
 	"github.com/labstack/echo"
 )
+
+func ElasticPost(filename string, title string) error {
+	url := "http://localhost:9200/mapping/titles"
+	doc := &models.TitleMapping{
+		Title:    title,
+		Filename: filename,
+	}
+	jsonValue, _ := json.Marshal(doc)
+
+	req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonValue))
+	check(err)
+
+	req.Header.Set("X-Custom-Header", "myvalue")
+	req.Header.Set("Content-Type", "application/json")
+
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	check(err)
+
+	defer resp.Body.Close()
+	log.Println("response Status:", resp.Status)
+	log.Println("response Headers:", resp.Header)
+	body, _ := ioutil.ReadAll(resp.Body)
+	log.Println("response Body:", string(body))
+	return nil
+}
 
 func VideoUpload(c echo.Context) error {
 	log.Println("Connection")
@@ -57,6 +87,9 @@ func VideoUpload(c echo.Context) error {
 			return nil
 		}
 	}
+	log.Println("====Post Elasticsearch about Title====")
+	ElasticPost(files[0].Filename, title)
+	log.Println("====Finish Elasticsearch about Title====")
 
 	log.Println("====Upload CloudStorage====")
 	googleApi.StorageUpload(files[0].Filename)

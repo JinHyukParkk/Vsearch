@@ -13,7 +13,6 @@ import (
 )
 
 func VideoList(c echo.Context) error {
-
 	listData, err := googleApi.ListAPI()
 	check(err)
 	videoList := []models.Video{}
