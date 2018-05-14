@@ -18,7 +18,7 @@ def word_count(list_line):
 def create_json_file(srt_lines, nonsilent_ranges, file_name):
     """create json file"""
     index = file_name.split('.')
-    URL_origin = "http://localhost:9200/" +index[0] +"/"+file_name+"/"
+    URL_origin = "http://localhost:9200/" +index[0].lower() +"/"+file_name.lower()+"/"
     init_time = datetime.datetime(100, 1, 1, 0, 0,)
     try:
         order = elastic_id = 0

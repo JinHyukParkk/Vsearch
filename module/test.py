@@ -2,6 +2,17 @@ from pydub import AudioSegment
 from pydub.silence import split_on_silence, detect_nonsilent
 from pydub.utils import db_to_float, ratio_to_db
 import itertools
+from nltk.stem.snowball import SnowballStemmer
+
+
+def Processing(sentence):
+    stemmer = SnowballStemmer("english")
+    prev_words = sentence.split(' ')
+    words = [stemmer.stem(word) for word in prev_words]
+
+    sentence = ' '.join(words)
+    return sentence
+
 def find_silence_thresh(audio_segment, min_silence_len=1000):
     seg_len = len(audio_segment)
 
@@ -30,8 +41,10 @@ def find_silence_thresh(audio_segment, min_silence_len=1000):
     # print("max_dbfs : " + max_dbfs)
 
 
-path = "/Users/yw/Desktop/test.flac"
+path = "/Users/yw/Desktop/test4.flac"
 format = "flac"
 sound_file = AudioSegment.from_file(path, format=format)
 print("ok")
 find_silence_thresh(sound_file)
+
+print(Processing("communication"))

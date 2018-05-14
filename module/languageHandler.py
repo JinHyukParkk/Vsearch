@@ -1,7 +1,8 @@
-from nltk.stem.porter import *
+from nltk.stem.snowball import SnowballStemmer
+
 
 def Processing(sentence):
-    stemmer = PorterStemmer()
+    stemmer = SnowballStemmer("english")
     prev_words = sentence.split(' ')
     words = [stemmer.stem(word) for word in prev_words]
 
