@@ -14,11 +14,11 @@ import (
 	"google.golang.org/api/iterator"
 )
 
-func Upload() {
+func CreateBucket() {
 	ctx := context.Background()
 
 	// Sets your Google C	loud Platform project ID.
-	projectID := "capstoneproject-198705"
+	projectID := os.Getenv("GOOGLE_PROJECT_ID")
 
 	// Creates a client.
 	client, err := storage.NewClient(ctx)
@@ -43,7 +43,7 @@ func Upload() {
 
 	fmt.Printf("Bucket %v created.\n", bucketName)
 }
-func delete(bucketName string) error {
+func DeleteBucket(bucketName string) error {
 	ctx := context.Background()
 
 	client, err := storage.NewClient(ctx)
