@@ -292,6 +292,7 @@ function sendKeyword(url,keyword){
 
 // 비디오 제목과 키워드를 보내서 비디오과 시간 테이블을 띄움
 function receiveVideo(url) {
+  console.log(url);
  $.ajax({
    type: "GET",
    url: url,

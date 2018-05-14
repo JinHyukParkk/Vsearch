@@ -41,6 +41,7 @@ func OneSearchKeyword(c echo.Context) error {
 
 	for _, s := range sArr {
 		stemmed, err := snowball.Stem(s, "english", true)
+
 		check(err)
 		str += stemmed
 		str += " "
