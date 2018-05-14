@@ -36,12 +36,13 @@ function home(url){
       console.log(resp.video_list[0].title);
       for(var i=0; i<resp.video_list.length; i++){
         var homeDiv = document.createElement("div");
-        homeDiv.className = "thumbnail col-md-4";
-        
+        homeDiv.className = "thumbnail col-md-12";
+        homeDiv.style.background = "#666";
+        //homeDiv.style.color = "#FFFFFF";
         var homeImg = document.createElement("img");
         homeImg.src = resp.video_list[i].image_url;
         homeImg.style.height = "200px";
-        homeImg.style.width = "300px";
+        homeImg.style.width = "600px";
         var pZone = document.createElement("div");
         pZone.className = "caption";
         var title = document.createElement("h3");
@@ -56,6 +57,7 @@ function home(url){
         inputSet.type = "hidden";
         inputSet.value = resp.video_list[i].filename;
         
+        homeDiv.style.color = "#FFFFFF";
         pZone.appendChild(title);
         pZone.appendChild(videoBtn);
         pZone.appendChild(inputSet);
@@ -225,9 +227,10 @@ function receiveVideo(url) {
 
        var btn = document.createElement("input");
        btn.type = "button";
-       btn.className = "btn btn-primary";
+       btn.className = "btn btn-default btnClass";
        btn.id = "th"+i;
        btn.value = resp.times[i].start_time;
+
        btn.placeholder = "start: " + resp.times[i].start_time + "~ end: " + resp.times[i].end_time;
 
        document.getElementById("TimeList").appendChild(btn);
@@ -237,10 +240,16 @@ function receiveVideo(url) {
      }
      //버튼클릭시 해당 영상 시간으로 이동.
      var buttons = document.getElementById("TimeList").childNodes;
-     for(var j = 0; j < buttons.length; j++){
+     for(var j = 1; j < buttons.length; j++){
        buttons[j].onclick = function(){
+        for(var k = 1; k<buttons.length; k++){
+          buttons[k].style.background = "#666";
+        }
        document.getElementById("VideoPlayer").currentTime = this.value;
+
+       this.style.background = "rgb(240, 91, 101)";
        }
+
      }  
 
    },

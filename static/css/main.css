@@ -1,14 +1,25 @@
 body{
 	font-size:12pt; 
-	height:100%;
+	/*height:100%;*/
+	background-color:rgba(31, 50, 62, 1); 
+	color:white;
 }
-#buttonbar{
-	display:none; 
+#mainHtml{
+	/*height:100%; */
+	padding:50px;
+	
+	background-color:black; 
 }
-
-#inputField{
-	display:none;
+#TimeList{
+	padding:0px 0px 0px 0px;
+	/*margin: 10px;*/
+	background-color:black; 
 }
-#errorMsg{
-	color:red;
+.btnClass{
+	margin:5px;
+	border:1px solid rgb(102, 102, 102);
+	color:white;
+	background:#666;
+    width:95%;
+    text-align:center; 
 }
