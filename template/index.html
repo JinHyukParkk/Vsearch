@@ -19,7 +19,7 @@
 </head>
 
 <body ondragstart="return false">
-  
+  <div class="container-fluid">
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
 
@@ -43,6 +43,14 @@
             </div>
             <button id="sendKeyword" type="button" class="btn btn-default">검색</button>
           </form>
+          
+          <form id="filename" class="navbar-form navbar-left" onsubmit="return false" autocomplete="off">
+            <div class="form-group">
+              <input id="filenameBox" type="text" class="form-control" placeholder="영상 제목">
+            </div>
+            <button id="sendFilename" type="button" class="btn btn-default">검색</button>
+          </form>
+          
           <form class="navbar-form navbar-left">
             <div class="form-group">
               <button type="button" class="btn btn-default form-control" data-toggle="modal" data-target="#myModal">영상 업로드</button>
@@ -90,9 +98,8 @@
         </div>
       </div>
     </nav>
-    <div class="container" id="mainHtml">
     <div class="col-md-8" id="myVideo"></div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="col-md-3">
       <form id="oneKeyword" class="form-inline" onsubmit="return false" autocomplete="off">
         <div class="form-group" id="oneFormDiv"></div>
       </form>
@@ -104,18 +111,20 @@
         <button id="sendKeyword" type="button" class="btn btn-default">검색</button>
       </form>-->
     </div>
-    <div class="col-xs-12 col-md-8" id="mainHome">
-
-      <!--<div class="thumbnail">
+    
+    <div class="col-md-8" id="mainHome">
+      <!--
+      <div class="thumbnail">
         <img src="..." alt="...">
         <div class="caption">
           <h3>Thumbnail label</h3>
-          
           <button class="btn btn-primary">button</button>
           <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
         </div>
-      </div>-->
+      </div>
+      -->
     </div>
+
     <!--<div class="col-md-2" id="Videos" class="videoCol">
       <div class="list-group">
         <button type="button" class="list-group-item">Cras justo odio</button>
