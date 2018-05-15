@@ -4,6 +4,9 @@ body{
 	background-color:rgba(31, 50, 62, 1); 
 	color:white;
 }
+.navBar{
+	background-color:black; 
+}
 #mainHtml{
 	/*height:100%; */
 	padding:50px;

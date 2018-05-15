@@ -36,7 +36,7 @@ function home(url){
       // console.log(resp.video_list[0].title);
       for(var i=0; i<resp.video_list.length; i++){
         var homeDiv = document.createElement("div");
-        homeDiv.className = "thumbnail col-md-12";
+        homeDiv.className = "thumbnail col-md-4";
         homeDiv.style.background = "#666";
         //homeDiv.style.color = "#FFFFFF";
         var homeImg = document.createElement("img");
