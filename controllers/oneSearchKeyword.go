@@ -68,7 +68,7 @@ func OneSearchKeyword(c echo.Context) error {
 
 	time_list := []models.Time{}
 	dat1 := dat["hits"].(map[string]interface{})
-	log.Println(dat1["total"])
+	// log.Println(dat1["total"])
 	cnt := dat1["total"].(float64)
 	if cnt == 0 {
 		return c.JSON(http.StatusOK, nil)
