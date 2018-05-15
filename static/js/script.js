@@ -13,13 +13,6 @@ window.onload = function(){
     sendKeyword(url,keyword);
     $("#keywordBox").val("");
   }
-
-  document.getElementById("sendFilename").onclick = function() {
-    var filename = document.getElementById("filename").value;
-    var url = "http://localhost:8080/filename/" + filename;
-    sendFilename(url,filename);
-    $("#filenameBox").val("");
-  }
   
   $("#keywordBox").keypress(function(e){
     if(e.keyCode == 13){

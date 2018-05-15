@@ -1,9 +1,16 @@
+@font-face{
+	font-family: "GodoM";
+	src: url(GodoM.otf)
+	format("truetype");
+}
 body{
+	font-family:GodoM;
 	font-size:12pt; 
 	/*height:100%;*/
-	background-image: url("background");
+	
 	/*background-color:rgba(31, 50, 62, 1); */
 	background-color: black;
+	
 	color: black;
 }
 .navBar{
@@ -15,9 +22,9 @@ body{
 
 #mainHtml{
 	/*height:100%; */
-	padding:30px;
+	padding:10px;
 	background-color: white;
-	padding-top: 100px;
+	padding-top: 60px;
 	/*display: grid;
   	grid-template-columns: repeat(4, 1fr);
   	grid-gap: 10px;
@@ -32,7 +39,8 @@ body{
 }
 .btnClass{
 	margin:5px;
-	border-bottom:  :2px solid rgb(102, 102, 102);
+	border:none;
+	border-bottom:2px solid rgb(102, 102, 102);
 	color:black;
 	background: white;
     width:95%;
@@ -52,6 +60,7 @@ body{
 }*/
 h2{
 	text-decoration: underline black;
+	font-size:30pt; 
 	padding-top: 0;
 	margin-top: 0;
 }
@@ -63,12 +72,12 @@ h1{
 	font-size: 20px;
 	margin:0;
 }
-/*.thumbNail{
-	margin-left: 1px;
-}*/
+.thumbNail{
+	margin-top: 10pt;
+}
 .titleText{
 	margin: 3px;
-	margin-top: 20px;
+	/*margin-bottom: 20px;*/
 }
 /*#keyword{
 	margin: 0, auto;
