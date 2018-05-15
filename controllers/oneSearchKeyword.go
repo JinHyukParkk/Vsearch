@@ -44,11 +44,12 @@ func OneSearchKeyword(c echo.Context) error {
 
 		check(err)
 		str += stemmed
-		str += " "
+		str += "%20"
 	}
-	log.Println(str)
+
 	// Create elastic request url
-	url := "http://localhost:9200/" + filename + "/_search?q=content:" + keyword + "&sort=id:asc&size=10000"
+	url := "http://localhost:9200/" + filename + "/_search?q=content:" + str + "&sort=id:asc&size=10000"
+	log.Println(url)
 	resp, err := http.Get(url)
 	check(err)
 
@@ -63,7 +64,6 @@ func OneSearchKeyword(c echo.Context) error {
 	}
 
 	time_list := []models.Time{}
-
 	dat1 := dat["hits"].(map[string]interface{})
 	// log.Println(dat1["total"])
 	cnt := dat1["total"].(float64)
