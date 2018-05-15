@@ -1,25 +1,76 @@
 body{
 	font-size:12pt; 
 	/*height:100%;*/
-	background-color:rgba(31, 50, 62, 1); 
-	color:white;
+	background-image: url("background");
+	/*background-color:rgba(31, 50, 62, 1); */
+	background-color: black;
+	color: black;
+}
+.navBar{
+	background: black;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
 }
 #mainHtml{
 	/*height:100%; */
-	padding:50px;
-	
-	background-color:black; 
+	padding:40px;
+	background-color: white;
+	padding-top: 100px;
+	/*display: grid;
+  	grid-template-columns: repeat(4, 1fr);
+  	grid-gap: 10px;
+	grid-auto-rows: minmax(0px, auto);*/
 }
+
 #TimeList{
 	padding:0px 0px 0px 0px;
 	/*margin: 10px;*/
-	background-color:black; 
+/*	background-color:black;*/ 
+	color: white;
 }
 .btnClass{
 	margin:5px;
-	border:1px solid rgb(102, 102, 102);
-	color:white;
-	background:#666;
+	border-bottom:  :2px solid rgb(102, 102, 102);
+	color:black;
+	background: white;
     width:95%;
-    text-align:center; 
+    text-align:center;
+}
+.embed-responsive-16by9{
+	padding: 10px;
+	/*background: #666;*/
+	border: 1px solid #666;
+	background: white;
+}
+/*.myVideo{
+	padding: 5px 5px 5px 5px;
+	background: #666;
+	border: 1px solid #666;
+	background: none;
+}*/
+h2{
+	text-decoration: underline black;
+	padding-top: 0;
+	margin-top: 0;
+}
+h3{
+	color: black;
+	text-align: left;
+}
+h1{
+	font-size: 20px;
+}
+.thumbNail{
+	margin: 3px;
+}
+.titleText{
+	margin: 3px;
+	margin-top: 20px;
+}
+/*#keyword{
+	margin: 0, auto;
+}*/
+#clickButton{
+	margin: 5px;
 }

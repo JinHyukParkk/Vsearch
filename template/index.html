@@ -20,7 +20,7 @@
 
 <body ondragstart="return false">
   
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse navBar">
       <div class="container-fluid">
 
         <div class="navbar-header">
@@ -31,7 +31,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">캡스톤</a>
+          <a class="navbar-brand" href="#">
+            <img src="sneak.png" style="width:40px;"/>
+          </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -91,48 +93,49 @@
       </div>
     </nav>
     <div class="container" id="mainHtml">
-    <div class="col-md-8" id="myVideo"></div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <form id="oneKeyword" class="form-inline" onsubmit="return false" autocomplete="off">
-        <div class="form-group" id="oneFormDiv"></div>
-      </form>
-      <div id="TimeList"></div>
-      <!--<form id="keyword" class="navbar-form navbar-left" onsubmit="return false" autocomplete="off">
-        <div class="form-group">
-          <input id="keywordBox" type="text" class="form-control" placeholder="키워드">
-        </div>
-        <button id="sendKeyword" type="button" class="btn btn-default">검색</button>
-      </form>-->
-    </div>
-    <div class="col-xs-12 col-md-8" id="mainHome">
+      <div class="col-md-9 myVideo" id="myVideo"></div>
+      <div class="col-xs-12 col-sm-6 col-md-3 timeSearch">
+        <form id="oneKeyword" class="form-inline" onsubmit="return false" autocomplete="off">
+          <div class="form-group" id="oneFormDiv"></div>
+        </form>
+        <div id="TimeList"></div>
+        <!--<form id="keyword" class="navbar-form navbar-left" onsubmit="return false" autocomplete="off">
+          <div class="form-group">
+            <input id="keywordBox" type="text" class="form-control" placeholder="키워드">
+          </div>
+          <button id="sendKeyword" type="button" class="btn btn-default">검색</button>
+        </form>-->
+      </div>
+      <div class="col-md-12 titleText" id="titleText"></div>
+      <span class="col-xs-12 col-md-12 mainHome" id="mainHome">
 
-      <!--<div class="thumbnail">
-        <img src="..." alt="...">
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          
-          <button class="btn btn-primary">button</button>
-          <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <!--<div class="thumbnail">
+          <img src="..." alt="...">
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            
+            <button class="btn btn-primary">button</button>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>-->
+      </span>
+      <!--<div class="col-md-2" id="Videos" class="videoCol">
+        <div class="list-group">
+          <button type="button" class="list-group-item">Cras justo odio</button>
+          <button type="button" class="list-group-item">Cras justo odio</button>
+          <button type="button" class="list-group-item">Cras justo odio</button>
         </div>
+        <div id="VideoList" class="list-group">VideoList</div>
       </div>-->
-    </div>
-    <!--<div class="col-md-2" id="Videos" class="videoCol">
-      <div class="list-group">
-        <button type="button" class="list-group-item">Cras justo odio</button>
-        <button type="button" class="list-group-item">Cras justo odio</button>
-        <button type="button" class="list-group-item">Cras justo odio</button>
+      <!--<div class="col-sm-12 col-md-10">
+        <div class="btn-group" role="group" aria-label="...">
+          <button type="button" class="btn btn-default" id="PlayVideo" value="Video">비디오</button>
+          <button type="button" class="btn btn-default" id="Time" value="VideoTime">영상시간</button>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9" id="myVideo"></div>
+        
       </div>
-      <div id="VideoList" class="list-group">VideoList</div>
-    </div>-->
-    <!--<div class="col-sm-12 col-md-10">
-      <div class="btn-group" role="group" aria-label="...">
-        <button type="button" class="btn btn-default" id="PlayVideo" value="Video">비디오</button>
-        <button type="button" class="btn btn-default" id="Time" value="VideoTime">영상시간</button>
-      </div>
-      <div class="embed-responsive embed-responsive-16by9" id="myVideo"></div>
-      
-    </div>
-    <div id="TimeList"></div>-->
+      <div id="TimeList"></div>-->
   </div>
 </body>
 
