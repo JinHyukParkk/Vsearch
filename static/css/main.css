@@ -12,12 +12,10 @@ body{
 	z-index: 100;
 	width: 100%;
 }
-.navBar{
-	background-color:black; 
-}
+
 #mainHtml{
 	/*height:100%; */
-	padding:40px;
+	padding:30px;
 	background-color: white;
 	padding-top: 100px;
 	/*display: grid;
@@ -63,10 +61,11 @@ h3{
 }
 h1{
 	font-size: 20px;
+	margin:0;
 }
-.thumbNail{
-	margin: 3px;
-}
+/*.thumbNail{
+	margin-left: 1px;
+}*/
 .titleText{
 	margin: 3px;
 	margin-top: 20px;

@@ -43,8 +43,9 @@ function home(url){
       // console.log(resp.video_list[0].title);
       for(var i=0; i<resp.video_list.length; i++){
         var homeDiv = document.createElement("button");
-        homeDiv.className = "thumbnail col-md-4 thumbNail";
+        homeDiv.className = "thumbnail col-md-3 thumbNail";
         homeDiv.style.background = "white";
+        homeDiv.style.border = "none";
         homeDiv.value = resp.video_list[i].video_url;
         homeDiv.type = "button";
         //homeDiv.style.color = "#FFFFFF";
@@ -55,8 +56,8 @@ function home(url){
         var homeImg = document.createElement("img");
         homeImg.src = resp.video_list[i].image_url;
         homeImg.style.height = "200px";
-        homeImg.style.width = "500px";
-        homeImg.style.cssFloat = "left";
+        homeImg.style.width = "400px";
+        homeImg.style.padding = "5px";
 
         var pZone = document.createElement("div");
         pZone.className = "caption";
