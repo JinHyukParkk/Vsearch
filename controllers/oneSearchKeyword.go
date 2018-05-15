@@ -48,7 +48,7 @@ func OneSearchKeyword(c echo.Context) error {
 	}
 	log.Println(str)
 	// Create elastic request url
-	url := "http://localhost:9200/" + filename + "/_search?q=content:" + keyword + "&sort=id:asc&size=10000"
+	url := "http://localhost:9200/" + filename + "/_search?q=content:" + str + "&sort=id:asc&size=10000"
 	resp, err := http.Get(url)
 	check(err)
 
