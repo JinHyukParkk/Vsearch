@@ -13,6 +13,13 @@ window.onload = function(){
     sendKeyword(url,keyword);
     $("#keywordBox").val("");
   }
+
+  document.getElementById("sendFilename").onclick = function() {
+    var filename = document.getElementById("filename").value;
+    var url = "http://localhost:8080/filename/" + filename;
+    sendFilename(url,filename);
+    $("#filenameBox").val("");
+  }
   
   $("#keywordBox").keypress(function(e){
     if(e.keyCode == 13){
@@ -35,53 +42,69 @@ function home(url){
       console.log(resp);
       // console.log(resp.video_list[0].title);
       for(var i=0; i<resp.video_list.length; i++){
-        var homeDiv = document.createElement("div");
-        homeDiv.className = "thumbnail col-md-4";
-        homeDiv.style.background = "#666";
+        var homeDiv = document.createElement("button");
+        homeDiv.className = "thumbnail col-md-4 thumbNail";
+        homeDiv.style.background = "white";
+        homeDiv.value = resp.video_list[i].video_url;
+        homeDiv.type = "button";
         //homeDiv.style.color = "#FFFFFF";
+        // var divBtn = document.createElement("button");
+        // divBtn.value = resp.video_list[i].file_name;
+        // divBtn.className = "btn btn-primary";
+
         var homeImg = document.createElement("img");
         homeImg.src = resp.video_list[i].image_url;
         homeImg.style.height = "200px";
-        homeImg.style.width = "600px";
+        homeImg.style.width = "500px";
+        homeImg.style.cssFloat = "left";
+
         var pZone = document.createElement("div");
         pZone.className = "caption";
-        var title = document.createElement("h3");
+
+        var title = document.createElement("h1");
         title.innerHTML = resp.video_list[i].title;
-        var videoBtn = document.createElement("button");
-        videoBtn.type = "button";
-        // videoBtn.value = resp.video_list[i].file_name;
-        videoBtn.className = "btn btn-primary";
-        videoBtn.innerHTML = "재생";
-        videoBtn.value = resp.video_list[i].video_url;
+        title.value = resp.video_list[i].title;
+        title.style.cssFloat = "left";
+
         var inputSet = document.createElement("input");
         inputSet.type = "hidden";
         inputSet.value = resp.video_list[i].filename;
+
+        // var videoBtn = document.createElement("button");
+        // videoBtn.type = "button";
+        // // videoBtn.value = resp.video_list[i].file_name;
+        // videoBtn.className = "btn btn-primary";
+        // videoBtn.innerHTML = "재생";
+        //videoBtn.value = resp.video_list[i].video_url;
         
         homeDiv.style.color = "#FFFFFF";
+
         pZone.appendChild(title);
-        pZone.appendChild(videoBtn);
         pZone.appendChild(inputSet);
+        //pZone.appendChild(videoBtn);
         homeDiv.appendChild(homeImg);
-        homeDiv.appendChild(pZone);   
+        homeDiv.appendChild(pZone);
+        // homeDiv.appendChild(divBtn);
 
         document.getElementById("mainHome").appendChild(homeDiv);
 
       }
 
       var buttonChild = document.getElementById("mainHome").childNodes;
-      for(var j = 3; j < buttonChild.length; j++){
-        var secondChild = buttonChild[j].childNodes;
-        var thirdChild = secondChild[1].childNodes;
+      for(var j = 0; j < buttonChild.length; j++){
+        // var secondChild = buttonChild[j].childNodes;
+        // var thirdChild = secondChild[1].childNodes;
         // console.log(thirdChild);
-        (thirdChild[1]).onclick = function(){
+        (buttonChild[j]).onclick = function(){
           // console.log(this.nextSibling);
           document.getElementById('myVideo').innerHTML = "";
           document.getElementById("oneFormDiv").innerHTML = "";
           document.getElementById('TimeList').innerHTML = "";
-          
+          document.getElementById('titleText').innerHTML = "";
+         
           var videoDiv = document.createElement("div");
           videoDiv.className = "embed-responsive embed-responsive-16by9";
-          
+         
           var myVideo = document.createElement("video");
           myVideo.id = "VideoPlayer";
           myVideo.className = "embed-responsive-item";
@@ -90,11 +113,16 @@ function home(url){
           myVideo.controls = true;
           videoDiv.appendChild(myVideo);
           document.getElementById("myVideo").appendChild(videoDiv);
+
+          var videoTitle = document.createElement("h2");
+          var t = document.createTextNode(this.childNodes[1].childNodes[0].value);
+          videoTitle.appendChild(t);                 
+          document.getElementById("titleText").appendChild(videoTitle);
           
           var oneKeywordSet = document.createElement("input");
           oneKeywordSet.id = "oneKeywordText";
           oneKeywordSet.type = "text";
-          oneKeywordSet.placeholder = "영상키워드";
+          oneKeywordSet.placeholder = "영상 내 키워드";
           oneKeywordSet.className = "form-control";
           document.getElementById("oneFormDiv").appendChild(oneKeywordSet);
           
@@ -102,7 +130,7 @@ function home(url){
           oneKeywordButton.id = "clickButton";
           oneKeywordButton.type = "button";
           oneKeywordButton.innerHTML = "검색";
-          oneKeywordButton.value = this.nextSibling.value;
+          oneKeywordButton.value = this.childNodes[1].childNodes[1].value;
           oneKeywordButton.className = "btn btn-default";
           document.getElementById("oneFormDiv").appendChild(oneKeywordButton);
           
@@ -114,6 +142,60 @@ function home(url){
 
         }
       }
+      // for(var j = 3; j < buttonChild.length; j++){
+      //   var secondChild = buttonChild[j].childNodes;
+      //   var thirdChild = secondChild[1].childNodes;
+      //   // console.log(thirdChild);
+      //   (thirdChild[1]).onclick = function(){
+      //     // console.log(this.nextSibling);
+      //     document.getElementById('myVideo').innerHTML = "";
+      //     document.getElementById('titleText').innerHTML = "";
+      //     document.getElementById("oneFormDiv").innerHTML = "";
+      //     document.getElementById('TimeList').innerHTML = "";
+          
+      //     var videoDiv = document.createElement("div");
+      //     videoDiv.className = "embed-responsive embed-responsive-16by9";
+          
+      //     var myVideo = document.createElement("video");
+      //     myVideo.id = "VideoPlayer";
+      //     myVideo.className = "embed-responsive-item myvidClass";
+      //     myVideo.src = this.value;
+      //     myVideo.autoplay = true;
+      //     myVideo.controls = true;
+      //     videoDiv.appendChild(myVideo);
+      //     document.getElementById("myVideo").appendChild(videoDiv);
+
+      //     var videoTitle = document.createElement("h1");
+      //     var t = document.createTextNode("Hello World");
+      //     videoTitle.appendChild(t);                 
+      //     document.getElementById("titleText").appendChild(videoTitle);
+
+          
+      //     var oneKeywordSet = document.createElement("input");
+      //     oneKeywordSet.id = "oneKeywordText";
+      //     oneKeywordSet.type = "text";
+      //     oneKeywordSet.placeholder = "영상키워드";
+      //     oneKeywordSet.className = "form-control";
+      //     oneKeywordSet.style.margin = "5px";
+      //     document.getElementById("oneFormDiv").appendChild(oneKeywordSet);
+          
+      //     var oneKeywordButton = document.createElement("button");
+      //     oneKeywordButton.id = "clickButton";
+      //     oneKeywordButton.type = "button";
+      //     oneKeywordButton.innerHTML = "검색";
+      //     oneKeywordButton.value = this.nextSibling.value;
+      //     oneKeywordButton.className = "btn btn-default";
+      //     oneKeywordButton.style.margin = "5px";
+      //     document.getElementById("oneFormDiv").appendChild(oneKeywordButton);
+          
+      //     oneKeywordButton.onclick = function(){
+      //       var putText = document.getElementById("oneKeywordText").value;
+      //       var newUrl = "http://localhost:8080/oneKeyword/" + this.value + "/" + putText;
+      //       receiveVideo(newUrl);
+      //     }
+
+      //   }
+      // }
       /*var buttons = document.getElementById("oneFormDiv").childNodes;
       console.log(buttons);
       (buttons[1]).onclick = function(){
@@ -173,36 +255,47 @@ function sendKeyword(url,keyword){
     console.log(resp);
       //console.log(resp.video_list[0].title);
       for(var i=0; i<resp.video_list.length; i++){
-        var homeDiv = document.createElement("div");
-        homeDiv.className = "thumbnail col-md-4";
-        
+        var homeDiv = document.createElement("button");
+        homeDiv.className = "thumbnail col-md-12 thumbNail";
+        homeDiv.style.background = "#666";
+        homeDiv.value = resp.video_list[i].video_url;
+        homeDiv.type = "button";
+        //homeDiv.style.color = "#FFFFFF";
+        // var divBtn = document.createElement("button");
+        // divBtn.value = resp.video_list[i].file_name;
+        // divBtn.className = "btn btn-primary";
+
         var homeImg = document.createElement("img");
         homeImg.src = resp.video_list[i].image_url;
         homeImg.style.height = "200px";
-        homeImg.style.width = "300px";
-       
+        homeImg.style.width = "500px";
+        homeImg.style.cssFloat = "left";
+
         var pZone = document.createElement("div");
         pZone.className = "caption";
-       
-        var title = document.createElement("h3");
+
+        var title = document.createElement("h1");
         title.innerHTML = resp.video_list[i].title;
-       
-        var videoBtn = document.createElement("button");
-        videoBtn.type = "button";
-        // videoBtn.value = resp.video_list[i].file_name;
-        videoBtn.className = "btn btn-primary";
-        videoBtn.innerHTML = "재생";
-        videoBtn.value = resp.video_list[i].video_url;
-       
+        title.value = resp.video_list[i].title;
+
+        // var videoBtn = document.createElement("button");
+        // videoBtn.type = "button";
+        // //videoBtn.value = resp.video_list[i].file_name;
+        // videoBtn.className = "btn btn-primary";
+        // videoBtn.innerHTML = "재생";
+        // videoBtn.value = resp.video_list[i].video_url;
+
         var inputSet = document.createElement("input");
         inputSet.type = "hidden";
         inputSet.value = resp.video_list[i].filename;
         
+        homeDiv.style.color = "#FFFFFF";
         pZone.appendChild(title);
-        pZone.appendChild(videoBtn);
+        //pZone.appendChild(videoBtn);
         pZone.appendChild(inputSet);
         homeDiv.appendChild(homeImg);
-        homeDiv.appendChild(pZone);   
+        homeDiv.appendChild(pZone);
+        // homeDiv.appendChild(divBtn);
 
         document.getElementById("mainHome").appendChild(homeDiv);
 
@@ -210,14 +303,15 @@ function sendKeyword(url,keyword){
 
       var buttonChild = document.getElementById("mainHome").childNodes;
       for(var j = 0; j < buttonChild.length; j++){
-        var secondChild = buttonChild[j].childNodes;
-        var thirdChild = secondChild[1].childNodes;
+        // var secondChild = buttonChild[j].childNodes;
+        // var thirdChild = secondChild[1].childNodes;
         // console.log(thirdChild);
-        (thirdChild[1]).onclick = function(){
+        (buttonChild[j]).onclick = function(){
           // console.log(this.nextSibling);
           document.getElementById('myVideo').innerHTML = "";
           document.getElementById("oneFormDiv").innerHTML = "";
           document.getElementById('TimeList').innerHTML = "";
+          document.getElementById('titleText').innerHTML = "";
          
           var videoDiv = document.createElement("div");
           videoDiv.className = "embed-responsive embed-responsive-16by9";
@@ -230,11 +324,16 @@ function sendKeyword(url,keyword){
           myVideo.controls = true;
           videoDiv.appendChild(myVideo);
           document.getElementById("myVideo").appendChild(videoDiv);
+
+          var videoTitle = document.createElement("h2");
+          var t = document.createTextNode(this.childNodes[1].childNodes[0].value);
+          videoTitle.appendChild(t);                 
+          document.getElementById("titleText").appendChild(videoTitle);
           
           var oneKeywordSet = document.createElement("input");
           oneKeywordSet.id = "oneKeywordText";
           oneKeywordSet.type = "text";
-          oneKeywordSet.placeholder = "영상키워드";
+          oneKeywordSet.placeholder = "영상 내 키워드";
           oneKeywordSet.className = "form-control";
           document.getElementById("oneFormDiv").appendChild(oneKeywordSet);
           
@@ -242,7 +341,7 @@ function sendKeyword(url,keyword){
           oneKeywordButton.id = "clickButton";
           oneKeywordButton.type = "button";
           oneKeywordButton.innerHTML = "검색";
-          oneKeywordButton.value = this.nextSibling.value;
+          oneKeywordButton.value = this.childNodes[1].childNodes[1].value;
           oneKeywordButton.className = "btn btn-default";
           document.getElementById("oneFormDiv").appendChild(oneKeywordButton);
           
@@ -251,7 +350,6 @@ function sendKeyword(url,keyword){
             var newUrl = "http://localhost:8080/oneKeyword/" + this.value + "/" + putText;
             receiveVideo(newUrl);
           }
-
         }
     /*
     // 키워드가 있는 비디오들을 버튼으로 생성
@@ -290,7 +388,6 @@ function sendKeyword(url,keyword){
 
 }
 
-// 비디오 제목과 키워드를 보내서 비디오과 시간 테이블을 띄움
 function receiveVideo(url) {
   console.log(url);
  $.ajax({
@@ -338,11 +435,13 @@ function receiveVideo(url) {
      for(var j = 1; j < buttons.length; j++){
        buttons[j].onclick = function(){
         for(var k = 1; k<buttons.length; k++){
-          buttons[k].style.background = "#666";
+          buttons[k].style.color = "black";
+          buttons[k].style.background = "white";
         }
        document.getElementById("VideoPlayer").currentTime = this.value;
 
        this.style.background = "rgb(240, 91, 101)";
+       this.style.color = "white";
        }
 
      }  
