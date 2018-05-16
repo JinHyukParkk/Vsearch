@@ -33,7 +33,7 @@ func customHTTPErrorHandler(err error, c echo.Context) {
 	if err := c.File(errorPage); err != nil {
 		c.Logger().Error(err)
 	}
-	c.Logger().Error(err)
+	// c.Logger().Error(err)
 }
 func main() {
 	e := echo.New()
@@ -54,15 +54,15 @@ func main() {
 	// e.Use(middleware.Static("/static"))
 	e.Static("/", "static")
 
-	// templete 폴더가 static 안에 있을 때
-	// e.Use(middleware.StaticWithConfig(middleware.StaticConfig{
-	// 	Root:   "static",
-	// 	Index:  "template/index.html",
-	// 	Browse: true,
-	// }))
-
 	//처음 시작하는 파일 설정.
 	e.File("/", "template/index.html")
+
+	//middleware로 static 관리
+	// e.Use(middleware.StaticWithConfig(middleware.StaticConfig{
+	// 	Root:   "static",
+	// 	Index:  "../template/index.html",
+	// 	Browse: true,
+	// }))
 
 	// route
 	e.GET("/videoList", controllers.VideoList)

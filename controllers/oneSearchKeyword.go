@@ -20,9 +20,12 @@ func FloatToString1(input_num float64) string {
 }
 
 func calcul_second(time string) float64 {
+	var sum float64 = 0
+	if !strings.Contains(time, ".") {
+		return sum
+	}
 	timesArr := strings.Split(time, ".")
 	timeArr := strings.Split(timesArr[0], ":")
-	var sum float64 = 0
 	hour, _ := strconv.ParseFloat(timeArr[0], 32)
 	sum += 3600 * hour
 	minite, _ := strconv.ParseFloat(timeArr[1], 32)
@@ -70,7 +73,6 @@ func OneSearchKeyword(c echo.Context) error {
 	if cnt == 0 {
 		return c.JSON(http.StatusOK, nil)
 	} else {
-		log.Println(dat1)
 		dat2 := dat1["hits"].([]interface{})
 		for _, d := range dat2 {
 			dat3 := d.(map[string]interface{})

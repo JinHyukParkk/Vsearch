@@ -1,11 +1,11 @@
-@font-face { 
-	font-family: 'NanumGothic'; 
-	src: url(NanumFont_TTF_ALL/NanumGothic.ttf) 
-	format('truetype'); 
+@font-face{
+	font-family: "GodoM";
+	src: url(GodoM.otf)
+	format("truetype");
 }
 body{
+	font-family:GodoM;
 	font-size:12pt; 
-	/*background-color: white;*/
 	color: black;
 	background-image: url('../images/bgg.png');
 
@@ -24,7 +24,6 @@ body{
 	width: 100px;
 }
 #mainHtml{
-	/*height:100%; */
 	padding:40px;
 	background-color: white;
 	padding-top: 50px;
@@ -39,7 +38,6 @@ body{
 }
 .btnClass{
 	margin:5px;
-	/*border : 2px solid rgb(102, 102, 102);*/
 	box-shadow: 3px rgb(102, 102, 102);
 	color:black;
 	background: white;
@@ -60,6 +58,7 @@ body{
 }*/
 h2{
 	text-decoration: underline black;
+	font-size:30pt; 
 	padding-top: 0;
 	margin-top: 0;
 }
@@ -71,11 +70,11 @@ h1{
 	font-size: 20px;
 }
 .thumbNail{
-	margin: 3px;
+	margin-top: 10pt;
 }
 .titleText{
 	margin: 3px;
-	margin-top: 20px;
+	/*margin-bottom: 20px;*/
 }
 /*#keyword{
 	margin: 0, auto;
