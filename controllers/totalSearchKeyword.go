@@ -112,6 +112,7 @@ func SearchKeyword(c echo.Context) error {
 	if err := json.Unmarshal(title_data, &title_dat); err != nil {
 		panic(err)
 	}
+
 	title_dat1 := title_dat["hits"].(map[string]interface{})
 	title_dat2 := title_dat1["hits"].([]interface{})
 
