@@ -75,24 +75,26 @@ func SearchKeyword(c echo.Context) error {
 	log.Println(dat)
 	video_list := []models.VideoInfo{}
 	count := 0
+	dat1 := dat["hits"].(map[string]interface{})
+	cnt := dat1["total"].(float64)
+	if cnt != 0 {
+		dat1 := dat["aggregations"].(map[string]interface{})
+		dat2 := dat1["group_by_state"].(map[string]interface{})
+		dat3 := dat2["buckets"].([]interface{})
 
-	dat1 := dat["aggregations"].(map[string]interface{})
-	dat2 := dat1["group_by_state"].(map[string]interface{})
-	dat3 := dat2["buckets"].([]interface{})
-
-	for _, d := range dat3 {
-		dat4 := d.(map[string]interface{})
-		log.Println(dat4["key"].(string))
-		if dat4["key"].(string) != "mapping" {
-			entity, err := googleApi.DataStoreRead(dat4["key"].(string) + ".mp4")
-			check(err)
-			image_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Image_name
-			video_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Video_name
-			video_list = append(video_list, models.VideoInfo{"keyword", dat4["key"].(string), image_url, video_url, entity.Title, FloatToString(dat4["doc_count"].(float64))})
-			count++
+		for _, d := range dat3 {
+			dat4 := d.(map[string]interface{})
+			log.Println(dat4["key"].(string))
+			if dat4["key"].(string) != "mapping" {
+				entity, err := googleApi.DataStoreRead(dat4["key"].(string) + ".mp4")
+				check(err)
+				image_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Image_name
+				video_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Video_name
+				video_list = append(video_list, models.VideoInfo{"keyword", dat4["key"].(string), image_url, video_url, entity.Title, FloatToString(dat4["doc_count"].(float64))})
+				count++
+			}
 		}
 	}
-
 	log.Println("=======Keyword Search Success=======")
 
 	title_url := "http://localhost:9200/mapping/titles/_search"
@@ -114,18 +116,21 @@ func SearchKeyword(c echo.Context) error {
 	}
 
 	title_dat1 := title_dat["hits"].(map[string]interface{})
-	title_dat2 := title_dat1["hits"].([]interface{})
+	cnt = title_dat1["total"].(float64)
+	if cnt != 0 {
+		title_dat2 := title_dat1["hits"].([]interface{})
 
-	for _, d := range title_dat2 {
-		title_dat3 := d.(map[string]interface{})
-		title_dat4 := title_dat3["_source"].(map[string]interface{})
-		entity, err := googleApi.DataStoreRead(title_dat4["filename"].(string))
-		check(err)
-		s := strings.Split(title_dat4["filename"].(string), ".")
-		image_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Image_name
-		video_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Video_name
-		video_list = append(video_list, models.VideoInfo{"title", s[0], image_url, video_url, entity.Title, "0"})
-		count++
+		for _, d := range title_dat2 {
+			title_dat3 := d.(map[string]interface{})
+			title_dat4 := title_dat3["_source"].(map[string]interface{})
+			entity, err := googleApi.DataStoreRead(title_dat4["filename"].(string))
+			check(err)
+			s := strings.Split(title_dat4["filename"].(string), ".")
+			image_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Image_name
+			video_url := "https://storage.googleapis.com/" + os.Getenv("cloudStorage") + "/" + entity.Video_name
+			video_list = append(video_list, models.VideoInfo{"title", s[0], image_url, video_url, entity.Title, "0"})
+			count++
+		}
 	}
 	log.Println("=======Title Search Success=======")
 
