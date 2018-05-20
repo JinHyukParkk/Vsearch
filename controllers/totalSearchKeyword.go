@@ -77,6 +77,7 @@ func SearchKeyword(c echo.Context) error {
 	count := 0
 	dat1 := dat["hits"].(map[string]interface{})
 	cnt := dat1["total"].(float64)
+	// 없을 때 cnt가 0일 때 넘어감
 	if cnt != 0 {
 		dat1 := dat["aggregations"].(map[string]interface{})
 		dat2 := dat1["group_by_state"].(map[string]interface{})
@@ -117,6 +118,7 @@ func SearchKeyword(c echo.Context) error {
 
 	title_dat1 := title_dat["hits"].(map[string]interface{})
 	cnt = title_dat1["total"].(float64)
+	// 없을 때 cnt가 0일 때 넘어감
 	if cnt != 0 {
 		title_dat2 := title_dat1["hits"].([]interface{})
 
