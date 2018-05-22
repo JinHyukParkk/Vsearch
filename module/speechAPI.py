@@ -42,3 +42,4 @@ def SpeechAPI(pathFile, results, index):
         results[index] = result_str
     except Exception as ex:
         log(ex,logging.error)
+        results[index]= ""
