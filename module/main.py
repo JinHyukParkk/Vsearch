@@ -29,11 +29,18 @@ def main():
 
     log("### SpeechAPI START ###", logging.info)
 
+    th_nums = 0
+
     for index in range(len(nonsilent_ranges)):
         path = "./audioFile_python/result" + str(index) + ".flac"
         th = threading.Thread(target=SpeechAPI, args=(path, dict_lines, index))
         th.start()
         threads.append(th)
+        th_nums+=1
+        if(th_nums > 300):
+            for thread in threads:
+                thread.join()
+                th_nums-=1
 
     for th in threads:
         th.join()

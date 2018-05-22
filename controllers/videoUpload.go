@@ -58,18 +58,23 @@ func VideoUpload(c echo.Context) error {
 
 	form, err := c.MultipartForm()
 	check(err)
-
+	// 파일 받기
 	title := c.FormValue("title")
-	images := form.File["myfile2"]
 	files := form.File["myfile1"]
+	images := form.File["myfile2"]
 
 	temp := files[0].Filename
+	temp = strings.ToLower(temp)
+	temp = strings.Replace(temp, " ", "_", -1)
 	temp2 := strings.Split(temp, ".")
 	imageName := temp2[0] + ".jpg"
+	fileName := temp2[0] + "." + temp2[1]
 
 	log.Println("File is good")
 	log.Println("Video Title : " + title)
 	log.Println("ImageName : " + imageName)
+	log.Println("FileName : " + fileName)
+
 	for _, image := range images {
 		src, err := image.Open()
 		check(err)
@@ -90,27 +95,28 @@ func VideoUpload(c echo.Context) error {
 
 		defer src.Close()
 
-		dst, err := os.Create("./audioFile/" + file.Filename)
+		dst, err := os.Create("./audioFile/" + fileName)
 		check(err)
 
 		if _, err = io.Copy(dst, src); err != nil {
 			return nil
 		}
 	}
+
 	log.Println("====Post Elasticsearch about Title====")
-	ElasticPost(files[0].Filename, title)
+	ElasticPost(fileName, title)
 	log.Println("====Finish Elasticsearch about Title====")
 
 	log.Println("====Upload CloudStorage====")
-	googleApi.StorageUpload(files[0].Filename)
+	googleApi.StorageUpload(fileName)
 	googleApi.StorageUpload(imageName)
 	log.Println("====Finish Upload CloudStorage====")
 
 	log.Println("====Upload dataStroage====")
-	googleApi.DataStoreUpload(files[0].Filename, imageName, title)
+	googleApi.DataStoreUpload(fileName, imageName, title)
 	log.Println("====Finish Upload dataStorage====")
 
-	s := strings.Split(files[0].Filename, ".")
+	s := strings.Split(fileName, ".")
 	name, ty := s[0], s[1]
 
 	log.Println("====Start shell Script====")
