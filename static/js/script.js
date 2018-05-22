@@ -33,6 +33,7 @@ function home(url){
 
     success:function(resp){
       console.log(resp);
+
       // console.log(resp.video_list[0].title);
       for(var i=0; i<resp.video_list.length; i++){
         var homeDiv = document.createElement("button");
@@ -91,6 +92,9 @@ function home(url){
         // console.log(thirdChild);
         (buttonChild[j]).onclick = function(){
           // console.log(this.nextSibling);
+          var childs = document.getElementById("upperHtml").childNodes;
+          childs[1].innerHTML = "";
+          console.log(childs);
           document.getElementById('myVideo').innerHTML = "";
           document.getElementById("oneFormDiv").innerHTML = "";
           document.getElementById('TimeList').innerHTML = "";
@@ -405,6 +409,7 @@ function receiveVideo(url) {
      document.getElementById("myVideo").appendChild(myVideo);
      */
      document.getElementById('TimeList').innerHTML = "";
+     /*document.getElementById('TimeList').style.height = "200px";*/
      var headerPart = document.createElement("h3");
      headerPart.innerHTML = "TimeList";
      document.getElementById("TimeList").appendChild(headerPart);
