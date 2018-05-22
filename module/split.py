@@ -6,7 +6,7 @@ import itertools
 
 def split_sound_file(path, format):
     """Split sound file && Return nonsilent ranges."""
-    min_silence_len = 500
+    min_silence_len = 300
     keep_silence = 100
 
     sound_file = AudioSegment.from_file(path, format=format)
