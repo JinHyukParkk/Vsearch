@@ -60,8 +60,8 @@ func VideoUpload(c echo.Context) error {
 	check(err)
 	// 파일 받기
 	title := c.FormValue("title")
-	images := form.File["myfile2"]
 	files := form.File["myfile1"]
+	images := form.File["myfile2"]
 
 	temp := files[0].Filename
 	temp = strings.ToLower(temp)

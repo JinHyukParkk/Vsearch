@@ -7,4 +7,5 @@ type KeywordModel struct {
 type Time struct {
 	Start_Time string `json:"start_time"`
 	End_Time   string `json:"end_time"`
+	Content    string `json:"content"`
 }
