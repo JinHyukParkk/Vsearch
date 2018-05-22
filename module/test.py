@@ -3,7 +3,12 @@ from pydub.silence import split_on_silence, detect_nonsilent
 from pydub.utils import db_to_float, ratio_to_db
 import itertools
 from nltk.stem.snowball import SnowballStemmer
+import io
 
+from google.cloud import speech
+from google.cloud.speech import enums
+from google.cloud.speech import types
+from log_python import log
 
 def Processing(sentence):
     stemmer = SnowballStemmer("english")
@@ -47,10 +52,43 @@ def find_silence_thresh(audio_segment, min_silence_len=500):
     print(ratio_to_db(min_dbfs/audio_segment.max_possible_amplitude))
     print(ratio_to_db(max_dbfs/audio_segment.max_possible_amplitude))
 
-path = "/Users/yw/Desktop/test5.flac"
-format = "flac"
-sound_file = AudioSegment.from_file(path, format=format)
-print("ok")
-find_silence_thresh(sound_file)
 
-print(Processing("communication"))
+def SpeechAPI(pathFile):
+    client = speech.SpeechClient()
+    # The name of the audio file to transcribe
+    # Loads the audio into memory
+    try:
+        with io.open(pathFile, 'rb') as audio_file:
+            content = audio_file.read()
+            audio = types.RecognitionAudio(content=content)
+    except FileNotFoundError:
+        return
+
+    try:
+        config = types.RecognitionConfig(
+            encoding=enums.RecognitionConfig.AudioEncoding.FLAC,
+            sample_rate_hertz=16000,
+            language_code='en-US')
+
+        # Detects speech in the audio file
+        response = client.recognize(config, audio)
+        # log(response.results, logging.info)
+        if not response.results:
+            print("AAA")
+            return
+        result_str = ""
+        for result in response.results:
+            result_str = result_str + format(result.alternatives[0].transcript)
+            print(result_str)
+    except Exception as ex:
+        print("Error")
+
+SpeechAPI("/Users/yw/go/src/github.com/JinHyukParkk/CapstoneProject/audioFile_python/result15.flac")
+
+# path = "/Users/yw/Desktop/test5.flac"
+# format = "flac"
+# sound_file = AudioSegment.from_file(path, format=format)
+# print("ok")
+# find_silence_thresh(sound_file)
+
+    # print(Processing("communication"))
