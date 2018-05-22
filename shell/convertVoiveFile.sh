@@ -11,7 +11,7 @@ sox --channels=2 --bits=24 --rate=44100 --encoding=signed-integer --endian=littl
 
 python3 $modulePath/main.py $1.flac
 
-# rm $resPath/*.flac
+rm $resPath/*.flac
 
 rm $AudioFile/*
 
