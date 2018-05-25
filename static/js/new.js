@@ -1,9 +1,9 @@
 window.onload = function(){
   var url = "http://localhost:8080/videoList";
   home(url);
-  // document.getElementById("UploadVideo").onclick = function(){
-  //   sendVideo('http://localhost:8080/videoUpload')
-  // }
+  document.getElementById("UploadVideo").onclick = function(){
+    sendVideo('http://localhost:8080/videoUpload')
+  }
   // /*document.getElementById("Time").onclick = function(){
   //   makeVideoKeywordTimeTable('http://localhost:8080/test1')
   // }*/
@@ -100,12 +100,13 @@ function home(url){
 
       var buttonChild = document.getElementById("titlesMain").childNodes;
       console.log(buttonChild);
-      for(var j = 3; j < buttonChild.length; j++){
+      for(var j = 1; j < buttonChild.length; j++){
         var secondChild = buttonChild[j].childNodes;
         // var thirdChild = secondChild[1].childNodes;
         // console.log(thirdChild);
         console.log(secondChild[1]);
         (secondChild[1]).onclick = function(){
+          
           // var childs = document.getElementById("upperHtml").childNodes;
           // childs[1].innerHTML = "";
           // console.log(childs);
@@ -376,16 +377,38 @@ function receiveVideo(url) {
      document.getElementById("TimeList").appendChild(headerPart);
      //영상 중간재생 버튼 생성.
      for(var i = 0; i < resp.times.length; i++){
-      var li = document.createElement("li");
-       var btn = document.createElement("input");
-       btn.type = "button";
-       btn.className = "button special fit";
-       btn.id = "th"+i;
-       btn.value = resp.times[i].start_time;
+        var li = document.createElement("li");
+        var btn = document.createElement("input");
+        btn.type = "button";
+        btn.className = "button special fit";
+        btn.id = "th"+i;
+        var time = Math.floor(resp.times[i].start_time);
+        var hour = 0;
+        var minute = 0;
+        var second = 0;
+        
+        second = time%60;
+        time = parseInt(time/60);
+        minute = time;
+        time = parseInt(time/60);
+        hour = time;
+        
+        if(parseInt(second/10) == 0){
+          second = "0" + second;
+        }
+        if(parseInt(minute/10) == 0){
+          minute = "0" + minute;
+        }
+        if(parseInt(hour/10) == 0){
+          hour = "0" + hour;
+        }
+        
+        btn.value = hour + ":" + minute + ":" + second;
 
-       btn.placeholder = "start: " + resp.times[i].start_time + "~ end: " + resp.times[i].end_time;
-       li.appendChild(btn);
-       document.getElementById("TimeList").appendChild(li);
+        btn.placeholder = resp.times[i].start_time;
+        
+        li.appendChild(btn);
+        document.getElementById("TimeList").appendChild(li);
 
        // var br = document.createElement("br");
        // document.getElementById("TimeList").appendChild(br);
@@ -404,7 +427,7 @@ function receiveVideo(url) {
 
         }
         this.className = "button fit";
-        document.getElementById("VideoPlayer").currentTime = this.value;
+        document.getElementById("VideoPlayer").currentTime = this.placeholder;
 
        // this.style.background = "rgb(240, 91, 101)";
        // this.style.color = "white";

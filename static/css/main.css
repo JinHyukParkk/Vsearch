@@ -3201,6 +3201,33 @@
 			}
 
 		}
+
+	#TimeList{
+		max-height:450px;
+		overflow:auto;  
+
+	}
+		@media screen and (max-width: 736px){
+			#TimeList{
+				max-height:340px;
+				overflow:auto;  
+
+			}
+		}
+		@media screen and (max-width: 980px){
+			#TimeList{
+				max-height:200px;
+				overflow:auto;  
+
+			}
+		}
+		@media screen and (max-width: 1280px){
+			#TimeList{
+				max-height:300px;
+				overflow:auto;  
+
+			}
+		}
 /* Footer */
 
 	#footer {
