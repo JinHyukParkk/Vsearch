@@ -61,6 +61,14 @@ echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | sudo tee 
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 sudo apt-get update && sudo apt-get install google-cloud-sdk
 
+echo "python library"
+pip3 install --upgrade google-cloud-speech
+pip3 install requests
+Pip3 install pydub
+Pip3 install nltk
+
+
+
 
 
 
