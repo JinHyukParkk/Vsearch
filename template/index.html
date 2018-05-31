@@ -65,6 +65,7 @@
                           <input type="button" class="btn btn-default" data-dismiss="modal" id="UploadVideo" value="Upload">
                         </div>
                       </div>
+                    </div>
                   </div>
                   
               <!-- Nav -->
@@ -102,10 +103,10 @@
 
                 <div id="timeTag" class="3u 12u$(medium)">
                   <form id="oneKeyword" class="form-inline" onsubmit="return false" autocomplete="off">
-                          <div class="row uniform">
-                            <div class="12u$" id="oneFormDiv"></div>
-                          </div>
-                        </form>
+                    <div class="row uniform">
+                      <div class="12u$" id="oneFormDiv"></div>
+                    </div>
+                  </form>
 
                       <div >
                         <ul class="actions vertical" id="TimeList">
@@ -115,9 +116,16 @@
                 </div>
               </header>
               
-                    <p>최신 업로드 영상</p>
-                    <div id="tilesTag">
+              <p id="placeTag">최신 업로드 영상</p>
+              <div id="tilesTag">
                 <section class="tiles" id="titlesMain">
+                </section>
+                
+              </div>
+
+              <p id="keywordsTag"></p>
+              <div>
+                <section class="tiles" id="keywordsMain">
                 </section>
               </div>
             </div>
