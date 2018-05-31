@@ -153,7 +153,8 @@ function receiveVideo(url) {
           this.className = "button fit";
           document.getElementById("VideoPlayer").currentTime = this.placeholder;
         } 
-      } 
+      }
+      $('[data-toggle="tooltip"]').tooltip();  
     },
    error:function(){
      alert("Error: receiveVideo");
@@ -165,6 +166,7 @@ function makeVideoButton(resp,flag){
   $("#titlesMain").empty();
   $("#keywordsMain").empty();
   document.getElementById("keywordsTag").innerHTML = "";
+
   console.log(resp);
 
   for(var i=0; i<resp.video_list.length; i++){
@@ -224,8 +226,6 @@ function makeVideoButton(resp,flag){
 function makeOnclickFunctionOfVideo(){
   var buttonChild = document.getElementById("titlesMain").childNodes;
   var buttonChilds = document.getElementById("keywordsMain").childNodes;
-  console.log(buttonChild);
-  console.log(buttonChilds);
   for(var j = 0; j < buttonChild.length; j++){
     var secondChild = buttonChild[j].childNodes;
     (secondChild[1]).onclick = function(){
