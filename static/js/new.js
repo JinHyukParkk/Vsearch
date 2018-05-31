@@ -35,7 +35,7 @@ function makeMainHome(url){
 
     success:function(resp){
       makeVideoButton(resp,1);
-      makeOnclickFunctionOfVideo();
+      makeOnclickFunctionOfVideo("titlesMain");
     },
     error:function(){
       alert("Error: makeMainHome");
@@ -80,8 +80,12 @@ function sendKeyword(url,keyword){
 
     success:function(resp){
       $("#titlesMain").empty();
+      $("#keywordsMain").empty();
+     
       makeVideoButton(resp,2);
-      makeOnclickFunctionOfVideo();  
+      
+      makeOnclickFunctionOfVideo("titlesMain");
+      makeOnclickFunctionOfVideo("keywordsMain"); 
     },
     error:function(){
       alert("Method Error: sendKeyword");
@@ -90,8 +94,7 @@ function sendKeyword(url,keyword){
 }
 
 function receiveVideo(url) {
-  console.log(url);
- $.ajax({
+  $.ajax({
     type: "GET",
     url: url,
     dataType: "JSON",
@@ -145,18 +148,18 @@ function receiveVideo(url) {
       //버튼클릭시 해당 영상 시간으로 이동.
       var buttons = document.getElementById("TimeList").childNodes;
       for(var j = 1; j < buttons.length; j++){
-        (buttons[j].firstChild).onclick = function(){
-
+        buttons[j].firstChild.onclick = function(){
           for(var k = 1; k<buttons.length; k++){
             (buttons[k].firstChild).className = "button special fit";
           }
           this.className = "button fit";
           document.getElementById("VideoPlayer").currentTime = this.placeholder;
         } 
-      } 
+      }
+      $('[data-toggle="tooltip"]').tooltip(); 
     },
-   error:function(){
-     alert("Error: receiveVideo");
+    error:function(){
+      alert("Error: receiveVideo");
    }
  })
 }
@@ -208,8 +211,8 @@ function makeVideoButton(resp,flag){
   }
 }
 
-function makeOnclickFunctionOfVideo(){
-  var buttonChild = document.getElementById("titlesMain").childNodes;
+function makeOnclickFunctionOfVideo(selectedMainPage){
+  var buttonChild = document.getElementById(selectedMainPage).childNodes;
   for(var j = 1; j < buttonChild.length; j++){
     var secondChild = buttonChild[j].childNodes;
     (secondChild[1]).onclick = function(){
