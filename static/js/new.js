@@ -163,13 +163,21 @@ function receiveVideo(url) {
 }
 
 function makeVideoButton(resp,flag){
+  var titleCount = 0;
+  var keywordCount = 0;
+  document.getElementById("placeTag").style.visibility = "visible";
   $("#titlesMain").empty();
   $("#keywordsMain").empty();
+  $('#headerTag').empty();
+  $("#oneFormDiv").empty();
+  $("#TimeList").empty();
+  
   document.getElementById("keywordsTag").innerHTML = "";
 
   console.log(resp);
 
   for(var i=0; i<resp.video_list.length; i++){
+
     var articleTag = document.createElement("article");
     articleTag.className = "style" + (i%6);
 
@@ -200,6 +208,7 @@ function makeVideoButton(resp,flag){
       
       // document.getElementById("placeTag").innerHTML = ""; 
       if(((resp.video_list[i]).search_type) == "keyword"){
+        keywordCount++;
         // var header = document.createElement("h2");
         // header.innerHTML = "keyword";
         // document.getElementById("keywordsMain").appendChild(header);
@@ -207,6 +216,7 @@ function makeVideoButton(resp,flag){
         document.getElementById("keywordsMain").appendChild(articleTag);
       }
       else if(((resp.video_list[i]).search_type) == "title"){
+        titleCount++;
         // var header = document.createElement("h2");
         // header.innerHTML = "title";
         // document.getElementById("titlesMain").appendChild(header);
@@ -221,17 +231,27 @@ function makeVideoButton(resp,flag){
       alert("Error: makeVideoButton: flag Error");
     }
   }
+  if (keywordCount == (resp.video_list.length)){
+    document.getElementById("placeTag").style.visibility = "hidden";
+  }
 }
 
 function makeOnclickFunctionOfVideo(){
   var buttonChild = document.getElementById("titlesMain").childNodes;
   var buttonChilds = document.getElementById("keywordsMain").childNodes;
+
   for(var j = 0; j < buttonChild.length; j++){
     var secondChild = buttonChild[j].childNodes;
+
     (secondChild[1]).onclick = function(){
-      document.getElementById('headerTag').innerHTML = "";
-      document.getElementById("oneFormDiv").innerHTML = "";
+
+      $('#headerTag').empty();
+      $("#oneFormDiv").empty();
+      $("#TimeList").empty();
       
+      var hTag = document.createElement("h1");
+      hTag.innerHTML = this.firstChild.value;
+
       var divTag = document.createElement("div");
       
       var spanTags = document.createElement("span");
@@ -246,7 +266,10 @@ function makeOnclickFunctionOfVideo(){
       divTag.appendChild(spanTags)
       spanTags.appendChild(myVideo);
       document.getElementById("headerTag").appendChild(divTag);
+      document.getElementById("headerTag").appendChild(hTag);
 
+      var hTag = document.createElement("h1");
+      hTag.innerHTML = ""
       var oneKeywordSet = document.createElement("input");
       oneKeywordSet.id = "oneKeywordText";
       oneKeywordSet.type = "text";
@@ -272,9 +295,14 @@ function makeOnclickFunctionOfVideo(){
   for(var k = 0; k < buttonChilds.length; k++){
     var secondChild = buttonChilds[k].childNodes;
     (secondChild[1]).onclick = function(){
-      document.getElementById('headerTag').innerHTML = "";
-      document.getElementById("oneFormDiv").innerHTML = "";
+
+      $('#headerTag').empty();
+      $("#oneFormDiv").empty();
+      $("#TimeList").empty();
       
+      var hTag = document.createElement("h1");
+      hTag.innerHTML = this.firstChild.value;
+
       var divTag = document.createElement("div");
       
       var spanTags = document.createElement("span");
@@ -289,6 +317,7 @@ function makeOnclickFunctionOfVideo(){
       divTag.appendChild(spanTags)
       spanTags.appendChild(myVideo);
       document.getElementById("headerTag").appendChild(divTag);
+      document.getElementById("headerTag").appendChild(hTag);
 
       var oneKeywordSet = document.createElement("input");
       oneKeywordSet.id = "oneKeywordText";
