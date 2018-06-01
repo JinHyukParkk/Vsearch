@@ -35,7 +35,7 @@ function makeMainHome(url){
 
     success:function(resp){
       makeVideoButton(resp,1);
-      makeOnclickFunctionOfVideo();
+      makeOnclickFunctionOfVideo("titlesMain");
     },
     error:function(){
       alert("Error: makeMainHome");
@@ -81,7 +81,8 @@ function sendKeyword(url,keyword){
     success:function(resp){
       // $("#titlesMain").empty();
       makeVideoButton(resp,2);
-      makeOnclickFunctionOfVideo();  
+      makeOnclickFunctionOfVideo("titlesMain"); 
+      makeOnclickFunctionOfVideo("keywordsMain"); 
     },
     error:function(){
       alert("Method Error: sendKeyword");
@@ -201,25 +202,17 @@ function makeVideoButton(resp,flag){
     articleTag.appendChild(aTag);
     
     if(flag == 1){
-      // $("#keywordsMain").empty();
       document.getElementById("titlesMain").appendChild(articleTag);
     }
     else if(flag == 2){ 
       
-      // document.getElementById("placeTag").innerHTML = ""; 
       if(((resp.video_list[i]).search_type) == "keyword"){
         keywordCount++;
-        // var header = document.createElement("h2");
-        // header.innerHTML = "keyword";
-        // document.getElementById("keywordsMain").appendChild(header);
         document.getElementById("keywordsTag").innerHTML = "Keyword";
         document.getElementById("keywordsMain").appendChild(articleTag);
       }
       else if(((resp.video_list[i]).search_type) == "title"){
         titleCount++;
-        // var header = document.createElement("h2");
-        // header.innerHTML = "title";
-        // document.getElementById("titlesMain").appendChild(header);
         document.getElementById("placeTag").innerHTML = "Title";
         document.getElementById("titlesMain").appendChild(articleTag);
       }
@@ -236,10 +229,9 @@ function makeVideoButton(resp,flag){
   }
 }
 
-function makeOnclickFunctionOfVideo(){
-  var buttonChild = document.getElementById("titlesMain").childNodes;
-  var buttonChilds = document.getElementById("keywordsMain").childNodes;
-
+function makeOnclickFunctionOfVideo(selectedMainPage){
+  var buttonChild = document.getElementById(selectedMainPage).childNodes;
+  
   for(var j = 0; j < buttonChild.length; j++){
     var secondChild = buttonChild[j].childNodes;
 
@@ -270,55 +262,6 @@ function makeOnclickFunctionOfVideo(){
 
       var hTag = document.createElement("h1");
       hTag.innerHTML = ""
-      var oneKeywordSet = document.createElement("input");
-      oneKeywordSet.id = "oneKeywordText";
-      oneKeywordSet.type = "text";
-      oneKeywordSet.placeholder = "영상 내 키워드";
-      oneKeywordSet.className = "form-control";
-      document.getElementById("oneFormDiv").appendChild(oneKeywordSet);
-      
-      var oneKeywordButton = document.createElement("button");
-      oneKeywordButton.id = "clickButton";
-      oneKeywordButton.type = "button";
-      oneKeywordButton.innerHTML = "검색";
-      oneKeywordButton.value = this.firstChild.value;
-      oneKeywordButton.className = "btn btn-default";
-      document.getElementById("oneFormDiv").appendChild(oneKeywordButton);
-      oneKeywordButton.onclick = function(){
-        var putText = document.getElementById("oneKeywordText").value;
-        var newUrl = "http://localhost:8080/oneKeyword/" + this.value + "/" + putText;
-        receiveVideo(newUrl);
-      }
-    }
-  }
-  
-  for(var k = 0; k < buttonChilds.length; k++){
-    var secondChild = buttonChilds[k].childNodes;
-    (secondChild[1]).onclick = function(){
-
-      $('#headerTag').empty();
-      $("#oneFormDiv").empty();
-      $("#TimeList").empty();
-      
-      var hTag = document.createElement("h1");
-      hTag.innerHTML = this.firstChild.value;
-
-      var divTag = document.createElement("div");
-      
-      var spanTags = document.createElement("span");
-      spanTags.className = "embed-responsive embed-responsive-16by9";
-      
-      var myVideo = document.createElement("video");
-      myVideo.id = "VideoPlayer";
-      myVideo.src = this.value;
-      myVideo.autoplay = true;
-      myVideo.controls = true;
-
-      divTag.appendChild(spanTags)
-      spanTags.appendChild(myVideo);
-      document.getElementById("headerTag").appendChild(divTag);
-      document.getElementById("headerTag").appendChild(hTag);
-
       var oneKeywordSet = document.createElement("input");
       oneKeywordSet.id = "oneKeywordText";
       oneKeywordSet.type = "text";
