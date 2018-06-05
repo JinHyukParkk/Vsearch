@@ -101,7 +101,7 @@ function sendKeyword(url,keyword){
 
 function receiveVideo(url) {
   console.log(url);
- $.ajax({
+  $.ajax({
     type: "GET",
     url: url,
     dataType: "JSON",
@@ -166,10 +166,10 @@ function receiveVideo(url) {
       }
       $('[data-toggle="tooltip"]').tooltip();  
     },
-   error:function(){
+    error:function(){
      alert("Error: receiveVideo");
-   }
- })
+    }
+  })
 }
 
 function makeVideoButton(resp,flag,keyword){
@@ -203,7 +203,7 @@ function makeVideoButton(resp,flag,keyword){
 
     var title = document.createElement("h2");
     title.innerHTML = resp.video_list[i].title;
-    title.value = resp.video_list[i].filename;
+    title.value = resp.video_list[i].filename.replace(/_/g," ");
     
     aTag.appendChild(title);
     spanTag.appendChild(homeImg);
