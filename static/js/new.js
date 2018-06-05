@@ -80,7 +80,7 @@ function sendKeyword(url,keyword){
 
     success:function(resp){
       // $("#titlesMain").empty();
-      makeVideoButton(resp,2);
+      makeVideoButton(resp,2,keyword);
       makeOnclickFunctionOfVideo();  
     },
     error:function(){
@@ -162,7 +162,7 @@ function receiveVideo(url) {
  })
 }
 
-function makeVideoButton(resp,flag){
+function makeVideoButton(resp,flag,keyword){
   var titleCount = 0;
   var keywordCount = 0;
   document.getElementById("placeTag").style.visibility = "visible";
@@ -186,7 +186,7 @@ function makeVideoButton(resp,flag){
 
     var homeImg = document.createElement("img");
     homeImg.src = resp.video_list[i].image_url;
-    homeImg.style.height = "385px";
+    homeImg.style.height = "350px";
     
     var aTag = document.createElement("a");
     aTag.value = resp.video_list[i].video_url
@@ -212,7 +212,7 @@ function makeVideoButton(resp,flag){
         // var header = document.createElement("h2");
         // header.innerHTML = "keyword";
         // document.getElementById("keywordsMain").appendChild(header);
-        document.getElementById("keywordsTag").innerHTML = "Keyword";
+        document.getElementById("keywordsTag").innerHTML = "Keyword:"+ keyword;
         document.getElementById("keywordsMain").appendChild(articleTag);
       }
       else if(((resp.video_list[i]).search_type) == "title"){
@@ -250,7 +250,9 @@ function makeOnclickFunctionOfVideo(){
       $("#TimeList").empty();
       
       var hTag = document.createElement("h1");
-      hTag.innerHTML = this.firstChild.value;
+      var originalName = this.firstChild.value;
+      var replaceName = originalName.replace("_"," ");
+      hTag.innerHTML = replaceName;
 
       var divTag = document.createElement("div");
       

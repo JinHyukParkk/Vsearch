@@ -37,3 +37,17 @@
 2018-05-26 15:32:14,111 - root - INFO - ### Create File END ###
 2018-05-26 15:32:14,112 - root - INFO - ### Python End ###
 2018-05-26 15:32:14,112 - root - INFO - ########################
+2018-06-03 16:42:56,347 - root - INFO - ########################
+2018-06-03 16:42:56,347 - root - INFO - ### Python Start ###
+2018-06-03 16:42:56,347 - root - INFO - ### Split START ###
+2018-06-03 16:42:56,347 - root - INFO - imitation_game.flac
+2018-06-03 16:43:11,847 - root - INFO - ### Split End ###
+2018-06-03 16:43:11,847 - root - INFO - ### SpeechAPI START ###
+2018-06-03 16:43:15,458 - root - ERROR - 400 Sync input too long. For audio longer than 1 min use LongRunningRecognize with a 'uri' parameter.
+2018-06-03 16:43:16,398 - root - ERROR - 400 Sync input too long. For audio longer than 1 min use LongRunningRecognize with a 'uri' parameter.
+2018-06-03 16:43:29,357 - root - INFO - ### SpeechAPI END ###
+2018-06-03 16:43:29,357 - root - INFO - nonsilent_len : 31 dict _ len : 31
+2018-06-03 16:43:29,357 - root - INFO - ### Create json START ###
+2018-06-03 16:43:29,708 - root - INFO - ### Create File END ###
+2018-06-03 16:43:29,709 - root - INFO - ### Python End ###
+2018-06-03 16:43:29,709 - root - INFO - ########################
