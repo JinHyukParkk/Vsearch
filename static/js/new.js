@@ -67,11 +67,8 @@ function sendVideo(url){
  })
 }
 
-
-
 // 키워드를 서버로 보내는 함수
 function sendKeyword(url,keyword){
-
  $.ajax({
     type: "GET",
     dataType : "JSON",
@@ -79,10 +76,22 @@ function sendKeyword(url,keyword){
     url: url,
 
     success:function(resp){
-      // $("#titlesMain").empty();
-      makeVideoButton(resp,2);
-      makeOnclickFunctionOfVideo("titlesMain"); 
-      makeOnclickFunctionOfVideo("keywordsMain"); 
+      console.log(resp.video_list.length);
+      if(resp.video_list.length == 0){
+        $("#titlesMain").empty();
+        $("#keywordsMain").empty();
+        $('#headerTag').empty();
+        $("#oneFormDiv").empty();
+        $("#TimeList").empty();
+
+        $("#keywordsTag").html("");  
+        $("#placeTag").html("검색 결과가 없습니다.");
+      }
+      else{
+        makeVideoButton(resp,2,keyword);
+        makeOnclickFunctionOfVideo("titlesMain"); 
+        makeOnclickFunctionOfVideo("keywordsMain"); 
+      }
     },
     error:function(){
       alert("Method Error: sendKeyword");
@@ -163,7 +172,7 @@ function receiveVideo(url) {
  })
 }
 
-function makeVideoButton(resp,flag){
+function makeVideoButton(resp,flag,keyword){
   var titleCount = 0;
   var keywordCount = 0;
   document.getElementById("placeTag").style.visibility = "visible";
@@ -208,12 +217,12 @@ function makeVideoButton(resp,flag){
       
       if(((resp.video_list[i]).search_type) == "keyword"){
         keywordCount++;
-        document.getElementById("keywordsTag").innerHTML = "Keyword";
+        document.getElementById("keywordsTag").innerHTML = "Keyword: " + keyword;
         document.getElementById("keywordsMain").appendChild(articleTag);
       }
       else if(((resp.video_list[i]).search_type) == "title"){
         titleCount++;
-        document.getElementById("placeTag").innerHTML = "Title";
+        document.getElementById("placeTag").innerHTML = "Title: " + keyword;
         document.getElementById("titlesMain").appendChild(articleTag);
       }
       else{
