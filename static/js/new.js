@@ -78,21 +78,20 @@ function sendKeyword(url,keyword){
     success:function(resp){
 
     console.log(resp.video_list.length);
-    if(resp.video_list.length == 0){
-      $("#titlesMain").empty();
-      $("#keywordsMain").empty();
-      $('#headerTag').empty();
-      $("#oneFormDiv").empty();
-      $("#TimeList").empty();
+    // if(resp.video_list.length == 0){
+      
+    //   $("#titlesMain").empty();
+    //   $("#keywordsMain").empty();
+    //   $('#headerTag').empty();
+    //   $("#oneFormDiv").empty();
+    //   $("#TimeList").empty();
 
-      $("#keywordsTag").html("");  
-      $("#placeTag").html("검색 결과가 없습니다.");
-    }
-    else{
+    //   $("#keywordsTag").html("");  
+    //   $("#placeTag").html("검색 결과가 없습니다.");
+    // }
       makeVideoButton(resp,2,keyword);
       makeOnclickFunctionOfVideo("titlesMain"); 
       makeOnclickFunctionOfVideo("keywordsMain"); 
-    }
 
     },
     error:function(){
@@ -147,8 +146,11 @@ function receiveVideo(url) {
           hour = "0" + hour;
         }
 
-        btn.value = hour + ":" + minute + ":" + second;
+        btn.value = hour + ":" + minute + ":" + second + "~";
         btn.placeholder = resp.times[i].start_time;
+
+        btn.style.fontSize = "12pt";
+        btn.style.padding = "0";
 
         li.appendChild(btn);
         document.getElementById("TimeList").appendChild(li);
@@ -177,13 +179,15 @@ function receiveVideo(url) {
 function makeVideoButton(resp,flag,keyword){
   var titleCount = 0;
   var keywordCount = 0;
-  document.getElementById("placeTag").style.visibility = "visible";
+  
   $("#titlesMain").empty();
   $("#keywordsMain").empty();
   $('#headerTag').empty();
   $("#oneFormDiv").empty();
   $("#TimeList").empty();
-  
+  $("#placeH").empty();
+  $("#keywordsH").empty();
+
   document.getElementById("keywordsTag").innerHTML = "";
 
   console.log(resp);
@@ -216,18 +220,21 @@ function makeVideoButton(resp,flag,keyword){
       document.getElementById("titlesMain").appendChild(articleTag);
     }
     else if(flag == 2){ 
+      document.getElementById("keywordsTag").innerHTML = "Keyword: " + keyword;
+      document.getElementById("keywordsTag").style.textTransform = "none";
+      
+      document.getElementById("placeTag").innerHTML = "Title: " + keyword;
+      document.getElementById("placeTag").style.textTransform = "none";
       
       if(((resp.video_list[i]).search_type) == "keyword"){
         keywordCount++;
-
-        document.getElementById("keywordsTag").innerHTML = "Keyword: " + keyword;
-
         document.getElementById("keywordsMain").appendChild(articleTag);
+
       }
       else if(((resp.video_list[i]).search_type) == "title"){
         titleCount++;
-        document.getElementById("placeTag").innerHTML = "Title: " + keyword;
         document.getElementById("titlesMain").appendChild(articleTag);
+
       }
       else{
         alert("Error: type Error");
@@ -237,8 +244,23 @@ function makeVideoButton(resp,flag,keyword){
       alert("Error: makeVideoButton: flag Error");
     }
   }
+  if(i==0 && flag==2){
+    document.getElementById("keywordsTag").innerHTML = "Keyword: " + keyword;
+    document.getElementById("keywordsTag").style.textTransform = "none";
+      
+    document.getElementById("placeTag").innerHTML = "Title: " + keyword;
+    document.getElementById("placeTag").style.textTransform = "none";
+  }
+
   if (keywordCount == (resp.video_list.length)){
-    document.getElementById("placeTag").style.visibility = "hidden";
+    var hTags = document.createElement("h2");
+    hTags.innerHTML = "검색결과가 없습니다.";
+    document.getElementById("placeH").appendChild(hTags);
+  }
+  if (titleCount == (resp.video_list.length)){
+    var hTags = document.createElement("h2");
+    hTags.innerHTML = "검색결과가 없습니다.";
+    document.getElementById("keywordsH").appendChild(hTags);
   }
 }
 

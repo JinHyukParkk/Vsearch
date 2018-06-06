@@ -46,14 +46,16 @@
                   </a>
                   
                   <span id="searchSpan">
-                    <form id="keyword" class="keyword" onsubmit="return false" autocomplete="off">
-                            <div class="form-group">
-                                <input id="keywordBox" type="text" class="form-control" placeholder="키워드">
-                            </div>
-                            <button id="sendKeyword" type="button" class="btn btn-default">검색</button>
-                          </form>
+                    <form id="keyword" class="keyword form-inline" onsubmit="return false" autocomplete="off">
+                      <div class="form-group">
+                          <input id="keywordBox" type="text" class="form-control" placeholder="키워드">
+                          <button id="sendKeyword" type="button" class="btn btn-default">검색</button>
+                      </div>
+                      
+                    </form>
+                    <button id="uploadButton" class="button icon fa-upload" data-toggle="modal" data-target="#myModal"> upload</button>
                   </span>
-                  <button class="button icon fa-upload" data-toggle="modal" data-target="#myModal"> upload</button>
+                  
                   <div class="modal fade" id="myModal" role="dialog">
                     <div class="modal-dialog">
                       <div class="modal-content">
@@ -80,18 +82,18 @@
                   </div>
                   
               <!-- Nav -->
-                <nav>
+                <!-- <nav>
                   <ul>
                     <li><a href="#menu">Menu</a></li>
                   </ul>
-                </nav>
+                </nav> -->
 
             </div>
           </header>
            
 
         <!-- Menu -->
-          <nav id="menu">
+          <!-- <nav id="menu">
             <h2>Menu</h2>
 
             <ul>
@@ -100,15 +102,14 @@
             </ul>
             
 
-          </nav>
+          </nav> -->
 
 
         <!-- Main -->
           <div id="main">
             <div class="inner">
-              <h1>This is Sneak! 영상속 내용을 검색할 수 있습니다. </h1>
+              <h1> </h1>
               <header class="row">
-                
                 
                 <div id="headerTag" class="9u 12u$(medium)"></div>
 
@@ -128,13 +129,15 @@
               </header>
               
               <h2 id="placeTag">최신 업로드 영상</h2>
+              <div id="placeH"></div>
               <div id="tilesTag">
                 <section class="tiles" id="titlesMain">
                 </section>
               </div>
               <!-- <br> -->
-              <!-- <hr> -->
+              <hr>
               <h2 id="keywordsTag"></h2>
+              <div id="keywordsH"></div>
               <div>
                 <section class="tiles" id="keywordsMain">
                 </section>
