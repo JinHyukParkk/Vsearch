@@ -35,7 +35,7 @@ function makeMainHome(url){
 
     success:function(resp){
       makeVideoButton(resp,1);
-      makeOnclickFunctionOfVideo("titlesMain");
+      makeOnclickFunctionOfVideo(false,"titlesMain");
     },
     error:function(){
       alert("Error: makeMainHome");
@@ -90,8 +90,8 @@ function sendKeyword(url,keyword){
     //   $("#placeTag").html("검색 결과가 없습니다.");
     // }
       makeVideoButton(resp,2,keyword);
-      makeOnclickFunctionOfVideo("titlesMain"); 
-      makeOnclickFunctionOfVideo("keywordsMain"); 
+      makeOnclickFunctionOfVideo(false,"titlesMain"); 
+      makeOnclickFunctionOfVideo(keyword,"keywordsMain"); 
 
     },
     error:function(){
@@ -110,6 +110,7 @@ function receiveVideo(url) {
     async: false,
 
     success:function(resp){
+      console.log(resp);
       document.getElementById('TimeList').innerHTML = "";
       
       var headerPart = document.createElement("h3");
@@ -179,7 +180,7 @@ function receiveVideo(url) {
 function makeVideoButton(resp,flag,keyword){
   var titleCount = 0;
   var keywordCount = 0;
-  
+  $("#mainBanner").empty();
   $("#titlesMain").empty();
   $("#keywordsMain").empty();
   $('#headerTag').empty();
@@ -187,11 +188,19 @@ function makeVideoButton(resp,flag,keyword){
   $("#TimeList").empty();
   $("#placeH").empty();
   $("#keywordsH").empty();
-
+  console.log(resp);
   document.getElementById("keywordsTag").innerHTML = "";
 
-  console.log(resp);
-
+  if(flag == 1){
+    var bannerVideo = document.createElement("video");
+    bannerVideo.src = "images/sample.mp4";
+    bannerVideo.id = "bannerVideo";
+    bannerVideo.autoplay = true;
+    bannerVideo.muted = true;
+    bannerVideo.loop = true;
+    document.getElementById("mainBanner").appendChild(bannerVideo);
+  }
+  
   for(var i=0; i<resp.video_list.length; i++){
 
     var articleTag = document.createElement("article");
@@ -217,7 +226,9 @@ function makeVideoButton(resp,flag,keyword){
     articleTag.appendChild(aTag);
     
     if(flag == 1){
+      
       document.getElementById("titlesMain").appendChild(articleTag);
+      
     }
     else if(flag == 2){ 
       document.getElementById("keywordsTag").innerHTML = "Keyword: " + keyword;
@@ -264,7 +275,7 @@ function makeVideoButton(resp,flag,keyword){
   }
 }
 
-function makeOnclickFunctionOfVideo(selectedMainPage){
+function makeOnclickFunctionOfVideo(keyword,selectedMainPage){
   var buttonChild = document.getElementById(selectedMainPage).childNodes;
   
   for(var j = 0; j < buttonChild.length; j++){
@@ -275,7 +286,7 @@ function makeOnclickFunctionOfVideo(selectedMainPage){
       $('#headerTag').empty();
       $("#oneFormDiv").empty();
       $("#TimeList").empty();
-      
+      $("#mainBanner").empty();
       var hTag = document.createElement("h1");
       var originalName = this.firstChild.value;
       var replaceName = originalName.replace("_"," ");
@@ -313,11 +324,18 @@ function makeOnclickFunctionOfVideo(selectedMainPage){
       oneKeywordButton.value = this.firstChild.value;
       oneKeywordButton.className = "btn btn-default";
       document.getElementById("oneFormDiv").appendChild(oneKeywordButton);
-      oneKeywordButton.onclick = function(){
-        var putText = document.getElementById("oneKeywordText").value;
-        var newUrl = "http://localhost:8080/oneKeyword/" + this.value + "/" + putText;
-        receiveVideo(newUrl);
+      if (keyword){
+        var newUrls = "http://localhost:8080/oneKeyword/" + this.firstChild.value + "/" + keyword;
+        receiveVideo(newUrls);
       }
+      else{
+        oneKeywordButton.onclick = function(){
+          var putText = document.getElementById("oneKeywordText").value;
+          var newUrl = "http://localhost:8080/oneKeyword/" + this.value + "/" + putText;
+          receiveVideo(newUrl);
+        }
+      }
+      
     }
   }
 }

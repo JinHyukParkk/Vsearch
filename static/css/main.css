@@ -2510,8 +2510,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			color: #f2849e !important;
-			box-shadow: inset 0 0 0 2px #f2849e;
+			color: #596eb7 !important;
+			box-shadow: inset 0 0 0 2px #596eb7;
 		}
 
 		input[type="submit"]:active,
@@ -2519,7 +2519,7 @@
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(242, 132, 158, 0.1);
+			background-color: rgba(89, 110, 183, 0.1);
 		}
 
 		input[type="submit"].small,
@@ -2553,7 +2553,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #f2849e;
+				background-color: #596eb7;
 			}
 
 			input[type="submit"].special:active,
@@ -2561,7 +2561,7 @@
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
-				background-color: #ee5f81;
+				background-color: #596eb7;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -3215,7 +3215,18 @@
 			}
 
 		}
+	#mainBanner{
+		margin-top:50px;
+		height: 100%;
+		width: 100%;
 
+		/*height:800pt;*/
+	}
+		#bannerVideo{
+			width: 100%;
+			height: 350pt;
+			background-color: black;
+		}
 	#TimeList{
 		max-height:500px;
 		overflow:auto;  
