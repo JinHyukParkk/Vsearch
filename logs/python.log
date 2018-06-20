@@ -84,3 +84,28 @@
 2018-06-19 22:37:34,583 - root - INFO - ### Create File END ###
 2018-06-19 22:37:34,584 - root - INFO - ### Python End ###
 2018-06-19 22:37:34,584 - root - INFO - ########################
+2018-06-20 15:47:30,993 - root - INFO - ########################
+2018-06-20 15:47:30,993 - root - INFO - ### Python Start ###
+2018-06-20 15:47:30,993 - root - INFO - ### Split START ###
+2018-06-20 15:47:30,993 - root - INFO - sample.flac
+2018-06-20 16:14:49,248 - root - INFO - ########################
+2018-06-20 16:14:49,249 - root - INFO - ### Python Start ###
+2018-06-20 16:14:49,249 - root - INFO - ### Split START ###
+2018-06-20 16:14:49,249 - root - INFO - mobile_computing_introduction_lecture.flac
+2018-06-20 16:16:33,639 - root - INFO - ### Split End ###
+2018-06-20 16:16:33,640 - root - INFO - ### SpeechAPI START ###
+2018-06-20 16:18:16,721 - root - INFO - ########################
+2018-06-20 16:18:16,721 - root - INFO - ### Python Start ###
+2018-06-20 16:18:16,721 - root - INFO - ### Split START ###
+2018-06-20 16:18:16,721 - root - INFO - capsule_networks__an_improvement_to_convolutional_networks.flac
+2018-06-20 16:19:11,430 - root - INFO - ### Split End ###
+2018-06-20 16:19:11,431 - root - INFO - ### SpeechAPI START ###
+2018-06-20 16:19:18,182 - root - ERROR - 400 Sync input too long. For audio longer than 1 min use LongRunningRecognize with a 'uri' parameter.
+2018-06-20 16:19:18,900 - root - ERROR - 400 Sync input too long. For audio longer than 1 min use LongRunningRecognize with a 'uri' parameter.
+2018-06-20 16:19:31,523 - root - INFO - ### SpeechAPI END ###
+2018-06-20 16:19:31,523 - root - INFO - nonsilent_len : 83 dict _ len : 63
+2018-06-20 16:19:31,523 - root - INFO - ### Create json START ###
+2018-06-20 16:19:32,329 - root - ERROR - list index out of range
+2018-06-20 16:19:32,330 - root - INFO - ### Create File END ###
+2018-06-20 16:19:32,330 - root - INFO - ### Python End ###
+2018-06-20 16:19:32,330 - root - INFO - ########################

@@ -200,9 +200,9 @@ function makeVideoButton(resp,flag,keyword){
     bannerVideo.loop = true;
     document.getElementById("mainBanner").appendChild(bannerVideo);
   }
-  
-  for(var i=0; i<resp.video_list.length; i++){
 
+  for(var i=0; i<resp.video_list.length; i++){
+  
     var articleTag = document.createElement("article");
     articleTag.className = "style" + (i%6);
 
