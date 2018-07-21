@@ -3,13 +3,6 @@
 ## 개요
  - 동영상에서 발생하는 음성을 인식하고, 사용자가 찾고자하는 keyword를 검색하는 웹애플리케이션입니다. keyword를 검색하면 해당 keyword가 발생하는 지점들의 시간 리스트가 나오고, 클릭 시 그 시간부터 재생하게 됩니다. 
 
-### 메인 화면
- ![main](./screenshot/mainPage.png)
-
-### 검색 화면
- ![main](./screenshot/searchPage.png)
-
-
 ## 사용법
 -------------
 ### 1. 환경 세팅
@@ -24,3 +17,10 @@
 # git clone https://github.com/JinHyukParkk
 # make
 ```
+
+### 메인 화면
+ ![main](./screenshot/mainPage.png)
+
+### 검색 화면
+ ![main](./screenshot/searchPage.png)
+
