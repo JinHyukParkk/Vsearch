@@ -193,7 +193,7 @@ function makeVideoButton(resp,flag,keyword){
 
   if(flag == 1){
     var bannerVideo = document.createElement("video");
-    bannerVideo.src = "https://storage.googleapis.com/testvideostore/Beenzino-%20Time_Travel.mp4";
+    bannerVideo.src = "https://storage.googleapis.com/ssh_pjh_bucket/Beenzino-%20Time_Travel.mp4";
     bannerVideo.id = "bannerVideo";
     bannerVideo.autoplay = true;
     bannerVideo.muted = true;
