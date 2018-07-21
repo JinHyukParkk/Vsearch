@@ -20,7 +20,6 @@
 
 
 ## 3. 사용법
--------------
 ### 3.1. 환경 세팅
 - OS : Ubuntu 16.04 LTS
 - DB : GCP Datastore(Nosql)
@@ -36,7 +35,6 @@
 
 
 ## 4. 실행 사진
--------------
 ### 4.1. 메인 화면
  ![main](./screenshot/mainPage.png)
 
