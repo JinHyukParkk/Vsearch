@@ -193,7 +193,7 @@ function makeVideoButton(resp,flag,keyword){
 
   if(flag == 1){
     var bannerVideo = document.createElement("video");
-    bannerVideo.src = "images/sample.mp4";
+    bannerVideo.src = "video/bannerAd.mp4";
     bannerVideo.id = "bannerVideo";
     bannerVideo.autoplay = true;
     bannerVideo.muted = true;
