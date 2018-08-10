@@ -29,7 +29,7 @@
 
 ### 3.2. 실행 방법
 ```
-# git clone https://github.com/JinHyukParkk
+# git clone https://github.com/JinHyukParkk/Vsearch
 # make
 ```
 
@@ -37,6 +37,7 @@
 ## 4. 실행 사진
 ### 4.1. 메인 화면
  ![main](./screenshot/mainPage.png)
+ -------------
 
 ### 4.2. 검색 화면
  ![main](./screenshot/searchPage.png)
