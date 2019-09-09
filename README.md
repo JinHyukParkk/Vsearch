@@ -24,7 +24,7 @@
 - OS : Ubuntu 16.04 LTS
 - DB : GCP Datastore(Nosql)
 - Storage : GCP Storage
-- Language : Golang 1.10, Python 3.6, Java 1.8
+- Language : Golang 1.10, Python 3.6, Java 1.8, JavaScript ES5
 - Opensource / Program : Sox, FFmpeg, ElasticSearch, Kibana
 
 ### 3.2. 실행 방법
